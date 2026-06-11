@@ -3,12 +3,12 @@
 
 #include <stdint.h>
 
-#define JADE_KEM_mlkem_mlkem768_amd64_ref_SECRETKEYBYTES   2400
-#define JADE_KEM_mlkem_mlkem768_amd64_ref_PUBLICKEYBYTES   1184
-#define JADE_KEM_mlkem_mlkem768_amd64_ref_CIPHERTEXTBYTES  1088
-#define JADE_KEM_mlkem_mlkem768_amd64_ref_KEYPAIRCOINBYTES 64
-#define JADE_KEM_mlkem_mlkem768_amd64_ref_ENCCOINBYTES     32
-#define JADE_KEM_mlkem_mlkem768_amd64_ref_BYTES            32
+#define JADE_KEM_mlkem_kaiburr8_amd64_ref_SECRETKEYBYTES   27728
+#define JADE_KEM_mlkem_kaiburr8_amd64_ref_PUBLICKEYBYTES   9248
+#define JADE_KEM_mlkem_kaiburr8_amd64_ref_CIPHERTEXTBYTES  9600
+#define JADE_KEM_mlkem_kaiburr8_amd64_ref_KEYPAIRCOINBYTES 64
+#define JADE_KEM_mlkem_kaiburr8_amd64_ref_ENCCOINBYTES     32
+#define JADE_KEM_mlkem_kaiburr8_amd64_ref_BYTES            32
 
 #define JADE_KEM_mlkem_mlkem768_amd64_ref_ALGNAME         "mlkem768"
 #define JADE_KEM_mlkem_mlkem768_amd64_ref_ARCH            "amd64"

@@ -1,13 +1,13 @@
 	.att_syntax
 	.text
 	.p2align	5
-	.global	jade_kem_mlkem_mlkem1024_amd64_ref_dec
-	.global	jade_kem_mlkem_mlkem1024_amd64_ref_enc
-	.global	jade_kem_mlkem_mlkem1024_amd64_ref_enc_derand
-	.global	jade_kem_mlkem_mlkem1024_amd64_ref_keypair
-	.global	jade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand
-	.type	jade_kem_mlkem_mlkem1024_amd64_ref_dec, %function
-jade_kem_mlkem_mlkem1024_amd64_ref_dec:
+	.global	jade_kem_mlkem_kaiburr6_amd64_ref_dec
+	.global	jade_kem_mlkem_kaiburr6_amd64_ref_enc
+	.global	jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand
+	.global	jade_kem_mlkem_kaiburr6_amd64_ref_keypair
+	.global	jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand
+	.type	jade_kem_mlkem_kaiburr6_amd64_ref_dec, %function
+jade_kem_mlkem_kaiburr6_amd64_ref_dec:
 	movq	%rsp, %rax
 	leaq	-212736(%rsp), %rsp
 	andq	$-8, %rsp
@@ -30,403 +30,403 @@ jade_kem_mlkem_mlkem1024_amd64_ref_dec:
 	leaq	2632(%rsp), %rcx
 	movq	%rax, %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$994:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$994:
 	leaq	3144(%rsp), %rcx
 	leaq	384(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$993:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$993:
 	leaq	3656(%rsp), %rcx
 	leaq	768(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$992:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$992:
 	leaq	4168(%rsp), %rcx
 	leaq	1152(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$991:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$991:
 	leaq	4680(%rsp), %rcx
 	leaq	1536(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$990:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$990:
 	leaq	5192(%rsp), %rcx
 	leaq	1920(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$989:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$989:
 	leaq	5704(%rsp), %rcx
 	leaq	2304(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$988:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$988:
 	leaq	6216(%rsp), %rcx
 	leaq	2688(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$987:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$987:
 	leaq	6728(%rsp), %rcx
 	leaq	3072(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$986:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$986:
 	leaq	7240(%rsp), %rcx
 	leaq	3456(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$985:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$985:
 	leaq	7752(%rsp), %rcx
 	leaq	3840(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$984:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$984:
 	leaq	8264(%rsp), %rcx
 	leaq	4224(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$983:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$983:
 	leaq	8776(%rsp), %rcx
 	leaq	4608(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$982:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$982:
 	leaq	9288(%rsp), %rcx
 	leaq	4992(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$981:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$981:
 	leaq	9800(%rsp), %rcx
 	leaq	5376(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$980:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$980:
 	leaq	10312(%rsp), %rcx
 	leaq	5760(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$979:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$979:
 	leaq	10824(%rsp), %rcx
 	leaq	6144(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$978:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$978:
 	leaq	11336(%rsp), %rcx
 	leaq	6528(%rax), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$977:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$977:
 	leaq	584(%rsp), %rcx
 	leaq	6912(%r11), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$976:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$976:
 	leaq	11848(%rsp), %rcx
 	movq	%rbx, %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$975:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$975:
 	leaq	12360(%rsp), %rcx
 	leaq	384(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$974:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$974:
 	leaq	12872(%rsp), %rcx
 	leaq	768(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$973:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$973:
 	leaq	13384(%rsp), %rcx
 	leaq	1152(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$972:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$972:
 	leaq	13896(%rsp), %rcx
 	leaq	1536(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$971:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$971:
 	leaq	14408(%rsp), %rcx
 	leaq	1920(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$970:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$970:
 	leaq	14920(%rsp), %rcx
 	leaq	2304(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$969:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$969:
 	leaq	15432(%rsp), %rcx
 	leaq	2688(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$968:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$968:
 	leaq	15944(%rsp), %rcx
 	leaq	3072(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$967:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$967:
 	leaq	16456(%rsp), %rcx
 	leaq	3456(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$966:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$966:
 	leaq	16968(%rsp), %rcx
 	leaq	3840(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$965:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$965:
 	leaq	17480(%rsp), %rcx
 	leaq	4224(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$964:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$964:
 	leaq	17992(%rsp), %rcx
 	leaq	4608(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$963:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$963:
 	leaq	18504(%rsp), %rcx
 	leaq	4992(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$962:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$962:
 	leaq	19016(%rsp), %rcx
 	leaq	5376(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$961:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$961:
 	leaq	19528(%rsp), %rcx
 	leaq	5760(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$960:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$960:
 	leaq	20040(%rsp), %rcx
 	leaq	6144(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$959:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$959:
 	leaq	20552(%rsp), %rcx
 	leaq	6528(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$958:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$958:
 	leaq	2632(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$957:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$957:
 	leaq	3144(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$956:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$956:
 	leaq	3656(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$955:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$955:
 	leaq	4168(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$954:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$954:
 	leaq	4680(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$953:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$953:
 	leaq	5192(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$952:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$952:
 	leaq	5704(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$951:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$951:
 	leaq	6216(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$950:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$950:
 	leaq	6728(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$949:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$949:
 	leaq	7240(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$948:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$948:
 	leaq	7752(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$947:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$947:
 	leaq	8264(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$946:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$946:
 	leaq	8776(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$945:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$945:
 	leaq	9288(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$944:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$944:
 	leaq	9800(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$943:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$943:
 	leaq	10312(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$942:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$942:
 	leaq	10824(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$941:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$941:
 	leaq	11336(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$940:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$940:
 	leaq	1096(%rsp), %r11
 	leaq	11848(%rsp), %rax
 	leaq	2632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$939:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$939:
 	leaq	16(%rsp), %rsp
 	leaq	1608(%rsp), %r11
 	leaq	12360(%rsp), %rax
 	leaq	3144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$938:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$938:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$937:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$937:
 	leaq	1608(%rsp), %r11
 	leaq	12872(%rsp), %rax
 	leaq	3656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$936:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$936:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$935:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$935:
 	leaq	1608(%rsp), %r11
 	leaq	13384(%rsp), %rax
 	leaq	4168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$934:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$934:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$933:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$933:
 	leaq	1608(%rsp), %r11
 	leaq	13896(%rsp), %rax
 	leaq	4680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$932:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$932:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$931:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$931:
 	leaq	1608(%rsp), %r11
 	leaq	14408(%rsp), %rax
 	leaq	5192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$930:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$930:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$929:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$929:
 	leaq	1608(%rsp), %r11
 	leaq	14920(%rsp), %rax
 	leaq	5704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$928:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$928:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$927:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$927:
 	leaq	1608(%rsp), %r11
 	leaq	15432(%rsp), %rax
 	leaq	6216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$926:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$926:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$925:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$925:
 	leaq	1608(%rsp), %r11
 	leaq	15944(%rsp), %rax
 	leaq	6728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$924:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$924:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$923:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$923:
 	leaq	1608(%rsp), %r11
 	leaq	16456(%rsp), %rax
 	leaq	7240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$922:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$922:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$921:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$921:
 	leaq	1608(%rsp), %r11
 	leaq	16968(%rsp), %rax
 	leaq	7752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$920:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$920:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$919:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$919:
 	leaq	1608(%rsp), %r11
 	leaq	17480(%rsp), %rax
 	leaq	8264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$918:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$918:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$917:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$917:
 	leaq	1608(%rsp), %r11
 	leaq	17992(%rsp), %rax
 	leaq	8776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$916:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$916:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$915:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$915:
 	leaq	1608(%rsp), %r11
 	leaq	18504(%rsp), %rax
 	leaq	9288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$914:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$914:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$913:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$913:
 	leaq	1608(%rsp), %r11
 	leaq	19016(%rsp), %rax
 	leaq	9800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$912:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$912:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$911:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$911:
 	leaq	1608(%rsp), %r11
 	leaq	19528(%rsp), %rax
 	leaq	10312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$910:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$910:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$909:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$909:
 	leaq	1608(%rsp), %r11
 	leaq	20040(%rsp), %rax
 	leaq	10824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$908:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$908:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$907:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$907:
 	leaq	1608(%rsp), %r11
 	leaq	20552(%rsp), %rax
 	leaq	11336(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$906:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$906:
 	leaq	16(%rsp), %rsp
 	leaq	1096(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$905:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$905:
 	leaq	1096(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$903
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$904:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$903
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$904:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -435,21 +435,21 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$904:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$903:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$903:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$904
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$904
 	leaq	1096(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$902:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$902:
 	leaq	1608(%rsp), %rax
 	leaq	584(%rsp), %rdx
 	leaq	1096(%rsp), %rcx
 	call	L_poly_sub$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$901:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$901:
 	leaq	1608(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$899
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$900:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$899
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$900:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -458,12 +458,12 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$900:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$899:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$899:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$900
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$900
 	leaq	1608(%rsp), %rax
 	call	L_i_poly_tomsg$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$898:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$898:
 	movq	%mm2, %rcx
 	movq	13856(%rcx), %rax
 	movq	%rax, 120(%rsp)
@@ -477,7 +477,7 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$898:
 	leaq	88(%rsp), %rbx
 	leaq	-224(%rsp), %rsp
 	call	L_sha3_512A_A64$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$897:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$897:
 	leaq	224(%rsp), %rsp
 	leaq	205384(%rsp), %rbp
 	leaq	88(%rsp), %rax
@@ -488,75 +488,75 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$897:
 	leaq	2632(%rsp), %rcx
 	movq	%rbx, %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$896:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$896:
 	leaq	3144(%rsp), %rcx
 	leaq	384(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$895:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$895:
 	leaq	3656(%rsp), %rcx
 	leaq	768(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$894:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$894:
 	leaq	4168(%rsp), %rcx
 	leaq	1152(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$893:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$893:
 	leaq	4680(%rsp), %rcx
 	leaq	1536(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$892:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$892:
 	leaq	5192(%rsp), %rcx
 	leaq	1920(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$891:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$891:
 	leaq	5704(%rsp), %rcx
 	leaq	2304(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$890:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$890:
 	leaq	6216(%rsp), %rcx
 	leaq	2688(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$889:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$889:
 	leaq	6728(%rsp), %rcx
 	leaq	3072(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$888:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$888:
 	leaq	7240(%rsp), %rcx
 	leaq	3456(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$887:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$887:
 	leaq	7752(%rsp), %rcx
 	leaq	3840(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$886:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$886:
 	leaq	8264(%rsp), %rcx
 	leaq	4224(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$885:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$885:
 	leaq	8776(%rsp), %rcx
 	leaq	4608(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$884:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$884:
 	leaq	9288(%rsp), %rcx
 	leaq	4992(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$883:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$883:
 	leaq	9800(%rsp), %rcx
 	leaq	5376(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$882:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$882:
 	leaq	10312(%rsp), %rcx
 	leaq	5760(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$881:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$881:
 	leaq	10824(%rsp), %rcx
 	leaq	6144(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$880:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$880:
 	leaq	11336(%rsp), %rcx
 	leaq	6528(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$879:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$879:
 	movq	6912(%r10), %rcx
 	movq	%rcx, 16(%rsp)
 	movq	6920(%r10), %rcx
@@ -567,7 +567,7 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$879:
 	movq	%rcx, 40(%rsp)
 	leaq	1608(%rsp), %rcx
 	call	L_i_poly_frommsg$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$878:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$878:
 	movq	%r11, %mm4
 	movq	$1, %rax
 	movq	%rax, %mm5
@@ -636,52 +636,52 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$878:
 	movb	47(%rsp), %sil
 	movb	%sil, 79(%rsp)
 	movq	$0, %rsi
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$857:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$857:
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$858
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$859:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$858
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$859:
 	movq	%mm5, %rax
 	cmpq	$0, %rax
-	je  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$876
+	je  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$876
 	movb	%sil, 80(%rsp)
 	movb	%dl, 81(%rsp)
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$877
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$876:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$877
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$876:
 	movb	%dl, 80(%rsp)
 	movb	%sil, 81(%rsp)
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$877:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$877:
 	movq	%rsi, (%rsp)
 	movq	%rdx, 8(%rsp)
 	leaq	384(%rsp), %rdx
 	leaq	48(%rsp), %rbx
 	call	L_shake128_absorb34$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$875:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$875:
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$862
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$863:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$862
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$863:
 	movq	%rcx, %mm6
 	leaq	384(%rsp), %rdx
 	leaq	216(%rsp), %rsi
 	leaq	-8(%rsp), %rsp
 	call	L_shake128_squeezeblock$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$874:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$874:
 	leaq	8(%rsp), %rsp
 	movq	%mm6, %rcx
 	lfence
 	movq	$0, %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$864
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$865:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$864
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$865:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$866
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$866
 	movq	$-1, %rdx
 	cmovb	%rdx, %rax
 	movq	$168, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$864
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$866:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$864
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$866:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movzbw	216(%rsp,%rdx), %si
@@ -699,43 +699,43 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$866:
 	orw 	%r9w, %di
 	addq	$3, %rdx
 	cmpw	$3329, %si
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$872
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$872
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$873
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$872:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$873
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$872:
 	movq	$-1, %r8
 	cmovnb	%r8, %rax
 	movw	%si, 1096(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$873:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$873:
 	cmpw	$3329, %di
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$868
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$868
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$864
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$868:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$864
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$868:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$870
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$870
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$864
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$870:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$864
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$870:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movw	%di, 1096(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$871:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$869:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$867:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$864:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$871:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$869:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$867:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$864:
 	cmpq	$166, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$865
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$862:
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$865
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$862:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$863
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$863
 	movq	(%rsp), %rsi
 	movq	8(%rsp), %rdx
 	movq	%rsi, %rax
@@ -745,498 +745,498 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$862:
 	addq	%rcx, %rax
 	leaq	39496(%rsp,%rax,2), %rax
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$860
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$861:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$860
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$861:
 	movw	1096(%rsp,%rcx,2), %r9w
 	movw	%r9w, (%rax,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$860:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$860:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$861
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$861
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$858:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$858:
 	cmpq	$18, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$859
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$859
 	incq	%rsi
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$856:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$856:
 	cmpq	$18, %rsi
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$857
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$857
 	movq	%mm4, %rcx
 	movb	$0, %al
 	leaq	11848(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$855:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$855:
 	leaq	304(%rsp), %rsp
 	movb	$1, %al
 	leaq	12360(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$854:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$854:
 	leaq	304(%rsp), %rsp
 	movb	$2, %al
 	leaq	12872(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$853:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$853:
 	leaq	304(%rsp), %rsp
 	movb	$3, %al
 	leaq	13384(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$852:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$852:
 	leaq	304(%rsp), %rsp
 	movb	$4, %al
 	leaq	13896(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$851:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$851:
 	leaq	304(%rsp), %rsp
 	movb	$5, %al
 	leaq	14408(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$850:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$850:
 	leaq	304(%rsp), %rsp
 	movb	$6, %al
 	leaq	14920(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$849:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$849:
 	leaq	304(%rsp), %rsp
 	movb	$7, %al
 	leaq	15432(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$848:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$848:
 	leaq	304(%rsp), %rsp
 	movb	$8, %al
 	leaq	15944(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$847:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$847:
 	leaq	304(%rsp), %rsp
 	movb	$9, %al
 	leaq	16456(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$846:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$846:
 	leaq	304(%rsp), %rsp
 	movb	$10, %al
 	leaq	16968(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$845:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$845:
 	leaq	304(%rsp), %rsp
 	movb	$11, %al
 	leaq	17480(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$844:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$844:
 	leaq	304(%rsp), %rsp
 	movb	$12, %al
 	leaq	17992(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$843:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$843:
 	leaq	304(%rsp), %rsp
 	movb	$13, %al
 	leaq	18504(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$842:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$842:
 	leaq	304(%rsp), %rsp
 	movb	$14, %al
 	leaq	19016(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$841:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$841:
 	leaq	304(%rsp), %rsp
 	movb	$15, %al
 	leaq	19528(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$840:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$840:
 	leaq	304(%rsp), %rsp
 	movb	$16, %al
 	leaq	20040(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$839:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$839:
 	leaq	304(%rsp), %rsp
 	movb	$17, %al
 	leaq	20552(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$838:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$838:
 	leaq	304(%rsp), %rsp
 	movq	%mm4, %rcx
 	movb	$18, %al
 	leaq	21064(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$837:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$837:
 	leaq	304(%rsp), %rsp
 	movb	$19, %al
 	leaq	21576(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$836:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$836:
 	leaq	304(%rsp), %rsp
 	movb	$20, %al
 	leaq	22088(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$835:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$835:
 	leaq	304(%rsp), %rsp
 	movb	$21, %al
 	leaq	22600(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$834:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$834:
 	leaq	304(%rsp), %rsp
 	movb	$22, %al
 	leaq	23112(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$833:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$833:
 	leaq	304(%rsp), %rsp
 	movb	$23, %al
 	leaq	23624(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$832:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$832:
 	leaq	304(%rsp), %rsp
 	movb	$24, %al
 	leaq	24136(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$831:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$831:
 	leaq	304(%rsp), %rsp
 	movb	$25, %al
 	leaq	24648(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$830:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$830:
 	leaq	304(%rsp), %rsp
 	movb	$26, %al
 	leaq	25160(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$829:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$829:
 	leaq	304(%rsp), %rsp
 	movb	$27, %al
 	leaq	25672(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$828:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$828:
 	leaq	304(%rsp), %rsp
 	movb	$28, %al
 	leaq	26184(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$827:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$827:
 	leaq	304(%rsp), %rsp
 	movb	$29, %al
 	leaq	26696(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$826:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$826:
 	leaq	304(%rsp), %rsp
 	movb	$30, %al
 	leaq	27208(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$825:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$825:
 	leaq	304(%rsp), %rsp
 	movb	$31, %al
 	leaq	27720(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$824:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$824:
 	leaq	304(%rsp), %rsp
 	movb	$32, %al
 	leaq	28232(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$823:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$823:
 	leaq	304(%rsp), %rsp
 	movb	$33, %al
 	leaq	28744(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$822:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$822:
 	leaq	304(%rsp), %rsp
 	movb	$34, %al
 	leaq	29256(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$821:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$821:
 	leaq	304(%rsp), %rsp
 	movb	$35, %al
 	leaq	29768(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$820:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$820:
 	leaq	304(%rsp), %rsp
 	movb	$36, %al
 	leaq	1096(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$819:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$819:
 	leaq	304(%rsp), %rsp
 	leaq	11848(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$818:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$818:
 	leaq	12360(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$817:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$817:
 	leaq	12872(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$816:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$816:
 	leaq	13384(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$815:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$815:
 	leaq	13896(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$814:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$814:
 	leaq	14408(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$813:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$813:
 	leaq	14920(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$812:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$812:
 	leaq	15432(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$811:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$811:
 	leaq	15944(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$810:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$810:
 	leaq	16456(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$809:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$809:
 	leaq	16968(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$808:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$808:
 	leaq	17480(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$807:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$807:
 	leaq	17992(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$806:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$806:
 	leaq	18504(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$805:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$805:
 	leaq	19016(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$804:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$804:
 	leaq	19528(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$803:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$803:
 	leaq	20040(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$802:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$802:
 	leaq	20552(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$801:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$801:
 	leaq	30280(%rsp), %r11
 	leaq	39496(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$800:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$800:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	40008(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$799:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$799:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$798:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$798:
 	leaq	584(%rsp), %r11
 	leaq	40520(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$797:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$797:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$796:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$796:
 	leaq	584(%rsp), %r11
 	leaq	41032(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$795:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$795:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$794:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$794:
 	leaq	584(%rsp), %r11
 	leaq	41544(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$793:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$793:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$792:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$792:
 	leaq	584(%rsp), %r11
 	leaq	42056(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$791:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$791:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$790:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$790:
 	leaq	584(%rsp), %r11
 	leaq	42568(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$789:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$789:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$788:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$788:
 	leaq	584(%rsp), %r11
 	leaq	43080(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$787:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$787:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$786:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$786:
 	leaq	584(%rsp), %r11
 	leaq	43592(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$785:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$785:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$784:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$784:
 	leaq	584(%rsp), %r11
 	leaq	44104(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$783:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$783:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$782:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$782:
 	leaq	584(%rsp), %r11
 	leaq	44616(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$781:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$781:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$780:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$780:
 	leaq	584(%rsp), %r11
 	leaq	45128(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$779:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$779:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$778:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$778:
 	leaq	584(%rsp), %r11
 	leaq	45640(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$777:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$777:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$776:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$776:
 	leaq	584(%rsp), %r11
 	leaq	46152(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$775:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$775:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$774:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$774:
 	leaq	584(%rsp), %r11
 	leaq	46664(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$773:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$773:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$772:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$772:
 	leaq	584(%rsp), %r11
 	leaq	47176(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$771:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$771:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$770:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$770:
 	leaq	584(%rsp), %r11
 	leaq	47688(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$769:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$769:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$768:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$768:
 	leaq	584(%rsp), %r11
 	leaq	48200(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$767:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$767:
 	leaq	16(%rsp), %rsp
 	leaq	30280(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$766:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$766:
 	leaq	30280(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$764
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$765:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$764
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$765:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -1245,207 +1245,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$765:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$764:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$764:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$765
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$765
 	leaq	30792(%rsp), %r11
 	leaq	48712(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$763:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$763:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	49224(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$762:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$762:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$761:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$761:
 	leaq	584(%rsp), %r11
 	leaq	49736(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$760:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$760:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$759:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$759:
 	leaq	584(%rsp), %r11
 	leaq	50248(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$758:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$758:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$757:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$757:
 	leaq	584(%rsp), %r11
 	leaq	50760(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$756:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$756:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$755:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$755:
 	leaq	584(%rsp), %r11
 	leaq	51272(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$754:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$754:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$753:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$753:
 	leaq	584(%rsp), %r11
 	leaq	51784(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$752:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$752:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$751:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$751:
 	leaq	584(%rsp), %r11
 	leaq	52296(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$750:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$750:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$749:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$749:
 	leaq	584(%rsp), %r11
 	leaq	52808(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$748:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$748:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$747:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$747:
 	leaq	584(%rsp), %r11
 	leaq	53320(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$746:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$746:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$745:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$745:
 	leaq	584(%rsp), %r11
 	leaq	53832(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$744:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$744:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$743:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$743:
 	leaq	584(%rsp), %r11
 	leaq	54344(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$742:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$742:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$741:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$741:
 	leaq	584(%rsp), %r11
 	leaq	54856(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$740:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$740:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$739:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$739:
 	leaq	584(%rsp), %r11
 	leaq	55368(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$738:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$738:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$737:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$737:
 	leaq	584(%rsp), %r11
 	leaq	55880(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$736:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$736:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$735:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$735:
 	leaq	584(%rsp), %r11
 	leaq	56392(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$734:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$734:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$733:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$733:
 	leaq	584(%rsp), %r11
 	leaq	56904(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$732:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$732:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$731:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$731:
 	leaq	584(%rsp), %r11
 	leaq	57416(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$730:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$730:
 	leaq	16(%rsp), %rsp
 	leaq	30792(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$729:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$729:
 	leaq	30792(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$727
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$728:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$727
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$728:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -1454,207 +1454,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$728:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$727:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$727:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$728
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$728
 	leaq	31304(%rsp), %r11
 	leaq	57928(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$726:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$726:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	58440(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$725:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$725:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$724:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$724:
 	leaq	584(%rsp), %r11
 	leaq	58952(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$723:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$723:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$722:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$722:
 	leaq	584(%rsp), %r11
 	leaq	59464(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$721:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$721:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$720:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$720:
 	leaq	584(%rsp), %r11
 	leaq	59976(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$719:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$719:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$718:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$718:
 	leaq	584(%rsp), %r11
 	leaq	60488(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$717:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$717:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$716:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$716:
 	leaq	584(%rsp), %r11
 	leaq	61000(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$715:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$715:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$714:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$714:
 	leaq	584(%rsp), %r11
 	leaq	61512(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$713:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$713:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$712:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$712:
 	leaq	584(%rsp), %r11
 	leaq	62024(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$711:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$711:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$710:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$710:
 	leaq	584(%rsp), %r11
 	leaq	62536(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$709:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$709:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$708:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$708:
 	leaq	584(%rsp), %r11
 	leaq	63048(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$707:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$707:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$706:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$706:
 	leaq	584(%rsp), %r11
 	leaq	63560(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$705:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$705:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$704:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$704:
 	leaq	584(%rsp), %r11
 	leaq	64072(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$703:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$703:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$702:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$702:
 	leaq	584(%rsp), %r11
 	leaq	64584(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$701:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$701:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$700:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$700:
 	leaq	584(%rsp), %r11
 	leaq	65096(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$699:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$699:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$698:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$698:
 	leaq	584(%rsp), %r11
 	leaq	65608(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$697:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$697:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$696:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$696:
 	leaq	584(%rsp), %r11
 	leaq	66120(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$695:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$695:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$694:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$694:
 	leaq	584(%rsp), %r11
 	leaq	66632(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$693:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$693:
 	leaq	16(%rsp), %rsp
 	leaq	31304(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$692:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$692:
 	leaq	31304(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$690
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$691:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$690
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$691:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -1663,207 +1663,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$691:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$690:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$690:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$691
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$691
 	leaq	31816(%rsp), %r11
 	leaq	67144(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$689:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$689:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	67656(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$688:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$688:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$687:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$687:
 	leaq	584(%rsp), %r11
 	leaq	68168(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$686:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$686:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$685:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$685:
 	leaq	584(%rsp), %r11
 	leaq	68680(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$684:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$684:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$683:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$683:
 	leaq	584(%rsp), %r11
 	leaq	69192(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$682:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$682:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$681:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$681:
 	leaq	584(%rsp), %r11
 	leaq	69704(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$680:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$680:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$679:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$679:
 	leaq	584(%rsp), %r11
 	leaq	70216(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$678:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$678:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$677:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$677:
 	leaq	584(%rsp), %r11
 	leaq	70728(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$676:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$676:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$675:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$675:
 	leaq	584(%rsp), %r11
 	leaq	71240(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$674:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$674:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$673:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$673:
 	leaq	584(%rsp), %r11
 	leaq	71752(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$672:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$672:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$671:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$671:
 	leaq	584(%rsp), %r11
 	leaq	72264(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$670:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$670:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$669:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$669:
 	leaq	584(%rsp), %r11
 	leaq	72776(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$668:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$668:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$667:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$667:
 	leaq	584(%rsp), %r11
 	leaq	73288(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$666:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$666:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$665:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$665:
 	leaq	584(%rsp), %r11
 	leaq	73800(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$664:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$664:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$663:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$663:
 	leaq	584(%rsp), %r11
 	leaq	74312(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$662:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$662:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$661:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$661:
 	leaq	584(%rsp), %r11
 	leaq	74824(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$660:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$660:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$659:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$659:
 	leaq	584(%rsp), %r11
 	leaq	75336(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$658:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$658:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$657:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$657:
 	leaq	584(%rsp), %r11
 	leaq	75848(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$656:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$656:
 	leaq	16(%rsp), %rsp
 	leaq	31816(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$655:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$655:
 	leaq	31816(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$653
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$654:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$653
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$654:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -1872,207 +1872,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$654:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$653:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$653:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$654
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$654
 	leaq	32328(%rsp), %r11
 	leaq	76360(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$652:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$652:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	76872(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$651:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$651:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$650:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$650:
 	leaq	584(%rsp), %r11
 	leaq	77384(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$649:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$649:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$648:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$648:
 	leaq	584(%rsp), %r11
 	leaq	77896(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$647:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$647:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$646:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$646:
 	leaq	584(%rsp), %r11
 	leaq	78408(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$645:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$645:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$644:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$644:
 	leaq	584(%rsp), %r11
 	leaq	78920(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$643:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$643:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$642:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$642:
 	leaq	584(%rsp), %r11
 	leaq	79432(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$641:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$641:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$640:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$640:
 	leaq	584(%rsp), %r11
 	leaq	79944(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$639:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$639:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$638:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$638:
 	leaq	584(%rsp), %r11
 	leaq	80456(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$637:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$637:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$636:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$636:
 	leaq	584(%rsp), %r11
 	leaq	80968(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$635:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$635:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$634:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$634:
 	leaq	584(%rsp), %r11
 	leaq	81480(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$633:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$633:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$632:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$632:
 	leaq	584(%rsp), %r11
 	leaq	81992(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$631:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$631:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$630:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$630:
 	leaq	584(%rsp), %r11
 	leaq	82504(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$629:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$629:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$628:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$628:
 	leaq	584(%rsp), %r11
 	leaq	83016(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$627:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$627:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$626:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$626:
 	leaq	584(%rsp), %r11
 	leaq	83528(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$625:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$625:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$624:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$624:
 	leaq	584(%rsp), %r11
 	leaq	84040(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$623:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$623:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$622:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$622:
 	leaq	584(%rsp), %r11
 	leaq	84552(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$621:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$621:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$620:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$620:
 	leaq	584(%rsp), %r11
 	leaq	85064(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$619:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$619:
 	leaq	16(%rsp), %rsp
 	leaq	32328(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$618:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$618:
 	leaq	32328(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$616
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$617:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$616
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$617:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -2081,207 +2081,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$617:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$616:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$616:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$617
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$617
 	leaq	32840(%rsp), %r11
 	leaq	85576(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$615:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$615:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	86088(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$614:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$614:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$613:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$613:
 	leaq	584(%rsp), %r11
 	leaq	86600(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$612:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$612:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$611:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$611:
 	leaq	584(%rsp), %r11
 	leaq	87112(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$610:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$610:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$609:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$609:
 	leaq	584(%rsp), %r11
 	leaq	87624(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$608:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$608:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$607:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$607:
 	leaq	584(%rsp), %r11
 	leaq	88136(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$606:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$606:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$605:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$605:
 	leaq	584(%rsp), %r11
 	leaq	88648(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$604:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$604:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$603:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$603:
 	leaq	584(%rsp), %r11
 	leaq	89160(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$602:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$602:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$601:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$601:
 	leaq	584(%rsp), %r11
 	leaq	89672(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$600:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$600:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$599:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$599:
 	leaq	584(%rsp), %r11
 	leaq	90184(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$598:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$598:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$597:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$597:
 	leaq	584(%rsp), %r11
 	leaq	90696(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$596:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$596:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$595:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$595:
 	leaq	584(%rsp), %r11
 	leaq	91208(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$594:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$594:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$593:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$593:
 	leaq	584(%rsp), %r11
 	leaq	91720(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$592:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$592:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$591:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$591:
 	leaq	584(%rsp), %r11
 	leaq	92232(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$590:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$590:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$589:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$589:
 	leaq	584(%rsp), %r11
 	leaq	92744(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$588:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$588:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$587:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$587:
 	leaq	584(%rsp), %r11
 	leaq	93256(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$586:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$586:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$585:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$585:
 	leaq	584(%rsp), %r11
 	leaq	93768(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$584:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$584:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$583:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$583:
 	leaq	584(%rsp), %r11
 	leaq	94280(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$582:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$582:
 	leaq	16(%rsp), %rsp
 	leaq	32840(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$581:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$581:
 	leaq	32840(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$579
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$580:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$579
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$580:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -2290,207 +2290,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$580:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$579:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$579:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$580
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$580
 	leaq	33352(%rsp), %r11
 	leaq	94792(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$578:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$578:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	95304(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$577:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$577:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$576:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$576:
 	leaq	584(%rsp), %r11
 	leaq	95816(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$575:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$575:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$574:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$574:
 	leaq	584(%rsp), %r11
 	leaq	96328(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$573:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$573:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$572:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$572:
 	leaq	584(%rsp), %r11
 	leaq	96840(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$571:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$571:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$570:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$570:
 	leaq	584(%rsp), %r11
 	leaq	97352(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$569:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$569:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$568:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$568:
 	leaq	584(%rsp), %r11
 	leaq	97864(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$567:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$567:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$566:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$566:
 	leaq	584(%rsp), %r11
 	leaq	98376(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$565:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$565:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$564:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$564:
 	leaq	584(%rsp), %r11
 	leaq	98888(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$563:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$563:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$562:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$562:
 	leaq	584(%rsp), %r11
 	leaq	99400(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$561:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$561:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$560:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$560:
 	leaq	584(%rsp), %r11
 	leaq	99912(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$559:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$559:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$558:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$558:
 	leaq	584(%rsp), %r11
 	leaq	100424(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$557:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$557:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$556:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$556:
 	leaq	584(%rsp), %r11
 	leaq	100936(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$555:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$555:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$554:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$554:
 	leaq	584(%rsp), %r11
 	leaq	101448(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$553:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$553:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$552:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$552:
 	leaq	584(%rsp), %r11
 	leaq	101960(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$551:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$551:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$550:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$550:
 	leaq	584(%rsp), %r11
 	leaq	102472(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$549:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$549:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$548:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$548:
 	leaq	584(%rsp), %r11
 	leaq	102984(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$547:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$547:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$546:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$546:
 	leaq	584(%rsp), %r11
 	leaq	103496(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$545:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$545:
 	leaq	16(%rsp), %rsp
 	leaq	33352(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$544:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$544:
 	leaq	33352(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$542
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$543:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$542
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$543:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -2499,207 +2499,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$543:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$542:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$542:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$543
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$543
 	leaq	33864(%rsp), %r11
 	leaq	104008(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$541:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$541:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	104520(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$540:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$540:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$539:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$539:
 	leaq	584(%rsp), %r11
 	leaq	105032(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$538:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$538:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$537:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$537:
 	leaq	584(%rsp), %r11
 	leaq	105544(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$536:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$536:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$535:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$535:
 	leaq	584(%rsp), %r11
 	leaq	106056(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$534:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$534:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$533:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$533:
 	leaq	584(%rsp), %r11
 	leaq	106568(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$532:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$532:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$531:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$531:
 	leaq	584(%rsp), %r11
 	leaq	107080(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$530:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$530:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$529:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$529:
 	leaq	584(%rsp), %r11
 	leaq	107592(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$528:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$528:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$527:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$527:
 	leaq	584(%rsp), %r11
 	leaq	108104(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$526:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$526:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$525:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$525:
 	leaq	584(%rsp), %r11
 	leaq	108616(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$524:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$524:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$523:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$523:
 	leaq	584(%rsp), %r11
 	leaq	109128(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$522:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$522:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$521:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$521:
 	leaq	584(%rsp), %r11
 	leaq	109640(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$520:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$520:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$519:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$519:
 	leaq	584(%rsp), %r11
 	leaq	110152(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$518:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$518:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$517:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$517:
 	leaq	584(%rsp), %r11
 	leaq	110664(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$516:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$516:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$515:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$515:
 	leaq	584(%rsp), %r11
 	leaq	111176(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$514:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$514:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$513:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$513:
 	leaq	584(%rsp), %r11
 	leaq	111688(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$512:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$512:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$511:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$511:
 	leaq	584(%rsp), %r11
 	leaq	112200(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$510:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$510:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$509:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$509:
 	leaq	584(%rsp), %r11
 	leaq	112712(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$508:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$508:
 	leaq	16(%rsp), %rsp
 	leaq	33864(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$507:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$507:
 	leaq	33864(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$505
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$506:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$505
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$506:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -2708,207 +2708,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$506:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$505:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$505:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$506
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$506
 	leaq	34376(%rsp), %r11
 	leaq	113224(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$504:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$504:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	113736(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$503:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$503:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$502:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$502:
 	leaq	584(%rsp), %r11
 	leaq	114248(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$501:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$501:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$500:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$500:
 	leaq	584(%rsp), %r11
 	leaq	114760(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$499:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$499:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$498:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$498:
 	leaq	584(%rsp), %r11
 	leaq	115272(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$497:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$497:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$496:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$496:
 	leaq	584(%rsp), %r11
 	leaq	115784(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$495:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$495:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$494:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$494:
 	leaq	584(%rsp), %r11
 	leaq	116296(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$493:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$493:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$492:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$492:
 	leaq	584(%rsp), %r11
 	leaq	116808(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$491:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$491:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$490:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$490:
 	leaq	584(%rsp), %r11
 	leaq	117320(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$489:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$489:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$488:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$488:
 	leaq	584(%rsp), %r11
 	leaq	117832(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$487:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$487:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$486:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$486:
 	leaq	584(%rsp), %r11
 	leaq	118344(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$485:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$485:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$484:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$484:
 	leaq	584(%rsp), %r11
 	leaq	118856(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$483:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$483:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$482:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$482:
 	leaq	584(%rsp), %r11
 	leaq	119368(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$481:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$481:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$480:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$480:
 	leaq	584(%rsp), %r11
 	leaq	119880(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$479:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$479:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$478:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$478:
 	leaq	584(%rsp), %r11
 	leaq	120392(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$477:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$477:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$476:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$476:
 	leaq	584(%rsp), %r11
 	leaq	120904(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$475:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$475:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$474:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$474:
 	leaq	584(%rsp), %r11
 	leaq	121416(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$473:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$473:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$472:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$472:
 	leaq	584(%rsp), %r11
 	leaq	121928(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$471:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$471:
 	leaq	16(%rsp), %rsp
 	leaq	34376(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$470:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$470:
 	leaq	34376(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$468
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$469:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$468
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$469:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -2917,207 +2917,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$469:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$468:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$468:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$469
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$469
 	leaq	34888(%rsp), %r11
 	leaq	122440(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$467:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$467:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	122952(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$466:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$466:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$465:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$465:
 	leaq	584(%rsp), %r11
 	leaq	123464(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$464:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$464:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$463:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$463:
 	leaq	584(%rsp), %r11
 	leaq	123976(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$462:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$462:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$461:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$461:
 	leaq	584(%rsp), %r11
 	leaq	124488(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$460:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$460:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$459:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$459:
 	leaq	584(%rsp), %r11
 	leaq	125000(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$458:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$458:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$457:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$457:
 	leaq	584(%rsp), %r11
 	leaq	125512(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$456:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$456:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$455:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$455:
 	leaq	584(%rsp), %r11
 	leaq	126024(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$454:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$454:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$453:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$453:
 	leaq	584(%rsp), %r11
 	leaq	126536(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$452:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$452:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$451:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$451:
 	leaq	584(%rsp), %r11
 	leaq	127048(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$450:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$450:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$449:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$449:
 	leaq	584(%rsp), %r11
 	leaq	127560(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$448:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$448:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$447:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$447:
 	leaq	584(%rsp), %r11
 	leaq	128072(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$446:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$446:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$445:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$445:
 	leaq	584(%rsp), %r11
 	leaq	128584(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$444:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$444:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$443:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$443:
 	leaq	584(%rsp), %r11
 	leaq	129096(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$442:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$442:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$441:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$441:
 	leaq	584(%rsp), %r11
 	leaq	129608(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$440:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$440:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$439:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$439:
 	leaq	584(%rsp), %r11
 	leaq	130120(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$438:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$438:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$437:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$437:
 	leaq	584(%rsp), %r11
 	leaq	130632(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$436:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$436:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$435:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$435:
 	leaq	584(%rsp), %r11
 	leaq	131144(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$434:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$434:
 	leaq	16(%rsp), %rsp
 	leaq	34888(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$433:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$433:
 	leaq	34888(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$431
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$432:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$431
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$432:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -3126,207 +3126,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$432:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$431:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$431:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$432
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$432
 	leaq	35400(%rsp), %r11
 	leaq	131656(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$430:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$430:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	132168(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$429:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$429:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$428:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$428:
 	leaq	584(%rsp), %r11
 	leaq	132680(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$427:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$427:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$426:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$426:
 	leaq	584(%rsp), %r11
 	leaq	133192(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$425:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$425:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$424:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$424:
 	leaq	584(%rsp), %r11
 	leaq	133704(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$423:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$423:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$422:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$422:
 	leaq	584(%rsp), %r11
 	leaq	134216(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$421:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$421:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$420:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$420:
 	leaq	584(%rsp), %r11
 	leaq	134728(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$419:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$419:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$418:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$418:
 	leaq	584(%rsp), %r11
 	leaq	135240(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$417:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$417:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$416:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$416:
 	leaq	584(%rsp), %r11
 	leaq	135752(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$415:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$415:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$414:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$414:
 	leaq	584(%rsp), %r11
 	leaq	136264(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$413:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$413:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$412:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$412:
 	leaq	584(%rsp), %r11
 	leaq	136776(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$411:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$411:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$410:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$410:
 	leaq	584(%rsp), %r11
 	leaq	137288(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$409:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$409:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$408:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$408:
 	leaq	584(%rsp), %r11
 	leaq	137800(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$407:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$407:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$406:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$406:
 	leaq	584(%rsp), %r11
 	leaq	138312(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$405:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$405:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$404:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$404:
 	leaq	584(%rsp), %r11
 	leaq	138824(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$403:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$403:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$402:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$402:
 	leaq	584(%rsp), %r11
 	leaq	139336(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$401:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$401:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$400:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$400:
 	leaq	584(%rsp), %r11
 	leaq	139848(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$399:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$399:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$398:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$398:
 	leaq	584(%rsp), %r11
 	leaq	140360(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$397:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$397:
 	leaq	16(%rsp), %rsp
 	leaq	35400(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$396:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$396:
 	leaq	35400(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$394
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$395:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$394
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$395:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -3335,207 +3335,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$395:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$394:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$394:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$395
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$395
 	leaq	35912(%rsp), %r11
 	leaq	140872(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$393:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$393:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	141384(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$392:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$392:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$391:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$391:
 	leaq	584(%rsp), %r11
 	leaq	141896(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$390:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$390:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$389:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$389:
 	leaq	584(%rsp), %r11
 	leaq	142408(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$388:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$388:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$387:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$387:
 	leaq	584(%rsp), %r11
 	leaq	142920(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$386:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$386:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$385:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$385:
 	leaq	584(%rsp), %r11
 	leaq	143432(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$384:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$384:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$383:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$383:
 	leaq	584(%rsp), %r11
 	leaq	143944(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$382:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$382:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$381:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$381:
 	leaq	584(%rsp), %r11
 	leaq	144456(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$380:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$380:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$379:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$379:
 	leaq	584(%rsp), %r11
 	leaq	144968(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$378:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$378:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$377:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$377:
 	leaq	584(%rsp), %r11
 	leaq	145480(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$376:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$376:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$375:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$375:
 	leaq	584(%rsp), %r11
 	leaq	145992(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$374:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$374:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$373:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$373:
 	leaq	584(%rsp), %r11
 	leaq	146504(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$372:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$372:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$371:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$371:
 	leaq	584(%rsp), %r11
 	leaq	147016(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$370:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$370:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$369:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$369:
 	leaq	584(%rsp), %r11
 	leaq	147528(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$368:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$368:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$367:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$367:
 	leaq	584(%rsp), %r11
 	leaq	148040(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$366:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$366:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$365:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$365:
 	leaq	584(%rsp), %r11
 	leaq	148552(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$364:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$364:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$363:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$363:
 	leaq	584(%rsp), %r11
 	leaq	149064(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$362:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$362:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$361:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$361:
 	leaq	584(%rsp), %r11
 	leaq	149576(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$360:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$360:
 	leaq	16(%rsp), %rsp
 	leaq	35912(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$359:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$359:
 	leaq	35912(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$357
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$358:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$357
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$358:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -3544,207 +3544,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$358:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$357:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$357:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$358
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$358
 	leaq	36424(%rsp), %r11
 	leaq	150088(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$356:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$356:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	150600(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$355:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$355:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$354:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$354:
 	leaq	584(%rsp), %r11
 	leaq	151112(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$353:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$353:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$352:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$352:
 	leaq	584(%rsp), %r11
 	leaq	151624(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$351:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$351:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$350:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$350:
 	leaq	584(%rsp), %r11
 	leaq	152136(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$349:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$349:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$348:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$348:
 	leaq	584(%rsp), %r11
 	leaq	152648(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$347:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$347:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$346:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$346:
 	leaq	584(%rsp), %r11
 	leaq	153160(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$345:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$345:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$344:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$344:
 	leaq	584(%rsp), %r11
 	leaq	153672(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$343:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$343:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$342:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$342:
 	leaq	584(%rsp), %r11
 	leaq	154184(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$341:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$341:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$340:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$340:
 	leaq	584(%rsp), %r11
 	leaq	154696(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$339:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$339:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$338:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$338:
 	leaq	584(%rsp), %r11
 	leaq	155208(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$337:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$337:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$336:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$336:
 	leaq	584(%rsp), %r11
 	leaq	155720(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$335:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$335:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$334:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$334:
 	leaq	584(%rsp), %r11
 	leaq	156232(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$333:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$333:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$332:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$332:
 	leaq	584(%rsp), %r11
 	leaq	156744(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$331:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$331:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$330:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$330:
 	leaq	584(%rsp), %r11
 	leaq	157256(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$329:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$329:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$328:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$328:
 	leaq	584(%rsp), %r11
 	leaq	157768(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$327:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$327:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$326:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$326:
 	leaq	584(%rsp), %r11
 	leaq	158280(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$325:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$325:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$324:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$324:
 	leaq	584(%rsp), %r11
 	leaq	158792(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$323:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$323:
 	leaq	16(%rsp), %rsp
 	leaq	36424(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$322:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$322:
 	leaq	36424(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$320
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$321:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$320
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$321:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -3753,207 +3753,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$321:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$320:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$320:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$321
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$321
 	leaq	36936(%rsp), %r11
 	leaq	159304(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$319:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$319:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	159816(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$318:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$318:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$317:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$317:
 	leaq	584(%rsp), %r11
 	leaq	160328(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$316:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$316:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$315:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$315:
 	leaq	584(%rsp), %r11
 	leaq	160840(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$314:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$314:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$313:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$313:
 	leaq	584(%rsp), %r11
 	leaq	161352(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$312:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$312:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$311:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$311:
 	leaq	584(%rsp), %r11
 	leaq	161864(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$310:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$310:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$309:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$309:
 	leaq	584(%rsp), %r11
 	leaq	162376(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$308:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$308:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$307:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$307:
 	leaq	584(%rsp), %r11
 	leaq	162888(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$306:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$306:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$305:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$305:
 	leaq	584(%rsp), %r11
 	leaq	163400(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$304:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$304:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$303:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$303:
 	leaq	584(%rsp), %r11
 	leaq	163912(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$302:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$302:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$301:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$301:
 	leaq	584(%rsp), %r11
 	leaq	164424(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$300:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$300:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$299:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$299:
 	leaq	584(%rsp), %r11
 	leaq	164936(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$298:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$298:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$297:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$297:
 	leaq	584(%rsp), %r11
 	leaq	165448(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$296:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$296:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$295:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$295:
 	leaq	584(%rsp), %r11
 	leaq	165960(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$294:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$294:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$293:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$293:
 	leaq	584(%rsp), %r11
 	leaq	166472(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$292:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$292:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$291:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$291:
 	leaq	584(%rsp), %r11
 	leaq	166984(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$290:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$290:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$289:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$289:
 	leaq	584(%rsp), %r11
 	leaq	167496(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$288:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$288:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$287:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$287:
 	leaq	584(%rsp), %r11
 	leaq	168008(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$286:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$286:
 	leaq	16(%rsp), %rsp
 	leaq	36936(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$285:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$285:
 	leaq	36936(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$283
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$284:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$283
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$284:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -3962,207 +3962,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$284:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$283:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$283:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$284
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$284
 	leaq	37448(%rsp), %r11
 	leaq	168520(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$282:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$282:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	169032(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$281:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$281:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$280:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$280:
 	leaq	584(%rsp), %r11
 	leaq	169544(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$279:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$279:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$278:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$278:
 	leaq	584(%rsp), %r11
 	leaq	170056(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$277:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$277:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$276:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$276:
 	leaq	584(%rsp), %r11
 	leaq	170568(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$275:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$275:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$274:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$274:
 	leaq	584(%rsp), %r11
 	leaq	171080(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$273:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$273:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$272:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$272:
 	leaq	584(%rsp), %r11
 	leaq	171592(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$271:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$271:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$270:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$270:
 	leaq	584(%rsp), %r11
 	leaq	172104(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$269:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$269:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$268:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$268:
 	leaq	584(%rsp), %r11
 	leaq	172616(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$267:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$267:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$266:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$266:
 	leaq	584(%rsp), %r11
 	leaq	173128(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$265:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$265:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$264:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$264:
 	leaq	584(%rsp), %r11
 	leaq	173640(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$263:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$263:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$262:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$262:
 	leaq	584(%rsp), %r11
 	leaq	174152(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$261:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$261:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$260:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$260:
 	leaq	584(%rsp), %r11
 	leaq	174664(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$259:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$259:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$258:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$258:
 	leaq	584(%rsp), %r11
 	leaq	175176(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$257:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$257:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$256:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$256:
 	leaq	584(%rsp), %r11
 	leaq	175688(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$255:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$255:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$254:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$254:
 	leaq	584(%rsp), %r11
 	leaq	176200(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$253:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$253:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$252:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$252:
 	leaq	584(%rsp), %r11
 	leaq	176712(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$251:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$251:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$250:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$250:
 	leaq	584(%rsp), %r11
 	leaq	177224(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$249:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$249:
 	leaq	16(%rsp), %rsp
 	leaq	37448(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$248:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$248:
 	leaq	37448(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$246
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$247:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$246
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$247:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -4171,207 +4171,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$247:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$246:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$246:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$247
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$247
 	leaq	37960(%rsp), %r11
 	leaq	177736(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$245:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$245:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	178248(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$244:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$244:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$243:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$243:
 	leaq	584(%rsp), %r11
 	leaq	178760(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$242:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$242:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$241:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$241:
 	leaq	584(%rsp), %r11
 	leaq	179272(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$240:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$240:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$239:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$239:
 	leaq	584(%rsp), %r11
 	leaq	179784(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$238:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$238:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$237:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$237:
 	leaq	584(%rsp), %r11
 	leaq	180296(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$236:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$236:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$235:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$235:
 	leaq	584(%rsp), %r11
 	leaq	180808(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$234:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$234:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$233:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$233:
 	leaq	584(%rsp), %r11
 	leaq	181320(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$232:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$232:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$231:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$231:
 	leaq	584(%rsp), %r11
 	leaq	181832(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$230:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$230:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$229:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$229:
 	leaq	584(%rsp), %r11
 	leaq	182344(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$228:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$228:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$227:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$227:
 	leaq	584(%rsp), %r11
 	leaq	182856(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$226:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$226:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$225:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$225:
 	leaq	584(%rsp), %r11
 	leaq	183368(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$224:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$224:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$223:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$223:
 	leaq	584(%rsp), %r11
 	leaq	183880(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$222:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$222:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$221:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$221:
 	leaq	584(%rsp), %r11
 	leaq	184392(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$220:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$220:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$219:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$219:
 	leaq	584(%rsp), %r11
 	leaq	184904(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$218:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$218:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$217:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$217:
 	leaq	584(%rsp), %r11
 	leaq	185416(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$216:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$216:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$215:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$215:
 	leaq	584(%rsp), %r11
 	leaq	185928(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$214:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$214:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$213:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$213:
 	leaq	584(%rsp), %r11
 	leaq	186440(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$212:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$212:
 	leaq	16(%rsp), %rsp
 	leaq	37960(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$211:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$211:
 	leaq	37960(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$209
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$210:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$209
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$210:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -4380,207 +4380,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$210:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$209:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$209:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$210
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$210
 	leaq	38472(%rsp), %r11
 	leaq	186952(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$208:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$208:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	187464(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$207:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$207:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$206:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$206:
 	leaq	584(%rsp), %r11
 	leaq	187976(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$205:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$205:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$204:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$204:
 	leaq	584(%rsp), %r11
 	leaq	188488(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$203:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$203:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$202:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$202:
 	leaq	584(%rsp), %r11
 	leaq	189000(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$201:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$201:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$200:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$200:
 	leaq	584(%rsp), %r11
 	leaq	189512(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$199:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$199:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$198:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$198:
 	leaq	584(%rsp), %r11
 	leaq	190024(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$197:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$197:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$196:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$196:
 	leaq	584(%rsp), %r11
 	leaq	190536(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$195:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$195:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$194:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$194:
 	leaq	584(%rsp), %r11
 	leaq	191048(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$193:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$193:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$192:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$192:
 	leaq	584(%rsp), %r11
 	leaq	191560(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$191:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$191:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$190:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$190:
 	leaq	584(%rsp), %r11
 	leaq	192072(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$189:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$189:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$188:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$188:
 	leaq	584(%rsp), %r11
 	leaq	192584(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$187:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$187:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$186:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$186:
 	leaq	584(%rsp), %r11
 	leaq	193096(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$185:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$185:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$184:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$184:
 	leaq	584(%rsp), %r11
 	leaq	193608(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$183:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$183:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$182:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$182:
 	leaq	584(%rsp), %r11
 	leaq	194120(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$181:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$181:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$180:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$180:
 	leaq	584(%rsp), %r11
 	leaq	194632(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$179:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$179:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$178:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$178:
 	leaq	584(%rsp), %r11
 	leaq	195144(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$177:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$177:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$176:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$176:
 	leaq	584(%rsp), %r11
 	leaq	195656(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$175:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$175:
 	leaq	16(%rsp), %rsp
 	leaq	38472(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$174:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$174:
 	leaq	38472(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$172
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$173:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$172
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$173:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -4589,207 +4589,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$173:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$172:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$172:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$173
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$173
 	leaq	38984(%rsp), %r11
 	leaq	196168(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$171:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$171:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %r11
 	leaq	196680(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$170:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$170:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$169:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$169:
 	leaq	584(%rsp), %r11
 	leaq	197192(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$168:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$168:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$167:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$167:
 	leaq	584(%rsp), %r11
 	leaq	197704(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$166:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$166:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$165:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$165:
 	leaq	584(%rsp), %r11
 	leaq	198216(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$164:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$164:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$163:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$163:
 	leaq	584(%rsp), %r11
 	leaq	198728(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$162:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$162:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$161:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$161:
 	leaq	584(%rsp), %r11
 	leaq	199240(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$160:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$160:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$159:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$159:
 	leaq	584(%rsp), %r11
 	leaq	199752(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$158:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$158:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$157:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$157:
 	leaq	584(%rsp), %r11
 	leaq	200264(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$156:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$156:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$155:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$155:
 	leaq	584(%rsp), %r11
 	leaq	200776(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$154:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$154:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$153:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$153:
 	leaq	584(%rsp), %r11
 	leaq	201288(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$152:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$152:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$151:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$151:
 	leaq	584(%rsp), %r11
 	leaq	201800(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$150:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$150:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$149:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$149:
 	leaq	584(%rsp), %r11
 	leaq	202312(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$148:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$148:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$147:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$147:
 	leaq	584(%rsp), %r11
 	leaq	202824(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$146:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$146:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$145:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$145:
 	leaq	584(%rsp), %r11
 	leaq	203336(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$144:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$144:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$143:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$143:
 	leaq	584(%rsp), %r11
 	leaq	203848(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$142:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$142:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$141:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$141:
 	leaq	584(%rsp), %r11
 	leaq	204360(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$140:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$140:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$139:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$139:
 	leaq	584(%rsp), %r11
 	leaq	204872(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$138:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$138:
 	leaq	16(%rsp), %rsp
 	leaq	38984(%rsp), %rax
 	leaq	584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$137:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$137:
 	leaq	38984(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$135
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$136:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$135
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$136:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -4798,207 +4798,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$136:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$135:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$135:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$136
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$136
 	leaq	584(%rsp), %r11
 	leaq	2632(%rsp), %rax
 	leaq	11848(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$134:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$134:
 	leaq	16(%rsp), %rsp
 	leaq	2120(%rsp), %r11
 	leaq	3144(%rsp), %rax
 	leaq	12360(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$133:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$133:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$132:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$132:
 	leaq	2120(%rsp), %r11
 	leaq	3656(%rsp), %rax
 	leaq	12872(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$131:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$131:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$130:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$130:
 	leaq	2120(%rsp), %r11
 	leaq	4168(%rsp), %rax
 	leaq	13384(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$129:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$129:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$128:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$128:
 	leaq	2120(%rsp), %r11
 	leaq	4680(%rsp), %rax
 	leaq	13896(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$127:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$127:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$126:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$126:
 	leaq	2120(%rsp), %r11
 	leaq	5192(%rsp), %rax
 	leaq	14408(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$125:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$125:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$124:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$124:
 	leaq	2120(%rsp), %r11
 	leaq	5704(%rsp), %rax
 	leaq	14920(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$123:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$123:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$122:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$122:
 	leaq	2120(%rsp), %r11
 	leaq	6216(%rsp), %rax
 	leaq	15432(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$121:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$121:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$120:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$120:
 	leaq	2120(%rsp), %r11
 	leaq	6728(%rsp), %rax
 	leaq	15944(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$119:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$119:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$118:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$118:
 	leaq	2120(%rsp), %r11
 	leaq	7240(%rsp), %rax
 	leaq	16456(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$117:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$117:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$116:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$116:
 	leaq	2120(%rsp), %r11
 	leaq	7752(%rsp), %rax
 	leaq	16968(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$115:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$115:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$114:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$114:
 	leaq	2120(%rsp), %r11
 	leaq	8264(%rsp), %rax
 	leaq	17480(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$113:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$113:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$112:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$112:
 	leaq	2120(%rsp), %r11
 	leaq	8776(%rsp), %rax
 	leaq	17992(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$111:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$111:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$110:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$110:
 	leaq	2120(%rsp), %r11
 	leaq	9288(%rsp), %rax
 	leaq	18504(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$109:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$109:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$108:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$108:
 	leaq	2120(%rsp), %r11
 	leaq	9800(%rsp), %rax
 	leaq	19016(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$107:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$107:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$106:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$106:
 	leaq	2120(%rsp), %r11
 	leaq	10312(%rsp), %rax
 	leaq	19528(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$105:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$105:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$104:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$104:
 	leaq	2120(%rsp), %r11
 	leaq	10824(%rsp), %rax
 	leaq	20040(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$103:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$103:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$102:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$102:
 	leaq	2120(%rsp), %r11
 	leaq	11336(%rsp), %rax
 	leaq	20552(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$101:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$101:
 	leaq	16(%rsp), %rsp
 	leaq	584(%rsp), %rax
 	leaq	2120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$100:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$100:
 	leaq	584(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$98
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$99:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$98
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$99:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5007,150 +5007,150 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$99:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$98:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$98:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$99
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$99
 	leaq	30280(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$97:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$97:
 	leaq	30792(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$96:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$96:
 	leaq	31304(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$95:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$95:
 	leaq	31816(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$94:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$94:
 	leaq	32328(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$93:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$93:
 	leaq	32840(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$92:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$92:
 	leaq	33352(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$91:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$91:
 	leaq	33864(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$90:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$90:
 	leaq	34376(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$89:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$89:
 	leaq	34888(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$88:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$88:
 	leaq	35400(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$87:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$87:
 	leaq	35912(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$86:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$86:
 	leaq	36424(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$85:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$85:
 	leaq	36936(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$84:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$84:
 	leaq	37448(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$83:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$83:
 	leaq	37960(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$82:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$82:
 	leaq	38472(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$81:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$81:
 	leaq	38984(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$80:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$80:
 	leaq	584(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$79:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$79:
 	leaq	30280(%rsp), %rax
 	leaq	21064(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$78:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$78:
 	leaq	30792(%rsp), %rax
 	leaq	21576(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$77:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$77:
 	leaq	31304(%rsp), %rax
 	leaq	22088(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$76:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$76:
 	leaq	31816(%rsp), %rax
 	leaq	22600(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$75:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$75:
 	leaq	32328(%rsp), %rax
 	leaq	23112(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$74:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$74:
 	leaq	32840(%rsp), %rax
 	leaq	23624(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$73:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$73:
 	leaq	33352(%rsp), %rax
 	leaq	24136(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$72:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$72:
 	leaq	33864(%rsp), %rax
 	leaq	24648(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$71:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$71:
 	leaq	34376(%rsp), %rax
 	leaq	25160(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$70:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$70:
 	leaq	34888(%rsp), %rax
 	leaq	25672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$69:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$69:
 	leaq	35400(%rsp), %rax
 	leaq	26184(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$68:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$68:
 	leaq	35912(%rsp), %rax
 	leaq	26696(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$67:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$67:
 	leaq	36424(%rsp), %rax
 	leaq	27208(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$66:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$66:
 	leaq	36936(%rsp), %rax
 	leaq	27720(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$65:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$65:
 	leaq	37448(%rsp), %rax
 	leaq	28232(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$64:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$64:
 	leaq	37960(%rsp), %rax
 	leaq	28744(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$63:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$63:
 	leaq	38472(%rsp), %rax
 	leaq	29256(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$62:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$62:
 	leaq	38984(%rsp), %rax
 	leaq	29768(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$61:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$61:
 	leaq	584(%rsp), %rax
 	leaq	1096(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$60:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$60:
 	leaq	584(%rsp), %rax
 	leaq	1608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$59:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$59:
 	leaq	30280(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$57
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$58:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$57
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$58:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5159,13 +5159,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$58:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$57:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$57:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$58
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$58
 	leaq	30792(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$55
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$56:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$55
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$56:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5174,13 +5174,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$56:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$55:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$55:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$56
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$56
 	leaq	31304(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$53
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$54:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$53
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$54:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5189,13 +5189,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$54:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$53:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$53:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$54
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$54
 	leaq	31816(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$51
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$52:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$51
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$52:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5204,13 +5204,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$52:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$51:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$51:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$52
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$52
 	leaq	32328(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$49
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$50:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$49
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$50:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5219,13 +5219,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$50:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$49:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$49:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$50
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$50
 	leaq	32840(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$47
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$48:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$47
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$48:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5234,13 +5234,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$48:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$47:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$47:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$48
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$48
 	leaq	33352(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$45
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$46:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$45
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$46:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5249,13 +5249,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$46:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$45:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$45:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$46
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$46
 	leaq	33864(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$43
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$44:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$43
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$44:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5264,13 +5264,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$44:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$43:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$43:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$44
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$44
 	leaq	34376(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$41
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$42:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$41
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$42:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5279,13 +5279,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$42:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$41:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$41:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$42
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$42
 	leaq	34888(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$39
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$40:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$39
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$40:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5294,13 +5294,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$40:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$39:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$39:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$40
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$40
 	leaq	35400(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$37
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$38:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$37
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$38:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5309,13 +5309,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$38:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$37:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$37:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$38
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$38
 	leaq	35912(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$35
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$36:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$35
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$36:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5324,13 +5324,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$36:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$35:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$35:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$36
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$36
 	leaq	36424(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$33
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$34:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$33
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$34:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5339,13 +5339,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$34:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$33:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$33:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$34
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$34
 	leaq	36936(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$31
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$32:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$31
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$32:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5354,13 +5354,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$32:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$31:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$31:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$32
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$32
 	leaq	37448(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$29
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$30:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$29
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$30:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5369,13 +5369,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$30:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$29:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$29:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$30
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$30
 	leaq	37960(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$27
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$28:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$27
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$28:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5384,13 +5384,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$28:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$27:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$27:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$28
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$28
 	leaq	38472(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$25
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$26:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$25
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$26:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5399,13 +5399,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$26:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$25:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$25:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$26
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$26
 	leaq	38984(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$23
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$24:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$23
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$24:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5414,13 +5414,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$24:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$23:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$23:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$24
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$24
 	leaq	584(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$21
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$22:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$21
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$22:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -5429,87 +5429,87 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$22:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$21:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$21:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$22
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$22
 	movq	%mm3, %r11
 	movq	%r11, %r10
 	movq	%r10, %rcx
 	leaq	30280(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$20:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$20:
 	leaq	384(%r10), %rcx
 	leaq	30792(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$19:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$19:
 	leaq	768(%r10), %rcx
 	leaq	31304(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$18:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$18:
 	leaq	1152(%r10), %rcx
 	leaq	31816(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$17:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$17:
 	leaq	1536(%r10), %rcx
 	leaq	32328(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$16:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$16:
 	leaq	1920(%r10), %rcx
 	leaq	32840(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$15:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$15:
 	leaq	2304(%r10), %rcx
 	leaq	33352(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$14:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$14:
 	leaq	2688(%r10), %rcx
 	leaq	33864(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$13:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$13:
 	leaq	3072(%r10), %rcx
 	leaq	34376(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$12:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$12:
 	leaq	3456(%r10), %rcx
 	leaq	34888(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$11:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$11:
 	leaq	3840(%r10), %rcx
 	leaq	35400(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$10:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$10:
 	leaq	4224(%r10), %rcx
 	leaq	35912(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$9:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$9:
 	leaq	4608(%r10), %rcx
 	leaq	36424(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$8:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$8:
 	leaq	4992(%r10), %rcx
 	leaq	36936(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$7:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$7:
 	leaq	5376(%r10), %rcx
 	leaq	37448(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$6:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$6:
 	leaq	5760(%r10), %rcx
 	leaq	37960(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$5:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$5:
 	leaq	6144(%r10), %rcx
 	leaq	38472(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$4:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$4:
 	leaq	6528(%r10), %rcx
 	leaq	38984(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$3:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$3:
 	leaq	6912(%r11), %rcx
 	leaq	584(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$2:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$2:
 	movq	%mm1, %rax
 	leaq	205384(%rsp), %rdx
 	movq	$0, %rcx
@@ -42000,7 +42000,7 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$2:
 	leaq	13888(%rdx), %rdi
 	leaq	-224(%rsp), %rsp
 	call	L_shake256_A32__A7328$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$1:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$1:
 	leaq	224(%rsp), %rsp
 	leaq	152(%rsp), %rax
 	negq	%rcx
@@ -42205,8 +42205,8 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_dec$1:
 	movq	212720(%rsp), %r15
 	movq	212728(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_mlkem1024_amd64_ref_enc, %function
-jade_kem_mlkem_mlkem1024_amd64_ref_enc:
+	.type	jade_kem_mlkem_kaiburr6_amd64_ref_enc, %function
+jade_kem_mlkem_kaiburr6_amd64_ref_enc:
 	movq	%rsp, %rax
 	leaq	-205448(%rsp), %rsp
 	andq	$-16, %rsp
@@ -42237,13 +42237,13 @@ jade_kem_mlkem_mlkem1024_amd64_ref_enc:
 	leaq	128(%rsp), %rsi
 	leaq	-232(%rsp), %rsp
 	call	L_sha3_256A_A6944$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$897:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$897:
 	leaq	232(%rsp), %rsp
 	leaq	160(%rsp), %rsi
 	leaq	96(%rsp), %rbx
 	leaq	-224(%rsp), %rsp
 	call	L_sha3_512A_A64$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$896:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$896:
 	leaq	224(%rsp), %rsp
 	movq	(%rsp), %r10
 	movq	%mm1, %rbp
@@ -42254,75 +42254,75 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$896:
 	leaq	2640(%rsp), %rcx
 	movq	%rbx, %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$895:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$895:
 	leaq	3152(%rsp), %rcx
 	leaq	384(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$894:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$894:
 	leaq	3664(%rsp), %rcx
 	leaq	768(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$893:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$893:
 	leaq	4176(%rsp), %rcx
 	leaq	1152(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$892:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$892:
 	leaq	4688(%rsp), %rcx
 	leaq	1536(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$891:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$891:
 	leaq	5200(%rsp), %rcx
 	leaq	1920(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$890:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$890:
 	leaq	5712(%rsp), %rcx
 	leaq	2304(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$889:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$889:
 	leaq	6224(%rsp), %rcx
 	leaq	2688(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$888:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$888:
 	leaq	6736(%rsp), %rcx
 	leaq	3072(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$887:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$887:
 	leaq	7248(%rsp), %rcx
 	leaq	3456(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$886:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$886:
 	leaq	7760(%rsp), %rcx
 	leaq	3840(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$885:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$885:
 	leaq	8272(%rsp), %rcx
 	leaq	4224(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$884:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$884:
 	leaq	8784(%rsp), %rcx
 	leaq	4608(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$883:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$883:
 	leaq	9296(%rsp), %rcx
 	leaq	4992(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$882:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$882:
 	leaq	9808(%rsp), %rcx
 	leaq	5376(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$881:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$881:
 	leaq	10320(%rsp), %rcx
 	leaq	5760(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$880:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$880:
 	leaq	10832(%rsp), %rcx
 	leaq	6144(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$879:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$879:
 	leaq	11344(%rsp), %rcx
 	leaq	6528(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$878:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$878:
 	movq	6912(%r10), %rcx
 	movq	%rcx, 24(%rsp)
 	movq	6920(%r10), %rcx
@@ -42333,7 +42333,7 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$878:
 	movq	%rcx, 48(%rsp)
 	leaq	592(%rsp), %rcx
 	call	L_i_poly_frommsg$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$877:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$877:
 	movq	%r11, %mm4
 	movq	$1, %rax
 	movq	%rax, %mm5
@@ -42402,52 +42402,52 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$877:
 	movb	55(%rsp), %sil
 	movb	%sil, 87(%rsp)
 	movq	$0, %rsi
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$855
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$856:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$855
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$856:
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$857
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$858:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$857
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$858:
 	movq	%mm5, %rax
 	cmpq	$0, %rax
-	je  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$875
+	je  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$875
 	movb	%sil, 88(%rsp)
 	movb	%dl, 89(%rsp)
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$876
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$875:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$876
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$875:
 	movb	%dl, 88(%rsp)
 	movb	%sil, 89(%rsp)
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$876:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$876:
 	movq	%rsi, (%rsp)
 	movq	%rdx, 16(%rsp)
 	leaq	392(%rsp), %rdx
 	leaq	56(%rsp), %rbx
 	call	L_shake128_absorb34$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$874:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$874:
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$861
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$862:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$861
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$862:
 	movq	%rcx, %mm6
 	leaq	392(%rsp), %rdx
 	leaq	224(%rsp), %rsi
 	leaq	-8(%rsp), %rsp
 	call	L_shake128_squeezeblock$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$873:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$873:
 	leaq	8(%rsp), %rsp
 	movq	%mm6, %rcx
 	lfence
 	movq	$0, %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$864:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$864:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$865
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$865
 	movq	$-1, %rdx
 	cmovb	%rdx, %rax
 	movq	$168, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$865:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$865:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movzbw	224(%rsp,%rdx), %si
@@ -42465,43 +42465,43 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$865:
 	orw 	%r9w, %di
 	addq	$3, %rdx
 	cmpw	$3329, %si
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$871
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$871
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$872
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$871:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$872
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$871:
 	movq	$-1, %r8
 	cmovnb	%r8, %rax
 	movw	%si, 1104(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$872:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$872:
 	cmpw	$3329, %di
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$867
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$867
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$867:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$867:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$869
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$869
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$869:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$869:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movw	%di, 1104(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$870:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$868:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$866:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$863:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$870:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$868:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$866:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$863:
 	cmpq	$166, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$864
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$861:
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$864
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$861:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$862
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$862
 	movq	(%rsp), %rsi
 	movq	16(%rsp), %rdx
 	movq	%rsi, %rax
@@ -42511,498 +42511,498 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$861:
 	addq	%rcx, %rax
 	leaq	39504(%rsp,%rax,2), %rax
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$859
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$860:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$859
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$860:
 	movw	1104(%rsp,%rcx,2), %r9w
 	movw	%r9w, (%rax,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$859:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$859:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$860
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$860
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$857:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$857:
 	cmpq	$18, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$858
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$858
 	incq	%rsi
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$855:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$855:
 	cmpq	$18, %rsi
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$856
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$856
 	movq	%mm4, %rcx
 	movb	$0, %al
 	leaq	11856(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$854:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$854:
 	leaq	304(%rsp), %rsp
 	movb	$1, %al
 	leaq	12368(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$853:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$853:
 	leaq	304(%rsp), %rsp
 	movb	$2, %al
 	leaq	12880(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$852:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$852:
 	leaq	304(%rsp), %rsp
 	movb	$3, %al
 	leaq	13392(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$851:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$851:
 	leaq	304(%rsp), %rsp
 	movb	$4, %al
 	leaq	13904(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$850:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$850:
 	leaq	304(%rsp), %rsp
 	movb	$5, %al
 	leaq	14416(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$849:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$849:
 	leaq	304(%rsp), %rsp
 	movb	$6, %al
 	leaq	14928(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$848:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$848:
 	leaq	304(%rsp), %rsp
 	movb	$7, %al
 	leaq	15440(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$847:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$847:
 	leaq	304(%rsp), %rsp
 	movb	$8, %al
 	leaq	15952(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$846:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$846:
 	leaq	304(%rsp), %rsp
 	movb	$9, %al
 	leaq	16464(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$845:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$845:
 	leaq	304(%rsp), %rsp
 	movb	$10, %al
 	leaq	16976(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$844:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$844:
 	leaq	304(%rsp), %rsp
 	movb	$11, %al
 	leaq	17488(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$843:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$843:
 	leaq	304(%rsp), %rsp
 	movb	$12, %al
 	leaq	18000(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$842:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$842:
 	leaq	304(%rsp), %rsp
 	movb	$13, %al
 	leaq	18512(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$841:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$841:
 	leaq	304(%rsp), %rsp
 	movb	$14, %al
 	leaq	19024(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$840:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$840:
 	leaq	304(%rsp), %rsp
 	movb	$15, %al
 	leaq	19536(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$839:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$839:
 	leaq	304(%rsp), %rsp
 	movb	$16, %al
 	leaq	20048(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$838:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$838:
 	leaq	304(%rsp), %rsp
 	movb	$17, %al
 	leaq	20560(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$837:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$837:
 	leaq	304(%rsp), %rsp
 	movq	%mm4, %rcx
 	movb	$18, %al
 	leaq	21072(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$836:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$836:
 	leaq	304(%rsp), %rsp
 	movb	$19, %al
 	leaq	21584(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$835:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$835:
 	leaq	304(%rsp), %rsp
 	movb	$20, %al
 	leaq	22096(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$834:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$834:
 	leaq	304(%rsp), %rsp
 	movb	$21, %al
 	leaq	22608(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$833:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$833:
 	leaq	304(%rsp), %rsp
 	movb	$22, %al
 	leaq	23120(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$832:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$832:
 	leaq	304(%rsp), %rsp
 	movb	$23, %al
 	leaq	23632(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$831:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$831:
 	leaq	304(%rsp), %rsp
 	movb	$24, %al
 	leaq	24144(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$830:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$830:
 	leaq	304(%rsp), %rsp
 	movb	$25, %al
 	leaq	24656(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$829:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$829:
 	leaq	304(%rsp), %rsp
 	movb	$26, %al
 	leaq	25168(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$828:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$828:
 	leaq	304(%rsp), %rsp
 	movb	$27, %al
 	leaq	25680(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$827:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$827:
 	leaq	304(%rsp), %rsp
 	movb	$28, %al
 	leaq	26192(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$826:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$826:
 	leaq	304(%rsp), %rsp
 	movb	$29, %al
 	leaq	26704(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$825:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$825:
 	leaq	304(%rsp), %rsp
 	movb	$30, %al
 	leaq	27216(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$824:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$824:
 	leaq	304(%rsp), %rsp
 	movb	$31, %al
 	leaq	27728(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$823:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$823:
 	leaq	304(%rsp), %rsp
 	movb	$32, %al
 	leaq	28240(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$822:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$822:
 	leaq	304(%rsp), %rsp
 	movb	$33, %al
 	leaq	28752(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$821:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$821:
 	leaq	304(%rsp), %rsp
 	movb	$34, %al
 	leaq	29264(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$820:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$820:
 	leaq	304(%rsp), %rsp
 	movb	$35, %al
 	leaq	29776(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$819:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$819:
 	leaq	304(%rsp), %rsp
 	movb	$36, %al
 	leaq	1104(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$818:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$818:
 	leaq	304(%rsp), %rsp
 	leaq	11856(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$817:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$817:
 	leaq	12368(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$816:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$816:
 	leaq	12880(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$815:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$815:
 	leaq	13392(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$814:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$814:
 	leaq	13904(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$813:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$813:
 	leaq	14416(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$812:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$812:
 	leaq	14928(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$811:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$811:
 	leaq	15440(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$810:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$810:
 	leaq	15952(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$809:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$809:
 	leaq	16464(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$808:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$808:
 	leaq	16976(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$807:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$807:
 	leaq	17488(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$806:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$806:
 	leaq	18000(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$805:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$805:
 	leaq	18512(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$804:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$804:
 	leaq	19024(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$803:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$803:
 	leaq	19536(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$802:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$802:
 	leaq	20048(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$801:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$801:
 	leaq	20560(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$800:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$800:
 	leaq	30288(%rsp), %r11
 	leaq	39504(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$799:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$799:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	40016(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$798:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$798:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$797:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$797:
 	leaq	1616(%rsp), %r11
 	leaq	40528(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$796:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$796:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$795:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$795:
 	leaq	1616(%rsp), %r11
 	leaq	41040(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$794:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$794:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$793:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$793:
 	leaq	1616(%rsp), %r11
 	leaq	41552(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$792:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$792:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$791:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$791:
 	leaq	1616(%rsp), %r11
 	leaq	42064(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$790:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$790:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$789:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$789:
 	leaq	1616(%rsp), %r11
 	leaq	42576(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$788:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$788:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$787:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$787:
 	leaq	1616(%rsp), %r11
 	leaq	43088(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$786:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$786:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$785:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$785:
 	leaq	1616(%rsp), %r11
 	leaq	43600(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$784:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$784:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$783:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$783:
 	leaq	1616(%rsp), %r11
 	leaq	44112(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$782:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$782:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$781:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$781:
 	leaq	1616(%rsp), %r11
 	leaq	44624(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$780:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$780:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$779:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$779:
 	leaq	1616(%rsp), %r11
 	leaq	45136(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$778:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$778:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$777:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$777:
 	leaq	1616(%rsp), %r11
 	leaq	45648(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$776:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$776:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$775:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$775:
 	leaq	1616(%rsp), %r11
 	leaq	46160(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$774:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$774:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$773:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$773:
 	leaq	1616(%rsp), %r11
 	leaq	46672(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$772:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$772:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$771:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$771:
 	leaq	1616(%rsp), %r11
 	leaq	47184(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$770:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$770:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$769:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$769:
 	leaq	1616(%rsp), %r11
 	leaq	47696(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$768:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$768:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$767:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$767:
 	leaq	1616(%rsp), %r11
 	leaq	48208(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$766:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$766:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$765:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$765:
 	leaq	30288(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$763
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$764:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$763
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$764:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -43011,207 +43011,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$764:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$763:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$763:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$764
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$764
 	leaq	30800(%rsp), %r11
 	leaq	48720(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$762:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$762:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	49232(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$761:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$761:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$760:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$760:
 	leaq	1616(%rsp), %r11
 	leaq	49744(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$759:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$759:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$758:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$758:
 	leaq	1616(%rsp), %r11
 	leaq	50256(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$757:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$757:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$756:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$756:
 	leaq	1616(%rsp), %r11
 	leaq	50768(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$755:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$755:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$754:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$754:
 	leaq	1616(%rsp), %r11
 	leaq	51280(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$753:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$753:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$752:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$752:
 	leaq	1616(%rsp), %r11
 	leaq	51792(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$751:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$751:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$750:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$750:
 	leaq	1616(%rsp), %r11
 	leaq	52304(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$749:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$749:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$748:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$748:
 	leaq	1616(%rsp), %r11
 	leaq	52816(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$747:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$747:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$746:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$746:
 	leaq	1616(%rsp), %r11
 	leaq	53328(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$745:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$745:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$744:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$744:
 	leaq	1616(%rsp), %r11
 	leaq	53840(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$743:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$743:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$742:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$742:
 	leaq	1616(%rsp), %r11
 	leaq	54352(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$741:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$741:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$740:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$740:
 	leaq	1616(%rsp), %r11
 	leaq	54864(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$739:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$739:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$738:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$738:
 	leaq	1616(%rsp), %r11
 	leaq	55376(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$737:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$737:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$736:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$736:
 	leaq	1616(%rsp), %r11
 	leaq	55888(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$735:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$735:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$734:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$734:
 	leaq	1616(%rsp), %r11
 	leaq	56400(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$733:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$733:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$732:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$732:
 	leaq	1616(%rsp), %r11
 	leaq	56912(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$731:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$731:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$730:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$730:
 	leaq	1616(%rsp), %r11
 	leaq	57424(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$729:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$729:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$728:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$728:
 	leaq	30800(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$726
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$727:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$726
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$727:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -43220,207 +43220,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$727:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$726:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$726:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$727
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$727
 	leaq	31312(%rsp), %r11
 	leaq	57936(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$725:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$725:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	58448(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$724:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$724:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$723:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$723:
 	leaq	1616(%rsp), %r11
 	leaq	58960(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$722:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$722:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$721:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$721:
 	leaq	1616(%rsp), %r11
 	leaq	59472(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$720:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$720:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$719:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$719:
 	leaq	1616(%rsp), %r11
 	leaq	59984(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$718:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$718:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$717:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$717:
 	leaq	1616(%rsp), %r11
 	leaq	60496(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$716:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$716:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$715:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$715:
 	leaq	1616(%rsp), %r11
 	leaq	61008(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$714:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$714:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$713:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$713:
 	leaq	1616(%rsp), %r11
 	leaq	61520(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$712:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$712:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$711:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$711:
 	leaq	1616(%rsp), %r11
 	leaq	62032(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$710:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$710:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$709:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$709:
 	leaq	1616(%rsp), %r11
 	leaq	62544(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$708:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$708:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$707:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$707:
 	leaq	1616(%rsp), %r11
 	leaq	63056(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$706:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$706:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$705:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$705:
 	leaq	1616(%rsp), %r11
 	leaq	63568(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$704:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$704:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$703:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$703:
 	leaq	1616(%rsp), %r11
 	leaq	64080(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$702:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$702:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$701:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$701:
 	leaq	1616(%rsp), %r11
 	leaq	64592(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$700:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$700:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$699:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$699:
 	leaq	1616(%rsp), %r11
 	leaq	65104(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$698:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$698:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$697:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$697:
 	leaq	1616(%rsp), %r11
 	leaq	65616(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$696:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$696:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$695:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$695:
 	leaq	1616(%rsp), %r11
 	leaq	66128(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$694:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$694:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$693:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$693:
 	leaq	1616(%rsp), %r11
 	leaq	66640(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$692:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$692:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$691:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$691:
 	leaq	31312(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$689
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$690:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$689
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$690:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -43429,207 +43429,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$690:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$689:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$689:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$690
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$690
 	leaq	31824(%rsp), %r11
 	leaq	67152(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$688:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$688:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	67664(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$687:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$687:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$686:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$686:
 	leaq	1616(%rsp), %r11
 	leaq	68176(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$685:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$685:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$684:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$684:
 	leaq	1616(%rsp), %r11
 	leaq	68688(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$683:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$683:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$682:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$682:
 	leaq	1616(%rsp), %r11
 	leaq	69200(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$681:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$681:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$680:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$680:
 	leaq	1616(%rsp), %r11
 	leaq	69712(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$679:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$679:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$678:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$678:
 	leaq	1616(%rsp), %r11
 	leaq	70224(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$677:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$677:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$676:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$676:
 	leaq	1616(%rsp), %r11
 	leaq	70736(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$675:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$675:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$674:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$674:
 	leaq	1616(%rsp), %r11
 	leaq	71248(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$673:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$673:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$672:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$672:
 	leaq	1616(%rsp), %r11
 	leaq	71760(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$671:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$671:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$670:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$670:
 	leaq	1616(%rsp), %r11
 	leaq	72272(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$669:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$669:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$668:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$668:
 	leaq	1616(%rsp), %r11
 	leaq	72784(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$667:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$667:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$666:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$666:
 	leaq	1616(%rsp), %r11
 	leaq	73296(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$665:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$665:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$664:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$664:
 	leaq	1616(%rsp), %r11
 	leaq	73808(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$663:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$663:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$662:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$662:
 	leaq	1616(%rsp), %r11
 	leaq	74320(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$661:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$661:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$660:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$660:
 	leaq	1616(%rsp), %r11
 	leaq	74832(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$659:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$659:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$658:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$658:
 	leaq	1616(%rsp), %r11
 	leaq	75344(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$657:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$657:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$656:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$656:
 	leaq	1616(%rsp), %r11
 	leaq	75856(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$655:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$655:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$654:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$654:
 	leaq	31824(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$652
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$653:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$652
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$653:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -43638,207 +43638,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$653:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$652:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$652:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$653
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$653
 	leaq	32336(%rsp), %r11
 	leaq	76368(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$651:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$651:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	76880(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$650:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$650:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$649:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$649:
 	leaq	1616(%rsp), %r11
 	leaq	77392(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$648:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$648:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$647:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$647:
 	leaq	1616(%rsp), %r11
 	leaq	77904(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$646:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$646:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$645:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$645:
 	leaq	1616(%rsp), %r11
 	leaq	78416(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$644:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$644:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$643:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$643:
 	leaq	1616(%rsp), %r11
 	leaq	78928(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$642:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$642:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$641:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$641:
 	leaq	1616(%rsp), %r11
 	leaq	79440(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$640:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$640:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$639:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$639:
 	leaq	1616(%rsp), %r11
 	leaq	79952(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$638:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$638:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$637:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$637:
 	leaq	1616(%rsp), %r11
 	leaq	80464(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$636:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$636:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$635:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$635:
 	leaq	1616(%rsp), %r11
 	leaq	80976(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$634:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$634:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$633:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$633:
 	leaq	1616(%rsp), %r11
 	leaq	81488(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$632:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$632:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$631:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$631:
 	leaq	1616(%rsp), %r11
 	leaq	82000(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$630:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$630:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$629:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$629:
 	leaq	1616(%rsp), %r11
 	leaq	82512(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$628:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$628:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$627:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$627:
 	leaq	1616(%rsp), %r11
 	leaq	83024(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$626:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$626:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$625:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$625:
 	leaq	1616(%rsp), %r11
 	leaq	83536(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$624:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$624:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$623:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$623:
 	leaq	1616(%rsp), %r11
 	leaq	84048(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$622:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$622:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$621:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$621:
 	leaq	1616(%rsp), %r11
 	leaq	84560(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$620:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$620:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$619:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$619:
 	leaq	1616(%rsp), %r11
 	leaq	85072(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$618:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$618:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$617:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$617:
 	leaq	32336(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$615
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$616:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$615
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$616:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -43847,207 +43847,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$616:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$615:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$615:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$616
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$616
 	leaq	32848(%rsp), %r11
 	leaq	85584(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$614:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$614:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	86096(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$613:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$613:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$612:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$612:
 	leaq	1616(%rsp), %r11
 	leaq	86608(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$611:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$611:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$610:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$610:
 	leaq	1616(%rsp), %r11
 	leaq	87120(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$609:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$609:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$608:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$608:
 	leaq	1616(%rsp), %r11
 	leaq	87632(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$607:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$607:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$606:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$606:
 	leaq	1616(%rsp), %r11
 	leaq	88144(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$605:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$605:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$604:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$604:
 	leaq	1616(%rsp), %r11
 	leaq	88656(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$603:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$603:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$602:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$602:
 	leaq	1616(%rsp), %r11
 	leaq	89168(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$601:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$601:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$600:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$600:
 	leaq	1616(%rsp), %r11
 	leaq	89680(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$599:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$599:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$598:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$598:
 	leaq	1616(%rsp), %r11
 	leaq	90192(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$597:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$597:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$596:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$596:
 	leaq	1616(%rsp), %r11
 	leaq	90704(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$595:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$595:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$594:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$594:
 	leaq	1616(%rsp), %r11
 	leaq	91216(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$593:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$593:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$592:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$592:
 	leaq	1616(%rsp), %r11
 	leaq	91728(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$591:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$591:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$590:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$590:
 	leaq	1616(%rsp), %r11
 	leaq	92240(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$589:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$589:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$588:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$588:
 	leaq	1616(%rsp), %r11
 	leaq	92752(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$587:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$587:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$586:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$586:
 	leaq	1616(%rsp), %r11
 	leaq	93264(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$585:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$585:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$584:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$584:
 	leaq	1616(%rsp), %r11
 	leaq	93776(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$583:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$583:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$582:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$582:
 	leaq	1616(%rsp), %r11
 	leaq	94288(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$581:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$581:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$580:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$580:
 	leaq	32848(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$578
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$579:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$578
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$579:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -44056,207 +44056,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$579:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$578:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$578:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$579
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$579
 	leaq	33360(%rsp), %r11
 	leaq	94800(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$577:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$577:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	95312(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$576:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$576:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$575:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$575:
 	leaq	1616(%rsp), %r11
 	leaq	95824(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$574:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$574:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$573:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$573:
 	leaq	1616(%rsp), %r11
 	leaq	96336(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$572:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$572:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$571:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$571:
 	leaq	1616(%rsp), %r11
 	leaq	96848(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$570:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$570:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$569:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$569:
 	leaq	1616(%rsp), %r11
 	leaq	97360(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$568:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$568:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$567:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$567:
 	leaq	1616(%rsp), %r11
 	leaq	97872(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$566:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$566:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$565:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$565:
 	leaq	1616(%rsp), %r11
 	leaq	98384(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$564:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$564:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$563:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$563:
 	leaq	1616(%rsp), %r11
 	leaq	98896(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$562:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$562:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$561:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$561:
 	leaq	1616(%rsp), %r11
 	leaq	99408(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$560:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$560:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$559:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$559:
 	leaq	1616(%rsp), %r11
 	leaq	99920(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$558:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$558:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$557:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$557:
 	leaq	1616(%rsp), %r11
 	leaq	100432(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$556:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$556:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$555:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$555:
 	leaq	1616(%rsp), %r11
 	leaq	100944(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$554:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$554:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$553:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$553:
 	leaq	1616(%rsp), %r11
 	leaq	101456(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$552:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$552:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$551:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$551:
 	leaq	1616(%rsp), %r11
 	leaq	101968(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$550:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$550:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$549:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$549:
 	leaq	1616(%rsp), %r11
 	leaq	102480(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$548:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$548:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$547:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$547:
 	leaq	1616(%rsp), %r11
 	leaq	102992(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$546:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$546:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$545:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$545:
 	leaq	1616(%rsp), %r11
 	leaq	103504(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$544:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$544:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$543:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$543:
 	leaq	33360(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$541
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$542:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$541
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$542:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -44265,207 +44265,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$542:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$541:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$541:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$542
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$542
 	leaq	33872(%rsp), %r11
 	leaq	104016(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$540:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$540:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	104528(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$539:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$539:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$538:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$538:
 	leaq	1616(%rsp), %r11
 	leaq	105040(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$537:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$537:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$536:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$536:
 	leaq	1616(%rsp), %r11
 	leaq	105552(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$535:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$535:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$534:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$534:
 	leaq	1616(%rsp), %r11
 	leaq	106064(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$533:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$533:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$532:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$532:
 	leaq	1616(%rsp), %r11
 	leaq	106576(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$531:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$531:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$530:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$530:
 	leaq	1616(%rsp), %r11
 	leaq	107088(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$529:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$529:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$528:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$528:
 	leaq	1616(%rsp), %r11
 	leaq	107600(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$527:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$527:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$526:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$526:
 	leaq	1616(%rsp), %r11
 	leaq	108112(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$525:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$525:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$524:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$524:
 	leaq	1616(%rsp), %r11
 	leaq	108624(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$523:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$523:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$522:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$522:
 	leaq	1616(%rsp), %r11
 	leaq	109136(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$521:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$521:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$520:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$520:
 	leaq	1616(%rsp), %r11
 	leaq	109648(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$519:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$519:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$518:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$518:
 	leaq	1616(%rsp), %r11
 	leaq	110160(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$517:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$517:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$516:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$516:
 	leaq	1616(%rsp), %r11
 	leaq	110672(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$515:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$515:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$514:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$514:
 	leaq	1616(%rsp), %r11
 	leaq	111184(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$513:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$513:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$512:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$512:
 	leaq	1616(%rsp), %r11
 	leaq	111696(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$511:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$511:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$510:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$510:
 	leaq	1616(%rsp), %r11
 	leaq	112208(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$509:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$509:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$508:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$508:
 	leaq	1616(%rsp), %r11
 	leaq	112720(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$507:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$507:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$506:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$506:
 	leaq	33872(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$504
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$505:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$504
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$505:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -44474,207 +44474,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$505:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$504:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$504:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$505
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$505
 	leaq	34384(%rsp), %r11
 	leaq	113232(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$503:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$503:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	113744(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$502:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$502:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$501:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$501:
 	leaq	1616(%rsp), %r11
 	leaq	114256(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$500:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$500:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$499:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$499:
 	leaq	1616(%rsp), %r11
 	leaq	114768(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$498:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$498:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$497:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$497:
 	leaq	1616(%rsp), %r11
 	leaq	115280(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$496:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$496:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$495:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$495:
 	leaq	1616(%rsp), %r11
 	leaq	115792(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$494:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$494:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$493:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$493:
 	leaq	1616(%rsp), %r11
 	leaq	116304(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$492:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$492:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$491:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$491:
 	leaq	1616(%rsp), %r11
 	leaq	116816(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$490:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$490:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$489:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$489:
 	leaq	1616(%rsp), %r11
 	leaq	117328(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$488:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$488:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$487:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$487:
 	leaq	1616(%rsp), %r11
 	leaq	117840(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$486:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$486:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$485:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$485:
 	leaq	1616(%rsp), %r11
 	leaq	118352(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$484:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$484:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$483:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$483:
 	leaq	1616(%rsp), %r11
 	leaq	118864(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$482:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$482:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$481:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$481:
 	leaq	1616(%rsp), %r11
 	leaq	119376(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$480:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$480:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$479:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$479:
 	leaq	1616(%rsp), %r11
 	leaq	119888(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$478:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$478:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$477:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$477:
 	leaq	1616(%rsp), %r11
 	leaq	120400(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$476:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$476:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$475:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$475:
 	leaq	1616(%rsp), %r11
 	leaq	120912(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$474:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$474:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$473:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$473:
 	leaq	1616(%rsp), %r11
 	leaq	121424(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$472:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$472:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$471:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$471:
 	leaq	1616(%rsp), %r11
 	leaq	121936(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$470:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$470:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$469:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$469:
 	leaq	34384(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$467
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$468:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$467
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$468:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -44683,207 +44683,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$468:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$467:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$467:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$468
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$468
 	leaq	34896(%rsp), %r11
 	leaq	122448(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$466:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$466:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	122960(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$465:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$465:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$464:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$464:
 	leaq	1616(%rsp), %r11
 	leaq	123472(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$463:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$463:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$462:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$462:
 	leaq	1616(%rsp), %r11
 	leaq	123984(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$461:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$461:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$460:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$460:
 	leaq	1616(%rsp), %r11
 	leaq	124496(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$459:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$459:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$458:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$458:
 	leaq	1616(%rsp), %r11
 	leaq	125008(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$457:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$457:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$456:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$456:
 	leaq	1616(%rsp), %r11
 	leaq	125520(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$455:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$455:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$454:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$454:
 	leaq	1616(%rsp), %r11
 	leaq	126032(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$453:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$453:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$452:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$452:
 	leaq	1616(%rsp), %r11
 	leaq	126544(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$451:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$451:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$450:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$450:
 	leaq	1616(%rsp), %r11
 	leaq	127056(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$449:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$449:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$448:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$448:
 	leaq	1616(%rsp), %r11
 	leaq	127568(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$447:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$447:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$446:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$446:
 	leaq	1616(%rsp), %r11
 	leaq	128080(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$445:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$445:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$444:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$444:
 	leaq	1616(%rsp), %r11
 	leaq	128592(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$443:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$443:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$442:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$442:
 	leaq	1616(%rsp), %r11
 	leaq	129104(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$441:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$441:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$440:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$440:
 	leaq	1616(%rsp), %r11
 	leaq	129616(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$439:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$439:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$438:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$438:
 	leaq	1616(%rsp), %r11
 	leaq	130128(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$437:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$437:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$436:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$436:
 	leaq	1616(%rsp), %r11
 	leaq	130640(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$435:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$435:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$434:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$434:
 	leaq	1616(%rsp), %r11
 	leaq	131152(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$433:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$433:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$432:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$432:
 	leaq	34896(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$430
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$431:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$430
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$431:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -44892,207 +44892,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$431:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$430:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$430:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$431
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$431
 	leaq	35408(%rsp), %r11
 	leaq	131664(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$429:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$429:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	132176(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$428:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$428:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$427:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$427:
 	leaq	1616(%rsp), %r11
 	leaq	132688(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$426:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$426:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$425:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$425:
 	leaq	1616(%rsp), %r11
 	leaq	133200(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$424:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$424:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$423:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$423:
 	leaq	1616(%rsp), %r11
 	leaq	133712(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$422:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$422:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$421:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$421:
 	leaq	1616(%rsp), %r11
 	leaq	134224(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$420:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$420:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$419:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$419:
 	leaq	1616(%rsp), %r11
 	leaq	134736(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$418:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$418:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$417:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$417:
 	leaq	1616(%rsp), %r11
 	leaq	135248(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$416:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$416:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$415:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$415:
 	leaq	1616(%rsp), %r11
 	leaq	135760(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$414:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$414:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$413:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$413:
 	leaq	1616(%rsp), %r11
 	leaq	136272(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$412:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$412:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$411:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$411:
 	leaq	1616(%rsp), %r11
 	leaq	136784(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$410:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$410:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$409:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$409:
 	leaq	1616(%rsp), %r11
 	leaq	137296(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$408:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$408:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$407:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$407:
 	leaq	1616(%rsp), %r11
 	leaq	137808(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$406:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$406:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$405:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$405:
 	leaq	1616(%rsp), %r11
 	leaq	138320(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$404:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$404:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$403:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$403:
 	leaq	1616(%rsp), %r11
 	leaq	138832(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$402:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$402:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$401:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$401:
 	leaq	1616(%rsp), %r11
 	leaq	139344(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$400:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$400:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$399:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$399:
 	leaq	1616(%rsp), %r11
 	leaq	139856(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$398:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$398:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$397:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$397:
 	leaq	1616(%rsp), %r11
 	leaq	140368(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$396:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$396:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$395:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$395:
 	leaq	35408(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$393
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$394:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$393
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$394:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -45101,207 +45101,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$394:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$393:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$393:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$394
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$394
 	leaq	35920(%rsp), %r11
 	leaq	140880(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$392:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$392:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	141392(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$391:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$391:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$390:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$390:
 	leaq	1616(%rsp), %r11
 	leaq	141904(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$389:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$389:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$388:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$388:
 	leaq	1616(%rsp), %r11
 	leaq	142416(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$387:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$387:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$386:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$386:
 	leaq	1616(%rsp), %r11
 	leaq	142928(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$385:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$385:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$384:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$384:
 	leaq	1616(%rsp), %r11
 	leaq	143440(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$383:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$383:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$382:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$382:
 	leaq	1616(%rsp), %r11
 	leaq	143952(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$381:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$381:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$380:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$380:
 	leaq	1616(%rsp), %r11
 	leaq	144464(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$379:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$379:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$378:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$378:
 	leaq	1616(%rsp), %r11
 	leaq	144976(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$377:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$377:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$376:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$376:
 	leaq	1616(%rsp), %r11
 	leaq	145488(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$375:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$375:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$374:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$374:
 	leaq	1616(%rsp), %r11
 	leaq	146000(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$373:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$373:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$372:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$372:
 	leaq	1616(%rsp), %r11
 	leaq	146512(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$371:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$371:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$370:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$370:
 	leaq	1616(%rsp), %r11
 	leaq	147024(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$369:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$369:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$368:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$368:
 	leaq	1616(%rsp), %r11
 	leaq	147536(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$367:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$367:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$366:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$366:
 	leaq	1616(%rsp), %r11
 	leaq	148048(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$365:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$365:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$364:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$364:
 	leaq	1616(%rsp), %r11
 	leaq	148560(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$363:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$363:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$362:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$362:
 	leaq	1616(%rsp), %r11
 	leaq	149072(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$361:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$361:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$360:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$360:
 	leaq	1616(%rsp), %r11
 	leaq	149584(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$359:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$359:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$358:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$358:
 	leaq	35920(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$356
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$357:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$356
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$357:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -45310,207 +45310,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$357:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$356:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$356:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$357
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$357
 	leaq	36432(%rsp), %r11
 	leaq	150096(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$355:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$355:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	150608(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$354:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$354:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$353:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$353:
 	leaq	1616(%rsp), %r11
 	leaq	151120(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$352:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$352:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$351:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$351:
 	leaq	1616(%rsp), %r11
 	leaq	151632(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$350:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$350:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$349:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$349:
 	leaq	1616(%rsp), %r11
 	leaq	152144(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$348:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$348:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$347:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$347:
 	leaq	1616(%rsp), %r11
 	leaq	152656(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$346:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$346:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$345:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$345:
 	leaq	1616(%rsp), %r11
 	leaq	153168(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$344:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$344:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$343:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$343:
 	leaq	1616(%rsp), %r11
 	leaq	153680(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$342:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$342:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$341:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$341:
 	leaq	1616(%rsp), %r11
 	leaq	154192(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$340:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$340:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$339:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$339:
 	leaq	1616(%rsp), %r11
 	leaq	154704(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$338:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$338:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$337:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$337:
 	leaq	1616(%rsp), %r11
 	leaq	155216(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$336:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$336:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$335:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$335:
 	leaq	1616(%rsp), %r11
 	leaq	155728(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$334:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$334:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$333:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$333:
 	leaq	1616(%rsp), %r11
 	leaq	156240(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$332:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$332:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$331:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$331:
 	leaq	1616(%rsp), %r11
 	leaq	156752(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$330:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$330:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$329:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$329:
 	leaq	1616(%rsp), %r11
 	leaq	157264(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$328:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$328:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$327:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$327:
 	leaq	1616(%rsp), %r11
 	leaq	157776(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$326:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$326:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$325:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$325:
 	leaq	1616(%rsp), %r11
 	leaq	158288(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$324:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$324:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$323:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$323:
 	leaq	1616(%rsp), %r11
 	leaq	158800(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$322:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$322:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$321:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$321:
 	leaq	36432(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$319
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$320:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$319
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$320:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -45519,207 +45519,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$320:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$319:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$319:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$320
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$320
 	leaq	36944(%rsp), %r11
 	leaq	159312(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$318:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$318:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	159824(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$317:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$317:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$316:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$316:
 	leaq	1616(%rsp), %r11
 	leaq	160336(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$315:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$315:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$314:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$314:
 	leaq	1616(%rsp), %r11
 	leaq	160848(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$313:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$313:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$312:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$312:
 	leaq	1616(%rsp), %r11
 	leaq	161360(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$311:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$311:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$310:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$310:
 	leaq	1616(%rsp), %r11
 	leaq	161872(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$309:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$309:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$308:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$308:
 	leaq	1616(%rsp), %r11
 	leaq	162384(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$307:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$307:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$306:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$306:
 	leaq	1616(%rsp), %r11
 	leaq	162896(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$305:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$305:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$304:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$304:
 	leaq	1616(%rsp), %r11
 	leaq	163408(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$303:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$303:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$302:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$302:
 	leaq	1616(%rsp), %r11
 	leaq	163920(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$301:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$301:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$300:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$300:
 	leaq	1616(%rsp), %r11
 	leaq	164432(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$299:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$299:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$298:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$298:
 	leaq	1616(%rsp), %r11
 	leaq	164944(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$297:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$297:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$296:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$296:
 	leaq	1616(%rsp), %r11
 	leaq	165456(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$295:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$295:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$294:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$294:
 	leaq	1616(%rsp), %r11
 	leaq	165968(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$293:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$293:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$292:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$292:
 	leaq	1616(%rsp), %r11
 	leaq	166480(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$291:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$291:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$290:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$290:
 	leaq	1616(%rsp), %r11
 	leaq	166992(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$289:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$289:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$288:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$288:
 	leaq	1616(%rsp), %r11
 	leaq	167504(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$287:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$287:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$286:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$286:
 	leaq	1616(%rsp), %r11
 	leaq	168016(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$285:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$285:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$284:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$284:
 	leaq	36944(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$282
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$283:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$282
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$283:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -45728,207 +45728,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$283:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$282:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$282:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$283
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$283
 	leaq	37456(%rsp), %r11
 	leaq	168528(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$281:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$281:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	169040(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$280:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$280:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$279:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$279:
 	leaq	1616(%rsp), %r11
 	leaq	169552(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$278:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$278:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$277:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$277:
 	leaq	1616(%rsp), %r11
 	leaq	170064(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$276:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$276:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$275:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$275:
 	leaq	1616(%rsp), %r11
 	leaq	170576(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$274:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$274:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$273:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$273:
 	leaq	1616(%rsp), %r11
 	leaq	171088(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$272:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$272:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$271:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$271:
 	leaq	1616(%rsp), %r11
 	leaq	171600(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$270:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$270:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$269:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$269:
 	leaq	1616(%rsp), %r11
 	leaq	172112(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$268:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$268:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$267:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$267:
 	leaq	1616(%rsp), %r11
 	leaq	172624(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$266:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$266:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$265:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$265:
 	leaq	1616(%rsp), %r11
 	leaq	173136(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$264:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$264:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$263:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$263:
 	leaq	1616(%rsp), %r11
 	leaq	173648(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$262:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$262:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$261:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$261:
 	leaq	1616(%rsp), %r11
 	leaq	174160(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$260:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$260:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$259:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$259:
 	leaq	1616(%rsp), %r11
 	leaq	174672(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$258:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$258:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$257:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$257:
 	leaq	1616(%rsp), %r11
 	leaq	175184(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$256:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$256:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$255:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$255:
 	leaq	1616(%rsp), %r11
 	leaq	175696(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$254:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$254:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$253:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$253:
 	leaq	1616(%rsp), %r11
 	leaq	176208(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$252:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$252:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$251:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$251:
 	leaq	1616(%rsp), %r11
 	leaq	176720(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$250:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$250:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$249:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$249:
 	leaq	1616(%rsp), %r11
 	leaq	177232(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$248:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$248:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$247:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$247:
 	leaq	37456(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$245
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$246:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$245
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$246:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -45937,207 +45937,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$246:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$245:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$245:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$246
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$246
 	leaq	37968(%rsp), %r11
 	leaq	177744(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$244:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$244:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	178256(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$243:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$243:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$242:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$242:
 	leaq	1616(%rsp), %r11
 	leaq	178768(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$241:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$241:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$240:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$240:
 	leaq	1616(%rsp), %r11
 	leaq	179280(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$239:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$239:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$238:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$238:
 	leaq	1616(%rsp), %r11
 	leaq	179792(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$237:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$237:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$236:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$236:
 	leaq	1616(%rsp), %r11
 	leaq	180304(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$235:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$235:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$234:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$234:
 	leaq	1616(%rsp), %r11
 	leaq	180816(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$233:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$233:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$232:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$232:
 	leaq	1616(%rsp), %r11
 	leaq	181328(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$231:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$231:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$230:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$230:
 	leaq	1616(%rsp), %r11
 	leaq	181840(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$229:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$229:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$228:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$228:
 	leaq	1616(%rsp), %r11
 	leaq	182352(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$227:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$227:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$226:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$226:
 	leaq	1616(%rsp), %r11
 	leaq	182864(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$225:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$225:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$224:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$224:
 	leaq	1616(%rsp), %r11
 	leaq	183376(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$223:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$223:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$222:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$222:
 	leaq	1616(%rsp), %r11
 	leaq	183888(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$221:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$221:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$220:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$220:
 	leaq	1616(%rsp), %r11
 	leaq	184400(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$219:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$219:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$218:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$218:
 	leaq	1616(%rsp), %r11
 	leaq	184912(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$217:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$217:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$216:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$216:
 	leaq	1616(%rsp), %r11
 	leaq	185424(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$215:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$215:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$214:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$214:
 	leaq	1616(%rsp), %r11
 	leaq	185936(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$213:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$213:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$212:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$212:
 	leaq	1616(%rsp), %r11
 	leaq	186448(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$211:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$211:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$210:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$210:
 	leaq	37968(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$208
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$209:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$208
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$209:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46146,207 +46146,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$209:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$208:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$208:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$209
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$209
 	leaq	38480(%rsp), %r11
 	leaq	186960(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$207:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$207:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	187472(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$206:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$206:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$205:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$205:
 	leaq	1616(%rsp), %r11
 	leaq	187984(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$204:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$204:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$203:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$203:
 	leaq	1616(%rsp), %r11
 	leaq	188496(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$202:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$202:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$201:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$201:
 	leaq	1616(%rsp), %r11
 	leaq	189008(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$200:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$200:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$199:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$199:
 	leaq	1616(%rsp), %r11
 	leaq	189520(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$198:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$198:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$197:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$197:
 	leaq	1616(%rsp), %r11
 	leaq	190032(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$196:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$196:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$195:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$195:
 	leaq	1616(%rsp), %r11
 	leaq	190544(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$194:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$194:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$193:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$193:
 	leaq	1616(%rsp), %r11
 	leaq	191056(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$192:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$192:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$191:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$191:
 	leaq	1616(%rsp), %r11
 	leaq	191568(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$190:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$190:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$189:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$189:
 	leaq	1616(%rsp), %r11
 	leaq	192080(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$188:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$188:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$187:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$187:
 	leaq	1616(%rsp), %r11
 	leaq	192592(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$186:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$186:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$185:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$185:
 	leaq	1616(%rsp), %r11
 	leaq	193104(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$184:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$184:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$183:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$183:
 	leaq	1616(%rsp), %r11
 	leaq	193616(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$182:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$182:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$181:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$181:
 	leaq	1616(%rsp), %r11
 	leaq	194128(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$180:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$180:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$179:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$179:
 	leaq	1616(%rsp), %r11
 	leaq	194640(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$178:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$178:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$177:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$177:
 	leaq	1616(%rsp), %r11
 	leaq	195152(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$176:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$176:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$175:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$175:
 	leaq	1616(%rsp), %r11
 	leaq	195664(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$174:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$174:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$173:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$173:
 	leaq	38480(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$171
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$172:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$171
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$172:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46355,207 +46355,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$172:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$171:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$171:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$172
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$172
 	leaq	38992(%rsp), %r11
 	leaq	196176(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$170:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$170:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	196688(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$169:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$169:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$168:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$168:
 	leaq	1616(%rsp), %r11
 	leaq	197200(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$167:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$167:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$166:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$166:
 	leaq	1616(%rsp), %r11
 	leaq	197712(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$165:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$165:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$164:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$164:
 	leaq	1616(%rsp), %r11
 	leaq	198224(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$163:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$163:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$162:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$162:
 	leaq	1616(%rsp), %r11
 	leaq	198736(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$161:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$161:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$160:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$160:
 	leaq	1616(%rsp), %r11
 	leaq	199248(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$159:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$159:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$158:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$158:
 	leaq	1616(%rsp), %r11
 	leaq	199760(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$157:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$157:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$156:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$156:
 	leaq	1616(%rsp), %r11
 	leaq	200272(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$155:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$155:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$154:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$154:
 	leaq	1616(%rsp), %r11
 	leaq	200784(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$153:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$153:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$152:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$152:
 	leaq	1616(%rsp), %r11
 	leaq	201296(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$151:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$151:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$150:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$150:
 	leaq	1616(%rsp), %r11
 	leaq	201808(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$149:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$149:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$148:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$148:
 	leaq	1616(%rsp), %r11
 	leaq	202320(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$147:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$147:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$146:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$146:
 	leaq	1616(%rsp), %r11
 	leaq	202832(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$145:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$145:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$144:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$144:
 	leaq	1616(%rsp), %r11
 	leaq	203344(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$143:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$143:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$142:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$142:
 	leaq	1616(%rsp), %r11
 	leaq	203856(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$141:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$141:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$140:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$140:
 	leaq	1616(%rsp), %r11
 	leaq	204368(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$139:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$139:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$138:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$138:
 	leaq	1616(%rsp), %r11
 	leaq	204880(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$137:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$137:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$136:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$136:
 	leaq	38992(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$134
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$135:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$134
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$135:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46564,207 +46564,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$135:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$134:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$134:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$135
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$135
 	leaq	1616(%rsp), %r11
 	leaq	2640(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$133:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$133:
 	leaq	16(%rsp), %rsp
 	leaq	2128(%rsp), %r11
 	leaq	3152(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$132:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$132:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$131:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$131:
 	leaq	2128(%rsp), %r11
 	leaq	3664(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$130:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$130:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$129:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$129:
 	leaq	2128(%rsp), %r11
 	leaq	4176(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$128:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$128:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$127:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$127:
 	leaq	2128(%rsp), %r11
 	leaq	4688(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$126:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$126:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$125:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$125:
 	leaq	2128(%rsp), %r11
 	leaq	5200(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$124:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$124:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$123:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$123:
 	leaq	2128(%rsp), %r11
 	leaq	5712(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$122:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$122:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$121:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$121:
 	leaq	2128(%rsp), %r11
 	leaq	6224(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$120:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$120:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$119:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$119:
 	leaq	2128(%rsp), %r11
 	leaq	6736(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$118:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$118:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$117:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$117:
 	leaq	2128(%rsp), %r11
 	leaq	7248(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$116:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$116:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$115:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$115:
 	leaq	2128(%rsp), %r11
 	leaq	7760(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$114:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$114:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$113:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$113:
 	leaq	2128(%rsp), %r11
 	leaq	8272(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$112:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$112:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$111:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$111:
 	leaq	2128(%rsp), %r11
 	leaq	8784(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$110:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$110:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$109:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$109:
 	leaq	2128(%rsp), %r11
 	leaq	9296(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$108:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$108:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$107:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$107:
 	leaq	2128(%rsp), %r11
 	leaq	9808(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$106:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$106:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$105:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$105:
 	leaq	2128(%rsp), %r11
 	leaq	10320(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$104:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$104:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$103:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$103:
 	leaq	2128(%rsp), %r11
 	leaq	10832(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$102:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$102:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$101:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$101:
 	leaq	2128(%rsp), %r11
 	leaq	11344(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$100:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$100:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$99:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$99:
 	leaq	1616(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$97
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$98:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$97
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$98:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46773,150 +46773,150 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$98:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$97:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$97:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$98
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$98
 	leaq	30288(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$96:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$96:
 	leaq	30800(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$95:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$95:
 	leaq	31312(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$94:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$94:
 	leaq	31824(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$93:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$93:
 	leaq	32336(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$92:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$92:
 	leaq	32848(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$91:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$91:
 	leaq	33360(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$90:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$90:
 	leaq	33872(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$89:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$89:
 	leaq	34384(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$88:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$88:
 	leaq	34896(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$87:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$87:
 	leaq	35408(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$86:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$86:
 	leaq	35920(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$85:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$85:
 	leaq	36432(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$84:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$84:
 	leaq	36944(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$83:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$83:
 	leaq	37456(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$82:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$82:
 	leaq	37968(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$81:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$81:
 	leaq	38480(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$80:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$80:
 	leaq	38992(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$79:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$79:
 	leaq	1616(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$78:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$78:
 	leaq	30288(%rsp), %rax
 	leaq	21072(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$77:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$77:
 	leaq	30800(%rsp), %rax
 	leaq	21584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$76:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$76:
 	leaq	31312(%rsp), %rax
 	leaq	22096(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$75:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$75:
 	leaq	31824(%rsp), %rax
 	leaq	22608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$74:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$74:
 	leaq	32336(%rsp), %rax
 	leaq	23120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$73:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$73:
 	leaq	32848(%rsp), %rax
 	leaq	23632(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$72:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$72:
 	leaq	33360(%rsp), %rax
 	leaq	24144(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$71:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$71:
 	leaq	33872(%rsp), %rax
 	leaq	24656(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$70:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$70:
 	leaq	34384(%rsp), %rax
 	leaq	25168(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$69:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$69:
 	leaq	34896(%rsp), %rax
 	leaq	25680(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$68:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$68:
 	leaq	35408(%rsp), %rax
 	leaq	26192(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$67:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$67:
 	leaq	35920(%rsp), %rax
 	leaq	26704(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$66:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$66:
 	leaq	36432(%rsp), %rax
 	leaq	27216(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$65:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$65:
 	leaq	36944(%rsp), %rax
 	leaq	27728(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$64:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$64:
 	leaq	37456(%rsp), %rax
 	leaq	28240(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$63:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$63:
 	leaq	37968(%rsp), %rax
 	leaq	28752(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$62:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$62:
 	leaq	38480(%rsp), %rax
 	leaq	29264(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$61:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$61:
 	leaq	38992(%rsp), %rax
 	leaq	29776(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$60:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$60:
 	leaq	1616(%rsp), %rax
 	leaq	1104(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$59:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$59:
 	leaq	1616(%rsp), %rax
 	leaq	592(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$58:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$58:
 	leaq	30288(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$56
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$57:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$56
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$57:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46925,13 +46925,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$57:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$56:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$56:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$57
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$57
 	leaq	30800(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$54
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$55:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$54
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$55:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46940,13 +46940,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$55:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$54:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$54:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$55
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$55
 	leaq	31312(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$52
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$53:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$52
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$53:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46955,13 +46955,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$53:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$52:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$52:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$53
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$53
 	leaq	31824(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$50
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$51:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$50
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$51:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46970,13 +46970,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$51:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$50:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$50:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$51
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$51
 	leaq	32336(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$48
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$49:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$48
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$49:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -46985,13 +46985,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$49:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$48:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$48:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$49
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$49
 	leaq	32848(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$46
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$47:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$46
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$47:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47000,13 +47000,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$47:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$46:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$46:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$47
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$47
 	leaq	33360(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$44
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$45:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$44
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$45:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47015,13 +47015,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$45:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$44:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$44:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$45
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$45
 	leaq	33872(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$42
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$43:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$42
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$43:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47030,13 +47030,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$43:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$42:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$42:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$43
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$43
 	leaq	34384(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$40
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$41:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$40
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$41:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47045,13 +47045,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$41:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$40:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$40:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$41
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$41
 	leaq	34896(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$38
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$39:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$38
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$39:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47060,13 +47060,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$39:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$38:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$38:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$39
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$39
 	leaq	35408(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$36
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$37:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$36
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$37:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47075,13 +47075,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$37:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$36:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$36:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$37
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$37
 	leaq	35920(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$34
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$35:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$34
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$35:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47090,13 +47090,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$35:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$34:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$34:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$35
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$35
 	leaq	36432(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$32
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$33:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$32
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$33:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47105,13 +47105,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$33:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$32:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$32:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$33
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$33
 	leaq	36944(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$30
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$31:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$30
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$31:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47120,13 +47120,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$31:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$30:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$30:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$31
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$31
 	leaq	37456(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$28
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$29:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$28
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$29:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47135,13 +47135,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$29:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$28:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$28:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$29
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$29
 	leaq	37968(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$26
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$27:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$26
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$27:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47150,13 +47150,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$27:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$26:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$26:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$27
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$27
 	leaq	38480(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$24
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$25:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$24
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$25:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47165,13 +47165,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$25:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$24:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$24:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$25
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$25
 	leaq	38992(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$22
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$23:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$22
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$23:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47180,13 +47180,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$23:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$22:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$22:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$23
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$23
 	leaq	1616(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$20
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$21:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$20
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$21:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -47195,87 +47195,87 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$21:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$20:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$20:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$21
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$21
 	movq	%mm3, %r10
 	movq	%r10, %r11
 	movq	%r11, %rcx
 	leaq	30288(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$19:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$19:
 	leaq	384(%r11), %rcx
 	leaq	30800(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$18:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$18:
 	leaq	768(%r11), %rcx
 	leaq	31312(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$17:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$17:
 	leaq	1152(%r11), %rcx
 	leaq	31824(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$16:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$16:
 	leaq	1536(%r11), %rcx
 	leaq	32336(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$15:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$15:
 	leaq	1920(%r11), %rcx
 	leaq	32848(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$14:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$14:
 	leaq	2304(%r11), %rcx
 	leaq	33360(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$13:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$13:
 	leaq	2688(%r11), %rcx
 	leaq	33872(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$12:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$12:
 	leaq	3072(%r11), %rcx
 	leaq	34384(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$11:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$11:
 	leaq	3456(%r11), %rcx
 	leaq	34896(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$10:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$10:
 	leaq	3840(%r11), %rcx
 	leaq	35408(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$9:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$9:
 	leaq	4224(%r11), %rcx
 	leaq	35920(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$8:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$8:
 	leaq	4608(%r11), %rcx
 	leaq	36432(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$7:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$7:
 	leaq	4992(%r11), %rcx
 	leaq	36944(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$6:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$6:
 	leaq	5376(%r11), %rcx
 	leaq	37456(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$5:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$5:
 	leaq	5760(%r11), %rcx
 	leaq	37968(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$4:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$4:
 	leaq	6144(%r11), %rcx
 	leaq	38480(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$3:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$3:
 	leaq	6528(%r11), %rcx
 	leaq	38992(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$2:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$2:
 	leaq	6912(%r10), %rcx
 	leaq	1616(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$1:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$1:
 	movq	8(%rsp), %rsi
 	movq	160(%rsp), %rax
 	movq	%rax, (%rsi)
@@ -47294,8 +47294,8 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc$1:
 	movq	205432(%rsp), %r15
 	movq	205440(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_mlkem1024_amd64_ref_enc_derand, %function
-jade_kem_mlkem_mlkem1024_amd64_ref_enc_derand:
+	.type	jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand, %function
+jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand:
 	movq	%rsp, %rax
 	leaq	-205448(%rsp), %rsp
 	andq	$-8, %rsp
@@ -47323,13 +47323,13 @@ jade_kem_mlkem_mlkem1024_amd64_ref_enc_derand:
 	leaq	128(%rsp), %rsi
 	leaq	-232(%rsp), %rsp
 	call	L_sha3_256A_A6944$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$897:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$897:
 	leaq	232(%rsp), %rsp
 	leaq	160(%rsp), %rsi
 	leaq	96(%rsp), %rbx
 	leaq	-224(%rsp), %rsp
 	call	L_sha3_512A_A64$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$896:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$896:
 	leaq	224(%rsp), %rsp
 	movq	(%rsp), %r10
 	movq	%mm1, %rdi
@@ -47340,75 +47340,75 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$896:
 	leaq	2640(%rsp), %rcx
 	movq	%rbx, %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$895:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$895:
 	leaq	3152(%rsp), %rcx
 	leaq	384(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$894:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$894:
 	leaq	3664(%rsp), %rcx
 	leaq	768(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$893:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$893:
 	leaq	4176(%rsp), %rcx
 	leaq	1152(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$892:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$892:
 	leaq	4688(%rsp), %rcx
 	leaq	1536(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$891:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$891:
 	leaq	5200(%rsp), %rcx
 	leaq	1920(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$890:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$890:
 	leaq	5712(%rsp), %rcx
 	leaq	2304(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$889:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$889:
 	leaq	6224(%rsp), %rcx
 	leaq	2688(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$888:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$888:
 	leaq	6736(%rsp), %rcx
 	leaq	3072(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$887:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$887:
 	leaq	7248(%rsp), %rcx
 	leaq	3456(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$886:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$886:
 	leaq	7760(%rsp), %rcx
 	leaq	3840(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$885:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$885:
 	leaq	8272(%rsp), %rcx
 	leaq	4224(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$884:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$884:
 	leaq	8784(%rsp), %rcx
 	leaq	4608(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$883:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$883:
 	leaq	9296(%rsp), %rcx
 	leaq	4992(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$882:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$882:
 	leaq	9808(%rsp), %rcx
 	leaq	5376(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$881:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$881:
 	leaq	10320(%rsp), %rcx
 	leaq	5760(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$880:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$880:
 	leaq	10832(%rsp), %rcx
 	leaq	6144(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$879:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$879:
 	leaq	11344(%rsp), %rcx
 	leaq	6528(%rbx), %rdx
 	call	L_poly_frombytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$878:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$878:
 	movq	6912(%r10), %rcx
 	movq	%rcx, 24(%rsp)
 	movq	6920(%r10), %rcx
@@ -47419,7 +47419,7 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$878:
 	movq	%rcx, 48(%rsp)
 	leaq	592(%rsp), %rcx
 	call	L_i_poly_frommsg$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$877:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$877:
 	movq	%r11, %mm4
 	movq	$1, %rax
 	movq	%rax, %mm5
@@ -47488,52 +47488,52 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$877:
 	movb	55(%rsp), %sil
 	movb	%sil, 87(%rsp)
 	movq	$0, %rsi
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$855
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$856:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$855
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$856:
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$857
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$858:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$857
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$858:
 	movq	%mm5, %rax
 	cmpq	$0, %rax
-	je  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$875
+	je  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$875
 	movb	%sil, 88(%rsp)
 	movb	%dl, 89(%rsp)
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$876
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$875:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$876
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$875:
 	movb	%dl, 88(%rsp)
 	movb	%sil, 89(%rsp)
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$876:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$876:
 	movq	%rsi, (%rsp)
 	movq	%rdx, 16(%rsp)
 	leaq	392(%rsp), %rdx
 	leaq	56(%rsp), %rbx
 	call	L_shake128_absorb34$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$874:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$874:
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$861
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$862:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$861
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$862:
 	movq	%rcx, %mm6
 	leaq	392(%rsp), %rdx
 	leaq	224(%rsp), %rsi
 	leaq	-8(%rsp), %rsp
 	call	L_shake128_squeezeblock$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$873:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$873:
 	leaq	8(%rsp), %rsp
 	movq	%mm6, %rcx
 	lfence
 	movq	$0, %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$864:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$864:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$865
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$865
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
 	movq	$168, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$865:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$865:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movzbw	224(%rsp,%rdx), %si
@@ -47551,43 +47551,43 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$865:
 	orw 	%r9w, %di
 	addq	$3, %rdx
 	cmpw	$3329, %si
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$871
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$871
 	movq	$-1, %r8
 	cmovb	%r8, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$872
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$871:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$872
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$871:
 	movq	$-1, %r8
 	cmovnb	%r8, %rax
 	movw	%si, 1104(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$872:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$872:
 	cmpw	$3329, %di
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$867
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$867
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$867:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$867:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$869
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$869
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$863
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$869:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$863
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$869:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movw	%di, 1104(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$870:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$868:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$866:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$863:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$870:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$868:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$866:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$863:
 	cmpq	$166, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$864
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$861:
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$864
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$861:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$862
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$862
 	movq	(%rsp), %rsi
 	movq	16(%rsp), %rdx
 	movq	%rsi, %rax
@@ -47597,498 +47597,498 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$861:
 	addq	%rcx, %rax
 	leaq	39504(%rsp,%rax,2), %rax
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$859
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$860:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$859
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$860:
 	movw	1104(%rsp,%rcx,2), %r9w
 	movw	%r9w, (%rax,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$859:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$859:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$860
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$860
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$857:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$857:
 	cmpq	$18, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$858
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$858
 	incq	%rsi
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$855:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$855:
 	cmpq	$18, %rsi
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$856
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$856
 	movq	%mm4, %rcx
 	movb	$0, %al
 	leaq	11856(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$854:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$854:
 	leaq	304(%rsp), %rsp
 	movb	$1, %al
 	leaq	12368(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$853:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$853:
 	leaq	304(%rsp), %rsp
 	movb	$2, %al
 	leaq	12880(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$852:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$852:
 	leaq	304(%rsp), %rsp
 	movb	$3, %al
 	leaq	13392(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$851:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$851:
 	leaq	304(%rsp), %rsp
 	movb	$4, %al
 	leaq	13904(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$850:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$850:
 	leaq	304(%rsp), %rsp
 	movb	$5, %al
 	leaq	14416(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$849:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$849:
 	leaq	304(%rsp), %rsp
 	movb	$6, %al
 	leaq	14928(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$848:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$848:
 	leaq	304(%rsp), %rsp
 	movb	$7, %al
 	leaq	15440(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$847:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$847:
 	leaq	304(%rsp), %rsp
 	movb	$8, %al
 	leaq	15952(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$846:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$846:
 	leaq	304(%rsp), %rsp
 	movb	$9, %al
 	leaq	16464(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$845:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$845:
 	leaq	304(%rsp), %rsp
 	movb	$10, %al
 	leaq	16976(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$844:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$844:
 	leaq	304(%rsp), %rsp
 	movb	$11, %al
 	leaq	17488(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$843:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$843:
 	leaq	304(%rsp), %rsp
 	movb	$12, %al
 	leaq	18000(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$842:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$842:
 	leaq	304(%rsp), %rsp
 	movb	$13, %al
 	leaq	18512(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$841:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$841:
 	leaq	304(%rsp), %rsp
 	movb	$14, %al
 	leaq	19024(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$840:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$840:
 	leaq	304(%rsp), %rsp
 	movb	$15, %al
 	leaq	19536(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$839:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$839:
 	leaq	304(%rsp), %rsp
 	movb	$16, %al
 	leaq	20048(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$838:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$838:
 	leaq	304(%rsp), %rsp
 	movb	$17, %al
 	leaq	20560(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$837:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$837:
 	leaq	304(%rsp), %rsp
 	movq	%mm4, %rcx
 	movb	$18, %al
 	leaq	21072(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$836:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$836:
 	leaq	304(%rsp), %rsp
 	movb	$19, %al
 	leaq	21584(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$835:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$835:
 	leaq	304(%rsp), %rsp
 	movb	$20, %al
 	leaq	22096(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$834:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$834:
 	leaq	304(%rsp), %rsp
 	movb	$21, %al
 	leaq	22608(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$833:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$833:
 	leaq	304(%rsp), %rsp
 	movb	$22, %al
 	leaq	23120(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$832:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$832:
 	leaq	304(%rsp), %rsp
 	movb	$23, %al
 	leaq	23632(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$831:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$831:
 	leaq	304(%rsp), %rsp
 	movb	$24, %al
 	leaq	24144(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$830:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$830:
 	leaq	304(%rsp), %rsp
 	movb	$25, %al
 	leaq	24656(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$829:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$829:
 	leaq	304(%rsp), %rsp
 	movb	$26, %al
 	leaq	25168(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$828:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$828:
 	leaq	304(%rsp), %rsp
 	movb	$27, %al
 	leaq	25680(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$827:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$827:
 	leaq	304(%rsp), %rsp
 	movb	$28, %al
 	leaq	26192(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$826:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$826:
 	leaq	304(%rsp), %rsp
 	movb	$29, %al
 	leaq	26704(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$825:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$825:
 	leaq	304(%rsp), %rsp
 	movb	$30, %al
 	leaq	27216(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$824:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$824:
 	leaq	304(%rsp), %rsp
 	movb	$31, %al
 	leaq	27728(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$823:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$823:
 	leaq	304(%rsp), %rsp
 	movb	$32, %al
 	leaq	28240(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$822:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$822:
 	leaq	304(%rsp), %rsp
 	movb	$33, %al
 	leaq	28752(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$821:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$821:
 	leaq	304(%rsp), %rsp
 	movb	$34, %al
 	leaq	29264(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$820:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$820:
 	leaq	304(%rsp), %rsp
 	movb	$35, %al
 	leaq	29776(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$819:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$819:
 	leaq	304(%rsp), %rsp
 	movb	$36, %al
 	leaq	1104(%rsp), %r10
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$818:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$818:
 	leaq	304(%rsp), %rsp
 	leaq	11856(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$817:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$817:
 	leaq	12368(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$816:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$816:
 	leaq	12880(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$815:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$815:
 	leaq	13392(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$814:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$814:
 	leaq	13904(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$813:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$813:
 	leaq	14416(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$812:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$812:
 	leaq	14928(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$811:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$811:
 	leaq	15440(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$810:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$810:
 	leaq	15952(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$809:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$809:
 	leaq	16464(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$808:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$808:
 	leaq	16976(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$807:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$807:
 	leaq	17488(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$806:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$806:
 	leaq	18000(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$805:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$805:
 	leaq	18512(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$804:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$804:
 	leaq	19024(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$803:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$803:
 	leaq	19536(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$802:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$802:
 	leaq	20048(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$801:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$801:
 	leaq	20560(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$800:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$800:
 	leaq	30288(%rsp), %r11
 	leaq	39504(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$799:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$799:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	40016(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$798:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$798:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$797:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$797:
 	leaq	1616(%rsp), %r11
 	leaq	40528(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$796:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$796:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$795:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$795:
 	leaq	1616(%rsp), %r11
 	leaq	41040(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$794:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$794:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$793:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$793:
 	leaq	1616(%rsp), %r11
 	leaq	41552(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$792:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$792:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$791:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$791:
 	leaq	1616(%rsp), %r11
 	leaq	42064(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$790:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$790:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$789:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$789:
 	leaq	1616(%rsp), %r11
 	leaq	42576(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$788:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$788:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$787:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$787:
 	leaq	1616(%rsp), %r11
 	leaq	43088(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$786:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$786:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$785:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$785:
 	leaq	1616(%rsp), %r11
 	leaq	43600(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$784:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$784:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$783:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$783:
 	leaq	1616(%rsp), %r11
 	leaq	44112(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$782:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$782:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$781:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$781:
 	leaq	1616(%rsp), %r11
 	leaq	44624(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$780:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$780:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$779:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$779:
 	leaq	1616(%rsp), %r11
 	leaq	45136(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$778:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$778:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$777:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$777:
 	leaq	1616(%rsp), %r11
 	leaq	45648(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$776:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$776:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$775:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$775:
 	leaq	1616(%rsp), %r11
 	leaq	46160(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$774:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$774:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$773:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$773:
 	leaq	1616(%rsp), %r11
 	leaq	46672(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$772:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$772:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$771:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$771:
 	leaq	1616(%rsp), %r11
 	leaq	47184(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$770:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$770:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$769:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$769:
 	leaq	1616(%rsp), %r11
 	leaq	47696(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$768:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$768:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$767:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$767:
 	leaq	1616(%rsp), %r11
 	leaq	48208(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$766:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$766:
 	leaq	16(%rsp), %rsp
 	leaq	30288(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$765:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$765:
 	leaq	30288(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$763
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$764:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$763
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$764:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -48097,207 +48097,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$764:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$763:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$763:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$764
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$764
 	leaq	30800(%rsp), %r11
 	leaq	48720(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$762:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$762:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	49232(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$761:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$761:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$760:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$760:
 	leaq	1616(%rsp), %r11
 	leaq	49744(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$759:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$759:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$758:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$758:
 	leaq	1616(%rsp), %r11
 	leaq	50256(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$757:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$757:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$756:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$756:
 	leaq	1616(%rsp), %r11
 	leaq	50768(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$755:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$755:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$754:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$754:
 	leaq	1616(%rsp), %r11
 	leaq	51280(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$753:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$753:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$752:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$752:
 	leaq	1616(%rsp), %r11
 	leaq	51792(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$751:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$751:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$750:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$750:
 	leaq	1616(%rsp), %r11
 	leaq	52304(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$749:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$749:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$748:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$748:
 	leaq	1616(%rsp), %r11
 	leaq	52816(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$747:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$747:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$746:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$746:
 	leaq	1616(%rsp), %r11
 	leaq	53328(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$745:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$745:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$744:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$744:
 	leaq	1616(%rsp), %r11
 	leaq	53840(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$743:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$743:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$742:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$742:
 	leaq	1616(%rsp), %r11
 	leaq	54352(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$741:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$741:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$740:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$740:
 	leaq	1616(%rsp), %r11
 	leaq	54864(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$739:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$739:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$738:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$738:
 	leaq	1616(%rsp), %r11
 	leaq	55376(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$737:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$737:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$736:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$736:
 	leaq	1616(%rsp), %r11
 	leaq	55888(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$735:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$735:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$734:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$734:
 	leaq	1616(%rsp), %r11
 	leaq	56400(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$733:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$733:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$732:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$732:
 	leaq	1616(%rsp), %r11
 	leaq	56912(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$731:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$731:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$730:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$730:
 	leaq	1616(%rsp), %r11
 	leaq	57424(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$729:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$729:
 	leaq	16(%rsp), %rsp
 	leaq	30800(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$728:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$728:
 	leaq	30800(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$726
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$727:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$726
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$727:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -48306,207 +48306,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$727:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$726:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$726:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$727
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$727
 	leaq	31312(%rsp), %r11
 	leaq	57936(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$725:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$725:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	58448(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$724:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$724:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$723:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$723:
 	leaq	1616(%rsp), %r11
 	leaq	58960(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$722:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$722:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$721:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$721:
 	leaq	1616(%rsp), %r11
 	leaq	59472(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$720:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$720:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$719:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$719:
 	leaq	1616(%rsp), %r11
 	leaq	59984(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$718:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$718:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$717:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$717:
 	leaq	1616(%rsp), %r11
 	leaq	60496(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$716:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$716:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$715:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$715:
 	leaq	1616(%rsp), %r11
 	leaq	61008(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$714:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$714:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$713:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$713:
 	leaq	1616(%rsp), %r11
 	leaq	61520(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$712:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$712:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$711:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$711:
 	leaq	1616(%rsp), %r11
 	leaq	62032(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$710:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$710:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$709:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$709:
 	leaq	1616(%rsp), %r11
 	leaq	62544(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$708:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$708:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$707:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$707:
 	leaq	1616(%rsp), %r11
 	leaq	63056(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$706:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$706:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$705:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$705:
 	leaq	1616(%rsp), %r11
 	leaq	63568(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$704:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$704:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$703:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$703:
 	leaq	1616(%rsp), %r11
 	leaq	64080(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$702:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$702:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$701:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$701:
 	leaq	1616(%rsp), %r11
 	leaq	64592(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$700:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$700:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$699:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$699:
 	leaq	1616(%rsp), %r11
 	leaq	65104(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$698:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$698:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$697:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$697:
 	leaq	1616(%rsp), %r11
 	leaq	65616(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$696:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$696:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$695:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$695:
 	leaq	1616(%rsp), %r11
 	leaq	66128(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$694:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$694:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$693:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$693:
 	leaq	1616(%rsp), %r11
 	leaq	66640(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$692:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$692:
 	leaq	16(%rsp), %rsp
 	leaq	31312(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$691:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$691:
 	leaq	31312(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$689
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$690:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$689
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$690:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -48515,207 +48515,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$690:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$689:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$689:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$690
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$690
 	leaq	31824(%rsp), %r11
 	leaq	67152(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$688:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$688:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	67664(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$687:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$687:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$686:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$686:
 	leaq	1616(%rsp), %r11
 	leaq	68176(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$685:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$685:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$684:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$684:
 	leaq	1616(%rsp), %r11
 	leaq	68688(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$683:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$683:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$682:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$682:
 	leaq	1616(%rsp), %r11
 	leaq	69200(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$681:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$681:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$680:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$680:
 	leaq	1616(%rsp), %r11
 	leaq	69712(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$679:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$679:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$678:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$678:
 	leaq	1616(%rsp), %r11
 	leaq	70224(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$677:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$677:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$676:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$676:
 	leaq	1616(%rsp), %r11
 	leaq	70736(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$675:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$675:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$674:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$674:
 	leaq	1616(%rsp), %r11
 	leaq	71248(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$673:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$673:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$672:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$672:
 	leaq	1616(%rsp), %r11
 	leaq	71760(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$671:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$671:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$670:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$670:
 	leaq	1616(%rsp), %r11
 	leaq	72272(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$669:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$669:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$668:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$668:
 	leaq	1616(%rsp), %r11
 	leaq	72784(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$667:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$667:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$666:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$666:
 	leaq	1616(%rsp), %r11
 	leaq	73296(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$665:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$665:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$664:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$664:
 	leaq	1616(%rsp), %r11
 	leaq	73808(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$663:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$663:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$662:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$662:
 	leaq	1616(%rsp), %r11
 	leaq	74320(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$661:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$661:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$660:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$660:
 	leaq	1616(%rsp), %r11
 	leaq	74832(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$659:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$659:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$658:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$658:
 	leaq	1616(%rsp), %r11
 	leaq	75344(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$657:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$657:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$656:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$656:
 	leaq	1616(%rsp), %r11
 	leaq	75856(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$655:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$655:
 	leaq	16(%rsp), %rsp
 	leaq	31824(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$654:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$654:
 	leaq	31824(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$652
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$653:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$652
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$653:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -48724,207 +48724,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$653:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$652:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$652:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$653
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$653
 	leaq	32336(%rsp), %r11
 	leaq	76368(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$651:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$651:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	76880(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$650:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$650:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$649:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$649:
 	leaq	1616(%rsp), %r11
 	leaq	77392(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$648:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$648:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$647:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$647:
 	leaq	1616(%rsp), %r11
 	leaq	77904(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$646:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$646:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$645:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$645:
 	leaq	1616(%rsp), %r11
 	leaq	78416(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$644:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$644:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$643:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$643:
 	leaq	1616(%rsp), %r11
 	leaq	78928(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$642:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$642:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$641:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$641:
 	leaq	1616(%rsp), %r11
 	leaq	79440(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$640:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$640:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$639:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$639:
 	leaq	1616(%rsp), %r11
 	leaq	79952(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$638:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$638:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$637:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$637:
 	leaq	1616(%rsp), %r11
 	leaq	80464(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$636:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$636:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$635:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$635:
 	leaq	1616(%rsp), %r11
 	leaq	80976(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$634:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$634:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$633:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$633:
 	leaq	1616(%rsp), %r11
 	leaq	81488(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$632:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$632:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$631:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$631:
 	leaq	1616(%rsp), %r11
 	leaq	82000(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$630:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$630:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$629:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$629:
 	leaq	1616(%rsp), %r11
 	leaq	82512(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$628:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$628:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$627:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$627:
 	leaq	1616(%rsp), %r11
 	leaq	83024(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$626:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$626:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$625:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$625:
 	leaq	1616(%rsp), %r11
 	leaq	83536(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$624:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$624:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$623:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$623:
 	leaq	1616(%rsp), %r11
 	leaq	84048(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$622:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$622:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$621:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$621:
 	leaq	1616(%rsp), %r11
 	leaq	84560(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$620:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$620:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$619:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$619:
 	leaq	1616(%rsp), %r11
 	leaq	85072(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$618:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$618:
 	leaq	16(%rsp), %rsp
 	leaq	32336(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$617:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$617:
 	leaq	32336(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$615
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$616:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$615
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$616:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -48933,207 +48933,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$616:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$615:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$615:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$616
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$616
 	leaq	32848(%rsp), %r11
 	leaq	85584(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$614:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$614:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	86096(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$613:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$613:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$612:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$612:
 	leaq	1616(%rsp), %r11
 	leaq	86608(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$611:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$611:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$610:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$610:
 	leaq	1616(%rsp), %r11
 	leaq	87120(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$609:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$609:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$608:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$608:
 	leaq	1616(%rsp), %r11
 	leaq	87632(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$607:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$607:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$606:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$606:
 	leaq	1616(%rsp), %r11
 	leaq	88144(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$605:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$605:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$604:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$604:
 	leaq	1616(%rsp), %r11
 	leaq	88656(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$603:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$603:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$602:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$602:
 	leaq	1616(%rsp), %r11
 	leaq	89168(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$601:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$601:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$600:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$600:
 	leaq	1616(%rsp), %r11
 	leaq	89680(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$599:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$599:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$598:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$598:
 	leaq	1616(%rsp), %r11
 	leaq	90192(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$597:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$597:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$596:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$596:
 	leaq	1616(%rsp), %r11
 	leaq	90704(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$595:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$595:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$594:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$594:
 	leaq	1616(%rsp), %r11
 	leaq	91216(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$593:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$593:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$592:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$592:
 	leaq	1616(%rsp), %r11
 	leaq	91728(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$591:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$591:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$590:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$590:
 	leaq	1616(%rsp), %r11
 	leaq	92240(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$589:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$589:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$588:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$588:
 	leaq	1616(%rsp), %r11
 	leaq	92752(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$587:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$587:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$586:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$586:
 	leaq	1616(%rsp), %r11
 	leaq	93264(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$585:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$585:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$584:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$584:
 	leaq	1616(%rsp), %r11
 	leaq	93776(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$583:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$583:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$582:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$582:
 	leaq	1616(%rsp), %r11
 	leaq	94288(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$581:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$581:
 	leaq	16(%rsp), %rsp
 	leaq	32848(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$580:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$580:
 	leaq	32848(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$578
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$579:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$578
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$579:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -49142,207 +49142,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$579:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$578:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$578:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$579
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$579
 	leaq	33360(%rsp), %r11
 	leaq	94800(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$577:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$577:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	95312(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$576:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$576:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$575:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$575:
 	leaq	1616(%rsp), %r11
 	leaq	95824(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$574:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$574:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$573:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$573:
 	leaq	1616(%rsp), %r11
 	leaq	96336(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$572:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$572:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$571:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$571:
 	leaq	1616(%rsp), %r11
 	leaq	96848(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$570:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$570:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$569:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$569:
 	leaq	1616(%rsp), %r11
 	leaq	97360(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$568:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$568:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$567:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$567:
 	leaq	1616(%rsp), %r11
 	leaq	97872(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$566:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$566:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$565:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$565:
 	leaq	1616(%rsp), %r11
 	leaq	98384(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$564:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$564:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$563:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$563:
 	leaq	1616(%rsp), %r11
 	leaq	98896(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$562:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$562:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$561:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$561:
 	leaq	1616(%rsp), %r11
 	leaq	99408(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$560:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$560:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$559:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$559:
 	leaq	1616(%rsp), %r11
 	leaq	99920(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$558:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$558:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$557:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$557:
 	leaq	1616(%rsp), %r11
 	leaq	100432(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$556:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$556:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$555:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$555:
 	leaq	1616(%rsp), %r11
 	leaq	100944(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$554:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$554:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$553:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$553:
 	leaq	1616(%rsp), %r11
 	leaq	101456(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$552:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$552:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$551:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$551:
 	leaq	1616(%rsp), %r11
 	leaq	101968(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$550:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$550:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$549:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$549:
 	leaq	1616(%rsp), %r11
 	leaq	102480(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$548:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$548:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$547:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$547:
 	leaq	1616(%rsp), %r11
 	leaq	102992(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$546:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$546:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$545:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$545:
 	leaq	1616(%rsp), %r11
 	leaq	103504(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$544:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$544:
 	leaq	16(%rsp), %rsp
 	leaq	33360(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$543:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$543:
 	leaq	33360(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$541
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$542:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$541
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$542:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -49351,207 +49351,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$542:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$541:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$541:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$542
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$542
 	leaq	33872(%rsp), %r11
 	leaq	104016(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$540:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$540:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	104528(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$539:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$539:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$538:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$538:
 	leaq	1616(%rsp), %r11
 	leaq	105040(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$537:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$537:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$536:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$536:
 	leaq	1616(%rsp), %r11
 	leaq	105552(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$535:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$535:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$534:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$534:
 	leaq	1616(%rsp), %r11
 	leaq	106064(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$533:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$533:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$532:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$532:
 	leaq	1616(%rsp), %r11
 	leaq	106576(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$531:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$531:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$530:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$530:
 	leaq	1616(%rsp), %r11
 	leaq	107088(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$529:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$529:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$528:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$528:
 	leaq	1616(%rsp), %r11
 	leaq	107600(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$527:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$527:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$526:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$526:
 	leaq	1616(%rsp), %r11
 	leaq	108112(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$525:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$525:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$524:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$524:
 	leaq	1616(%rsp), %r11
 	leaq	108624(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$523:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$523:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$522:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$522:
 	leaq	1616(%rsp), %r11
 	leaq	109136(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$521:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$521:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$520:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$520:
 	leaq	1616(%rsp), %r11
 	leaq	109648(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$519:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$519:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$518:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$518:
 	leaq	1616(%rsp), %r11
 	leaq	110160(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$517:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$517:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$516:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$516:
 	leaq	1616(%rsp), %r11
 	leaq	110672(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$515:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$515:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$514:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$514:
 	leaq	1616(%rsp), %r11
 	leaq	111184(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$513:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$513:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$512:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$512:
 	leaq	1616(%rsp), %r11
 	leaq	111696(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$511:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$511:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$510:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$510:
 	leaq	1616(%rsp), %r11
 	leaq	112208(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$509:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$509:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$508:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$508:
 	leaq	1616(%rsp), %r11
 	leaq	112720(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$507:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$507:
 	leaq	16(%rsp), %rsp
 	leaq	33872(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$506:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$506:
 	leaq	33872(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$504
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$505:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$504
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$505:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -49560,207 +49560,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$505:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$504:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$504:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$505
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$505
 	leaq	34384(%rsp), %r11
 	leaq	113232(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$503:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$503:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	113744(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$502:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$502:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$501:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$501:
 	leaq	1616(%rsp), %r11
 	leaq	114256(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$500:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$500:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$499:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$499:
 	leaq	1616(%rsp), %r11
 	leaq	114768(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$498:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$498:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$497:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$497:
 	leaq	1616(%rsp), %r11
 	leaq	115280(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$496:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$496:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$495:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$495:
 	leaq	1616(%rsp), %r11
 	leaq	115792(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$494:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$494:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$493:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$493:
 	leaq	1616(%rsp), %r11
 	leaq	116304(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$492:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$492:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$491:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$491:
 	leaq	1616(%rsp), %r11
 	leaq	116816(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$490:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$490:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$489:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$489:
 	leaq	1616(%rsp), %r11
 	leaq	117328(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$488:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$488:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$487:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$487:
 	leaq	1616(%rsp), %r11
 	leaq	117840(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$486:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$486:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$485:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$485:
 	leaq	1616(%rsp), %r11
 	leaq	118352(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$484:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$484:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$483:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$483:
 	leaq	1616(%rsp), %r11
 	leaq	118864(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$482:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$482:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$481:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$481:
 	leaq	1616(%rsp), %r11
 	leaq	119376(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$480:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$480:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$479:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$479:
 	leaq	1616(%rsp), %r11
 	leaq	119888(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$478:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$478:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$477:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$477:
 	leaq	1616(%rsp), %r11
 	leaq	120400(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$476:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$476:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$475:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$475:
 	leaq	1616(%rsp), %r11
 	leaq	120912(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$474:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$474:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$473:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$473:
 	leaq	1616(%rsp), %r11
 	leaq	121424(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$472:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$472:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$471:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$471:
 	leaq	1616(%rsp), %r11
 	leaq	121936(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$470:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$470:
 	leaq	16(%rsp), %rsp
 	leaq	34384(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$469:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$469:
 	leaq	34384(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$467
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$468:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$467
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$468:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -49769,207 +49769,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$468:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$467:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$467:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$468
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$468
 	leaq	34896(%rsp), %r11
 	leaq	122448(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$466:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$466:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	122960(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$465:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$465:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$464:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$464:
 	leaq	1616(%rsp), %r11
 	leaq	123472(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$463:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$463:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$462:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$462:
 	leaq	1616(%rsp), %r11
 	leaq	123984(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$461:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$461:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$460:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$460:
 	leaq	1616(%rsp), %r11
 	leaq	124496(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$459:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$459:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$458:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$458:
 	leaq	1616(%rsp), %r11
 	leaq	125008(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$457:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$457:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$456:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$456:
 	leaq	1616(%rsp), %r11
 	leaq	125520(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$455:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$455:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$454:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$454:
 	leaq	1616(%rsp), %r11
 	leaq	126032(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$453:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$453:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$452:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$452:
 	leaq	1616(%rsp), %r11
 	leaq	126544(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$451:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$451:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$450:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$450:
 	leaq	1616(%rsp), %r11
 	leaq	127056(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$449:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$449:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$448:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$448:
 	leaq	1616(%rsp), %r11
 	leaq	127568(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$447:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$447:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$446:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$446:
 	leaq	1616(%rsp), %r11
 	leaq	128080(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$445:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$445:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$444:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$444:
 	leaq	1616(%rsp), %r11
 	leaq	128592(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$443:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$443:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$442:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$442:
 	leaq	1616(%rsp), %r11
 	leaq	129104(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$441:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$441:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$440:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$440:
 	leaq	1616(%rsp), %r11
 	leaq	129616(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$439:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$439:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$438:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$438:
 	leaq	1616(%rsp), %r11
 	leaq	130128(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$437:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$437:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$436:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$436:
 	leaq	1616(%rsp), %r11
 	leaq	130640(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$435:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$435:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$434:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$434:
 	leaq	1616(%rsp), %r11
 	leaq	131152(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$433:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$433:
 	leaq	16(%rsp), %rsp
 	leaq	34896(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$432:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$432:
 	leaq	34896(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$430
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$431:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$430
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$431:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -49978,207 +49978,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$431:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$430:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$430:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$431
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$431
 	leaq	35408(%rsp), %r11
 	leaq	131664(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$429:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$429:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	132176(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$428:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$428:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$427:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$427:
 	leaq	1616(%rsp), %r11
 	leaq	132688(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$426:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$426:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$425:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$425:
 	leaq	1616(%rsp), %r11
 	leaq	133200(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$424:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$424:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$423:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$423:
 	leaq	1616(%rsp), %r11
 	leaq	133712(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$422:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$422:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$421:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$421:
 	leaq	1616(%rsp), %r11
 	leaq	134224(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$420:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$420:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$419:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$419:
 	leaq	1616(%rsp), %r11
 	leaq	134736(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$418:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$418:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$417:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$417:
 	leaq	1616(%rsp), %r11
 	leaq	135248(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$416:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$416:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$415:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$415:
 	leaq	1616(%rsp), %r11
 	leaq	135760(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$414:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$414:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$413:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$413:
 	leaq	1616(%rsp), %r11
 	leaq	136272(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$412:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$412:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$411:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$411:
 	leaq	1616(%rsp), %r11
 	leaq	136784(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$410:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$410:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$409:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$409:
 	leaq	1616(%rsp), %r11
 	leaq	137296(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$408:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$408:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$407:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$407:
 	leaq	1616(%rsp), %r11
 	leaq	137808(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$406:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$406:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$405:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$405:
 	leaq	1616(%rsp), %r11
 	leaq	138320(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$404:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$404:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$403:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$403:
 	leaq	1616(%rsp), %r11
 	leaq	138832(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$402:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$402:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$401:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$401:
 	leaq	1616(%rsp), %r11
 	leaq	139344(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$400:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$400:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$399:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$399:
 	leaq	1616(%rsp), %r11
 	leaq	139856(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$398:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$398:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$397:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$397:
 	leaq	1616(%rsp), %r11
 	leaq	140368(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$396:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$396:
 	leaq	16(%rsp), %rsp
 	leaq	35408(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$395:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$395:
 	leaq	35408(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$393
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$394:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$393
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$394:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -50187,207 +50187,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$394:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$393:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$393:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$394
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$394
 	leaq	35920(%rsp), %r11
 	leaq	140880(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$392:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$392:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	141392(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$391:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$391:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$390:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$390:
 	leaq	1616(%rsp), %r11
 	leaq	141904(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$389:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$389:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$388:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$388:
 	leaq	1616(%rsp), %r11
 	leaq	142416(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$387:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$387:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$386:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$386:
 	leaq	1616(%rsp), %r11
 	leaq	142928(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$385:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$385:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$384:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$384:
 	leaq	1616(%rsp), %r11
 	leaq	143440(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$383:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$383:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$382:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$382:
 	leaq	1616(%rsp), %r11
 	leaq	143952(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$381:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$381:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$380:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$380:
 	leaq	1616(%rsp), %r11
 	leaq	144464(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$379:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$379:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$378:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$378:
 	leaq	1616(%rsp), %r11
 	leaq	144976(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$377:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$377:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$376:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$376:
 	leaq	1616(%rsp), %r11
 	leaq	145488(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$375:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$375:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$374:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$374:
 	leaq	1616(%rsp), %r11
 	leaq	146000(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$373:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$373:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$372:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$372:
 	leaq	1616(%rsp), %r11
 	leaq	146512(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$371:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$371:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$370:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$370:
 	leaq	1616(%rsp), %r11
 	leaq	147024(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$369:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$369:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$368:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$368:
 	leaq	1616(%rsp), %r11
 	leaq	147536(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$367:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$367:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$366:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$366:
 	leaq	1616(%rsp), %r11
 	leaq	148048(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$365:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$365:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$364:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$364:
 	leaq	1616(%rsp), %r11
 	leaq	148560(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$363:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$363:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$362:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$362:
 	leaq	1616(%rsp), %r11
 	leaq	149072(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$361:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$361:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$360:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$360:
 	leaq	1616(%rsp), %r11
 	leaq	149584(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$359:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$359:
 	leaq	16(%rsp), %rsp
 	leaq	35920(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$358:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$358:
 	leaq	35920(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$356
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$357:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$356
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$357:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -50396,207 +50396,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$357:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$356:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$356:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$357
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$357
 	leaq	36432(%rsp), %r11
 	leaq	150096(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$355:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$355:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	150608(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$354:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$354:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$353:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$353:
 	leaq	1616(%rsp), %r11
 	leaq	151120(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$352:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$352:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$351:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$351:
 	leaq	1616(%rsp), %r11
 	leaq	151632(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$350:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$350:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$349:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$349:
 	leaq	1616(%rsp), %r11
 	leaq	152144(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$348:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$348:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$347:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$347:
 	leaq	1616(%rsp), %r11
 	leaq	152656(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$346:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$346:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$345:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$345:
 	leaq	1616(%rsp), %r11
 	leaq	153168(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$344:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$344:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$343:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$343:
 	leaq	1616(%rsp), %r11
 	leaq	153680(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$342:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$342:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$341:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$341:
 	leaq	1616(%rsp), %r11
 	leaq	154192(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$340:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$340:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$339:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$339:
 	leaq	1616(%rsp), %r11
 	leaq	154704(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$338:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$338:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$337:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$337:
 	leaq	1616(%rsp), %r11
 	leaq	155216(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$336:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$336:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$335:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$335:
 	leaq	1616(%rsp), %r11
 	leaq	155728(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$334:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$334:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$333:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$333:
 	leaq	1616(%rsp), %r11
 	leaq	156240(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$332:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$332:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$331:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$331:
 	leaq	1616(%rsp), %r11
 	leaq	156752(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$330:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$330:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$329:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$329:
 	leaq	1616(%rsp), %r11
 	leaq	157264(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$328:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$328:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$327:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$327:
 	leaq	1616(%rsp), %r11
 	leaq	157776(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$326:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$326:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$325:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$325:
 	leaq	1616(%rsp), %r11
 	leaq	158288(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$324:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$324:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$323:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$323:
 	leaq	1616(%rsp), %r11
 	leaq	158800(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$322:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$322:
 	leaq	16(%rsp), %rsp
 	leaq	36432(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$321:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$321:
 	leaq	36432(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$319
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$320:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$319
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$320:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -50605,207 +50605,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$320:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$319:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$319:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$320
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$320
 	leaq	36944(%rsp), %r11
 	leaq	159312(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$318:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$318:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	159824(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$317:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$317:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$316:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$316:
 	leaq	1616(%rsp), %r11
 	leaq	160336(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$315:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$315:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$314:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$314:
 	leaq	1616(%rsp), %r11
 	leaq	160848(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$313:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$313:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$312:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$312:
 	leaq	1616(%rsp), %r11
 	leaq	161360(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$311:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$311:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$310:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$310:
 	leaq	1616(%rsp), %r11
 	leaq	161872(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$309:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$309:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$308:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$308:
 	leaq	1616(%rsp), %r11
 	leaq	162384(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$307:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$307:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$306:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$306:
 	leaq	1616(%rsp), %r11
 	leaq	162896(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$305:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$305:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$304:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$304:
 	leaq	1616(%rsp), %r11
 	leaq	163408(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$303:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$303:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$302:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$302:
 	leaq	1616(%rsp), %r11
 	leaq	163920(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$301:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$301:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$300:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$300:
 	leaq	1616(%rsp), %r11
 	leaq	164432(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$299:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$299:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$298:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$298:
 	leaq	1616(%rsp), %r11
 	leaq	164944(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$297:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$297:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$296:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$296:
 	leaq	1616(%rsp), %r11
 	leaq	165456(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$295:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$295:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$294:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$294:
 	leaq	1616(%rsp), %r11
 	leaq	165968(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$293:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$293:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$292:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$292:
 	leaq	1616(%rsp), %r11
 	leaq	166480(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$291:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$291:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$290:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$290:
 	leaq	1616(%rsp), %r11
 	leaq	166992(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$289:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$289:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$288:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$288:
 	leaq	1616(%rsp), %r11
 	leaq	167504(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$287:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$287:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$286:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$286:
 	leaq	1616(%rsp), %r11
 	leaq	168016(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$285:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$285:
 	leaq	16(%rsp), %rsp
 	leaq	36944(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$284:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$284:
 	leaq	36944(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$282
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$283:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$282
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$283:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -50814,207 +50814,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$283:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$282:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$282:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$283
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$283
 	leaq	37456(%rsp), %r11
 	leaq	168528(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$281:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$281:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	169040(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$280:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$280:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$279:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$279:
 	leaq	1616(%rsp), %r11
 	leaq	169552(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$278:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$278:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$277:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$277:
 	leaq	1616(%rsp), %r11
 	leaq	170064(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$276:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$276:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$275:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$275:
 	leaq	1616(%rsp), %r11
 	leaq	170576(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$274:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$274:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$273:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$273:
 	leaq	1616(%rsp), %r11
 	leaq	171088(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$272:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$272:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$271:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$271:
 	leaq	1616(%rsp), %r11
 	leaq	171600(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$270:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$270:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$269:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$269:
 	leaq	1616(%rsp), %r11
 	leaq	172112(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$268:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$268:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$267:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$267:
 	leaq	1616(%rsp), %r11
 	leaq	172624(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$266:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$266:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$265:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$265:
 	leaq	1616(%rsp), %r11
 	leaq	173136(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$264:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$264:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$263:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$263:
 	leaq	1616(%rsp), %r11
 	leaq	173648(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$262:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$262:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$261:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$261:
 	leaq	1616(%rsp), %r11
 	leaq	174160(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$260:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$260:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$259:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$259:
 	leaq	1616(%rsp), %r11
 	leaq	174672(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$258:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$258:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$257:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$257:
 	leaq	1616(%rsp), %r11
 	leaq	175184(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$256:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$256:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$255:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$255:
 	leaq	1616(%rsp), %r11
 	leaq	175696(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$254:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$254:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$253:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$253:
 	leaq	1616(%rsp), %r11
 	leaq	176208(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$252:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$252:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$251:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$251:
 	leaq	1616(%rsp), %r11
 	leaq	176720(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$250:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$250:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$249:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$249:
 	leaq	1616(%rsp), %r11
 	leaq	177232(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$248:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$248:
 	leaq	16(%rsp), %rsp
 	leaq	37456(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$247:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$247:
 	leaq	37456(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$245
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$246:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$245
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$246:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -51023,207 +51023,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$246:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$245:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$245:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$246
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$246
 	leaq	37968(%rsp), %r11
 	leaq	177744(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$244:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$244:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	178256(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$243:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$243:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$242:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$242:
 	leaq	1616(%rsp), %r11
 	leaq	178768(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$241:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$241:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$240:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$240:
 	leaq	1616(%rsp), %r11
 	leaq	179280(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$239:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$239:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$238:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$238:
 	leaq	1616(%rsp), %r11
 	leaq	179792(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$237:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$237:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$236:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$236:
 	leaq	1616(%rsp), %r11
 	leaq	180304(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$235:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$235:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$234:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$234:
 	leaq	1616(%rsp), %r11
 	leaq	180816(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$233:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$233:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$232:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$232:
 	leaq	1616(%rsp), %r11
 	leaq	181328(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$231:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$231:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$230:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$230:
 	leaq	1616(%rsp), %r11
 	leaq	181840(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$229:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$229:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$228:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$228:
 	leaq	1616(%rsp), %r11
 	leaq	182352(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$227:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$227:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$226:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$226:
 	leaq	1616(%rsp), %r11
 	leaq	182864(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$225:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$225:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$224:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$224:
 	leaq	1616(%rsp), %r11
 	leaq	183376(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$223:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$223:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$222:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$222:
 	leaq	1616(%rsp), %r11
 	leaq	183888(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$221:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$221:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$220:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$220:
 	leaq	1616(%rsp), %r11
 	leaq	184400(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$219:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$219:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$218:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$218:
 	leaq	1616(%rsp), %r11
 	leaq	184912(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$217:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$217:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$216:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$216:
 	leaq	1616(%rsp), %r11
 	leaq	185424(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$215:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$215:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$214:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$214:
 	leaq	1616(%rsp), %r11
 	leaq	185936(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$213:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$213:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$212:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$212:
 	leaq	1616(%rsp), %r11
 	leaq	186448(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$211:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$211:
 	leaq	16(%rsp), %rsp
 	leaq	37968(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$210:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$210:
 	leaq	37968(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$208
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$209:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$208
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$209:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -51232,207 +51232,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$209:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$208:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$208:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$209
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$209
 	leaq	38480(%rsp), %r11
 	leaq	186960(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$207:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$207:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	187472(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$206:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$206:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$205:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$205:
 	leaq	1616(%rsp), %r11
 	leaq	187984(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$204:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$204:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$203:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$203:
 	leaq	1616(%rsp), %r11
 	leaq	188496(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$202:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$202:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$201:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$201:
 	leaq	1616(%rsp), %r11
 	leaq	189008(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$200:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$200:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$199:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$199:
 	leaq	1616(%rsp), %r11
 	leaq	189520(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$198:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$198:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$197:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$197:
 	leaq	1616(%rsp), %r11
 	leaq	190032(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$196:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$196:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$195:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$195:
 	leaq	1616(%rsp), %r11
 	leaq	190544(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$194:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$194:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$193:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$193:
 	leaq	1616(%rsp), %r11
 	leaq	191056(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$192:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$192:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$191:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$191:
 	leaq	1616(%rsp), %r11
 	leaq	191568(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$190:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$190:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$189:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$189:
 	leaq	1616(%rsp), %r11
 	leaq	192080(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$188:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$188:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$187:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$187:
 	leaq	1616(%rsp), %r11
 	leaq	192592(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$186:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$186:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$185:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$185:
 	leaq	1616(%rsp), %r11
 	leaq	193104(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$184:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$184:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$183:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$183:
 	leaq	1616(%rsp), %r11
 	leaq	193616(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$182:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$182:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$181:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$181:
 	leaq	1616(%rsp), %r11
 	leaq	194128(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$180:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$180:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$179:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$179:
 	leaq	1616(%rsp), %r11
 	leaq	194640(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$178:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$178:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$177:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$177:
 	leaq	1616(%rsp), %r11
 	leaq	195152(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$176:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$176:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$175:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$175:
 	leaq	1616(%rsp), %r11
 	leaq	195664(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$174:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$174:
 	leaq	16(%rsp), %rsp
 	leaq	38480(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$173:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$173:
 	leaq	38480(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$171
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$172:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$171
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$172:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -51441,207 +51441,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$172:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$171:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$171:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$172
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$172
 	leaq	38992(%rsp), %r11
 	leaq	196176(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$170:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$170:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %r11
 	leaq	196688(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$169:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$169:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$168:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$168:
 	leaq	1616(%rsp), %r11
 	leaq	197200(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$167:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$167:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$166:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$166:
 	leaq	1616(%rsp), %r11
 	leaq	197712(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$165:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$165:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$164:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$164:
 	leaq	1616(%rsp), %r11
 	leaq	198224(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$163:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$163:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$162:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$162:
 	leaq	1616(%rsp), %r11
 	leaq	198736(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$161:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$161:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$160:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$160:
 	leaq	1616(%rsp), %r11
 	leaq	199248(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$159:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$159:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$158:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$158:
 	leaq	1616(%rsp), %r11
 	leaq	199760(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$157:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$157:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$156:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$156:
 	leaq	1616(%rsp), %r11
 	leaq	200272(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$155:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$155:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$154:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$154:
 	leaq	1616(%rsp), %r11
 	leaq	200784(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$153:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$153:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$152:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$152:
 	leaq	1616(%rsp), %r11
 	leaq	201296(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$151:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$151:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$150:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$150:
 	leaq	1616(%rsp), %r11
 	leaq	201808(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$149:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$149:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$148:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$148:
 	leaq	1616(%rsp), %r11
 	leaq	202320(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$147:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$147:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$146:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$146:
 	leaq	1616(%rsp), %r11
 	leaq	202832(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$145:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$145:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$144:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$144:
 	leaq	1616(%rsp), %r11
 	leaq	203344(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$143:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$143:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$142:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$142:
 	leaq	1616(%rsp), %r11
 	leaq	203856(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$141:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$141:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$140:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$140:
 	leaq	1616(%rsp), %r11
 	leaq	204368(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$139:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$139:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$138:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$138:
 	leaq	1616(%rsp), %r11
 	leaq	204880(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$137:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$137:
 	leaq	16(%rsp), %rsp
 	leaq	38992(%rsp), %rax
 	leaq	1616(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$136:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$136:
 	leaq	38992(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$134
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$135:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$134
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$135:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -51650,207 +51650,207 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$135:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$134:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$134:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$135
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$135
 	leaq	1616(%rsp), %r11
 	leaq	2640(%rsp), %rax
 	leaq	11856(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$133:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$133:
 	leaq	16(%rsp), %rsp
 	leaq	2128(%rsp), %r11
 	leaq	3152(%rsp), %rax
 	leaq	12368(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$132:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$132:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$131:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$131:
 	leaq	2128(%rsp), %r11
 	leaq	3664(%rsp), %rax
 	leaq	12880(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$130:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$130:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$129:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$129:
 	leaq	2128(%rsp), %r11
 	leaq	4176(%rsp), %rax
 	leaq	13392(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$128:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$128:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$127:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$127:
 	leaq	2128(%rsp), %r11
 	leaq	4688(%rsp), %rax
 	leaq	13904(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$126:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$126:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$125:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$125:
 	leaq	2128(%rsp), %r11
 	leaq	5200(%rsp), %rax
 	leaq	14416(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$124:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$124:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$123:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$123:
 	leaq	2128(%rsp), %r11
 	leaq	5712(%rsp), %rax
 	leaq	14928(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$122:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$122:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$121:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$121:
 	leaq	2128(%rsp), %r11
 	leaq	6224(%rsp), %rax
 	leaq	15440(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$120:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$120:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$119:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$119:
 	leaq	2128(%rsp), %r11
 	leaq	6736(%rsp), %rax
 	leaq	15952(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$118:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$118:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$117:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$117:
 	leaq	2128(%rsp), %r11
 	leaq	7248(%rsp), %rax
 	leaq	16464(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$116:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$116:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$115:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$115:
 	leaq	2128(%rsp), %r11
 	leaq	7760(%rsp), %rax
 	leaq	16976(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$114:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$114:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$113:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$113:
 	leaq	2128(%rsp), %r11
 	leaq	8272(%rsp), %rax
 	leaq	17488(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$112:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$112:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$111:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$111:
 	leaq	2128(%rsp), %r11
 	leaq	8784(%rsp), %rax
 	leaq	18000(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$110:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$110:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$109:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$109:
 	leaq	2128(%rsp), %r11
 	leaq	9296(%rsp), %rax
 	leaq	18512(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$108:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$108:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$107:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$107:
 	leaq	2128(%rsp), %r11
 	leaq	9808(%rsp), %rax
 	leaq	19024(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$106:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$106:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$105:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$105:
 	leaq	2128(%rsp), %r11
 	leaq	10320(%rsp), %rax
 	leaq	19536(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$104:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$104:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$103:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$103:
 	leaq	2128(%rsp), %r11
 	leaq	10832(%rsp), %rax
 	leaq	20048(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$102:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$102:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$101:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$101:
 	leaq	2128(%rsp), %r11
 	leaq	11344(%rsp), %rax
 	leaq	20560(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$100:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$100:
 	leaq	16(%rsp), %rsp
 	leaq	1616(%rsp), %rax
 	leaq	2128(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$99:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$99:
 	leaq	1616(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$97
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$98:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$97
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$98:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -51859,150 +51859,150 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$98:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$97:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$97:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$98
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$98
 	leaq	30288(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$96:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$96:
 	leaq	30800(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$95:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$95:
 	leaq	31312(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$94:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$94:
 	leaq	31824(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$93:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$93:
 	leaq	32336(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$92:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$92:
 	leaq	32848(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$91:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$91:
 	leaq	33360(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$90:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$90:
 	leaq	33872(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$89:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$89:
 	leaq	34384(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$88:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$88:
 	leaq	34896(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$87:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$87:
 	leaq	35408(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$86:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$86:
 	leaq	35920(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$85:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$85:
 	leaq	36432(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$84:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$84:
 	leaq	36944(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$83:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$83:
 	leaq	37456(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$82:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$82:
 	leaq	37968(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$81:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$81:
 	leaq	38480(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$80:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$80:
 	leaq	38992(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$79:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$79:
 	leaq	1616(%rsp), %rax
 	call	L_poly_invntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$78:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$78:
 	leaq	30288(%rsp), %rax
 	leaq	21072(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$77:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$77:
 	leaq	30800(%rsp), %rax
 	leaq	21584(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$76:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$76:
 	leaq	31312(%rsp), %rax
 	leaq	22096(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$75:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$75:
 	leaq	31824(%rsp), %rax
 	leaq	22608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$74:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$74:
 	leaq	32336(%rsp), %rax
 	leaq	23120(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$73:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$73:
 	leaq	32848(%rsp), %rax
 	leaq	23632(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$72:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$72:
 	leaq	33360(%rsp), %rax
 	leaq	24144(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$71:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$71:
 	leaq	33872(%rsp), %rax
 	leaq	24656(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$70:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$70:
 	leaq	34384(%rsp), %rax
 	leaq	25168(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$69:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$69:
 	leaq	34896(%rsp), %rax
 	leaq	25680(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$68:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$68:
 	leaq	35408(%rsp), %rax
 	leaq	26192(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$67:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$67:
 	leaq	35920(%rsp), %rax
 	leaq	26704(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$66:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$66:
 	leaq	36432(%rsp), %rax
 	leaq	27216(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$65:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$65:
 	leaq	36944(%rsp), %rax
 	leaq	27728(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$64:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$64:
 	leaq	37456(%rsp), %rax
 	leaq	28240(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$63:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$63:
 	leaq	37968(%rsp), %rax
 	leaq	28752(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$62:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$62:
 	leaq	38480(%rsp), %rax
 	leaq	29264(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$61:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$61:
 	leaq	38992(%rsp), %rax
 	leaq	29776(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$60:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$60:
 	leaq	1616(%rsp), %rax
 	leaq	1104(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$59:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$59:
 	leaq	1616(%rsp), %rax
 	leaq	592(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$58:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$58:
 	leaq	30288(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$56
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$57:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$56
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$57:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52011,13 +52011,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$57:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$56:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$56:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$57
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$57
 	leaq	30800(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$54
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$55:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$54
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$55:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52026,13 +52026,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$55:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$54:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$54:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$55
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$55
 	leaq	31312(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$52
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$53:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$52
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$53:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52041,13 +52041,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$53:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$52:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$52:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$53
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$53
 	leaq	31824(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$50
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$51:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$50
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$51:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52056,13 +52056,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$51:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$50:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$50:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$51
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$51
 	leaq	32336(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$48
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$49:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$48
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$49:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52071,13 +52071,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$49:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$48:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$48:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$49
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$49
 	leaq	32848(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$46
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$47:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$46
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$47:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52086,13 +52086,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$47:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$46:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$46:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$47
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$47
 	leaq	33360(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$44
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$45:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$44
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$45:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52101,13 +52101,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$45:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$44:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$44:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$45
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$45
 	leaq	33872(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$42
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$43:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$42
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$43:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52116,13 +52116,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$43:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$42:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$42:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$43
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$43
 	leaq	34384(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$40
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$41:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$40
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$41:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52131,13 +52131,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$41:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$40:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$40:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$41
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$41
 	leaq	34896(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$38
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$39:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$38
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$39:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52146,13 +52146,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$39:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$38:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$38:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$39
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$39
 	leaq	35408(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$36
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$37:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$36
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$37:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52161,13 +52161,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$37:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$36:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$36:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$37
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$37
 	leaq	35920(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$34
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$35:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$34
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$35:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52176,13 +52176,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$35:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$34:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$34:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$35
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$35
 	leaq	36432(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$32
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$33:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$32
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$33:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52191,13 +52191,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$33:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$32:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$32:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$33
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$33
 	leaq	36944(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$30
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$31:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$30
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$31:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52206,13 +52206,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$31:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$30:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$30:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$31
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$31
 	leaq	37456(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$28
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$29:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$28
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$29:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52221,13 +52221,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$29:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$28:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$28:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$29
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$29
 	leaq	37968(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$26
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$27:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$26
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$27:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52236,13 +52236,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$27:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$26:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$26:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$27
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$27
 	leaq	38480(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$24
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$25:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$24
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$25:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52251,13 +52251,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$25:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$24:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$24:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$25
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$25
 	leaq	38992(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$22
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$23:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$22
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$23:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52266,13 +52266,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$23:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$22:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$22:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$23
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$23
 	leaq	1616(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$20
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$21:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$20
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$21:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -52281,87 +52281,87 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$21:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$20:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$20:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$21
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$21
 	movq	%mm3, %r10
 	movq	%r10, %r11
 	movq	%r11, %rcx
 	leaq	30288(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$19:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$19:
 	leaq	384(%r11), %rcx
 	leaq	30800(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$18:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$18:
 	leaq	768(%r11), %rcx
 	leaq	31312(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$17:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$17:
 	leaq	1152(%r11), %rcx
 	leaq	31824(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$16:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$16:
 	leaq	1536(%r11), %rcx
 	leaq	32336(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$15:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$15:
 	leaq	1920(%r11), %rcx
 	leaq	32848(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$14:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$14:
 	leaq	2304(%r11), %rcx
 	leaq	33360(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$13:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$13:
 	leaq	2688(%r11), %rcx
 	leaq	33872(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$12:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$12:
 	leaq	3072(%r11), %rcx
 	leaq	34384(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$11:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$11:
 	leaq	3456(%r11), %rcx
 	leaq	34896(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$10:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$10:
 	leaq	3840(%r11), %rcx
 	leaq	35408(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$9:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$9:
 	leaq	4224(%r11), %rcx
 	leaq	35920(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$8:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$8:
 	leaq	4608(%r11), %rcx
 	leaq	36432(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$7:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$7:
 	leaq	4992(%r11), %rcx
 	leaq	36944(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$6:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$6:
 	leaq	5376(%r11), %rcx
 	leaq	37456(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$5:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$5:
 	leaq	5760(%r11), %rcx
 	leaq	37968(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$4:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$4:
 	leaq	6144(%r11), %rcx
 	leaq	38480(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$3:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$3:
 	leaq	6528(%r11), %rcx
 	leaq	38992(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$2:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$2:
 	leaq	6912(%r10), %rcx
 	leaq	1616(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$1:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$1:
 	movq	8(%rsp), %rsi
 	movq	160(%rsp), %rax
 	movq	%rax, (%rsi)
@@ -52380,8 +52380,8 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_enc_derand$1:
 	movq	205432(%rsp), %r15
 	movq	205440(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_mlkem1024_amd64_ref_keypair, %function
-jade_kem_mlkem_mlkem1024_amd64_ref_keypair:
+	.type	jade_kem_mlkem_kaiburr6_amd64_ref_keypair, %function
+jade_kem_mlkem_kaiburr6_amd64_ref_keypair:
 	movq	%rsp, %rax
 	leaq	-194776(%rsp), %rsp
 	andq	$-16, %rsp
@@ -52417,7 +52417,7 @@ jade_kem_mlkem_mlkem1024_amd64_ref_keypair:
 	leaq	96(%rsp), %rbx
 	leaq	-224(%rsp), %rsp
 	call	L_sha3_512A_A33$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$870:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$870:
 	leaq	224(%rsp), %rsp
 	movq	240(%rsp), %rax
 	movq	%rax, 64(%rsp)
@@ -52502,52 +52502,52 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$870:
 	movb	95(%rsp), %sil
 	movb	%sil, 167(%rsp)
 	movq	$0, %rsi
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$848
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$849:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$848
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$849:
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$850
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$851:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$850
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$851:
 	movq	%mm5, %rax
 	cmpq	$0, %rax
-	je  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$868
+	je  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$868
 	movb	%sil, 168(%rsp)
 	movb	%dl, 169(%rsp)
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$869
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$868:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$869
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$868:
 	movb	%dl, 168(%rsp)
 	movb	%sil, 169(%rsp)
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$869:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$869:
 	movq	%rsi, 16(%rsp)
 	movq	%rdx, 24(%rsp)
 	leaq	472(%rsp), %rdx
 	leaq	136(%rsp), %rbx
 	call	L_shake128_absorb34$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$867:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$867:
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$854
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$855:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$854
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$855:
 	movq	%rcx, %mm6
 	leaq	472(%rsp), %rdx
 	leaq	304(%rsp), %rsi
 	leaq	-8(%rsp), %rsp
 	call	L_shake128_squeezeblock$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$866:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$866:
 	leaq	8(%rsp), %rsp
 	movq	%mm6, %rcx
 	lfence
 	movq	$0, %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$857:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$857:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$858
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$858
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
 	movq	$168, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$858:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$858:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movzbw	304(%rsp,%rdx), %si
@@ -52565,43 +52565,43 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$858:
 	orw 	%r9w, %di
 	addq	$3, %rdx
 	cmpw	$3329, %si
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$864
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$864
 	movq	$-1, %r8
 	cmovb	%r8, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$865
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$864:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$865
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$864:
 	movq	$-1, %r8
 	cmovnb	%r8, %rax
 	movw	%si, 672(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$865:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$865:
 	cmpw	$3329, %di
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$860
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$860
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$860:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$860:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$862
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$862
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$862:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$862:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movw	%di, 672(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$863:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$861:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$859:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$856:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$863:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$861:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$859:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$856:
 	cmpq	$166, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$857
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$854:
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$857
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$854:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$855
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$855
 	movq	16(%rsp), %rsi
 	movq	24(%rsp), %rdx
 	movq	%rsi, %rax
@@ -52611,580 +52611,580 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$854:
 	addq	%rcx, %rax
 	leaq	28832(%rsp,%rax,2), %rax
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$852
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$853:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$852
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$853:
 	movw	672(%rsp,%rcx,2), %r9w
 	movw	%r9w, (%rax,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$852:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$852:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$853
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$853
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$850:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$850:
 	cmpq	$18, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$851
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$851
 	incq	%rsi
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$848:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$848:
 	cmpq	$18, %rsi
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$849
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$849
 	movb	$0, %al
 	leaq	1184(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$847:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$847:
 	leaq	304(%rsp), %rsp
 	movb	$1, %al
 	leaq	1696(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$846:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$846:
 	leaq	304(%rsp), %rsp
 	movb	$2, %al
 	leaq	2208(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$845:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$845:
 	leaq	304(%rsp), %rsp
 	movb	$3, %al
 	leaq	2720(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$844:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$844:
 	leaq	304(%rsp), %rsp
 	movb	$4, %al
 	leaq	3232(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$843:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$843:
 	leaq	304(%rsp), %rsp
 	movb	$5, %al
 	leaq	3744(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$842:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$842:
 	leaq	304(%rsp), %rsp
 	movb	$6, %al
 	leaq	4256(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$841:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$841:
 	leaq	304(%rsp), %rsp
 	movb	$7, %al
 	leaq	4768(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$840:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$840:
 	leaq	304(%rsp), %rsp
 	movb	$8, %al
 	leaq	5280(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$839:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$839:
 	leaq	304(%rsp), %rsp
 	movb	$9, %al
 	leaq	5792(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$838:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$838:
 	leaq	304(%rsp), %rsp
 	movb	$10, %al
 	leaq	6304(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$837:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$837:
 	leaq	304(%rsp), %rsp
 	movb	$11, %al
 	leaq	6816(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$836:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$836:
 	leaq	304(%rsp), %rsp
 	movb	$12, %al
 	leaq	7328(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$835:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$835:
 	leaq	304(%rsp), %rsp
 	movb	$13, %al
 	leaq	7840(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$834:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$834:
 	leaq	304(%rsp), %rsp
 	movb	$14, %al
 	leaq	8352(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$833:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$833:
 	leaq	304(%rsp), %rsp
 	movb	$15, %al
 	leaq	8864(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$832:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$832:
 	leaq	304(%rsp), %rsp
 	movb	$16, %al
 	leaq	9376(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$831:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$831:
 	leaq	304(%rsp), %rsp
 	movb	$17, %al
 	leaq	9888(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$830:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$830:
 	leaq	304(%rsp), %rsp
 	movb	$18, %al
 	leaq	10400(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$829:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$829:
 	leaq	304(%rsp), %rsp
 	movb	$19, %al
 	leaq	10912(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$828:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$828:
 	leaq	304(%rsp), %rsp
 	movb	$20, %al
 	leaq	11424(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$827:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$827:
 	leaq	304(%rsp), %rsp
 	movb	$21, %al
 	leaq	11936(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$826:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$826:
 	leaq	304(%rsp), %rsp
 	movb	$22, %al
 	leaq	12448(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$825:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$825:
 	leaq	304(%rsp), %rsp
 	movb	$23, %al
 	leaq	12960(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$824:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$824:
 	leaq	304(%rsp), %rsp
 	movb	$24, %al
 	leaq	13472(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$823:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$823:
 	leaq	304(%rsp), %rsp
 	movb	$25, %al
 	leaq	13984(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$822:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$822:
 	leaq	304(%rsp), %rsp
 	movb	$26, %al
 	leaq	14496(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$821:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$821:
 	leaq	304(%rsp), %rsp
 	movb	$27, %al
 	leaq	15008(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$820:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$820:
 	leaq	304(%rsp), %rsp
 	movb	$28, %al
 	leaq	15520(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$819:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$819:
 	leaq	304(%rsp), %rsp
 	movb	$29, %al
 	leaq	16032(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$818:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$818:
 	leaq	304(%rsp), %rsp
 	movb	$30, %al
 	leaq	16544(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$817:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$817:
 	leaq	304(%rsp), %rsp
 	movb	$31, %al
 	leaq	17056(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$816:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$816:
 	leaq	304(%rsp), %rsp
 	movb	$32, %al
 	leaq	17568(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$815:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$815:
 	leaq	304(%rsp), %rsp
 	movb	$33, %al
 	leaq	18080(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$814:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$814:
 	leaq	304(%rsp), %rsp
 	movb	$34, %al
 	leaq	18592(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$813:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$813:
 	leaq	304(%rsp), %rsp
 	movb	$35, %al
 	leaq	19104(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$812:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$812:
 	leaq	304(%rsp), %rsp
 	leaq	1184(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$811:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$811:
 	leaq	1696(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$810:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$810:
 	leaq	2208(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$809:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$809:
 	leaq	2720(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$808:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$808:
 	leaq	3232(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$807:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$807:
 	leaq	3744(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$806:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$806:
 	leaq	4256(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$805:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$805:
 	leaq	4768(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$804:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$804:
 	leaq	5280(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$803:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$803:
 	leaq	5792(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$802:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$802:
 	leaq	6304(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$801:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$801:
 	leaq	6816(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$800:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$800:
 	leaq	7328(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$799:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$799:
 	leaq	7840(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$798:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$798:
 	leaq	8352(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$797:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$797:
 	leaq	8864(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$796:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$796:
 	leaq	9376(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$795:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$795:
 	leaq	9888(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$794:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$794:
 	leaq	10400(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$793:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$793:
 	leaq	10912(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$792:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$792:
 	leaq	11424(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$791:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$791:
 	leaq	11936(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$790:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$790:
 	leaq	12448(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$789:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$789:
 	leaq	12960(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$788:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$788:
 	leaq	13472(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$787:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$787:
 	leaq	13984(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$786:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$786:
 	leaq	14496(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$785:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$785:
 	leaq	15008(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$784:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$784:
 	leaq	15520(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$783:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$783:
 	leaq	16032(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$782:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$782:
 	leaq	16544(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$781:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$781:
 	leaq	17056(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$780:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$780:
 	leaq	17568(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$779:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$779:
 	leaq	18080(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$778:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$778:
 	leaq	18592(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$777:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$777:
 	leaq	19104(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$776:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$776:
 	leaq	19616(%rsp), %r11
 	leaq	28832(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$775:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$775:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	29344(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$774:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$774:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$773:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$773:
 	leaq	672(%rsp), %r11
 	leaq	29856(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$772:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$772:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$771:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$771:
 	leaq	672(%rsp), %r11
 	leaq	30368(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$770:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$770:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$769:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$769:
 	leaq	672(%rsp), %r11
 	leaq	30880(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$768:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$768:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$767:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$767:
 	leaq	672(%rsp), %r11
 	leaq	31392(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$766:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$766:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$765:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$765:
 	leaq	672(%rsp), %r11
 	leaq	31904(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$764:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$764:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$763:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$763:
 	leaq	672(%rsp), %r11
 	leaq	32416(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$762:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$762:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$761:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$761:
 	leaq	672(%rsp), %r11
 	leaq	32928(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$760:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$760:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$759:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$759:
 	leaq	672(%rsp), %r11
 	leaq	33440(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$758:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$758:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$757:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$757:
 	leaq	672(%rsp), %r11
 	leaq	33952(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$756:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$756:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$755:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$755:
 	leaq	672(%rsp), %r11
 	leaq	34464(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$754:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$754:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$753:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$753:
 	leaq	672(%rsp), %r11
 	leaq	34976(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$752:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$752:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$751:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$751:
 	leaq	672(%rsp), %r11
 	leaq	35488(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$750:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$750:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$749:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$749:
 	leaq	672(%rsp), %r11
 	leaq	36000(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$748:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$748:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$747:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$747:
 	leaq	672(%rsp), %r11
 	leaq	36512(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$746:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$746:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$745:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$745:
 	leaq	672(%rsp), %r11
 	leaq	37024(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$744:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$744:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$743:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$743:
 	leaq	672(%rsp), %r11
 	leaq	37536(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$742:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$742:
 	leaq	16(%rsp), %rsp
 	leaq	19616(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$741:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$741:
 	leaq	19616(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$739
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$740:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$739
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$740:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -53193,210 +53193,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$740:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$739:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$739:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$740
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$740
 	leaq	19616(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$738:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$738:
 	leaq	20128(%rsp), %r11
 	leaq	38048(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$737:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$737:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	38560(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$736:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$736:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$735:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$735:
 	leaq	672(%rsp), %r11
 	leaq	39072(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$734:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$734:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$733:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$733:
 	leaq	672(%rsp), %r11
 	leaq	39584(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$732:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$732:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$731:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$731:
 	leaq	672(%rsp), %r11
 	leaq	40096(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$730:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$730:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$729:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$729:
 	leaq	672(%rsp), %r11
 	leaq	40608(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$728:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$728:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$727:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$727:
 	leaq	672(%rsp), %r11
 	leaq	41120(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$726:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$726:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$725:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$725:
 	leaq	672(%rsp), %r11
 	leaq	41632(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$724:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$724:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$723:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$723:
 	leaq	672(%rsp), %r11
 	leaq	42144(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$722:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$722:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$721:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$721:
 	leaq	672(%rsp), %r11
 	leaq	42656(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$720:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$720:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$719:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$719:
 	leaq	672(%rsp), %r11
 	leaq	43168(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$718:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$718:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$717:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$717:
 	leaq	672(%rsp), %r11
 	leaq	43680(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$716:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$716:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$715:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$715:
 	leaq	672(%rsp), %r11
 	leaq	44192(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$714:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$714:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$713:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$713:
 	leaq	672(%rsp), %r11
 	leaq	44704(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$712:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$712:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$711:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$711:
 	leaq	672(%rsp), %r11
 	leaq	45216(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$710:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$710:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$709:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$709:
 	leaq	672(%rsp), %r11
 	leaq	45728(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$708:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$708:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$707:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$707:
 	leaq	672(%rsp), %r11
 	leaq	46240(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$706:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$706:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$705:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$705:
 	leaq	672(%rsp), %r11
 	leaq	46752(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$704:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$704:
 	leaq	16(%rsp), %rsp
 	leaq	20128(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$703:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$703:
 	leaq	20128(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$701
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$702:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$701
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$702:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -53405,210 +53405,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$702:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$701:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$701:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$702
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$702
 	leaq	20128(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$700:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$700:
 	leaq	20640(%rsp), %r11
 	leaq	47264(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$699:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$699:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	47776(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$698:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$698:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$697:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$697:
 	leaq	672(%rsp), %r11
 	leaq	48288(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$696:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$696:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$695:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$695:
 	leaq	672(%rsp), %r11
 	leaq	48800(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$694:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$694:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$693:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$693:
 	leaq	672(%rsp), %r11
 	leaq	49312(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$692:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$692:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$691:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$691:
 	leaq	672(%rsp), %r11
 	leaq	49824(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$690:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$690:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$689:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$689:
 	leaq	672(%rsp), %r11
 	leaq	50336(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$688:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$688:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$687:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$687:
 	leaq	672(%rsp), %r11
 	leaq	50848(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$686:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$686:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$685:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$685:
 	leaq	672(%rsp), %r11
 	leaq	51360(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$684:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$684:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$683:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$683:
 	leaq	672(%rsp), %r11
 	leaq	51872(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$682:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$682:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$681:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$681:
 	leaq	672(%rsp), %r11
 	leaq	52384(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$680:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$680:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$679:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$679:
 	leaq	672(%rsp), %r11
 	leaq	52896(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$678:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$678:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$677:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$677:
 	leaq	672(%rsp), %r11
 	leaq	53408(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$676:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$676:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$675:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$675:
 	leaq	672(%rsp), %r11
 	leaq	53920(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$674:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$674:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$673:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$673:
 	leaq	672(%rsp), %r11
 	leaq	54432(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$672:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$672:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$671:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$671:
 	leaq	672(%rsp), %r11
 	leaq	54944(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$670:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$670:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$669:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$669:
 	leaq	672(%rsp), %r11
 	leaq	55456(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$668:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$668:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$667:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$667:
 	leaq	672(%rsp), %r11
 	leaq	55968(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$666:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$666:
 	leaq	16(%rsp), %rsp
 	leaq	20640(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$665:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$665:
 	leaq	20640(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$663
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$664:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$663
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$664:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -53617,210 +53617,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$664:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$663:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$663:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$664
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$664
 	leaq	20640(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$662:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$662:
 	leaq	21152(%rsp), %r11
 	leaq	56480(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$661:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$661:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	56992(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$660:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$660:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$659:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$659:
 	leaq	672(%rsp), %r11
 	leaq	57504(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$658:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$658:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$657:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$657:
 	leaq	672(%rsp), %r11
 	leaq	58016(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$656:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$656:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$655:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$655:
 	leaq	672(%rsp), %r11
 	leaq	58528(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$654:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$654:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$653:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$653:
 	leaq	672(%rsp), %r11
 	leaq	59040(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$652:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$652:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$651:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$651:
 	leaq	672(%rsp), %r11
 	leaq	59552(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$650:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$650:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$649:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$649:
 	leaq	672(%rsp), %r11
 	leaq	60064(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$648:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$648:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$647:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$647:
 	leaq	672(%rsp), %r11
 	leaq	60576(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$646:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$646:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$645:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$645:
 	leaq	672(%rsp), %r11
 	leaq	61088(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$644:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$644:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$643:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$643:
 	leaq	672(%rsp), %r11
 	leaq	61600(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$642:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$642:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$641:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$641:
 	leaq	672(%rsp), %r11
 	leaq	62112(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$640:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$640:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$639:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$639:
 	leaq	672(%rsp), %r11
 	leaq	62624(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$638:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$638:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$637:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$637:
 	leaq	672(%rsp), %r11
 	leaq	63136(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$636:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$636:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$635:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$635:
 	leaq	672(%rsp), %r11
 	leaq	63648(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$634:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$634:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$633:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$633:
 	leaq	672(%rsp), %r11
 	leaq	64160(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$632:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$632:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$631:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$631:
 	leaq	672(%rsp), %r11
 	leaq	64672(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$630:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$630:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$629:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$629:
 	leaq	672(%rsp), %r11
 	leaq	65184(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$628:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$628:
 	leaq	16(%rsp), %rsp
 	leaq	21152(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$627:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$627:
 	leaq	21152(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$625
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$626:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$625
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$626:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -53829,210 +53829,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$626:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$625:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$625:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$626
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$626
 	leaq	21152(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$624:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$624:
 	leaq	21664(%rsp), %r11
 	leaq	65696(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$623:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$623:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	66208(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$622:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$622:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$621:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$621:
 	leaq	672(%rsp), %r11
 	leaq	66720(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$620:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$620:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$619:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$619:
 	leaq	672(%rsp), %r11
 	leaq	67232(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$618:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$618:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$617:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$617:
 	leaq	672(%rsp), %r11
 	leaq	67744(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$616:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$616:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$615:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$615:
 	leaq	672(%rsp), %r11
 	leaq	68256(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$614:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$614:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$613:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$613:
 	leaq	672(%rsp), %r11
 	leaq	68768(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$612:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$612:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$611:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$611:
 	leaq	672(%rsp), %r11
 	leaq	69280(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$610:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$610:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$609:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$609:
 	leaq	672(%rsp), %r11
 	leaq	69792(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$608:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$608:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$607:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$607:
 	leaq	672(%rsp), %r11
 	leaq	70304(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$606:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$606:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$605:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$605:
 	leaq	672(%rsp), %r11
 	leaq	70816(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$604:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$604:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$603:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$603:
 	leaq	672(%rsp), %r11
 	leaq	71328(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$602:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$602:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$601:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$601:
 	leaq	672(%rsp), %r11
 	leaq	71840(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$600:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$600:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$599:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$599:
 	leaq	672(%rsp), %r11
 	leaq	72352(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$598:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$598:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$597:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$597:
 	leaq	672(%rsp), %r11
 	leaq	72864(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$596:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$596:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$595:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$595:
 	leaq	672(%rsp), %r11
 	leaq	73376(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$594:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$594:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$593:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$593:
 	leaq	672(%rsp), %r11
 	leaq	73888(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$592:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$592:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$591:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$591:
 	leaq	672(%rsp), %r11
 	leaq	74400(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$590:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$590:
 	leaq	16(%rsp), %rsp
 	leaq	21664(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$589:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$589:
 	leaq	21664(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$587
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$588:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$587
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$588:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -54041,210 +54041,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$588:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$587:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$587:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$588
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$588
 	leaq	21664(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$586:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$586:
 	leaq	22176(%rsp), %r11
 	leaq	74912(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$585:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$585:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	75424(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$584:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$584:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$583:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$583:
 	leaq	672(%rsp), %r11
 	leaq	75936(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$582:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$582:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$581:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$581:
 	leaq	672(%rsp), %r11
 	leaq	76448(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$580:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$580:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$579:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$579:
 	leaq	672(%rsp), %r11
 	leaq	76960(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$578:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$578:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$577:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$577:
 	leaq	672(%rsp), %r11
 	leaq	77472(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$576:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$576:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$575:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$575:
 	leaq	672(%rsp), %r11
 	leaq	77984(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$574:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$574:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$573:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$573:
 	leaq	672(%rsp), %r11
 	leaq	78496(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$572:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$572:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$571:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$571:
 	leaq	672(%rsp), %r11
 	leaq	79008(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$570:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$570:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$569:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$569:
 	leaq	672(%rsp), %r11
 	leaq	79520(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$568:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$568:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$567:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$567:
 	leaq	672(%rsp), %r11
 	leaq	80032(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$566:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$566:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$565:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$565:
 	leaq	672(%rsp), %r11
 	leaq	80544(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$564:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$564:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$563:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$563:
 	leaq	672(%rsp), %r11
 	leaq	81056(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$562:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$562:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$561:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$561:
 	leaq	672(%rsp), %r11
 	leaq	81568(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$560:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$560:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$559:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$559:
 	leaq	672(%rsp), %r11
 	leaq	82080(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$558:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$558:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$557:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$557:
 	leaq	672(%rsp), %r11
 	leaq	82592(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$556:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$556:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$555:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$555:
 	leaq	672(%rsp), %r11
 	leaq	83104(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$554:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$554:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$553:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$553:
 	leaq	672(%rsp), %r11
 	leaq	83616(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$552:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$552:
 	leaq	16(%rsp), %rsp
 	leaq	22176(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$551:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$551:
 	leaq	22176(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$549
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$550:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$549
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$550:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -54253,210 +54253,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$550:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$549:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$549:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$550
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$550
 	leaq	22176(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$548:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$548:
 	leaq	22688(%rsp), %r11
 	leaq	84128(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$547:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$547:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	84640(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$546:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$546:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$545:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$545:
 	leaq	672(%rsp), %r11
 	leaq	85152(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$544:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$544:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$543:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$543:
 	leaq	672(%rsp), %r11
 	leaq	85664(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$542:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$542:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$541:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$541:
 	leaq	672(%rsp), %r11
 	leaq	86176(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$540:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$540:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$539:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$539:
 	leaq	672(%rsp), %r11
 	leaq	86688(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$538:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$538:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$537:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$537:
 	leaq	672(%rsp), %r11
 	leaq	87200(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$536:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$536:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$535:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$535:
 	leaq	672(%rsp), %r11
 	leaq	87712(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$534:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$534:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$533:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$533:
 	leaq	672(%rsp), %r11
 	leaq	88224(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$532:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$532:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$531:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$531:
 	leaq	672(%rsp), %r11
 	leaq	88736(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$530:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$530:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$529:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$529:
 	leaq	672(%rsp), %r11
 	leaq	89248(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$528:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$528:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$527:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$527:
 	leaq	672(%rsp), %r11
 	leaq	89760(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$526:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$526:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$525:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$525:
 	leaq	672(%rsp), %r11
 	leaq	90272(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$524:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$524:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$523:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$523:
 	leaq	672(%rsp), %r11
 	leaq	90784(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$522:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$522:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$521:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$521:
 	leaq	672(%rsp), %r11
 	leaq	91296(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$520:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$520:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$519:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$519:
 	leaq	672(%rsp), %r11
 	leaq	91808(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$518:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$518:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$517:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$517:
 	leaq	672(%rsp), %r11
 	leaq	92320(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$516:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$516:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$515:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$515:
 	leaq	672(%rsp), %r11
 	leaq	92832(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$514:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$514:
 	leaq	16(%rsp), %rsp
 	leaq	22688(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$513:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$513:
 	leaq	22688(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$511
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$512:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$511
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$512:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -54465,210 +54465,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$512:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$511:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$511:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$512
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$512
 	leaq	22688(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$510:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$510:
 	leaq	23200(%rsp), %r11
 	leaq	93344(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$509:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$509:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	93856(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$508:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$508:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$507:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$507:
 	leaq	672(%rsp), %r11
 	leaq	94368(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$506:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$506:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$505:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$505:
 	leaq	672(%rsp), %r11
 	leaq	94880(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$504:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$504:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$503:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$503:
 	leaq	672(%rsp), %r11
 	leaq	95392(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$502:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$502:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$501:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$501:
 	leaq	672(%rsp), %r11
 	leaq	95904(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$500:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$500:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$499:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$499:
 	leaq	672(%rsp), %r11
 	leaq	96416(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$498:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$498:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$497:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$497:
 	leaq	672(%rsp), %r11
 	leaq	96928(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$496:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$496:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$495:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$495:
 	leaq	672(%rsp), %r11
 	leaq	97440(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$494:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$494:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$493:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$493:
 	leaq	672(%rsp), %r11
 	leaq	97952(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$492:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$492:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$491:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$491:
 	leaq	672(%rsp), %r11
 	leaq	98464(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$490:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$490:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$489:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$489:
 	leaq	672(%rsp), %r11
 	leaq	98976(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$488:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$488:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$487:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$487:
 	leaq	672(%rsp), %r11
 	leaq	99488(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$486:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$486:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$485:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$485:
 	leaq	672(%rsp), %r11
 	leaq	100000(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$484:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$484:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$483:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$483:
 	leaq	672(%rsp), %r11
 	leaq	100512(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$482:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$482:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$481:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$481:
 	leaq	672(%rsp), %r11
 	leaq	101024(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$480:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$480:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$479:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$479:
 	leaq	672(%rsp), %r11
 	leaq	101536(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$478:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$478:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$477:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$477:
 	leaq	672(%rsp), %r11
 	leaq	102048(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$476:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$476:
 	leaq	16(%rsp), %rsp
 	leaq	23200(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$475:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$475:
 	leaq	23200(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$473
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$474:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$473
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$474:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -54677,210 +54677,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$474:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$473:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$473:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$474
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$474
 	leaq	23200(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$472:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$472:
 	leaq	23712(%rsp), %r11
 	leaq	102560(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$471:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$471:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	103072(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$470:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$470:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$469:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$469:
 	leaq	672(%rsp), %r11
 	leaq	103584(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$468:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$468:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$467:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$467:
 	leaq	672(%rsp), %r11
 	leaq	104096(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$466:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$466:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$465:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$465:
 	leaq	672(%rsp), %r11
 	leaq	104608(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$464:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$464:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$463:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$463:
 	leaq	672(%rsp), %r11
 	leaq	105120(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$462:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$462:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$461:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$461:
 	leaq	672(%rsp), %r11
 	leaq	105632(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$460:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$460:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$459:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$459:
 	leaq	672(%rsp), %r11
 	leaq	106144(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$458:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$458:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$457:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$457:
 	leaq	672(%rsp), %r11
 	leaq	106656(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$456:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$456:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$455:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$455:
 	leaq	672(%rsp), %r11
 	leaq	107168(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$454:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$454:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$453:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$453:
 	leaq	672(%rsp), %r11
 	leaq	107680(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$452:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$452:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$451:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$451:
 	leaq	672(%rsp), %r11
 	leaq	108192(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$450:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$450:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$449:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$449:
 	leaq	672(%rsp), %r11
 	leaq	108704(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$448:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$448:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$447:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$447:
 	leaq	672(%rsp), %r11
 	leaq	109216(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$446:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$446:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$445:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$445:
 	leaq	672(%rsp), %r11
 	leaq	109728(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$444:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$444:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$443:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$443:
 	leaq	672(%rsp), %r11
 	leaq	110240(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$442:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$442:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$441:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$441:
 	leaq	672(%rsp), %r11
 	leaq	110752(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$440:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$440:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$439:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$439:
 	leaq	672(%rsp), %r11
 	leaq	111264(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$438:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$438:
 	leaq	16(%rsp), %rsp
 	leaq	23712(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$437:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$437:
 	leaq	23712(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$435
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$436:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$435
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$436:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -54889,210 +54889,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$436:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$435:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$435:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$436
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$436
 	leaq	23712(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$434:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$434:
 	leaq	24224(%rsp), %r11
 	leaq	111776(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$433:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$433:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	112288(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$432:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$432:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$431:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$431:
 	leaq	672(%rsp), %r11
 	leaq	112800(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$430:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$430:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$429:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$429:
 	leaq	672(%rsp), %r11
 	leaq	113312(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$428:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$428:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$427:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$427:
 	leaq	672(%rsp), %r11
 	leaq	113824(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$426:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$426:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$425:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$425:
 	leaq	672(%rsp), %r11
 	leaq	114336(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$424:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$424:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$423:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$423:
 	leaq	672(%rsp), %r11
 	leaq	114848(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$422:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$422:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$421:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$421:
 	leaq	672(%rsp), %r11
 	leaq	115360(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$420:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$420:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$419:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$419:
 	leaq	672(%rsp), %r11
 	leaq	115872(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$418:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$418:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$417:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$417:
 	leaq	672(%rsp), %r11
 	leaq	116384(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$416:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$416:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$415:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$415:
 	leaq	672(%rsp), %r11
 	leaq	116896(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$414:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$414:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$413:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$413:
 	leaq	672(%rsp), %r11
 	leaq	117408(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$412:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$412:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$411:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$411:
 	leaq	672(%rsp), %r11
 	leaq	117920(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$410:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$410:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$409:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$409:
 	leaq	672(%rsp), %r11
 	leaq	118432(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$408:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$408:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$407:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$407:
 	leaq	672(%rsp), %r11
 	leaq	118944(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$406:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$406:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$405:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$405:
 	leaq	672(%rsp), %r11
 	leaq	119456(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$404:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$404:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$403:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$403:
 	leaq	672(%rsp), %r11
 	leaq	119968(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$402:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$402:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$401:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$401:
 	leaq	672(%rsp), %r11
 	leaq	120480(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$400:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$400:
 	leaq	16(%rsp), %rsp
 	leaq	24224(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$399:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$399:
 	leaq	24224(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$397
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$398:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$397
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$398:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -55101,210 +55101,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$398:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$397:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$397:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$398
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$398
 	leaq	24224(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$396:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$396:
 	leaq	24736(%rsp), %r11
 	leaq	120992(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$395:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$395:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	121504(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$394:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$394:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$393:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$393:
 	leaq	672(%rsp), %r11
 	leaq	122016(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$392:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$392:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$391:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$391:
 	leaq	672(%rsp), %r11
 	leaq	122528(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$390:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$390:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$389:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$389:
 	leaq	672(%rsp), %r11
 	leaq	123040(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$388:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$388:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$387:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$387:
 	leaq	672(%rsp), %r11
 	leaq	123552(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$386:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$386:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$385:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$385:
 	leaq	672(%rsp), %r11
 	leaq	124064(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$384:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$384:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$383:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$383:
 	leaq	672(%rsp), %r11
 	leaq	124576(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$382:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$382:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$381:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$381:
 	leaq	672(%rsp), %r11
 	leaq	125088(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$380:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$380:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$379:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$379:
 	leaq	672(%rsp), %r11
 	leaq	125600(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$378:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$378:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$377:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$377:
 	leaq	672(%rsp), %r11
 	leaq	126112(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$376:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$376:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$375:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$375:
 	leaq	672(%rsp), %r11
 	leaq	126624(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$374:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$374:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$373:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$373:
 	leaq	672(%rsp), %r11
 	leaq	127136(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$372:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$372:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$371:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$371:
 	leaq	672(%rsp), %r11
 	leaq	127648(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$370:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$370:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$369:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$369:
 	leaq	672(%rsp), %r11
 	leaq	128160(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$368:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$368:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$367:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$367:
 	leaq	672(%rsp), %r11
 	leaq	128672(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$366:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$366:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$365:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$365:
 	leaq	672(%rsp), %r11
 	leaq	129184(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$364:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$364:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$363:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$363:
 	leaq	672(%rsp), %r11
 	leaq	129696(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$362:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$362:
 	leaq	16(%rsp), %rsp
 	leaq	24736(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$361:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$361:
 	leaq	24736(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$359
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$360:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$359
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$360:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -55313,210 +55313,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$360:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$359:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$359:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$360
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$360
 	leaq	24736(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$358:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$358:
 	leaq	25248(%rsp), %r11
 	leaq	130208(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$357:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$357:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	130720(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$356:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$356:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$355:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$355:
 	leaq	672(%rsp), %r11
 	leaq	131232(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$354:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$354:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$353:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$353:
 	leaq	672(%rsp), %r11
 	leaq	131744(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$352:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$352:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$351:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$351:
 	leaq	672(%rsp), %r11
 	leaq	132256(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$350:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$350:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$349:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$349:
 	leaq	672(%rsp), %r11
 	leaq	132768(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$348:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$348:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$347:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$347:
 	leaq	672(%rsp), %r11
 	leaq	133280(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$346:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$346:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$345:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$345:
 	leaq	672(%rsp), %r11
 	leaq	133792(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$344:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$344:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$343:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$343:
 	leaq	672(%rsp), %r11
 	leaq	134304(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$342:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$342:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$341:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$341:
 	leaq	672(%rsp), %r11
 	leaq	134816(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$340:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$340:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$339:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$339:
 	leaq	672(%rsp), %r11
 	leaq	135328(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$338:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$338:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$337:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$337:
 	leaq	672(%rsp), %r11
 	leaq	135840(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$336:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$336:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$335:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$335:
 	leaq	672(%rsp), %r11
 	leaq	136352(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$334:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$334:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$333:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$333:
 	leaq	672(%rsp), %r11
 	leaq	136864(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$332:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$332:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$331:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$331:
 	leaq	672(%rsp), %r11
 	leaq	137376(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$330:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$330:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$329:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$329:
 	leaq	672(%rsp), %r11
 	leaq	137888(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$328:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$328:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$327:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$327:
 	leaq	672(%rsp), %r11
 	leaq	138400(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$326:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$326:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$325:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$325:
 	leaq	672(%rsp), %r11
 	leaq	138912(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$324:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$324:
 	leaq	16(%rsp), %rsp
 	leaq	25248(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$323:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$323:
 	leaq	25248(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$321
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$322:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$321
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$322:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -55525,210 +55525,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$322:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$321:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$321:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$322
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$322
 	leaq	25248(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$320:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$320:
 	leaq	25760(%rsp), %r11
 	leaq	139424(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$319:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$319:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	139936(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$318:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$318:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$317:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$317:
 	leaq	672(%rsp), %r11
 	leaq	140448(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$316:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$316:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$315:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$315:
 	leaq	672(%rsp), %r11
 	leaq	140960(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$314:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$314:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$313:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$313:
 	leaq	672(%rsp), %r11
 	leaq	141472(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$312:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$312:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$311:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$311:
 	leaq	672(%rsp), %r11
 	leaq	141984(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$310:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$310:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$309:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$309:
 	leaq	672(%rsp), %r11
 	leaq	142496(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$308:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$308:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$307:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$307:
 	leaq	672(%rsp), %r11
 	leaq	143008(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$306:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$306:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$305:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$305:
 	leaq	672(%rsp), %r11
 	leaq	143520(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$304:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$304:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$303:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$303:
 	leaq	672(%rsp), %r11
 	leaq	144032(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$302:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$302:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$301:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$301:
 	leaq	672(%rsp), %r11
 	leaq	144544(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$300:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$300:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$299:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$299:
 	leaq	672(%rsp), %r11
 	leaq	145056(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$298:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$298:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$297:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$297:
 	leaq	672(%rsp), %r11
 	leaq	145568(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$296:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$296:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$295:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$295:
 	leaq	672(%rsp), %r11
 	leaq	146080(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$294:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$294:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$293:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$293:
 	leaq	672(%rsp), %r11
 	leaq	146592(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$292:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$292:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$291:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$291:
 	leaq	672(%rsp), %r11
 	leaq	147104(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$290:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$290:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$289:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$289:
 	leaq	672(%rsp), %r11
 	leaq	147616(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$288:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$288:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$287:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$287:
 	leaq	672(%rsp), %r11
 	leaq	148128(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$286:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$286:
 	leaq	16(%rsp), %rsp
 	leaq	25760(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$285:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$285:
 	leaq	25760(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$283
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$284:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$283
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$284:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -55737,210 +55737,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$284:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$283:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$283:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$284
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$284
 	leaq	25760(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$282:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$282:
 	leaq	26272(%rsp), %r11
 	leaq	148640(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$281:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$281:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	149152(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$280:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$280:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$279:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$279:
 	leaq	672(%rsp), %r11
 	leaq	149664(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$278:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$278:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$277:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$277:
 	leaq	672(%rsp), %r11
 	leaq	150176(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$276:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$276:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$275:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$275:
 	leaq	672(%rsp), %r11
 	leaq	150688(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$274:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$274:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$273:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$273:
 	leaq	672(%rsp), %r11
 	leaq	151200(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$272:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$272:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$271:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$271:
 	leaq	672(%rsp), %r11
 	leaq	151712(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$270:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$270:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$269:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$269:
 	leaq	672(%rsp), %r11
 	leaq	152224(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$268:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$268:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$267:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$267:
 	leaq	672(%rsp), %r11
 	leaq	152736(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$266:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$266:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$265:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$265:
 	leaq	672(%rsp), %r11
 	leaq	153248(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$264:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$264:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$263:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$263:
 	leaq	672(%rsp), %r11
 	leaq	153760(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$262:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$262:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$261:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$261:
 	leaq	672(%rsp), %r11
 	leaq	154272(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$260:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$260:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$259:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$259:
 	leaq	672(%rsp), %r11
 	leaq	154784(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$258:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$258:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$257:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$257:
 	leaq	672(%rsp), %r11
 	leaq	155296(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$256:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$256:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$255:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$255:
 	leaq	672(%rsp), %r11
 	leaq	155808(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$254:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$254:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$253:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$253:
 	leaq	672(%rsp), %r11
 	leaq	156320(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$252:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$252:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$251:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$251:
 	leaq	672(%rsp), %r11
 	leaq	156832(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$250:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$250:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$249:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$249:
 	leaq	672(%rsp), %r11
 	leaq	157344(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$248:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$248:
 	leaq	16(%rsp), %rsp
 	leaq	26272(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$247:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$247:
 	leaq	26272(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$245
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$246:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$245
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$246:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -55949,210 +55949,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$246:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$245:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$245:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$246
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$246
 	leaq	26272(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$244:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$244:
 	leaq	26784(%rsp), %r11
 	leaq	157856(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$243:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$243:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	158368(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$242:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$242:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$241:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$241:
 	leaq	672(%rsp), %r11
 	leaq	158880(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$240:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$240:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$239:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$239:
 	leaq	672(%rsp), %r11
 	leaq	159392(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$238:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$238:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$237:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$237:
 	leaq	672(%rsp), %r11
 	leaq	159904(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$236:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$236:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$235:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$235:
 	leaq	672(%rsp), %r11
 	leaq	160416(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$234:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$234:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$233:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$233:
 	leaq	672(%rsp), %r11
 	leaq	160928(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$232:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$232:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$231:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$231:
 	leaq	672(%rsp), %r11
 	leaq	161440(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$230:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$230:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$229:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$229:
 	leaq	672(%rsp), %r11
 	leaq	161952(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$228:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$228:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$227:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$227:
 	leaq	672(%rsp), %r11
 	leaq	162464(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$226:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$226:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$225:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$225:
 	leaq	672(%rsp), %r11
 	leaq	162976(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$224:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$224:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$223:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$223:
 	leaq	672(%rsp), %r11
 	leaq	163488(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$222:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$222:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$221:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$221:
 	leaq	672(%rsp), %r11
 	leaq	164000(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$220:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$220:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$219:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$219:
 	leaq	672(%rsp), %r11
 	leaq	164512(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$218:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$218:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$217:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$217:
 	leaq	672(%rsp), %r11
 	leaq	165024(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$216:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$216:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$215:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$215:
 	leaq	672(%rsp), %r11
 	leaq	165536(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$214:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$214:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$213:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$213:
 	leaq	672(%rsp), %r11
 	leaq	166048(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$212:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$212:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$211:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$211:
 	leaq	672(%rsp), %r11
 	leaq	166560(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$210:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$210:
 	leaq	16(%rsp), %rsp
 	leaq	26784(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$209:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$209:
 	leaq	26784(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$207
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$208:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$207
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$208:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56161,210 +56161,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$208:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$207:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$207:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$208
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$208
 	leaq	26784(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$206:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$206:
 	leaq	27296(%rsp), %r11
 	leaq	167072(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$205:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$205:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	167584(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$204:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$204:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$203:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$203:
 	leaq	672(%rsp), %r11
 	leaq	168096(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$202:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$202:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$201:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$201:
 	leaq	672(%rsp), %r11
 	leaq	168608(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$200:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$200:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$199:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$199:
 	leaq	672(%rsp), %r11
 	leaq	169120(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$198:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$198:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$197:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$197:
 	leaq	672(%rsp), %r11
 	leaq	169632(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$196:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$196:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$195:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$195:
 	leaq	672(%rsp), %r11
 	leaq	170144(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$194:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$194:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$193:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$193:
 	leaq	672(%rsp), %r11
 	leaq	170656(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$192:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$192:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$191:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$191:
 	leaq	672(%rsp), %r11
 	leaq	171168(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$190:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$190:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$189:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$189:
 	leaq	672(%rsp), %r11
 	leaq	171680(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$188:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$188:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$187:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$187:
 	leaq	672(%rsp), %r11
 	leaq	172192(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$186:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$186:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$185:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$185:
 	leaq	672(%rsp), %r11
 	leaq	172704(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$184:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$184:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$183:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$183:
 	leaq	672(%rsp), %r11
 	leaq	173216(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$182:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$182:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$181:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$181:
 	leaq	672(%rsp), %r11
 	leaq	173728(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$180:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$180:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$179:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$179:
 	leaq	672(%rsp), %r11
 	leaq	174240(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$178:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$178:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$177:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$177:
 	leaq	672(%rsp), %r11
 	leaq	174752(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$176:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$176:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$175:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$175:
 	leaq	672(%rsp), %r11
 	leaq	175264(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$174:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$174:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$173:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$173:
 	leaq	672(%rsp), %r11
 	leaq	175776(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$172:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$172:
 	leaq	16(%rsp), %rsp
 	leaq	27296(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$171:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$171:
 	leaq	27296(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$169
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$170:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$169
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$170:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56373,210 +56373,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$170:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$169:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$169:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$170
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$170
 	leaq	27296(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$168:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$168:
 	leaq	27808(%rsp), %r11
 	leaq	176288(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$167:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$167:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	176800(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$166:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$166:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$165:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$165:
 	leaq	672(%rsp), %r11
 	leaq	177312(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$164:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$164:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$163:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$163:
 	leaq	672(%rsp), %r11
 	leaq	177824(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$162:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$162:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$161:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$161:
 	leaq	672(%rsp), %r11
 	leaq	178336(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$160:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$160:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$159:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$159:
 	leaq	672(%rsp), %r11
 	leaq	178848(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$158:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$158:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$157:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$157:
 	leaq	672(%rsp), %r11
 	leaq	179360(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$156:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$156:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$155:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$155:
 	leaq	672(%rsp), %r11
 	leaq	179872(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$154:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$154:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$153:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$153:
 	leaq	672(%rsp), %r11
 	leaq	180384(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$152:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$152:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$151:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$151:
 	leaq	672(%rsp), %r11
 	leaq	180896(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$150:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$150:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$149:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$149:
 	leaq	672(%rsp), %r11
 	leaq	181408(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$148:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$148:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$147:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$147:
 	leaq	672(%rsp), %r11
 	leaq	181920(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$146:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$146:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$145:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$145:
 	leaq	672(%rsp), %r11
 	leaq	182432(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$144:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$144:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$143:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$143:
 	leaq	672(%rsp), %r11
 	leaq	182944(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$142:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$142:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$141:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$141:
 	leaq	672(%rsp), %r11
 	leaq	183456(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$140:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$140:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$139:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$139:
 	leaq	672(%rsp), %r11
 	leaq	183968(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$138:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$138:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$137:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$137:
 	leaq	672(%rsp), %r11
 	leaq	184480(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$136:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$136:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$135:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$135:
 	leaq	672(%rsp), %r11
 	leaq	184992(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$134:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$134:
 	leaq	16(%rsp), %rsp
 	leaq	27808(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$133:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$133:
 	leaq	27808(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$131
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$132:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$131
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$132:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56585,210 +56585,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$132:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$131:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$131:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$132
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$132
 	leaq	27808(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$130:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$130:
 	leaq	28320(%rsp), %r11
 	leaq	185504(%rsp), %rax
 	leaq	1184(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$129:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$129:
 	leaq	16(%rsp), %rsp
 	leaq	672(%rsp), %r11
 	leaq	186016(%rsp), %rax
 	leaq	1696(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$128:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$128:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$127:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$127:
 	leaq	672(%rsp), %r11
 	leaq	186528(%rsp), %rax
 	leaq	2208(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$126:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$126:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$125:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$125:
 	leaq	672(%rsp), %r11
 	leaq	187040(%rsp), %rax
 	leaq	2720(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$124:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$124:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$123:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$123:
 	leaq	672(%rsp), %r11
 	leaq	187552(%rsp), %rax
 	leaq	3232(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$122:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$122:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$121:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$121:
 	leaq	672(%rsp), %r11
 	leaq	188064(%rsp), %rax
 	leaq	3744(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$120:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$120:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$119:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$119:
 	leaq	672(%rsp), %r11
 	leaq	188576(%rsp), %rax
 	leaq	4256(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$118:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$118:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$117:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$117:
 	leaq	672(%rsp), %r11
 	leaq	189088(%rsp), %rax
 	leaq	4768(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$116:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$116:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$115:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$115:
 	leaq	672(%rsp), %r11
 	leaq	189600(%rsp), %rax
 	leaq	5280(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$114:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$114:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$113:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$113:
 	leaq	672(%rsp), %r11
 	leaq	190112(%rsp), %rax
 	leaq	5792(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$112:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$112:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$111:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$111:
 	leaq	672(%rsp), %r11
 	leaq	190624(%rsp), %rax
 	leaq	6304(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$110:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$110:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$109:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$109:
 	leaq	672(%rsp), %r11
 	leaq	191136(%rsp), %rax
 	leaq	6816(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$108:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$108:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$107:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$107:
 	leaq	672(%rsp), %r11
 	leaq	191648(%rsp), %rax
 	leaq	7328(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$106:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$106:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$105:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$105:
 	leaq	672(%rsp), %r11
 	leaq	192160(%rsp), %rax
 	leaq	7840(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$104:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$104:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$103:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$103:
 	leaq	672(%rsp), %r11
 	leaq	192672(%rsp), %rax
 	leaq	8352(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$102:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$102:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$101:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$101:
 	leaq	672(%rsp), %r11
 	leaq	193184(%rsp), %rax
 	leaq	8864(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$100:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$100:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$99:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$99:
 	leaq	672(%rsp), %r11
 	leaq	193696(%rsp), %rax
 	leaq	9376(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$98:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$98:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$97:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$97:
 	leaq	672(%rsp), %r11
 	leaq	194208(%rsp), %rax
 	leaq	9888(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$96:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$96:
 	leaq	16(%rsp), %rsp
 	leaq	28320(%rsp), %rax
 	leaq	672(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$95:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$95:
 	leaq	28320(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$93
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$94:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$93
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$94:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56797,88 +56797,88 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$94:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$93:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$93:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$94
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$94
 	leaq	28320(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$92:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$92:
 	leaq	19616(%rsp), %rax
 	leaq	10400(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$91:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$91:
 	leaq	20128(%rsp), %rax
 	leaq	10912(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$90:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$90:
 	leaq	20640(%rsp), %rax
 	leaq	11424(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$89:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$89:
 	leaq	21152(%rsp), %rax
 	leaq	11936(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$88:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$88:
 	leaq	21664(%rsp), %rax
 	leaq	12448(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$87:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$87:
 	leaq	22176(%rsp), %rax
 	leaq	12960(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$86:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$86:
 	leaq	22688(%rsp), %rax
 	leaq	13472(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$85:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$85:
 	leaq	23200(%rsp), %rax
 	leaq	13984(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$84:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$84:
 	leaq	23712(%rsp), %rax
 	leaq	14496(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$83:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$83:
 	leaq	24224(%rsp), %rax
 	leaq	15008(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$82:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$82:
 	leaq	24736(%rsp), %rax
 	leaq	15520(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$81:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$81:
 	leaq	25248(%rsp), %rax
 	leaq	16032(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$80:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$80:
 	leaq	25760(%rsp), %rax
 	leaq	16544(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$79:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$79:
 	leaq	26272(%rsp), %rax
 	leaq	17056(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$78:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$78:
 	leaq	26784(%rsp), %rax
 	leaq	17568(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$77:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$77:
 	leaq	27296(%rsp), %rax
 	leaq	18080(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$76:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$76:
 	leaq	27808(%rsp), %rax
 	leaq	18592(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$75:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$75:
 	leaq	28320(%rsp), %rax
 	leaq	19104(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$74:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$74:
 	leaq	19616(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$72
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$73:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$72
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$73:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56887,13 +56887,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$73:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$72:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$72:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$73
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$73
 	leaq	20128(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$70
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$71:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$70
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$71:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56902,13 +56902,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$71:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$70:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$70:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$71
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$71
 	leaq	20640(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$68
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$69:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$68
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$69:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56917,13 +56917,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$69:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$68:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$68:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$69
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$69
 	leaq	21152(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$66
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$67:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$66
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$67:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56932,13 +56932,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$67:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$66:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$66:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$67
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$67
 	leaq	21664(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$64
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$65:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$64
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$65:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56947,13 +56947,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$65:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$64:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$64:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$65
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$65
 	leaq	22176(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$62
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$63:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$62
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$63:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56962,13 +56962,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$63:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$62:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$62:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$63
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$63
 	leaq	22688(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$60
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$61:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$60
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$61:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56977,13 +56977,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$61:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$60:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$60:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$61
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$61
 	leaq	23200(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$58
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$59:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$58
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$59:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -56992,13 +56992,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$59:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$58:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$58:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$59
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$59
 	leaq	23712(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$56
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$57:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$56
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$57:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57007,13 +57007,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$57:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$56:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$56:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$57
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$57
 	leaq	24224(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$54
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$55:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$54
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$55:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57022,13 +57022,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$55:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$54:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$54:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$55
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$55
 	leaq	24736(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$52
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$53:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$52
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$53:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57037,13 +57037,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$53:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$52:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$52:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$53
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$53
 	leaq	25248(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$50
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$51:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$50
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$51:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57052,13 +57052,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$51:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$50:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$50:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$51
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$51
 	leaq	25760(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$48
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$49:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$48
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$49:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57067,13 +57067,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$49:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$48:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$48:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$49
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$49
 	leaq	26272(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$46
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$47:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$46
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$47:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57082,13 +57082,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$47:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$46:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$46:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$47
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$47
 	leaq	26784(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$44
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$45:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$44
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$45:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57097,13 +57097,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$45:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$44:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$44:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$45
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$45
 	leaq	27296(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$42
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$43:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$42
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$43:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57112,13 +57112,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$43:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$42:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$42:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$43
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$43
 	leaq	27808(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$40
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$41:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$40
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$41:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57127,13 +57127,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$41:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$40:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$40:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$41
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$41
 	leaq	28320(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$38
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$39:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$38
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$39:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -57142,156 +57142,156 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$39:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$38:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$38:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$39
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$39
 	movq	(%rsp), %rbx
 	movq	8(%rsp), %r10
 	movq	%r10, %rcx
 	leaq	1184(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$37:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$37:
 	leaq	384(%r10), %rcx
 	leaq	1696(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$36:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$36:
 	leaq	768(%r10), %rcx
 	leaq	2208(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$35:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$35:
 	leaq	1152(%r10), %rcx
 	leaq	2720(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$34:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$34:
 	leaq	1536(%r10), %rcx
 	leaq	3232(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$33:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$33:
 	leaq	1920(%r10), %rcx
 	leaq	3744(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$32:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$32:
 	leaq	2304(%r10), %rcx
 	leaq	4256(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$31:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$31:
 	leaq	2688(%r10), %rcx
 	leaq	4768(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$30:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$30:
 	leaq	3072(%r10), %rcx
 	leaq	5280(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$29:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$29:
 	leaq	3456(%r10), %rcx
 	leaq	5792(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$28:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$28:
 	leaq	3840(%r10), %rcx
 	leaq	6304(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$27:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$27:
 	leaq	4224(%r10), %rcx
 	leaq	6816(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$26:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$26:
 	leaq	4608(%r10), %rcx
 	leaq	7328(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$25:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$25:
 	leaq	4992(%r10), %rcx
 	leaq	7840(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$24:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$24:
 	leaq	5376(%r10), %rcx
 	leaq	8352(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$23:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$23:
 	leaq	5760(%r10), %rcx
 	leaq	8864(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$22:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$22:
 	leaq	6144(%r10), %rcx
 	leaq	9376(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$21:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$21:
 	leaq	6528(%r10), %rcx
 	leaq	9888(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$20:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$20:
 	movq	%rbx, %r10
 	movq	%r10, %rcx
 	leaq	19616(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$19:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$19:
 	leaq	384(%r10), %rcx
 	leaq	20128(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$18:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$18:
 	leaq	768(%r10), %rcx
 	leaq	20640(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$17:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$17:
 	leaq	1152(%r10), %rcx
 	leaq	21152(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$16:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$16:
 	leaq	1536(%r10), %rcx
 	leaq	21664(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$15:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$15:
 	leaq	1920(%r10), %rcx
 	leaq	22176(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$14:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$14:
 	leaq	2304(%r10), %rcx
 	leaq	22688(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$13:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$13:
 	leaq	2688(%r10), %rcx
 	leaq	23200(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$12:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$12:
 	leaq	3072(%r10), %rcx
 	leaq	23712(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$11:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$11:
 	leaq	3456(%r10), %rcx
 	leaq	24224(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$10:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$10:
 	leaq	3840(%r10), %rcx
 	leaq	24736(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$9:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$9:
 	leaq	4224(%r10), %rcx
 	leaq	25248(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$8:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$8:
 	leaq	4608(%r10), %rcx
 	leaq	25760(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$7:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$7:
 	leaq	4992(%r10), %rcx
 	leaq	26272(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$6:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$6:
 	leaq	5376(%r10), %rcx
 	leaq	26784(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$5:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$5:
 	leaq	5760(%r10), %rcx
 	leaq	27296(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$4:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$4:
 	leaq	6144(%r10), %rcx
 	leaq	27808(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$3:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$3:
 	leaq	6528(%r10), %rcx
 	leaq	28320(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$2:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$2:
 	movq	64(%rsp), %rax
 	movq	%rax, 6912(%rbx)
 	movq	72(%rsp), %rax
@@ -59041,7 +59041,7 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$2:
 	leaq	64(%rsp), %rsi
 	leaq	-232(%rsp), %rsp
 	call	L_sha3_256A_A6944$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$1:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$1:
 	leaq	232(%rsp), %rsp
 	movq	%mm2, %rdx
 	movq	64(%rsp), %rax
@@ -59071,8 +59071,8 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair$1:
 	movq	194760(%rsp), %r15
 	movq	194768(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand, %function
-jade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand:
+	.type	jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand, %function
+jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand:
 	movq	%rsp, %rax
 	leaq	-194712(%rsp), %rsp
 	andq	$-8, %rsp
@@ -59103,7 +59103,7 @@ jade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand:
 	leaq	96(%rsp), %rbx
 	leaq	-224(%rsp), %rsp
 	call	L_sha3_512A_A33$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$870:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$870:
 	leaq	224(%rsp), %rsp
 	movq	176(%rsp), %rax
 	movq	%rax, 64(%rsp)
@@ -59188,52 +59188,52 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$870:
 	movb	95(%rsp), %sil
 	movb	%sil, 167(%rsp)
 	movq	$0, %rsi
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$848
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$849:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$848
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$849:
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$850
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$851:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$850
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$851:
 	movq	%mm5, %rax
 	cmpq	$0, %rax
-	je  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$868
+	je  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$868
 	movb	%sil, 168(%rsp)
 	movb	%dl, 169(%rsp)
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$869
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$868:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$869
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$868:
 	movb	%dl, 168(%rsp)
 	movb	%sil, 169(%rsp)
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$869:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$869:
 	movq	%rsi, 16(%rsp)
 	movq	%rdx, 24(%rsp)
 	leaq	408(%rsp), %rdx
 	leaq	136(%rsp), %rbx
 	call	L_shake128_absorb34$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$867:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$867:
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$854
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$855:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$854
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$855:
 	movq	%rcx, %mm6
 	leaq	408(%rsp), %rdx
 	leaq	240(%rsp), %rsi
 	leaq	-8(%rsp), %rsp
 	call	L_shake128_squeezeblock$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$866:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$866:
 	leaq	8(%rsp), %rsp
 	movq	%mm6, %rcx
 	lfence
 	movq	$0, %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$857:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$857:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$858
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$858
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
 	movq	$168, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$858:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$858:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movzbw	240(%rsp,%rdx), %si
@@ -59251,43 +59251,43 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$858:
 	orw 	%r9w, %di
 	addq	$3, %rdx
 	cmpw	$3329, %si
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$864
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$864
 	movq	$-1, %r8
 	cmovb	%r8, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$865
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$864:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$865
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$864:
 	movq	$-1, %r8
 	cmovnb	%r8, %rax
 	movw	%si, 608(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$865:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$865:
 	cmpw	$3329, %di
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$860
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$860
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$860:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$860:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$862
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$862
 	movq	$-1, %rsi
 	cmovb	%rsi, %rax
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$856
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$862:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$856
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$862:
 	movq	$-1, %rsi
 	cmovnb	%rsi, %rax
 	movw	%di, 608(%rsp,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$863:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$861:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$859:
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$856:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$863:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$861:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$859:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$856:
 	cmpq	$166, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$857
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$854:
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$857
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$854:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$855
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$855
 	movq	16(%rsp), %rsi
 	movq	24(%rsp), %rdx
 	movq	%rsi, %rax
@@ -59297,580 +59297,580 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$854:
 	addq	%rcx, %rax
 	leaq	28768(%rsp,%rax,2), %rax
 	movq	$0, %rcx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$852
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$853:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$852
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$853:
 	movw	608(%rsp,%rcx,2), %r9w
 	movw	%r9w, (%rax,%rcx,2)
 	incq	%rcx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$852:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$852:
 	cmpq	$256, %rcx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$853
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$853
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$850:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$850:
 	cmpq	$18, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$851
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$851
 	incq	%rsi
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$848:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$848:
 	cmpq	$18, %rsi
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$849
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$849
 	movb	$0, %al
 	leaq	1120(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$847:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$847:
 	leaq	304(%rsp), %rsp
 	movb	$1, %al
 	leaq	1632(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$846:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$846:
 	leaq	304(%rsp), %rsp
 	movb	$2, %al
 	leaq	2144(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$845:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$845:
 	leaq	304(%rsp), %rsp
 	movb	$3, %al
 	leaq	2656(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$844:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$844:
 	leaq	304(%rsp), %rsp
 	movb	$4, %al
 	leaq	3168(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$843:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$843:
 	leaq	304(%rsp), %rsp
 	movb	$5, %al
 	leaq	3680(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$842:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$842:
 	leaq	304(%rsp), %rsp
 	movb	$6, %al
 	leaq	4192(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$841:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$841:
 	leaq	304(%rsp), %rsp
 	movb	$7, %al
 	leaq	4704(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$840:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$840:
 	leaq	304(%rsp), %rsp
 	movb	$8, %al
 	leaq	5216(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$839:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$839:
 	leaq	304(%rsp), %rsp
 	movb	$9, %al
 	leaq	5728(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$838:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$838:
 	leaq	304(%rsp), %rsp
 	movb	$10, %al
 	leaq	6240(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$837:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$837:
 	leaq	304(%rsp), %rsp
 	movb	$11, %al
 	leaq	6752(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$836:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$836:
 	leaq	304(%rsp), %rsp
 	movb	$12, %al
 	leaq	7264(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$835:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$835:
 	leaq	304(%rsp), %rsp
 	movb	$13, %al
 	leaq	7776(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$834:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$834:
 	leaq	304(%rsp), %rsp
 	movb	$14, %al
 	leaq	8288(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$833:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$833:
 	leaq	304(%rsp), %rsp
 	movb	$15, %al
 	leaq	8800(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$832:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$832:
 	leaq	304(%rsp), %rsp
 	movb	$16, %al
 	leaq	9312(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$831:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$831:
 	leaq	304(%rsp), %rsp
 	movb	$17, %al
 	leaq	9824(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$830:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$830:
 	leaq	304(%rsp), %rsp
 	movb	$18, %al
 	leaq	10336(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$829:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$829:
 	leaq	304(%rsp), %rsp
 	movb	$19, %al
 	leaq	10848(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$828:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$828:
 	leaq	304(%rsp), %rsp
 	movb	$20, %al
 	leaq	11360(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$827:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$827:
 	leaq	304(%rsp), %rsp
 	movb	$21, %al
 	leaq	11872(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$826:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$826:
 	leaq	304(%rsp), %rsp
 	movb	$22, %al
 	leaq	12384(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$825:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$825:
 	leaq	304(%rsp), %rsp
 	movb	$23, %al
 	leaq	12896(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$824:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$824:
 	leaq	304(%rsp), %rsp
 	movb	$24, %al
 	leaq	13408(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$823:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$823:
 	leaq	304(%rsp), %rsp
 	movb	$25, %al
 	leaq	13920(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$822:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$822:
 	leaq	304(%rsp), %rsp
 	movb	$26, %al
 	leaq	14432(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$821:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$821:
 	leaq	304(%rsp), %rsp
 	movb	$27, %al
 	leaq	14944(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$820:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$820:
 	leaq	304(%rsp), %rsp
 	movb	$28, %al
 	leaq	15456(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$819:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$819:
 	leaq	304(%rsp), %rsp
 	movb	$29, %al
 	leaq	15968(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$818:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$818:
 	leaq	304(%rsp), %rsp
 	movb	$30, %al
 	leaq	16480(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$817:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$817:
 	leaq	304(%rsp), %rsp
 	movb	$31, %al
 	leaq	16992(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$816:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$816:
 	leaq	304(%rsp), %rsp
 	movb	$32, %al
 	leaq	17504(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$815:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$815:
 	leaq	304(%rsp), %rsp
 	movb	$33, %al
 	leaq	18016(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$814:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$814:
 	leaq	304(%rsp), %rsp
 	movb	$34, %al
 	leaq	18528(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$813:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$813:
 	leaq	304(%rsp), %rsp
 	movb	$35, %al
 	leaq	19040(%rsp), %r10
 	leaq	32(%rsp), %rcx
 	leaq	-304(%rsp), %rsp
 	call	L_poly_getnoise$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$812:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$812:
 	leaq	304(%rsp), %rsp
 	leaq	1120(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$811:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$811:
 	leaq	1632(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$810:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$810:
 	leaq	2144(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$809:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$809:
 	leaq	2656(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$808:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$808:
 	leaq	3168(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$807:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$807:
 	leaq	3680(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$806:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$806:
 	leaq	4192(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$805:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$805:
 	leaq	4704(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$804:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$804:
 	leaq	5216(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$803:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$803:
 	leaq	5728(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$802:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$802:
 	leaq	6240(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$801:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$801:
 	leaq	6752(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$800:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$800:
 	leaq	7264(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$799:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$799:
 	leaq	7776(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$798:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$798:
 	leaq	8288(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$797:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$797:
 	leaq	8800(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$796:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$796:
 	leaq	9312(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$795:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$795:
 	leaq	9824(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$794:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$794:
 	leaq	10336(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$793:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$793:
 	leaq	10848(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$792:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$792:
 	leaq	11360(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$791:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$791:
 	leaq	11872(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$790:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$790:
 	leaq	12384(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$789:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$789:
 	leaq	12896(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$788:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$788:
 	leaq	13408(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$787:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$787:
 	leaq	13920(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$786:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$786:
 	leaq	14432(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$785:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$785:
 	leaq	14944(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$784:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$784:
 	leaq	15456(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$783:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$783:
 	leaq	15968(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$782:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$782:
 	leaq	16480(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$781:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$781:
 	leaq	16992(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$780:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$780:
 	leaq	17504(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$779:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$779:
 	leaq	18016(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$778:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$778:
 	leaq	18528(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$777:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$777:
 	leaq	19040(%rsp), %rax
 	call	L_poly_ntt$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$776:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$776:
 	leaq	19552(%rsp), %r11
 	leaq	28768(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$775:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$775:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	29280(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$774:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$774:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$773:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$773:
 	leaq	608(%rsp), %r11
 	leaq	29792(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$772:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$772:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$771:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$771:
 	leaq	608(%rsp), %r11
 	leaq	30304(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$770:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$770:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$769:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$769:
 	leaq	608(%rsp), %r11
 	leaq	30816(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$768:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$768:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$767:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$767:
 	leaq	608(%rsp), %r11
 	leaq	31328(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$766:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$766:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$765:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$765:
 	leaq	608(%rsp), %r11
 	leaq	31840(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$764:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$764:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$763:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$763:
 	leaq	608(%rsp), %r11
 	leaq	32352(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$762:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$762:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$761:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$761:
 	leaq	608(%rsp), %r11
 	leaq	32864(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$760:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$760:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$759:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$759:
 	leaq	608(%rsp), %r11
 	leaq	33376(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$758:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$758:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$757:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$757:
 	leaq	608(%rsp), %r11
 	leaq	33888(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$756:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$756:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$755:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$755:
 	leaq	608(%rsp), %r11
 	leaq	34400(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$754:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$754:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$753:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$753:
 	leaq	608(%rsp), %r11
 	leaq	34912(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$752:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$752:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$751:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$751:
 	leaq	608(%rsp), %r11
 	leaq	35424(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$750:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$750:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$749:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$749:
 	leaq	608(%rsp), %r11
 	leaq	35936(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$748:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$748:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$747:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$747:
 	leaq	608(%rsp), %r11
 	leaq	36448(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$746:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$746:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$745:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$745:
 	leaq	608(%rsp), %r11
 	leaq	36960(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$744:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$744:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$743:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$743:
 	leaq	608(%rsp), %r11
 	leaq	37472(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$742:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$742:
 	leaq	16(%rsp), %rsp
 	leaq	19552(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$741:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$741:
 	leaq	19552(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$739
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$740:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$739
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$740:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -59879,210 +59879,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$740:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$739:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$739:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$740
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$740
 	leaq	19552(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$738:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$738:
 	leaq	20064(%rsp), %r11
 	leaq	37984(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$737:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$737:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	38496(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$736:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$736:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$735:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$735:
 	leaq	608(%rsp), %r11
 	leaq	39008(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$734:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$734:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$733:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$733:
 	leaq	608(%rsp), %r11
 	leaq	39520(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$732:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$732:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$731:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$731:
 	leaq	608(%rsp), %r11
 	leaq	40032(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$730:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$730:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$729:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$729:
 	leaq	608(%rsp), %r11
 	leaq	40544(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$728:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$728:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$727:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$727:
 	leaq	608(%rsp), %r11
 	leaq	41056(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$726:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$726:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$725:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$725:
 	leaq	608(%rsp), %r11
 	leaq	41568(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$724:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$724:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$723:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$723:
 	leaq	608(%rsp), %r11
 	leaq	42080(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$722:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$722:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$721:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$721:
 	leaq	608(%rsp), %r11
 	leaq	42592(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$720:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$720:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$719:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$719:
 	leaq	608(%rsp), %r11
 	leaq	43104(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$718:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$718:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$717:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$717:
 	leaq	608(%rsp), %r11
 	leaq	43616(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$716:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$716:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$715:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$715:
 	leaq	608(%rsp), %r11
 	leaq	44128(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$714:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$714:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$713:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$713:
 	leaq	608(%rsp), %r11
 	leaq	44640(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$712:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$712:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$711:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$711:
 	leaq	608(%rsp), %r11
 	leaq	45152(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$710:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$710:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$709:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$709:
 	leaq	608(%rsp), %r11
 	leaq	45664(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$708:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$708:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$707:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$707:
 	leaq	608(%rsp), %r11
 	leaq	46176(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$706:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$706:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$705:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$705:
 	leaq	608(%rsp), %r11
 	leaq	46688(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$704:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$704:
 	leaq	16(%rsp), %rsp
 	leaq	20064(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$703:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$703:
 	leaq	20064(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$701
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$702:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$701
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$702:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -60091,210 +60091,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$702:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$701:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$701:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$702
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$702
 	leaq	20064(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$700:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$700:
 	leaq	20576(%rsp), %r11
 	leaq	47200(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$699:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$699:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	47712(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$698:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$698:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$697:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$697:
 	leaq	608(%rsp), %r11
 	leaq	48224(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$696:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$696:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$695:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$695:
 	leaq	608(%rsp), %r11
 	leaq	48736(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$694:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$694:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$693:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$693:
 	leaq	608(%rsp), %r11
 	leaq	49248(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$692:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$692:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$691:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$691:
 	leaq	608(%rsp), %r11
 	leaq	49760(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$690:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$690:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$689:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$689:
 	leaq	608(%rsp), %r11
 	leaq	50272(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$688:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$688:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$687:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$687:
 	leaq	608(%rsp), %r11
 	leaq	50784(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$686:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$686:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$685:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$685:
 	leaq	608(%rsp), %r11
 	leaq	51296(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$684:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$684:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$683:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$683:
 	leaq	608(%rsp), %r11
 	leaq	51808(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$682:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$682:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$681:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$681:
 	leaq	608(%rsp), %r11
 	leaq	52320(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$680:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$680:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$679:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$679:
 	leaq	608(%rsp), %r11
 	leaq	52832(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$678:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$678:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$677:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$677:
 	leaq	608(%rsp), %r11
 	leaq	53344(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$676:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$676:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$675:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$675:
 	leaq	608(%rsp), %r11
 	leaq	53856(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$674:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$674:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$673:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$673:
 	leaq	608(%rsp), %r11
 	leaq	54368(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$672:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$672:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$671:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$671:
 	leaq	608(%rsp), %r11
 	leaq	54880(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$670:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$670:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$669:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$669:
 	leaq	608(%rsp), %r11
 	leaq	55392(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$668:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$668:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$667:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$667:
 	leaq	608(%rsp), %r11
 	leaq	55904(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$666:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$666:
 	leaq	16(%rsp), %rsp
 	leaq	20576(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$665:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$665:
 	leaq	20576(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$663
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$664:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$663
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$664:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -60303,210 +60303,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$664:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$663:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$663:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$664
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$664
 	leaq	20576(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$662:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$662:
 	leaq	21088(%rsp), %r11
 	leaq	56416(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$661:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$661:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	56928(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$660:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$660:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$659:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$659:
 	leaq	608(%rsp), %r11
 	leaq	57440(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$658:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$658:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$657:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$657:
 	leaq	608(%rsp), %r11
 	leaq	57952(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$656:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$656:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$655:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$655:
 	leaq	608(%rsp), %r11
 	leaq	58464(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$654:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$654:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$653:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$653:
 	leaq	608(%rsp), %r11
 	leaq	58976(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$652:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$652:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$651:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$651:
 	leaq	608(%rsp), %r11
 	leaq	59488(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$650:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$650:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$649:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$649:
 	leaq	608(%rsp), %r11
 	leaq	60000(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$648:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$648:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$647:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$647:
 	leaq	608(%rsp), %r11
 	leaq	60512(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$646:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$646:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$645:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$645:
 	leaq	608(%rsp), %r11
 	leaq	61024(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$644:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$644:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$643:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$643:
 	leaq	608(%rsp), %r11
 	leaq	61536(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$642:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$642:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$641:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$641:
 	leaq	608(%rsp), %r11
 	leaq	62048(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$640:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$640:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$639:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$639:
 	leaq	608(%rsp), %r11
 	leaq	62560(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$638:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$638:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$637:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$637:
 	leaq	608(%rsp), %r11
 	leaq	63072(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$636:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$636:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$635:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$635:
 	leaq	608(%rsp), %r11
 	leaq	63584(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$634:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$634:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$633:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$633:
 	leaq	608(%rsp), %r11
 	leaq	64096(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$632:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$632:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$631:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$631:
 	leaq	608(%rsp), %r11
 	leaq	64608(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$630:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$630:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$629:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$629:
 	leaq	608(%rsp), %r11
 	leaq	65120(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$628:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$628:
 	leaq	16(%rsp), %rsp
 	leaq	21088(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$627:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$627:
 	leaq	21088(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$625
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$626:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$625
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$626:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -60515,210 +60515,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$626:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$625:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$625:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$626
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$626
 	leaq	21088(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$624:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$624:
 	leaq	21600(%rsp), %r11
 	leaq	65632(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$623:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$623:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	66144(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$622:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$622:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$621:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$621:
 	leaq	608(%rsp), %r11
 	leaq	66656(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$620:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$620:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$619:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$619:
 	leaq	608(%rsp), %r11
 	leaq	67168(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$618:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$618:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$617:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$617:
 	leaq	608(%rsp), %r11
 	leaq	67680(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$616:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$616:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$615:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$615:
 	leaq	608(%rsp), %r11
 	leaq	68192(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$614:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$614:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$613:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$613:
 	leaq	608(%rsp), %r11
 	leaq	68704(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$612:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$612:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$611:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$611:
 	leaq	608(%rsp), %r11
 	leaq	69216(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$610:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$610:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$609:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$609:
 	leaq	608(%rsp), %r11
 	leaq	69728(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$608:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$608:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$607:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$607:
 	leaq	608(%rsp), %r11
 	leaq	70240(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$606:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$606:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$605:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$605:
 	leaq	608(%rsp), %r11
 	leaq	70752(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$604:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$604:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$603:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$603:
 	leaq	608(%rsp), %r11
 	leaq	71264(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$602:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$602:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$601:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$601:
 	leaq	608(%rsp), %r11
 	leaq	71776(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$600:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$600:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$599:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$599:
 	leaq	608(%rsp), %r11
 	leaq	72288(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$598:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$598:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$597:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$597:
 	leaq	608(%rsp), %r11
 	leaq	72800(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$596:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$596:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$595:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$595:
 	leaq	608(%rsp), %r11
 	leaq	73312(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$594:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$594:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$593:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$593:
 	leaq	608(%rsp), %r11
 	leaq	73824(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$592:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$592:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$591:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$591:
 	leaq	608(%rsp), %r11
 	leaq	74336(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$590:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$590:
 	leaq	16(%rsp), %rsp
 	leaq	21600(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$589:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$589:
 	leaq	21600(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$587
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$588:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$587
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$588:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -60727,210 +60727,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$588:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$587:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$587:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$588
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$588
 	leaq	21600(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$586:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$586:
 	leaq	22112(%rsp), %r11
 	leaq	74848(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$585:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$585:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	75360(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$584:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$584:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$583:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$583:
 	leaq	608(%rsp), %r11
 	leaq	75872(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$582:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$582:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$581:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$581:
 	leaq	608(%rsp), %r11
 	leaq	76384(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$580:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$580:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$579:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$579:
 	leaq	608(%rsp), %r11
 	leaq	76896(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$578:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$578:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$577:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$577:
 	leaq	608(%rsp), %r11
 	leaq	77408(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$576:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$576:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$575:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$575:
 	leaq	608(%rsp), %r11
 	leaq	77920(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$574:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$574:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$573:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$573:
 	leaq	608(%rsp), %r11
 	leaq	78432(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$572:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$572:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$571:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$571:
 	leaq	608(%rsp), %r11
 	leaq	78944(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$570:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$570:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$569:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$569:
 	leaq	608(%rsp), %r11
 	leaq	79456(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$568:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$568:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$567:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$567:
 	leaq	608(%rsp), %r11
 	leaq	79968(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$566:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$566:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$565:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$565:
 	leaq	608(%rsp), %r11
 	leaq	80480(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$564:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$564:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$563:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$563:
 	leaq	608(%rsp), %r11
 	leaq	80992(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$562:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$562:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$561:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$561:
 	leaq	608(%rsp), %r11
 	leaq	81504(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$560:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$560:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$559:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$559:
 	leaq	608(%rsp), %r11
 	leaq	82016(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$558:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$558:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$557:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$557:
 	leaq	608(%rsp), %r11
 	leaq	82528(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$556:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$556:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$555:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$555:
 	leaq	608(%rsp), %r11
 	leaq	83040(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$554:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$554:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$553:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$553:
 	leaq	608(%rsp), %r11
 	leaq	83552(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$552:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$552:
 	leaq	16(%rsp), %rsp
 	leaq	22112(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$551:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$551:
 	leaq	22112(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$549
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$550:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$549
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$550:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -60939,210 +60939,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$550:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$549:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$549:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$550
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$550
 	leaq	22112(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$548:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$548:
 	leaq	22624(%rsp), %r11
 	leaq	84064(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$547:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$547:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	84576(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$546:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$546:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$545:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$545:
 	leaq	608(%rsp), %r11
 	leaq	85088(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$544:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$544:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$543:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$543:
 	leaq	608(%rsp), %r11
 	leaq	85600(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$542:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$542:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$541:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$541:
 	leaq	608(%rsp), %r11
 	leaq	86112(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$540:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$540:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$539:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$539:
 	leaq	608(%rsp), %r11
 	leaq	86624(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$538:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$538:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$537:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$537:
 	leaq	608(%rsp), %r11
 	leaq	87136(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$536:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$536:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$535:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$535:
 	leaq	608(%rsp), %r11
 	leaq	87648(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$534:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$534:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$533:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$533:
 	leaq	608(%rsp), %r11
 	leaq	88160(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$532:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$532:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$531:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$531:
 	leaq	608(%rsp), %r11
 	leaq	88672(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$530:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$530:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$529:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$529:
 	leaq	608(%rsp), %r11
 	leaq	89184(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$528:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$528:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$527:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$527:
 	leaq	608(%rsp), %r11
 	leaq	89696(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$526:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$526:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$525:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$525:
 	leaq	608(%rsp), %r11
 	leaq	90208(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$524:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$524:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$523:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$523:
 	leaq	608(%rsp), %r11
 	leaq	90720(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$522:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$522:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$521:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$521:
 	leaq	608(%rsp), %r11
 	leaq	91232(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$520:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$520:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$519:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$519:
 	leaq	608(%rsp), %r11
 	leaq	91744(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$518:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$518:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$517:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$517:
 	leaq	608(%rsp), %r11
 	leaq	92256(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$516:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$516:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$515:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$515:
 	leaq	608(%rsp), %r11
 	leaq	92768(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$514:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$514:
 	leaq	16(%rsp), %rsp
 	leaq	22624(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$513:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$513:
 	leaq	22624(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$511
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$512:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$511
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$512:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -61151,210 +61151,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$512:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$511:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$511:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$512
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$512
 	leaq	22624(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$510:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$510:
 	leaq	23136(%rsp), %r11
 	leaq	93280(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$509:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$509:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	93792(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$508:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$508:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$507:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$507:
 	leaq	608(%rsp), %r11
 	leaq	94304(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$506:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$506:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$505:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$505:
 	leaq	608(%rsp), %r11
 	leaq	94816(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$504:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$504:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$503:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$503:
 	leaq	608(%rsp), %r11
 	leaq	95328(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$502:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$502:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$501:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$501:
 	leaq	608(%rsp), %r11
 	leaq	95840(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$500:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$500:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$499:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$499:
 	leaq	608(%rsp), %r11
 	leaq	96352(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$498:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$498:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$497:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$497:
 	leaq	608(%rsp), %r11
 	leaq	96864(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$496:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$496:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$495:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$495:
 	leaq	608(%rsp), %r11
 	leaq	97376(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$494:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$494:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$493:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$493:
 	leaq	608(%rsp), %r11
 	leaq	97888(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$492:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$492:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$491:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$491:
 	leaq	608(%rsp), %r11
 	leaq	98400(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$490:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$490:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$489:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$489:
 	leaq	608(%rsp), %r11
 	leaq	98912(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$488:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$488:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$487:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$487:
 	leaq	608(%rsp), %r11
 	leaq	99424(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$486:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$486:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$485:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$485:
 	leaq	608(%rsp), %r11
 	leaq	99936(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$484:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$484:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$483:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$483:
 	leaq	608(%rsp), %r11
 	leaq	100448(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$482:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$482:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$481:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$481:
 	leaq	608(%rsp), %r11
 	leaq	100960(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$480:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$480:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$479:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$479:
 	leaq	608(%rsp), %r11
 	leaq	101472(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$478:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$478:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$477:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$477:
 	leaq	608(%rsp), %r11
 	leaq	101984(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$476:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$476:
 	leaq	16(%rsp), %rsp
 	leaq	23136(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$475:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$475:
 	leaq	23136(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$473
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$474:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$473
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$474:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -61363,210 +61363,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$474:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$473:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$473:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$474
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$474
 	leaq	23136(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$472:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$472:
 	leaq	23648(%rsp), %r11
 	leaq	102496(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$471:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$471:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	103008(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$470:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$470:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$469:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$469:
 	leaq	608(%rsp), %r11
 	leaq	103520(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$468:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$468:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$467:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$467:
 	leaq	608(%rsp), %r11
 	leaq	104032(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$466:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$466:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$465:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$465:
 	leaq	608(%rsp), %r11
 	leaq	104544(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$464:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$464:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$463:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$463:
 	leaq	608(%rsp), %r11
 	leaq	105056(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$462:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$462:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$461:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$461:
 	leaq	608(%rsp), %r11
 	leaq	105568(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$460:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$460:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$459:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$459:
 	leaq	608(%rsp), %r11
 	leaq	106080(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$458:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$458:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$457:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$457:
 	leaq	608(%rsp), %r11
 	leaq	106592(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$456:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$456:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$455:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$455:
 	leaq	608(%rsp), %r11
 	leaq	107104(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$454:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$454:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$453:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$453:
 	leaq	608(%rsp), %r11
 	leaq	107616(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$452:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$452:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$451:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$451:
 	leaq	608(%rsp), %r11
 	leaq	108128(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$450:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$450:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$449:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$449:
 	leaq	608(%rsp), %r11
 	leaq	108640(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$448:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$448:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$447:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$447:
 	leaq	608(%rsp), %r11
 	leaq	109152(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$446:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$446:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$445:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$445:
 	leaq	608(%rsp), %r11
 	leaq	109664(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$444:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$444:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$443:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$443:
 	leaq	608(%rsp), %r11
 	leaq	110176(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$442:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$442:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$441:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$441:
 	leaq	608(%rsp), %r11
 	leaq	110688(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$440:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$440:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$439:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$439:
 	leaq	608(%rsp), %r11
 	leaq	111200(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$438:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$438:
 	leaq	16(%rsp), %rsp
 	leaq	23648(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$437:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$437:
 	leaq	23648(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$435
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$436:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$435
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$436:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -61575,210 +61575,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$436:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$435:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$435:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$436
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$436
 	leaq	23648(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$434:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$434:
 	leaq	24160(%rsp), %r11
 	leaq	111712(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$433:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$433:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	112224(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$432:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$432:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$431:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$431:
 	leaq	608(%rsp), %r11
 	leaq	112736(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$430:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$430:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$429:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$429:
 	leaq	608(%rsp), %r11
 	leaq	113248(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$428:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$428:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$427:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$427:
 	leaq	608(%rsp), %r11
 	leaq	113760(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$426:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$426:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$425:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$425:
 	leaq	608(%rsp), %r11
 	leaq	114272(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$424:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$424:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$423:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$423:
 	leaq	608(%rsp), %r11
 	leaq	114784(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$422:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$422:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$421:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$421:
 	leaq	608(%rsp), %r11
 	leaq	115296(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$420:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$420:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$419:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$419:
 	leaq	608(%rsp), %r11
 	leaq	115808(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$418:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$418:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$417:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$417:
 	leaq	608(%rsp), %r11
 	leaq	116320(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$416:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$416:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$415:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$415:
 	leaq	608(%rsp), %r11
 	leaq	116832(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$414:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$414:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$413:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$413:
 	leaq	608(%rsp), %r11
 	leaq	117344(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$412:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$412:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$411:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$411:
 	leaq	608(%rsp), %r11
 	leaq	117856(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$410:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$410:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$409:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$409:
 	leaq	608(%rsp), %r11
 	leaq	118368(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$408:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$408:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$407:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$407:
 	leaq	608(%rsp), %r11
 	leaq	118880(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$406:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$406:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$405:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$405:
 	leaq	608(%rsp), %r11
 	leaq	119392(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$404:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$404:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$403:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$403:
 	leaq	608(%rsp), %r11
 	leaq	119904(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$402:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$402:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$401:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$401:
 	leaq	608(%rsp), %r11
 	leaq	120416(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$400:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$400:
 	leaq	16(%rsp), %rsp
 	leaq	24160(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$399:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$399:
 	leaq	24160(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$397
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$398:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$397
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$398:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -61787,210 +61787,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$398:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$397:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$397:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$398
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$398
 	leaq	24160(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$396:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$396:
 	leaq	24672(%rsp), %r11
 	leaq	120928(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$395:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$395:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	121440(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$394:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$394:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$393:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$393:
 	leaq	608(%rsp), %r11
 	leaq	121952(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$392:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$392:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$391:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$391:
 	leaq	608(%rsp), %r11
 	leaq	122464(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$390:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$390:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$389:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$389:
 	leaq	608(%rsp), %r11
 	leaq	122976(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$388:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$388:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$387:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$387:
 	leaq	608(%rsp), %r11
 	leaq	123488(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$386:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$386:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$385:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$385:
 	leaq	608(%rsp), %r11
 	leaq	124000(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$384:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$384:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$383:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$383:
 	leaq	608(%rsp), %r11
 	leaq	124512(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$382:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$382:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$381:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$381:
 	leaq	608(%rsp), %r11
 	leaq	125024(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$380:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$380:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$379:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$379:
 	leaq	608(%rsp), %r11
 	leaq	125536(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$378:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$378:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$377:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$377:
 	leaq	608(%rsp), %r11
 	leaq	126048(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$376:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$376:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$375:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$375:
 	leaq	608(%rsp), %r11
 	leaq	126560(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$374:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$374:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$373:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$373:
 	leaq	608(%rsp), %r11
 	leaq	127072(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$372:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$372:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$371:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$371:
 	leaq	608(%rsp), %r11
 	leaq	127584(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$370:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$370:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$369:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$369:
 	leaq	608(%rsp), %r11
 	leaq	128096(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$368:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$368:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$367:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$367:
 	leaq	608(%rsp), %r11
 	leaq	128608(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$366:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$366:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$365:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$365:
 	leaq	608(%rsp), %r11
 	leaq	129120(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$364:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$364:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$363:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$363:
 	leaq	608(%rsp), %r11
 	leaq	129632(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$362:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$362:
 	leaq	16(%rsp), %rsp
 	leaq	24672(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$361:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$361:
 	leaq	24672(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$359
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$360:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$359
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$360:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -61999,210 +61999,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$360:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$359:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$359:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$360
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$360
 	leaq	24672(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$358:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$358:
 	leaq	25184(%rsp), %r11
 	leaq	130144(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$357:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$357:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	130656(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$356:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$356:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$355:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$355:
 	leaq	608(%rsp), %r11
 	leaq	131168(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$354:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$354:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$353:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$353:
 	leaq	608(%rsp), %r11
 	leaq	131680(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$352:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$352:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$351:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$351:
 	leaq	608(%rsp), %r11
 	leaq	132192(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$350:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$350:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$349:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$349:
 	leaq	608(%rsp), %r11
 	leaq	132704(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$348:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$348:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$347:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$347:
 	leaq	608(%rsp), %r11
 	leaq	133216(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$346:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$346:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$345:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$345:
 	leaq	608(%rsp), %r11
 	leaq	133728(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$344:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$344:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$343:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$343:
 	leaq	608(%rsp), %r11
 	leaq	134240(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$342:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$342:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$341:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$341:
 	leaq	608(%rsp), %r11
 	leaq	134752(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$340:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$340:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$339:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$339:
 	leaq	608(%rsp), %r11
 	leaq	135264(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$338:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$338:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$337:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$337:
 	leaq	608(%rsp), %r11
 	leaq	135776(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$336:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$336:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$335:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$335:
 	leaq	608(%rsp), %r11
 	leaq	136288(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$334:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$334:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$333:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$333:
 	leaq	608(%rsp), %r11
 	leaq	136800(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$332:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$332:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$331:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$331:
 	leaq	608(%rsp), %r11
 	leaq	137312(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$330:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$330:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$329:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$329:
 	leaq	608(%rsp), %r11
 	leaq	137824(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$328:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$328:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$327:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$327:
 	leaq	608(%rsp), %r11
 	leaq	138336(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$326:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$326:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$325:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$325:
 	leaq	608(%rsp), %r11
 	leaq	138848(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$324:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$324:
 	leaq	16(%rsp), %rsp
 	leaq	25184(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$323:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$323:
 	leaq	25184(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$321
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$322:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$321
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$322:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -62211,210 +62211,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$322:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$321:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$321:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$322
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$322
 	leaq	25184(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$320:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$320:
 	leaq	25696(%rsp), %r11
 	leaq	139360(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$319:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$319:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	139872(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$318:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$318:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$317:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$317:
 	leaq	608(%rsp), %r11
 	leaq	140384(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$316:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$316:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$315:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$315:
 	leaq	608(%rsp), %r11
 	leaq	140896(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$314:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$314:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$313:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$313:
 	leaq	608(%rsp), %r11
 	leaq	141408(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$312:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$312:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$311:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$311:
 	leaq	608(%rsp), %r11
 	leaq	141920(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$310:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$310:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$309:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$309:
 	leaq	608(%rsp), %r11
 	leaq	142432(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$308:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$308:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$307:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$307:
 	leaq	608(%rsp), %r11
 	leaq	142944(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$306:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$306:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$305:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$305:
 	leaq	608(%rsp), %r11
 	leaq	143456(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$304:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$304:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$303:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$303:
 	leaq	608(%rsp), %r11
 	leaq	143968(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$302:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$302:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$301:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$301:
 	leaq	608(%rsp), %r11
 	leaq	144480(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$300:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$300:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$299:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$299:
 	leaq	608(%rsp), %r11
 	leaq	144992(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$298:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$298:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$297:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$297:
 	leaq	608(%rsp), %r11
 	leaq	145504(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$296:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$296:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$295:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$295:
 	leaq	608(%rsp), %r11
 	leaq	146016(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$294:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$294:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$293:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$293:
 	leaq	608(%rsp), %r11
 	leaq	146528(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$292:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$292:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$291:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$291:
 	leaq	608(%rsp), %r11
 	leaq	147040(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$290:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$290:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$289:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$289:
 	leaq	608(%rsp), %r11
 	leaq	147552(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$288:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$288:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$287:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$287:
 	leaq	608(%rsp), %r11
 	leaq	148064(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$286:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$286:
 	leaq	16(%rsp), %rsp
 	leaq	25696(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$285:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$285:
 	leaq	25696(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$283
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$284:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$283
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$284:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -62423,210 +62423,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$284:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$283:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$283:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$284
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$284
 	leaq	25696(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$282:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$282:
 	leaq	26208(%rsp), %r11
 	leaq	148576(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$281:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$281:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	149088(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$280:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$280:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$279:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$279:
 	leaq	608(%rsp), %r11
 	leaq	149600(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$278:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$278:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$277:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$277:
 	leaq	608(%rsp), %r11
 	leaq	150112(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$276:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$276:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$275:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$275:
 	leaq	608(%rsp), %r11
 	leaq	150624(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$274:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$274:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$273:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$273:
 	leaq	608(%rsp), %r11
 	leaq	151136(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$272:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$272:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$271:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$271:
 	leaq	608(%rsp), %r11
 	leaq	151648(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$270:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$270:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$269:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$269:
 	leaq	608(%rsp), %r11
 	leaq	152160(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$268:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$268:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$267:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$267:
 	leaq	608(%rsp), %r11
 	leaq	152672(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$266:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$266:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$265:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$265:
 	leaq	608(%rsp), %r11
 	leaq	153184(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$264:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$264:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$263:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$263:
 	leaq	608(%rsp), %r11
 	leaq	153696(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$262:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$262:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$261:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$261:
 	leaq	608(%rsp), %r11
 	leaq	154208(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$260:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$260:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$259:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$259:
 	leaq	608(%rsp), %r11
 	leaq	154720(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$258:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$258:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$257:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$257:
 	leaq	608(%rsp), %r11
 	leaq	155232(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$256:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$256:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$255:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$255:
 	leaq	608(%rsp), %r11
 	leaq	155744(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$254:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$254:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$253:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$253:
 	leaq	608(%rsp), %r11
 	leaq	156256(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$252:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$252:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$251:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$251:
 	leaq	608(%rsp), %r11
 	leaq	156768(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$250:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$250:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$249:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$249:
 	leaq	608(%rsp), %r11
 	leaq	157280(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$248:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$248:
 	leaq	16(%rsp), %rsp
 	leaq	26208(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$247:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$247:
 	leaq	26208(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$245
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$246:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$245
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$246:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -62635,210 +62635,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$246:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$245:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$245:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$246
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$246
 	leaq	26208(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$244:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$244:
 	leaq	26720(%rsp), %r11
 	leaq	157792(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$243:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$243:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	158304(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$242:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$242:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$241:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$241:
 	leaq	608(%rsp), %r11
 	leaq	158816(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$240:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$240:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$239:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$239:
 	leaq	608(%rsp), %r11
 	leaq	159328(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$238:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$238:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$237:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$237:
 	leaq	608(%rsp), %r11
 	leaq	159840(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$236:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$236:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$235:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$235:
 	leaq	608(%rsp), %r11
 	leaq	160352(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$234:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$234:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$233:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$233:
 	leaq	608(%rsp), %r11
 	leaq	160864(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$232:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$232:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$231:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$231:
 	leaq	608(%rsp), %r11
 	leaq	161376(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$230:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$230:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$229:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$229:
 	leaq	608(%rsp), %r11
 	leaq	161888(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$228:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$228:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$227:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$227:
 	leaq	608(%rsp), %r11
 	leaq	162400(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$226:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$226:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$225:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$225:
 	leaq	608(%rsp), %r11
 	leaq	162912(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$224:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$224:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$223:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$223:
 	leaq	608(%rsp), %r11
 	leaq	163424(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$222:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$222:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$221:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$221:
 	leaq	608(%rsp), %r11
 	leaq	163936(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$220:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$220:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$219:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$219:
 	leaq	608(%rsp), %r11
 	leaq	164448(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$218:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$218:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$217:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$217:
 	leaq	608(%rsp), %r11
 	leaq	164960(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$216:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$216:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$215:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$215:
 	leaq	608(%rsp), %r11
 	leaq	165472(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$214:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$214:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$213:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$213:
 	leaq	608(%rsp), %r11
 	leaq	165984(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$212:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$212:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$211:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$211:
 	leaq	608(%rsp), %r11
 	leaq	166496(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$210:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$210:
 	leaq	16(%rsp), %rsp
 	leaq	26720(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$209:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$209:
 	leaq	26720(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$207
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$208:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$207
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$208:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -62847,210 +62847,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$208:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$207:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$207:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$208
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$208
 	leaq	26720(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$206:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$206:
 	leaq	27232(%rsp), %r11
 	leaq	167008(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$205:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$205:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	167520(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$204:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$204:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$203:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$203:
 	leaq	608(%rsp), %r11
 	leaq	168032(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$202:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$202:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$201:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$201:
 	leaq	608(%rsp), %r11
 	leaq	168544(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$200:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$200:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$199:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$199:
 	leaq	608(%rsp), %r11
 	leaq	169056(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$198:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$198:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$197:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$197:
 	leaq	608(%rsp), %r11
 	leaq	169568(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$196:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$196:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$195:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$195:
 	leaq	608(%rsp), %r11
 	leaq	170080(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$194:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$194:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$193:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$193:
 	leaq	608(%rsp), %r11
 	leaq	170592(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$192:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$192:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$191:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$191:
 	leaq	608(%rsp), %r11
 	leaq	171104(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$190:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$190:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$189:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$189:
 	leaq	608(%rsp), %r11
 	leaq	171616(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$188:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$188:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$187:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$187:
 	leaq	608(%rsp), %r11
 	leaq	172128(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$186:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$186:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$185:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$185:
 	leaq	608(%rsp), %r11
 	leaq	172640(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$184:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$184:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$183:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$183:
 	leaq	608(%rsp), %r11
 	leaq	173152(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$182:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$182:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$181:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$181:
 	leaq	608(%rsp), %r11
 	leaq	173664(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$180:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$180:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$179:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$179:
 	leaq	608(%rsp), %r11
 	leaq	174176(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$178:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$178:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$177:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$177:
 	leaq	608(%rsp), %r11
 	leaq	174688(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$176:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$176:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$175:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$175:
 	leaq	608(%rsp), %r11
 	leaq	175200(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$174:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$174:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$173:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$173:
 	leaq	608(%rsp), %r11
 	leaq	175712(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$172:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$172:
 	leaq	16(%rsp), %rsp
 	leaq	27232(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$171:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$171:
 	leaq	27232(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$169
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$170:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$169
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$170:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63059,210 +63059,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$170:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$169:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$169:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$170
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$170
 	leaq	27232(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$168:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$168:
 	leaq	27744(%rsp), %r11
 	leaq	176224(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$167:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$167:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	176736(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$166:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$166:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$165:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$165:
 	leaq	608(%rsp), %r11
 	leaq	177248(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$164:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$164:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$163:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$163:
 	leaq	608(%rsp), %r11
 	leaq	177760(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$162:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$162:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$161:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$161:
 	leaq	608(%rsp), %r11
 	leaq	178272(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$160:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$160:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$159:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$159:
 	leaq	608(%rsp), %r11
 	leaq	178784(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$158:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$158:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$157:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$157:
 	leaq	608(%rsp), %r11
 	leaq	179296(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$156:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$156:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$155:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$155:
 	leaq	608(%rsp), %r11
 	leaq	179808(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$154:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$154:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$153:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$153:
 	leaq	608(%rsp), %r11
 	leaq	180320(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$152:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$152:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$151:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$151:
 	leaq	608(%rsp), %r11
 	leaq	180832(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$150:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$150:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$149:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$149:
 	leaq	608(%rsp), %r11
 	leaq	181344(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$148:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$148:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$147:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$147:
 	leaq	608(%rsp), %r11
 	leaq	181856(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$146:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$146:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$145:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$145:
 	leaq	608(%rsp), %r11
 	leaq	182368(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$144:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$144:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$143:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$143:
 	leaq	608(%rsp), %r11
 	leaq	182880(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$142:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$142:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$141:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$141:
 	leaq	608(%rsp), %r11
 	leaq	183392(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$140:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$140:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$139:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$139:
 	leaq	608(%rsp), %r11
 	leaq	183904(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$138:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$138:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$137:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$137:
 	leaq	608(%rsp), %r11
 	leaq	184416(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$136:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$136:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$135:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$135:
 	leaq	608(%rsp), %r11
 	leaq	184928(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$134:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$134:
 	leaq	16(%rsp), %rsp
 	leaq	27744(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$133:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$133:
 	leaq	27744(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$131
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$132:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$131
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$132:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63271,210 +63271,210 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$132:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$131:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$131:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$132
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$132
 	leaq	27744(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$130:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$130:
 	leaq	28256(%rsp), %r11
 	leaq	185440(%rsp), %rax
 	leaq	1120(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$129:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$129:
 	leaq	16(%rsp), %rsp
 	leaq	608(%rsp), %r11
 	leaq	185952(%rsp), %rax
 	leaq	1632(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$128:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$128:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$127:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$127:
 	leaq	608(%rsp), %r11
 	leaq	186464(%rsp), %rax
 	leaq	2144(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$126:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$126:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$125:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$125:
 	leaq	608(%rsp), %r11
 	leaq	186976(%rsp), %rax
 	leaq	2656(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$124:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$124:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$123:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$123:
 	leaq	608(%rsp), %r11
 	leaq	187488(%rsp), %rax
 	leaq	3168(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$122:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$122:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$121:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$121:
 	leaq	608(%rsp), %r11
 	leaq	188000(%rsp), %rax
 	leaq	3680(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$120:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$120:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$119:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$119:
 	leaq	608(%rsp), %r11
 	leaq	188512(%rsp), %rax
 	leaq	4192(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$118:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$118:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$117:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$117:
 	leaq	608(%rsp), %r11
 	leaq	189024(%rsp), %rax
 	leaq	4704(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$116:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$116:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$115:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$115:
 	leaq	608(%rsp), %r11
 	leaq	189536(%rsp), %rax
 	leaq	5216(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$114:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$114:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$113:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$113:
 	leaq	608(%rsp), %r11
 	leaq	190048(%rsp), %rax
 	leaq	5728(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$112:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$112:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$111:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$111:
 	leaq	608(%rsp), %r11
 	leaq	190560(%rsp), %rax
 	leaq	6240(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$110:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$110:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$109:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$109:
 	leaq	608(%rsp), %r11
 	leaq	191072(%rsp), %rax
 	leaq	6752(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$108:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$108:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$107:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$107:
 	leaq	608(%rsp), %r11
 	leaq	191584(%rsp), %rax
 	leaq	7264(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$106:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$106:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$105:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$105:
 	leaq	608(%rsp), %r11
 	leaq	192096(%rsp), %rax
 	leaq	7776(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$104:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$104:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$103:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$103:
 	leaq	608(%rsp), %r11
 	leaq	192608(%rsp), %rax
 	leaq	8288(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$102:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$102:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$101:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$101:
 	leaq	608(%rsp), %r11
 	leaq	193120(%rsp), %rax
 	leaq	8800(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$100:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$100:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$99:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$99:
 	leaq	608(%rsp), %r11
 	leaq	193632(%rsp), %rax
 	leaq	9312(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$98:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$98:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$97:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$97:
 	leaq	608(%rsp), %r11
 	leaq	194144(%rsp), %rax
 	leaq	9824(%rsp), %rcx
 	leaq	-16(%rsp), %rsp
 	call	L_poly_basemul$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$96:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$96:
 	leaq	16(%rsp), %rsp
 	leaq	28256(%rsp), %rax
 	leaq	608(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$95:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$95:
 	leaq	28256(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$93
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$94:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$93
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$94:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63483,88 +63483,88 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$94:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$93:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$93:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$94
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$94
 	leaq	28256(%rsp), %rax
 	call	L_poly_frommont$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$92:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$92:
 	leaq	19552(%rsp), %rax
 	leaq	10336(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$91:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$91:
 	leaq	20064(%rsp), %rax
 	leaq	10848(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$90:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$90:
 	leaq	20576(%rsp), %rax
 	leaq	11360(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$89:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$89:
 	leaq	21088(%rsp), %rax
 	leaq	11872(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$88:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$88:
 	leaq	21600(%rsp), %rax
 	leaq	12384(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$87:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$87:
 	leaq	22112(%rsp), %rax
 	leaq	12896(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$86:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$86:
 	leaq	22624(%rsp), %rax
 	leaq	13408(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$85:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$85:
 	leaq	23136(%rsp), %rax
 	leaq	13920(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$84:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$84:
 	leaq	23648(%rsp), %rax
 	leaq	14432(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$83:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$83:
 	leaq	24160(%rsp), %rax
 	leaq	14944(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$82:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$82:
 	leaq	24672(%rsp), %rax
 	leaq	15456(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$81:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$81:
 	leaq	25184(%rsp), %rax
 	leaq	15968(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$80:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$80:
 	leaq	25696(%rsp), %rax
 	leaq	16480(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$79:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$79:
 	leaq	26208(%rsp), %rax
 	leaq	16992(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$78:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$78:
 	leaq	26720(%rsp), %rax
 	leaq	17504(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$77:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$77:
 	leaq	27232(%rsp), %rax
 	leaq	18016(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$76:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$76:
 	leaq	27744(%rsp), %rax
 	leaq	18528(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$75:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$75:
 	leaq	28256(%rsp), %rax
 	leaq	19040(%rsp), %rcx
 	call	L_poly_add2$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$74:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$74:
 	leaq	19552(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$72
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$73:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$72
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$73:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63573,13 +63573,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$73:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$72:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$72:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$73
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$73
 	leaq	20064(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$70
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$71:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$70
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$71:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63588,13 +63588,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$71:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$70:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$70:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$71
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$71
 	leaq	20576(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$68
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$69:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$68
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$69:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63603,13 +63603,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$69:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$68:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$68:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$69
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$69
 	leaq	21088(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$66
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$67:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$66
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$67:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63618,13 +63618,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$67:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$66:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$66:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$67
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$67
 	leaq	21600(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$64
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$65:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$64
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$65:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63633,13 +63633,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$65:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$64:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$64:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$65
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$65
 	leaq	22112(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$62
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$63:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$62
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$63:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63648,13 +63648,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$63:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$62:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$62:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$63
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$63
 	leaq	22624(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$60
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$61:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$60
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$61:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63663,13 +63663,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$61:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$60:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$60:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$61
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$61
 	leaq	23136(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$58
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$59:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$58
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$59:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63678,13 +63678,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$59:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$58:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$58:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$59
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$59
 	leaq	23648(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$56
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$57:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$56
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$57:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63693,13 +63693,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$57:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$56:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$56:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$57
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$57
 	leaq	24160(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$54
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$55:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$54
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$55:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63708,13 +63708,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$55:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$54:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$54:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$55
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$55
 	leaq	24672(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$52
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$53:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$52
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$53:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63723,13 +63723,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$53:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$52:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$52:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$53
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$53
 	leaq	25184(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$50
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$51:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$50
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$51:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63738,13 +63738,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$51:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$50:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$50:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$51
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$51
 	leaq	25696(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$48
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$49:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$48
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$49:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63753,13 +63753,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$49:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$48:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$48:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$49
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$49
 	leaq	26208(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$46
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$47:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$46
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$47:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63768,13 +63768,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$47:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$46:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$46:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$47
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$47
 	leaq	26720(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$44
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$45:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$44
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$45:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63783,13 +63783,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$45:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$44:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$44:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$45
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$45
 	leaq	27232(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$42
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$43:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$42
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$43:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63798,13 +63798,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$43:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$42:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$42:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$43
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$43
 	leaq	27744(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$40
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$41:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$40
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$41:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63813,13 +63813,13 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$41:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$40:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$40:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$41
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$41
 	leaq	28256(%rsp), %rax
 	movq	$0, %rdx
-	jmp 	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$38
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$39:
+	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$38
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$39:
 	movw	(%rax,%rdx,2), %bx
 	movswl	%bx, %r9d
 	imull	$20159, %r9d, %r9d
@@ -63828,156 +63828,156 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$39:
 	subw	%r9w, %bx
 	movw	%bx, (%rax,%rdx,2)
 	incq	%rdx
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$38:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$38:
 	cmpq	$256, %rdx
-	jb  	Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$39
+	jb  	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$39
 	movq	(%rsp), %rbx
 	movq	8(%rsp), %r10
 	movq	%r10, %rcx
 	leaq	1120(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$37:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$37:
 	leaq	384(%r10), %rcx
 	leaq	1632(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$36:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$36:
 	leaq	768(%r10), %rcx
 	leaq	2144(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$35:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$35:
 	leaq	1152(%r10), %rcx
 	leaq	2656(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$34:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$34:
 	leaq	1536(%r10), %rcx
 	leaq	3168(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$33:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$33:
 	leaq	1920(%r10), %rcx
 	leaq	3680(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$32:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$32:
 	leaq	2304(%r10), %rcx
 	leaq	4192(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$31:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$31:
 	leaq	2688(%r10), %rcx
 	leaq	4704(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$30:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$30:
 	leaq	3072(%r10), %rcx
 	leaq	5216(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$29:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$29:
 	leaq	3456(%r10), %rcx
 	leaq	5728(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$28:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$28:
 	leaq	3840(%r10), %rcx
 	leaq	6240(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$27:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$27:
 	leaq	4224(%r10), %rcx
 	leaq	6752(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$26:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$26:
 	leaq	4608(%r10), %rcx
 	leaq	7264(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$25:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$25:
 	leaq	4992(%r10), %rcx
 	leaq	7776(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$24:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$24:
 	leaq	5376(%r10), %rcx
 	leaq	8288(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$23:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$23:
 	leaq	5760(%r10), %rcx
 	leaq	8800(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$22:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$22:
 	leaq	6144(%r10), %rcx
 	leaq	9312(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$21:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$21:
 	leaq	6528(%r10), %rcx
 	leaq	9824(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$20:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$20:
 	movq	%rbx, %r10
 	movq	%r10, %rcx
 	leaq	19552(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$19:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$19:
 	leaq	384(%r10), %rcx
 	leaq	20064(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$18:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$18:
 	leaq	768(%r10), %rcx
 	leaq	20576(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$17:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$17:
 	leaq	1152(%r10), %rcx
 	leaq	21088(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$16:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$16:
 	leaq	1536(%r10), %rcx
 	leaq	21600(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$15:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$15:
 	leaq	1920(%r10), %rcx
 	leaq	22112(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$14:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$14:
 	leaq	2304(%r10), %rcx
 	leaq	22624(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$13:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$13:
 	leaq	2688(%r10), %rcx
 	leaq	23136(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$12:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$12:
 	leaq	3072(%r10), %rcx
 	leaq	23648(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$11:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$11:
 	leaq	3456(%r10), %rcx
 	leaq	24160(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$10:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$10:
 	leaq	3840(%r10), %rcx
 	leaq	24672(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$9:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$9:
 	leaq	4224(%r10), %rcx
 	leaq	25184(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$8:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$8:
 	leaq	4608(%r10), %rcx
 	leaq	25696(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$7:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$7:
 	leaq	4992(%r10), %rcx
 	leaq	26208(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$6:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$6:
 	leaq	5376(%r10), %rcx
 	leaq	26720(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$5:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$5:
 	leaq	5760(%r10), %rcx
 	leaq	27232(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$4:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$4:
 	leaq	6144(%r10), %rcx
 	leaq	27744(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$3:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$3:
 	leaq	6528(%r10), %rcx
 	leaq	28256(%rsp), %rax
 	call	L_poly_tobytes$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$2:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$2:
 	movq	64(%rsp), %rax
 	movq	%rax, 6912(%rbx)
 	movq	72(%rsp), %rax
@@ -65727,7 +65727,7 @@ Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$2:
 	leaq	64(%rsp), %rsi
 	leaq	-232(%rsp), %rsp
 	call	L_sha3_256A_A6944$1
-Ljade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand$1:
+Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$1:
 	leaq	232(%rsp), %rsp
 	movq	%mm2, %rdx
 	movq	64(%rsp), %rax

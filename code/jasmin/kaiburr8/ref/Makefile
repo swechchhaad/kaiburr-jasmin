@@ -35,3 +35,9 @@ clean:
 ifeq ($(OS),Darwin)
 	-rm -rf test/*.dSYM
 endif
+
+test/test_kem: test/test_kem.c jkem.s randombytes.c
+	$(CC) $(CFLAGS) -I include/ -o test/test_kem test/test_kem.c jkem.s randombytes.c
+
+test: test/test_kem
+	cd test && bash test.sh
