@@ -268,7 +268,7 @@ fn _i_poly_frommsg(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_INDCPA_MS
 fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] s_seed, reg u8 nonce) -> reg ptr u16[MLKEM_N]
 {
   stack u8[MLKEM_SYMBYTES +1] extseed;   /* 33 = MLKEM_SYMBYTES +1 */
-  stack u8[MLKEM_ETA*MLKEM_N/4] buf;      /* 128 = MLKEM_ETA*MLKEM_N/4 */
+  stack u8[MLKEM_N] buf;      /* 128 = MLKEM_ETA*MLKEM_N/4 */
   reg u8 c,a,b;
   reg u16 t;
   reg ui64 i;
@@ -285,36 +285,34 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
   }
   extseed[MLKEM_SYMBYTES] = nonce;
 
-  buf = _shake256_128_33(buf, extseed);
+  buf = _shake256_256_33(buf, extseed);
 
   () = #unspill(rp);
 
   i = 0;
-  while (i < MLKEM_ETA*MLKEM_N/4) {
+  while (i < MLKEM_N) {
     c = buf[i];
-    a = c;
-    a &= 0x55;
-
-    c >>= 1;
-    c &= 0x55;
-    c += a;
-
-    a = c;
-    a &= 0x3;
     b = c;
-    b >>= 2;
-    b &= 0x3;
-    a -= b;
-    t = (16s)a;
-    rp[2 * i] = t;
+    b &= 1;
+    
     a = c;
-    a >>= 4;
-    a &= 0x3;
-    b = c >> 6;
-    b &= 0x3;
-    a -= b;
+    a &= (1 << (NOISE_N - 1)) - 1;
+    a += 1;
+    a >>= (NOISE_N - 1);         
+
+    a <<= 1;
+    a += 1;
+    a -= b;    
+
+    c >>= (NOISE_N - 1); 
+    c &= 1;                       
+    b = 0;
+    b -= c;
+    a ^= b;
+    a -= b;                    
+
     t = (16s)a;
-    rp[2 * i + 1] = t;
+    rp[i] = t;
     i += 1;
   }
 

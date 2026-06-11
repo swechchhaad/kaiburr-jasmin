@@ -27,6 +27,10 @@ namespace A128 {
   param int _ASIZE = 128;
   from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
 }
+namespace A256 {
+  param int _ASIZE = 256;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
 
 namespace A168 {
   param int _ASIZE = 168;
@@ -43,8 +47,27 @@ namespace A1184 {
   from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
 }
 
+namespace A9248 {
+  param int _ASIZE = 9248;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
+
+namespace A9600 {
+  param int _ASIZE = 9600;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
+
+namespace A7296 {
+  param int _ASIZE = 7296;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
+
 namespace A1568 {
   param int _ASIZE = 1568;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
+namespace A6944 {
+  param int _ASIZE = 6944;
   from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
 }
 
@@ -66,6 +89,28 @@ fn _shake256_128_33
   st, _ = A33::__absorb_ref(st, 0, in, SHAKE, R136);
   () = #unspill(out);
   _, out = A128::__squeeze_ref(st, out, R136);
+
+  return out;
+}
+
+#[safety =
+   { requires = is_arr_init(in,0,33)
+   , ensures = is_arr_init(out,0,256)
+   }
+ ]
+fn _shake256_256_33
+( reg mut ptr u8[256] out
+, reg const ptr u8[33] in
+) -> reg ptr u8[256]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  st = st_s;
+  st = __state_init_ref(st);
+  () = #spill(out);
+  st, _ = A33::__absorb_ref(st, 0, in, SHAKE, R136);
+  () = #unspill(out);
+  _, out = A256::__squeeze_ref(st, out, R136);
 
   return out;
 }
@@ -94,6 +139,73 @@ fn _shake256_A32__A1120
 }
 
 #[safety =
+   { requires = is_arr_init(in0,0,32) && is_arr_init(in1,0,9600)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _shake256_A32__A9632
+( reg mut ptr u8[32] out
+, reg const ptr u8[32] in0
+, reg const ptr u8[9600] in1) -> reg ptr u8[32]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  st = st_s;
+  st = __state_init_ref(st);
+  () = #spill(out, in1);
+  st, _ = A32::__absorb_ref(st, 0, in0, UNFINISHED, R136);
+  () = #unspill(in1);
+  st, _ = A9600::__absorb_ref(st, 32, in1, SHAKE, R136);
+  () = #unspill(out);
+  _, out = A32::__squeeze_ref(st, out, R136);
+  return out;
+}
+
+#[safety =
+   { requires = is_arr_init(in,0,9248)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _sha3_256A_A9248
+( reg mut ptr u8[32] out
+, reg ptr u8[9248] in
+) -> reg ptr u8[32]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  () = #spill(out);
+  st = st_s;
+  st = __state_init_ref(st);
+  st, _ = A9248::__absorb_ref(st, 0, in, SHA3, R136);
+  () = #unspill(out);
+  _, out = A32::__squeeze_ref(st, out, R136);
+
+  return out;
+}
+
+#[safety =
+   { requires = is_arr_init(in,0,6944)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _sha3_256A_A6944
+( reg mut ptr u8[32] out
+, reg ptr u8[6944] in
+) -> reg ptr u8[32]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  () = #spill(out);
+  st = st_s;
+  st = __state_init_ref(st);
+  st, _ = A6944::__absorb_ref(st, 0, in, SHA3, R136);
+  () = #unspill(out);
+  _, out = A32::__squeeze_ref(st, out, R136);
+
+  return out;
+}
+
+#[safety =
    { requires = is_arr_init(in0,0,32) && is_arr_init(in1,0,1568)
    , ensures = is_arr_init(out,0,32)
    }
@@ -112,6 +224,30 @@ fn _shake256_A32__A1600
   st, _ = A32::__absorb_ref(st, 0, in0, UNFINISHED, R136);
   () = #unspill(in1);
   st, _ = A1568::__absorb_ref(st, 32, in1, SHAKE, R136);
+  () = #unspill(out);
+  _, out = A32::__squeeze_ref(st, out, R136);
+  return out;
+}
+
+#[safety =
+   { requires = is_arr_init(in0,0,32) && is_arr_init(in1,0,7296)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _shake256_A32__A7328
+( #[spill_to_mmx] reg mut ptr u8[32] out
+, reg const ptr u8[32] in0
+, reg const ptr u8[7296] in1) -> reg ptr u8[32]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  () = #spill(out);
+  () = #spill(in1);
+  st = st_s;
+  st = __state_init_ref(st);
+  st, _ = A32::__absorb_ref(st, 0, in0, UNFINISHED, R136);
+  () = #unspill(in1);
+  st, _ = A7296::__absorb_ref(st, 32, in1, SHAKE, R136);
   () = #unspill(out);
   _, out = A32::__squeeze_ref(st, out, R136);
   return out;

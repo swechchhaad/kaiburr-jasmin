@@ -99,40 +99,43 @@ fn __gen_matrix(stack u8[MLKEM_SYMBYTES] seed, reg u64 transposed) -> stack u16[
   stack u64[25] state;
   stack u16[MLKEM_N] poly;
   stack u16[MLKEM_K*MLKEM_VECN] r;
+  stack u64 si sj;
 
   reg u8 c;
   reg u16 t;
   reg ui64 ctr;
   reg u64 k;
+  reg u64 i j off tmp;
   #[mmx] reg ui64 sctr;
   #[mmx] reg u64 stransposed;
-  inline int j i;
+  inline int s;
 
   stransposed = transposed;
-
-  for j = 0 to MLKEM_SYMBYTES
+  for s = 0 to MLKEM_SYMBYTES
   {
-    c = seed[j];
-    extseed[j] = c;
+   c = seed[s];
+   extseed[s] = c;
   }
 
-  for i = 0 to MLKEM_K
+ i = 0;
+  while (i < MLKEM_K)
   {
-    for j = 0 to MLKEM_K
+    j = 0;
+    while (j < MLKEM_K)
     {
       transposed = stransposed;
-
-      if(transposed == 0)
+      if (transposed == 0)
       {
-        extseed[MLKEM_SYMBYTES] = j;
-        extseed[MLKEM_SYMBYTES + 1] = i;
+        extseed[MLKEM_SYMBYTES]     = (8u)j;
+        extseed[MLKEM_SYMBYTES + 1] = (8u)i;
       }
       else
       {
-        extseed[MLKEM_SYMBYTES] = i;
-        extseed[MLKEM_SYMBYTES + 1] = j;
+        extseed[MLKEM_SYMBYTES]     = (8u)i;
+        extseed[MLKEM_SYMBYTES + 1] = (8u)j;
       }
 
+      si = i; sj = j;                    
       state = _shake128_absorb34(state, extseed);
 
       ctr = 0;
@@ -141,21 +144,32 @@ fn __gen_matrix(stack u8[MLKEM_SYMBYTES] seed, reg u64 transposed) -> stack u16[
         sctr = ctr;
         state, buf = _shake128_squeezeblock(state, buf);
         ctr = sctr;
-
-        ctr, poly  = __rej_uniform(poly, ctr, buf);
+        ctr, poly = __rej_uniform(poly, ctr, buf);
       }
 
-      k = 0;
+      i = si; j = sj;                           
+
+   
+      off  = i;
+      off *= MLKEM_VECN;
+      tmp  = j;
+      tmp *= MLKEM_N;
+      off += tmp;
+
       reg ptr u16[MLKEM_N] rij;
-      rij = r[i * MLKEM_VECN + j * MLKEM_N : MLKEM_N];
+      rij = r[off : MLKEM_N];
+      k = 0;
       while (k < MLKEM_N)
       {
-        t = poly[k];
-        rij[k] = t;
+        t = poly[k]; 
+        rij[k] = t;        
         k += 1;
       }
-      r[i * MLKEM_VECN + j * MLKEM_N : MLKEM_N] = rij;
+      r[off : MLKEM_N] = rij;
+
+      j += 1;
     }
+    i += 1;
   }
   return r;
 }
