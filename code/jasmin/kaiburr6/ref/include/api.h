@@ -1,16 +1,17 @@
+
 #ifndef JADE_KEM_mlkem_mlkem1024_amd64_ref_API_H
 #define JADE_KEM_mlkem_mlkem1024_amd64_ref_API_H
 
 #include <stdint.h>
 
-#define JADE_KEM_mlkem_mlkem1024_amd64_ref_SECRETKEYBYTES   3168
-#define JADE_KEM_mlkem_mlkem1024_amd64_ref_PUBLICKEYBYTES   1568
-#define JADE_KEM_mlkem_mlkem1024_amd64_ref_CIPHERTEXTBYTES  1568
+#define JADE_KEM_mlkem_mlkem1024_amd64_ref_SECRETKEYBYTES   20920
+#define JADE_KEM_mlkem_mlkem1024_amd64_ref_PUBLICKEYBYTES   6944
+#define JADE_KEM_mlkem_mlkem1024_amd64_ref_CIPHERTEXTBYTES  7296
 #define JADE_KEM_mlkem_mlkem1024_amd64_ref_KEYPAIRCOINBYTES 64
 #define JADE_KEM_mlkem_mlkem1024_amd64_ref_ENCCOINBYTES     32
 #define JADE_KEM_mlkem_mlkem1024_amd64_ref_BYTES            32
 
-#define JADE_KEM_mlkem_mlkem1024_amd64_ref_ALGNAME         "mlkem1024"
+#define JADE_KEM_mlkem_mlkem1024_amd64_ref_ALGNAME         "kaiburr6"
 #define JADE_KEM_mlkem_mlkem1024_amd64_ref_ARCH            "amd64"
 #define JADE_KEM_mlkem_mlkem1024_amd64_ref_IMPL            "ref"
 

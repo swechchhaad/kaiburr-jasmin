@@ -157,7 +157,7 @@ fn __indcpa_enc(
 
   ct = s_ct;
   ct[0:MLKEM_POLYVECBYTES] = __i_polyvec_tobytes(ct[0:MLKEM_POLYVECBYTES], bp);
-  ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v = _poly_tobytes(ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v);
+  ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v = _i_poly_tobytes(ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v);
 
   return ct;
 }
@@ -173,8 +173,8 @@ fn __indcpa_dec(reg mut ptr u8[MLKEM_INDCPA_MSGBYTES] msgp, reg const ptr u8[MLK
   stack u16[MLKEM_N] t v mp;
   stack u16[MLKEM_VECN] bp skpv;
 
-  bp = __i_polyvec_frombytes(ct[0:MLKEM_POLYVECBYTES]);
-  v = _poly_frombytes(v, ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES]);
+  bp = __i_polyvec_frombytes(bp,ct[0:MLKEM_POLYVECBYTES]);
+  v = _i_poly_frombytes(v, ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES]);
 
   skpv = __i_polyvec_frombytes(sk);
 

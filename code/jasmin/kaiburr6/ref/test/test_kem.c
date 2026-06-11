@@ -1,70 +1,72 @@
+
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
-#include "../../../../kyber/ref/params.h"
-#include "../../../../kyber/ref/kem.h"
+#include "../include/api.h"
+
+#define SK_BYTES   JADE_KEM_mlkem_mlkem1024_amd64_ref_SECRETKEYBYTES
+#define PK_BYTES   JADE_KEM_mlkem_mlkem1024_amd64_ref_PUBLICKEYBYTES
+#define CT_BYTES   JADE_KEM_mlkem_mlkem1024_amd64_ref_CIPHERTEXTBYTES
+#define SS_BYTES   JADE_KEM_mlkem_mlkem1024_amd64_ref_BYTES
+#define KP_COINS   JADE_KEM_mlkem_mlkem1024_amd64_ref_KEYPAIRCOINBYTES
+#define ENC_COINS  JADE_KEM_mlkem_mlkem1024_amd64_ref_ENCCOINBYTES
+
+#define NTESTS 10
 
 int main(void)
 {
-  unsigned char sk0[KYBER_SECRETKEYBYTES];
-  unsigned char sk1[KYBER_SECRETKEYBYTES];
-  unsigned char pk0[KYBER_PUBLICKEYBYTES];
-  unsigned char pk1[KYBER_PUBLICKEYBYTES];
-  unsigned char ct0[KYBER_CIPHERTEXTBYTES];
-  unsigned char ct1[KYBER_CIPHERTEXTBYTES];
-  unsigned char shk0[KYBER_SSBYTES];
-  unsigned char shk1[KYBER_SSBYTES];
-
-  unsigned char randomness0[2*KYBER_SYMBYTES];
-  unsigned char randomness1[2*KYBER_SYMBYTES];
+  unsigned char sk[SK_BYTES];
+  unsigned char pk[PK_BYTES];
+  unsigned char ct[CT_BYTES];
+  unsigned char ss_enc[SS_BYTES];
+  unsigned char ss_dec[SS_BYTES];
+  unsigned char kp_coins[KP_COINS];
+  unsigned char enc_coins[ENC_COINS];
+  int ret;
 
   FILE *urandom = fopen("/dev/urandom", "r");
-  fread(randomness0, 2*KYBER_SYMBYTES, 1, urandom);
-  fread(randomness1, 2*KYBER_SYMBYTES, 1, urandom);
+  if (!urandom) { printf("error: could not open /dev/urandom\n"); return -1; }
+
+  printf("kaiburr6 ref roundtrip test (k=18, NOISE_N=6)\n");
+  printf("PK=%d SK=%d CT=%d SS=%d bytes\n\n", PK_BYTES, SK_BYTES, CT_BYTES, SS_BYTES);
+
+  for (int t = 0; t < NTESTS; t++)
+  {
+    fread(kp_coins,  KP_COINS,  1, urandom);
+    fread(enc_coins, ENC_COINS, 1, urandom);
+
+    /* --- keygen --- */
+    ret = jade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand(pk, sk, kp_coins);
+    if (ret != 0) { printf("test %d: keypair failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
+
+    /* --- encapsulate --- */
+    ret = jade_kem_mlkem_mlkem1024_amd64_ref_enc_derand(ct, ss_enc, pk, enc_coins);
+    if (ret != 0) { printf("test %d: enc failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
+
+    /* --- decapsulate (should succeed) --- */
+    ret = jade_kem_mlkem_mlkem1024_amd64_ref_dec(ss_dec, ct, sk);
+    if (ret != 0) { printf("test %d: dec failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
+
+    if (memcmp(ss_enc, ss_dec, SS_BYTES) != 0) {
+      printf("test %d: FAIL — shared secrets do not match after successful dec\n", t);
+      fclose(urandom); return -1;
+    }
+
+    /* --- decapsulate corrupted ciphertext (implicit rejection) --- */
+    ct[0] ^= 1;
+    ret = jade_kem_mlkem_mlkem1024_amd64_ref_dec(ss_dec, ct, sk);
+    if (ret != 0) { printf("test %d: dec (corrupt) failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
+
+    if (memcmp(ss_enc, ss_dec, SS_BYTES) == 0) {
+      printf("test %d: FAIL — shared secrets match after corrupted ct (implicit rejection broken)\n", t);
+      fclose(urandom); return -1;
+    }
+
+    printf("test %d: OK\n", t);
+  }
+
   fclose(urandom);
-
-  /* TEST KEYPAIR */
-  jade_kem_mlkem_mlkem1024_amd64_ref_keypair_derand(pk1, sk1, randomness0);
-  crypto_kem_keypair_derand(pk0, sk0, randomness0);
-
-  for(int i=0;i<KYBER_SECRETKEYBYTES;i++)
-    if(sk0[i] != sk1[i]) {printf("error crypto_kem_keypair sk: %d\n", i); exit(-1); }
-
-  for(int i=0;i<KYBER_PUBLICKEYBYTES;i++)
-    if(pk0[i] != pk1[i]) {printf("error crypto_kem_keypair pk: %d\n", i); exit(-1); }
-
-  /* TEST ENCAPSULATION */
-  crypto_kem_enc_derand(ct0, shk0, pk0, randomness1);
-  jade_kem_mlkem_mlkem1024_amd64_ref_enc_derand(ct1, shk1, pk1, randomness1);
-
-  for(int i=0;i<KYBER_CIPHERTEXTBYTES;i++)
-    if(ct0[i] != ct1[i]) {printf("error crypto_kem_enc ct: %d\n", i); exit(-1); }
-
-  for(int i=0;i<KYBER_SSBYTES;i++)
-    if(shk0[i] != shk1[i]) {printf("error crypto_kem_enc ss: %d\n", i); exit(-1); }
-  
-  /* TEST DECAPSULATION */
-  memset(shk0, 0, KYBER_SSBYTES);
-  memset(shk1, 0, KYBER_SSBYTES);
-
-  crypto_kem_dec(shk0, ct0, sk0);
-  jade_kem_mlkem_mlkem1024_amd64_ref_dec(shk1, ct1, sk1);
-
-  for(int i=0;i<KYBER_SSBYTES;i++)
-    if(shk0[i] != shk1[i]) {printf("error crypto_kem_dec (suc): %d %d %d\n", i, shk0[i], shk1[i]); exit(-1); }
-
-  /* TEST DECAPSULATION FAILURE */
-  memset(shk0, 0, KYBER_SSBYTES);
-  memset(shk1, 0, KYBER_SSBYTES);
-
-  ct0[0] = !ct0[0]; // corrupt a single byte
-  ct1[0] = ct0[0];
-
-  crypto_kem_dec(shk0, ct0, sk0);
-  jade_kem_mlkem_mlkem1024_amd64_ref_dec(shk1, ct1, sk1);
-
-  for(int i=0;i<KYBER_SSBYTES;i++)
-    if(shk0[i] != shk1[i]) {printf("error crypto_kem_dec (fail): %d %d %d\n", i, shk0[i], shk1[i]); exit(-1); }
-
+  printf("\nAll %d tests passed.\n", NTESTS);
   return 0;
 }
