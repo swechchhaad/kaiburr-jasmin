@@ -32,6 +32,11 @@ namespace A256 {
   from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
 }
 
+namespace A192 {
+  param int _ASIZE = 192;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
+
 namespace A168 {
   param int _ASIZE = 168;
   from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
@@ -111,6 +116,28 @@ fn _shake256_256_33
   st, _ = A33::__absorb_ref(st, 0, in, SHAKE, R136);
   () = #unspill(out);
   _, out = A256::__squeeze_ref(st, out, R136);
+
+  return out;
+}
+
+#[safety =
+   { requires = is_arr_init(in,0,33)
+   , ensures = is_arr_init(out,0,192)
+   }
+ ]
+fn _shake256_192_33
+( reg mut ptr u8[192] out
+, reg const ptr u8[33] in
+) -> reg ptr u8[192]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  st = st_s;
+  st = __state_init_ref(st);
+  () = #spill(out);
+  st, _ = A33::__absorb_ref(st, 0, in, SHAKE, R136);
+  () = #unspill(out);
+  _, out = A192::__squeeze_ref(st, out, R136);
 
   return out;
 }

@@ -3,7 +3,6 @@ param int MLKEM_N = 256;
 param int MLKEM_VECN =  MLKEM_K * MLKEM_N;
 
 param int MLKEM_SYMBYTES = 32;
-param int MLKEM_ETA = 2;
 param int MLKEM_POLYBYTES = 384;
 param int MLKEM_POLYVECBYTES = (MLKEM_K * MLKEM_POLYBYTES);
 param int MLKEM_INDCPA_MSGBYTES = MLKEM_SYMBYTES;
