@@ -375,9 +375,9 @@ fn _gen_matrix_buf_rejection
   return pol, counter;
 }
 
-param int IDX_TABLE_SIZE = 32 * (MLKEM_K-2);
+param int IDX_TABLE_SIZE = 4 * MLKEM_K * MLKEM_K;
 
-#[safety = { requires = 0 <= b + (_t << (MLKEM_K + 1)) && b + ( _t << (MLKEM_K + 1)) <= IDX_TABLE_SIZE - 8 } ]
+#[safety = { requires = 0 <= b + (_t * (IDX_TABLE_SIZE/2)) && b + ( _t * (IDX_TABLE_SIZE/2)) <= IDX_TABLE_SIZE - 8 } ]
 inline fn gen_matrix_get_indexes(
   reg u64 b,
   reg u64 _t)
@@ -421,8 +421,8 @@ fn __gen_matrix_fill_polynomial
 }
 
 #[safety =
-   { requires = is_arr_init(rho,0,32) && 0 <= pos_entry + (transposed << (MLKEM_K + 1)) &&
-          pos_entry + (transposed << (MLKEM_K + 1)) <= 32 * (MLKEM_K-2) - 8
+   { requires = is_arr_init(rho,0,32) && 0 <= pos_entry + (transposed * (IDX_TABLE_SIZE/2)) &&
+          pos_entry + (transposed * (IDX_TABLE_SIZE/2)) <= IDX_TABLE_SIZE - 8
    , ensures = is_arr_init(polx4,0,2048)
    }
  ]

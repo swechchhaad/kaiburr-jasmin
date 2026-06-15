@@ -56,6 +56,18 @@ namespace A1568 {
   from Keccak require "avx2/keccak1600x4_fixedsizes_ASIZE.jinc"
 }
 
+namespace A9248 {
+  param int _ASIZE = 9248;
+  from Keccak require "avx2/keccak1600_fixedsizes_ASIZE.jinc"
+  from Keccak require "avx2/keccak1600x4_fixedsizes_ASIZE.jinc"
+}
+
+namespace A9632 {
+  param int _ASIZE = 9632;
+  from Keccak require "avx2/keccak1600_fixedsizes_ASIZE.jinc"
+  from Keccak require "avx2/keccak1600x4_fixedsizes_ASIZE.jinc"
+}
+
 namespace A1120 {
   param int _ASIZE = 1120;
   from Keccak require "avx2/keccak1600_fixedsizes_ASIZE.jinc"
@@ -440,6 +452,23 @@ fn _sha3_256A_A1568
 }
 
 #[ safety =
+   { requires = is_arr_init(in,0,9248)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _sha3_256A_A9248
+( #[spill_to_mmx] reg mut ptr u8[32] out
+, #[spill_to_mmx] reg const ptr u8[9248] in
+) -> reg ptr u8[32]
+{ reg u256[7] st;
+  st = __state_init_avx2();
+  st, _ = A9248::__absorb_avx2(st, 0, in, SHA3, R136);
+  _, out = A32::__squeeze_avx2(st, out, R136);
+
+  return out;
+}
+
+#[ safety =
    { requires = is_arr_init(in,0,1120)
    , ensures = is_arr_init(out,0,32)
    }
@@ -483,6 +512,22 @@ fn _shake256_A32__A1600
 { reg u256[7] st;
   st = __state_init_avx2();
   st, _ = A1600::__absorb_avx2(st, 0, in, SHAKE, R136);
+  _, out = A32::__squeeze_avx2(st, out, R136);
+  return out;
+}
+
+#[ safety =
+   { requires = is_arr_init(in,0,9632)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _shake256_A32__A9632
+(  reg mut ptr u8[32] out
+,  reg const ptr u8[9632] in
+) -> reg ptr u8[32]
+{ reg u256[7] st;
+  st = __state_init_avx2();
+  st, _ = A9632::__absorb_avx2(st, 0, in, SHAKE, R136);
   _, out = A32::__squeeze_avx2(st, out, R136);
   return out;
 }
