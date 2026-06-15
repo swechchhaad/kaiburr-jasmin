@@ -23,7 +23,7 @@ fn _gen_matrix_avx2
 
   buf = buf_s;
 
-  for i = 0 to 4
+  for i = 0 to (MLKEM_K*MLKEM_K)/4
   {
     pos_entry = 8*i;
     polx4 = matrix[4*i*MLKEM_N:4*MLKEM_N];

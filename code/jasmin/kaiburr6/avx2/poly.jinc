@@ -1,117 +1,95 @@
 require "params.jinc"
 require "../../common/avx2/poly.jinc"
 
-u16 pc_mask_s = 0x1F;
-u16 pc_shift1_s = 0x400;
-u16 pc_shift2_s = 0x2001;
-u32 pc_shift3_s = 0x4000001;
-u64 pc_sllvdidx_s = 0xC;
-u8[32] pc_shufbidx_s = { 0, 1, 2, 3, 4,-1,-1,-1,-1,-1, 8, 9,10,11,12,-1,
-                         9,10,11,12,-1, 0, 1, 2, 3, 4,-1,-1,-1,-1,-1, 8 };
-/*
-_poly_compress: compresses a polynomial to 5 bits per coefficient and packs
-                in byte array stored in rp
+u256 noise6_shuf = (32u8)[
+    0,  1,  2, 255,    3,  4,  5, 255,    6,  7,  8, 255,    9, 10, 11, 255,
+  255,255,255, 255,  255,255,255, 255,  255,255,255, 255,  255,255,255, 255
+];
 
-requires: input coefficients to be in the range [0..2q)
+u256 noise6_shiftv = (8u32)[ 0, 6, 12, 18, 0, 6, 12, 18 ];
+u256 noise6_perm01 = (8u32)[ 0, 0, 0, 0, 1, 1, 1, 1 ];
+u256 noise6_perm23 = (8u32)[ 2, 2, 2, 2, 3, 3, 3, 3 ];
 
-ensures:
-    output bytes encode the compressed polynomial
-*/
-#[safety =
-   { requires = is_arr_init(a,0,2*MLKEM_N)
-   , ensures = is_arr_init(rp,0,MLKEM_POLYCOMPRESSEDBYTES) && is_arr_init(a,0,2*MLKEM_N)
-   }
- ]
-inline
-fn _i_poly_compress(reg ptr u8[MLKEM_POLYCOMPRESSEDBYTES] rp, reg ptr u16[MLKEM_N] a) -> reg ptr u8[MLKEM_POLYCOMPRESSEDBYTES], reg ptr u16[MLKEM_N]
+u256 noise6_c01 = (8u32)[    1,    1,    1,    1,    1,    1,    1,    1 ];
+u256 noise6_c1f = (8u32)[ 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f ];
+u256 noise6_c20 = (8u32)[ 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 ];
+u256 noise6_c3f = (8u32)[ 0x3f, 0x3f, 0x3f, 0x3f, 0x3f, 0x3f, 0x3f, 0x3f ];
+
+inline fn noise6_map(reg u256 f, reg u256 one, reg u256 c1f, reg u256 c20) -> reg u256
 {
-  inline int i;
-  reg u256 f0 f1 v mask shift1 shift2 shift3 sllvdidx shufbidx;
-  reg u128 t0 t1;
+  reg u256 lowb t a sgn;
 
-  a = _poly_csubq(a);
+  lowb = #VPAND_256(f, one);
+  t    = #VPAND_256(f, c1f);
+  t    = #VPCMPEQ_8u32(t, c1f);
+  a    = #VPAND_256(t, one);
+  a    = #VPADD_8u32(a, a);
+  a    = #VPADD_8u32(a, one);
+  a    = #VPSUB_8u32(a, lowb);
 
-  v = jvx16[:u256 0];
-  shift1 = #VPBROADCAST_16u16(pc_shift1_s);
-  mask = #VPBROADCAST_16u16(pc_mask_s);
-  shift2 = #VPBROADCAST_16u16(pc_shift2_s);
-  shift3 = #VPBROADCAST_8u32(pc_shift3_s);
-  sllvdidx = #VPBROADCAST_4u64(pc_sllvdidx_s);
-  shufbidx = pc_shufbidx_s[:u256 0];
+  sgn  = #VPAND_256(f, c20);
+  sgn  = #VPCMPEQ_8u32(sgn, c20);
+  a    = #VPXOR_256(a, sgn);
+  a    = #VPSUB_8u32(a, sgn);
 
-  for i = 0 to MLKEM_N/32
-  {
-    f0 = a[:u256 2*i];
-    f1 = a[:u256 2*i + 1];
-    f0 = #VPMULH_16u16(f0, v);
-    f1 = #VPMULH_16u16(f1, v);
-    f0 = #VPMULHRS_16u16(f0, shift1);
-    f1 = #VPMULHRS_16u16(f1, shift1);
-    f0 = #VPAND_256(f0, mask);
-    f1 = #VPAND_256(f1, mask);
-    f0 = #VPACKUS_16u16(f0, f1);
-    f0 = #VPMADDUBSW_256(f0, shift2);
-    f0 = #VPMADDWD_256(f0, shift3);
-    f0 = #VPSLLV_8u32(f0, sllvdidx);
-    f0 = #VPSRLV_4u64(f0, sllvdidx);
-    f0 = #VPSHUFB_256(f0, shufbidx);
-    t0 = (128u)f0;
-    t1 = #VEXTRACTI128(f0, 1);
-    t0 = #BLENDV_16u8(t0, t1, (128u)shufbidx);
-    rp.[:u128 20*i] = t0;
-    rp.[:u32 20*i + 16] = (32u)t1;
-  }
-
-  return rp, a;
+  return a;
 }
 
-/*
-_poly_decompress: decompresses a polynomial from 5 bits per coefficient from
-                input array ap
-
-ensures:
-    every output coefficient is in the range [0..q)
-
-*/
-
-u8[32] pd_jshufbidx = {0,0,0,1,1,1,1,2,2,3,3,3,3,4,4,4,
-                       5,5,5,6,6,6,6,7,7,8,8,8,8,9,9,9};
-u16[16] pd_mask_s = {31,992,124,3968,496,62,1984,248,
-                     31,992,124,3968,496,62,1984,248};
-u16[16] pd_shift_s = {1024,32,256,8,64,512,16,128,
-                      1024,32,256,8,64,512,16,128};
-
-#[safety =
-   { requires = is_arr_init(a,0,MLKEM_POLYCOMPRESSEDBYTES)
-   , ensures = is_arr_init(rp,0,2*MLKEM_N)
+#[ safety =
+   { requires = is_arr_init(s_seed,0,MLKEM_SYMBYTES)
+   , ensures = is_arr_init(rp,0,MLKEM_N * 2)
    }
  ]
-fn _i_poly_decompress(reg mut ptr u16[MLKEM_N] rp, reg ptr u8 [MLKEM_POLYCOMPRESSEDBYTES] a) -> reg ptr u16[MLKEM_N]
+fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] s_seed, reg u8 nonce) -> reg ptr u16[MLKEM_N]
 {
-  inline int i;
-  reg u256 f q shufbidx mask shift;
-  reg u128 t;
-  reg u16 ti;
-  stack u128 sh;
+  stack u8[6 * MLKEM_N/8 + 32] buf;
+  stack u8[1] nonce_s;
+  reg u64 i;
+  reg ptr u8[MLKEM_SYMBYTES] seed;
 
-  q = jqx16[:u256 0];
-  shufbidx = pd_jshufbidx[:u256 0];
-  mask = pd_mask_s[:u256 0];
-  shift = pd_shift_s[:u256 0];
+  reg u256 zero shufc shiftc p01 p23 one c1f c20 c3f;
+  reg u256 v groups gg ff a0 a1 plo outlo;
 
-  for i = 0 to MLKEM_N/16
-  {
-    t = (128u)a.[:u64 10*i];
-    ti = (16u)a.[:u16 10*i + 8];
-    t = #VPINSR_8u16(t, ti, 4);
-    sh = t;
-    f = #VPBROADCAST_2u128(sh);
+  () = #spill(rp);
+  seed = s_seed;
+  nonce_s[0] = nonce;
 
-    f = #VPSHUFB_256(f, shufbidx);
-    f = #VPAND_256(f, mask);
-    f = #VPMULL_16u16(f, shift);
-    f = #VPMULHRS_16u16(f, q);
-    rp[:u256 i] = f;
+  buf[0:6 * MLKEM_N/8] = _shake256_A192__A32_A1(buf[0:6 * MLKEM_N/8], seed, nonce_s);
+
+  () = #unspill(rp);
+
+  zero = #set0_256();
+  buf.[:u256 6 * MLKEM_N/8] = zero;
+
+  shufc  = noise6_shuf;
+  shiftc = noise6_shiftv;
+  p01    = noise6_perm01;
+  p23    = noise6_perm23;
+  one    = noise6_c01;
+  c1f    = noise6_c1f;
+  c20    = noise6_c20;
+  c3f    = noise6_c3f;
+
+  i = 0;
+  while (i < MLKEM_N/16) {
+    v      = buf.[:u256 (uint)(12*i)];
+    groups = #VPSHUFB_256(v, shufc);
+
+    gg = #VPERMD(p01, groups);
+    ff = #VPSRLV_8u32(gg, shiftc);
+    ff = #VPAND_256(ff, c3f);
+    a0 = noise6_map(ff, one, c1f, c20);
+
+    gg = #VPERMD(p23, groups);
+    ff = #VPSRLV_8u32(gg, shiftc);
+    ff = #VPAND_256(ff, c3f);
+    a1 = noise6_map(ff, one, c1f, c20);
+
+    plo   = #VPACKSS_8u32(a0, a1);
+    outlo = #VPERMQ(plo, 0xD8);
+
+    rp[:u256 i] = outlo;
+    i += 1;
   }
 
   return rp;

@@ -29,7 +29,7 @@ fn __crypto_kem_keypair_jazz(reg ptr u8[MLKEM_PUBLICKEYBYTES] pk, reg ptr u8[MLK
     sk.[:u64 (MLKEM_POLYVECBYTES/8 + i)*8] = t64;
   }
 
-  sk[MLKEM_POLYVECBYTES + MLKEM_PUBLICKEYBYTES:32] = _sha3_256A_A1568(sk[MLKEM_POLYVECBYTES + MLKEM_PUBLICKEYBYTES:32], pk);
+  sk[MLKEM_POLYVECBYTES + MLKEM_PUBLICKEYBYTES:32] = _sha3_256A_A6944(sk[MLKEM_POLYVECBYTES + MLKEM_PUBLICKEYBYTES:32], pk);
 
   randomnessp = s_randomnessp;
 
@@ -62,7 +62,7 @@ fn __crypto_kem_enc_jazz(
   reg u256 b = randomnessp[#unaligned:u256 0];
   buf[:u256 0] = b;
 
-  buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES] = _sha3_256A_A1568(buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES], pk);
+  buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES] = _sha3_256A_A6944(buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES], pk);
 
   kr = _sha3_512A_A64(kr, buf);
 
@@ -128,7 +128,7 @@ fn __crypto_kem_dec_jazz(
   /* fixme: should this be done in memory? */
   () = #unspill(shk);
 
-  shk = _shake256_A32__A1600(shk, zp_ct);
+  shk = _shake256_A32__A7328(shk, zp_ct);
 
   shk = __cmov(shk, kr[0:MLKEM_SYMBYTES], cnd);
   return shk;

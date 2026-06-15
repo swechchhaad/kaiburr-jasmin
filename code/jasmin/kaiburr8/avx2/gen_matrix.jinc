@@ -17,15 +17,13 @@ fn _gen_matrix_avx2
   stack u8[BUF_size * 4] buf_s;
   reg ptr u8[BUF_size * 4] buf;
   reg ptr u16[4*MLKEM_N] polx4;
-  reg ptr u16[MLKEM_N] pol;
   reg u64 pos_entry;
-  reg u16 rc;
 
   () = #spill(transposed);
 
   buf = buf_s;
 
-  for i = 0 to 2
+  for i = 0 to (MLKEM_K*MLKEM_K)/4
   {
     pos_entry = 8*i;
     polx4 = matrix[4*i*MLKEM_N:4*MLKEM_N];
@@ -33,13 +31,6 @@ fn _gen_matrix_avx2
     polx4, buf = _gen_matrix_sample_four_polynomials(polx4, buf, rho, pos_entry, transposed);
     matrix[i*4*MLKEM_N:4*MLKEM_N] = polx4;
   }
-
-  // sample the last one, (2,2), using single-lane code
-  pol = matrix[8*MLKEM_N:MLKEM_N];
-  rc = 0x0202;
-  pol, buf[BUF_size * 0 : BUF_size] = __gen_matrix_sample_one_polynomial(pol, buf[BUF_size * 0 : BUF_size], rho, rc);
-
-  matrix[8*MLKEM_N:MLKEM_N] = pol;
 
   for i = 0 to MLKEM_K
   { for j = 0 to MLKEM_K
