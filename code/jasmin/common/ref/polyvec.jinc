@@ -69,6 +69,7 @@ fn __polyvec_pointwise_acc(stack u16[MLKEM_VECN] a, stack u16[MLKEM_VECN] b) -> 
   {
     t = _poly_basemul(t, a[MLKEM_N*i:MLKEM_N], b[MLKEM_N*i:MLKEM_N]);
     r = _poly_add2(r, t);
+    r = __poly_reduce(r);   /* reduce each iter so the running sum can't overflow */
   }
   r = __poly_reduce(r);
 
