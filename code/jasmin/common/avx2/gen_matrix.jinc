@@ -329,7 +329,6 @@ fn _gen_matrix_buf_rejection
   sst = sample_shuffle_table;
 
   saved_buf_offset = buf_offset;
-  buf_offset = buf_offset;
 
   while
     { condition_loop = buf_offset <u 3 * 168 - 48 + 1;

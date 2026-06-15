@@ -19,6 +19,8 @@ JINC = kem.jinc ../../common/avx2/params.jinc params.jinc ../../common/avx2/cons
 %.s: %.jazz
 	$(JASMINC) -o $@ $(JFLAGS) $^
 
+jkem.s: $(JINC)
+
 test/test_kem: test/test_kem.c jkem.s randombytes.c
 	$(CC) $(CFLAGS) -I include/ -o test/test_kem test/test_kem.c jkem.s randombytes.c
 
