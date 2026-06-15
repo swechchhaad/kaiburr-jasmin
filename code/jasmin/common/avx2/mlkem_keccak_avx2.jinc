@@ -38,6 +38,12 @@ namespace A128 {
   from Keccak require "avx2/keccak1600x4_fixedsizes_ASIZE.jinc"
 }
 
+namespace A256 {
+  param int _ASIZE = 256;
+  from Keccak require "avx2/keccak1600_fixedsizes_ASIZE.jinc"
+  from Keccak require "avx2/keccak1600x4_fixedsizes_ASIZE.jinc"
+}
+
 namespace A1184 {
   param int _ASIZE = 1184;
   from Keccak require "avx2/keccak1600_fixedsizes_ASIZE.jinc"
@@ -193,6 +199,27 @@ fn _shake256_A128__A32_A1
   return out;
 }
 
+
+#[safety =
+   { requires = is_arr_init(seed,0,32) && is_arr_init(nonce,0,1)
+   , ensures = is_arr_init(out,0,256)
+   }
+ ]
+fn _shake256_A256__A32_A1
+( reg mut ptr u8[256] out
+, reg const ptr u8[32] seed
+, reg const ptr u8[1] nonce
+) -> reg ptr u8[256]
+{ reg u256[7] st;
+  st = __state_init_avx2();
+  st, _ = A32::__absorb_avx2(st, 0, seed, UNFINISHED, R136);
+  st, _ = A1::__absorb_avx2(st, 32, nonce, SHAKE, R136);
+  _, out = A256::__squeeze_avx2(st, out, R136);
+
+  return out;
+}
+
+
 /* 4-way parallel SHAKE-256 writing to 128-byte stack arrays (A128) and reading from 32 byte
    stack array first (same input on all lanes), and then from 1 byte stack arrays next */
 #[safety =
@@ -219,6 +246,34 @@ fn _shake256x4_A128__A32_A1
   st, _ = A1::__absorb_avx2x4(st, 32, nonces[0:1], nonces[1:1], nonces[2:1], nonces[3:1], SHAKE, R136);
   st, out0, out1, out2, out3
     = A128::__squeeze_avx2x4(st, out0, out1, out2, out3, R136);
+
+  return out0, out1, out2, out3;
+}
+
+#[safety =
+   { requires = is_arr_init(seed,0,32) && is_arr_init(nonces,0,4) 
+    , ensures = is_arr_init(out0,0,256) &&
+                is_arr_init(out1,0,256) &&
+                is_arr_init(out2,0,256) &&
+                is_arr_init(out3,0,256)
+    }
+]
+fn _shake256x4_A256__A32_A1
+( reg mut ptr u8[256] out0 out1 out2 out3
+, reg const ptr u8[32] seed
+, reg const ptr u8[4] nonces
+) -> reg ptr u8[256] /* out0 */
+   , reg ptr u8[256] /* out1 */
+   , reg ptr u8[256] /* out2 */
+   , reg ptr u8[256] /* out3 */
+{ stack u256[25] st_s;
+  reg ptr u256[25] st;
+  st = st_s;
+  st = __state_init_avx2x4(st);
+  st, _ = A32::__absorb_bcast_avx2x4(st, 0, seed, UNFINISHED, R136);
+  st, _ = A1::__absorb_avx2x4(st, 32, nonces[0:1], nonces[1:1], nonces[2:1], nonces[3:1], SHAKE, R136);
+  st, out0, out1, out2, out3
+    = A256::__squeeze_avx2x4(st, out0, out1, out2, out3, R136);
 
   return out0, out1, out2, out3;
 }
@@ -431,4 +486,3 @@ fn _shake256_A32__A1600
   _, out = A32::__squeeze_avx2(st, out, R136);
   return out;
 }
-

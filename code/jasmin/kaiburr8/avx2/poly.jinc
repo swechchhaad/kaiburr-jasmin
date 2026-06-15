@@ -1,118 +1,61 @@
 require "params.jinc"
 require "../../common/avx2/poly.jinc"
 
-u16 pc_shift1_s = 0x200;
-u16 pc_mask_s = 0x0F;
-u16 pc_shift2_s = 0x1001;
-u32[8] pc_permidx_s = {0,4,1,5,2,6,3,7};
-
-/*
-_poly_compress: compresses a polynomial to 4 bits per coefficient and packs
-                in byte array stored in rp
-
-requires: input coefficients to be in the range [0..2q)
-
-ensures:
-    output bytes  encode the compressed polynomial
-
-    it returns the input polynomial reduced to the range [0..q)
-
-*/
-#[safety =
-   { requires = is_arr_init(a,0,2*MLKEM_N)
-   , ensures = is_arr_init(rp,0,MLKEM_POLYCOMPRESSEDBYTES) && is_arr_init(a,0,2*MLKEM_N)
+#[ safety =
+   { requires = is_arr_init(s_seed,0,MLKEM_SYMBYTES)
+   , ensures = is_arr_init(rp,0,MLKEM_N * 2)
    }
  ]
-fn _i_poly_compress(reg ptr u8[MLKEM_POLYCOMPRESSEDBYTES] rp, reg ptr u16[MLKEM_N] a) -> reg ptr u8[MLKEM_POLYCOMPRESSEDBYTES], reg ptr u16[MLKEM_N]
+fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] s_seed, reg u8 nonce) -> reg ptr u16[MLKEM_N]
 {
-  inline int i;
-  reg u256 f0 f1 f2 f3 v shift1 mask shift2 permidx;
-  reg ptr u16[16] x16p;
+  stack u8[8 * MLKEM_N/8] buf;
+  stack u8[1] nonce_s;
+  reg u8  t;
+  reg u64 i;
+  reg ptr u8[MLKEM_SYMBYTES] seed;
 
-  a = _poly_csubq(a);
+  reg u256 zero c01 c7f;
+  reg u256 v lowb m7f a sgn wlo whi;
+  reg u128 ahi;
 
-  x16p = jvx16;
-  v = x16p[:u256 0];
-  shift1 = #VPBROADCAST_16u16(pc_shift1_s);
-  mask = #VPBROADCAST_16u16(pc_mask_s);
-  shift2 = #VPBROADCAST_16u16(pc_shift2_s);
-  permidx = pc_permidx_s[:u256 0];
+  () = #spill(rp);
+  seed = s_seed;
+  nonce_s[0] = nonce;
 
-  for i = 0 to MLKEM_N/64
-  {
-    f0 = a[:u256 4*i];
-    f1 = a[:u256 4*i + 1];
-    f2 = a[:u256 4*i + 2];
-    f3 = a[:u256 4*i + 3];
-    f0 = #VPMULH_16u16(f0, v);
-    f1 = #VPMULH_16u16(f1, v);
-    f2 = #VPMULH_16u16(f2, v);
-    f3 = #VPMULH_16u16(f3, v);
-    f0 = #VPMULHRS_16u16(f0, shift1);
-    f1 = #VPMULHRS_16u16(f1, shift1);
-    f2 = #VPMULHRS_16u16(f2, shift1);
-    f3 = #VPMULHRS_16u16(f3, shift1);
-    f0 = #VPAND_256(f0, mask);
-    f1 = #VPAND_256(f1, mask);
-    f2 = #VPAND_256(f2, mask);
-    f3 = #VPAND_256(f3, mask);
-    f0 = #VPACKUS_16u16(f0, f1);
-    f2 = #VPACKUS_16u16(f2, f3);
-    f0 = #VPMADDUBSW_256(f0, shift2);
-    f2 = #VPMADDUBSW_256(f2, shift2);
-    f0 = #VPACKUS_16u16(f0, f2);
-    f0 = #VPERMD(permidx, f0);
-    rp.[:u256 32*i] = f0;
+  buf = _shake256_A256__A32_A1(buf, seed, nonce_s);
+
+  () = #unspill(rp);
+
+  zero = #set0_256();
+  t = 1;    c01 = #VPBROADCAST_32u8(t);
+  t = 0x7f; c7f = #VPBROADCAST_32u8(t); 
+
+  i = 0;
+  while (i < MLKEM_N) {
+    v    = buf.[:u256 (uint) i];    
+
+    lowb = #VPAND_256(v, c01);   
+    m7f  = #VPAND_256(v, c7f);      
+    m7f  = #VPCMPEQ_32u8(m7f, c7f);
+    a    = #VPAND_256(m7f, c01);
+    a    = #VPADD_32u8(a, a); 
+    a    = #VPADD_32u8(a, c01);  
+    a    = #VPSUB_32u8(a, lowb);
+
+    sgn  = #VPCMPGT_32u8(zero, v); 
+    a    = #VPXOR_256(a, sgn);
+    a    = #VPSUB_32u8(a, sgn); 
+
+    // sign-extend bytes -> 16-bit words (two 128-bit halves)
+    wlo  = #VPMOVSX_16u8_16u16((128u) a);
+    ahi  = #VEXTRACTI128(a, 1);
+    whi  = #VPMOVSX_16u8_16u16(ahi);   
+
+    rp.[:u256 (uint)(2*i)]      = wlo; 
+    rp.[:u256 (uint)(2*i + 32)] = whi;
+
+    i += 32;
   }
 
-  return rp, a;
-}
-
-/*
-_poly_decompress: decompresses a polynomial from 4 bits per coefficient from
-                input array ap
-
-ensures:
-    every output coefficient is in the range [0..q)
-
-*/
-
-
-u8[32] pd_jshufbidx = {0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,
-                       4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7};
-u32 pd_mask_s = 0x00F0000F;
-u32 pd_shift_s = 0x800800;
-
-#[safety =
-   { requires = is_arr_init(a,0,MLKEM_POLYCOMPRESSEDBYTES)
-   , ensures = is_arr_init(rp,0,MLKEM_N*2)
-   }
- ]
-fn _i_poly_decompress(reg mut ptr u16[MLKEM_N] rp, reg ptr u8 [MLKEM_POLYCOMPRESSEDBYTES] a) -> reg ptr u16[MLKEM_N]
-{  inline int i;
-  reg u256 f q shufbidx mask shift;
-  reg u128 h;
-  reg ptr u16[16] x16p;
-  reg ptr u8[32] x32p;
-  stack u128 sh;
-
-  x16p = jqx16;
-  q = x16p[:u256 0];
-  x32p = pd_jshufbidx;
-  shufbidx = x32p[:u256 0];
-  mask = #VPBROADCAST_8u32(pd_mask_s);
-  shift = #VPBROADCAST_8u32(pd_shift_s);
-
-  for i = 0 to MLKEM_N/16
-  {
-    h = (128u)a.[:u64 8*i];
-    sh = h;
-    f = #VPBROADCAST_2u128(sh);
-    f = #VPSHUFB_256(f, shufbidx);
-    f = #VPAND_256(f, mask);
-    f = #VPMULL_16u16(f, shift);
-    f = #VPMULHRS_16u16(f, q);
-    rp[:u256 i] = f;
-  }
   return rp;
 }
