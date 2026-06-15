@@ -1,9 +1,5 @@
 require "../../common/avx2/gen_matrix_globals.jinc"
 
-/* k=24 matrix-generation (i,j) schedule for 4-way SHAKE128.
-   First half: normal order, bytes (col,row) per cell.
-   Second half (offset 1152): transposed order, bytes (row,col).
-   144 batches x 4 cells = 576 cells per half; k*k divisible by 4 */
 u8[2304] gen_matrix_indexes =
 {
   0x00, 0x00, 0x01, 0x00, 0x02, 0x00, 0x03, 0x00, // (0,0) (0,1) (0,2) (0,3)

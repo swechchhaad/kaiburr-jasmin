@@ -388,7 +388,7 @@ inline fn gen_matrix_get_indexes(
   reg ptr u8[IDX_TABLE_SIZE] idxs;
   idxs = gen_matrix_indexes;
 
-  t = _t; t <<= (MLKEM_K + 1); // transposed table in the second half
+  t = _t; t *= (IDX_TABLE_SIZE/2); // transposed table in the second half
   b += t;
 
   t = idxs.[:u64 b];
