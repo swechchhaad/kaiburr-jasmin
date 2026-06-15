@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <sys/random.h>
 
 #include "../include/api.h"
 
@@ -12,61 +13,59 @@
 #define KP_COINS   JADE_KEM_mlkem_kaiburr6_amd64_ref_KEYPAIRCOINBYTES
 #define ENC_COINS  JADE_KEM_mlkem_kaiburr6_amd64_ref_ENCCOINBYTES
 
-#define NTESTS 10
+#ifndef NTESTS
+#define NTESTS 10000
+#endif
 
-int main(void)
+int main(int argc, char **argv)
 {
-  unsigned char sk[SK_BYTES];
-  unsigned char pk[PK_BYTES];
-  unsigned char ct[CT_BYTES];
-  unsigned char ss_enc[SS_BYTES];
-  unsigned char ss_dec[SS_BYTES];
-  unsigned char kp_coins[KP_COINS];
-  unsigned char enc_coins[ENC_COINS];
-  int ret;
-
-  FILE *urandom = fopen("/dev/urandom", "r");
-  if (!urandom) { printf("error: could not open /dev/urandom\n"); return -1; }
+  long ntests = NTESTS;
+  if (argc > 1) ntests = atol(argv[1]);
 
   printf("kaiburr6 ref roundtrip test (k=18, NOISE_N=6)\n");
-  printf("PK=%d SK=%d CT=%d SS=%d bytes\n\n", PK_BYTES, SK_BYTES, CT_BYTES, SS_BYTES);
+  printf("PK=%d SK=%d CT=%d SS=%d bytes\n", PK_BYTES, SK_BYTES, CT_BYTES, SS_BYTES);
+  printf("running %ld iterations...\n\n", ntests);
 
-  for (int t = 0; t < NTESTS; t++)
+  long roundtrip_fail = 0;  /* ss mismatch after a valid decapsulation */
+  long reject_fail    = 0;  /* corrupted ct still produced the genuine ss */
+  long error_fail     = 0;  /* a primitive returned nonzero, or rng failed */
+
+  #pragma omp parallel for schedule(dynamic, 64) \
+          reduction(+:roundtrip_fail,reject_fail,error_fail)
+  for (long t = 0; t < ntests; t++)
   {
-    fread(kp_coins,  KP_COINS,  1, urandom);
-    fread(enc_coins, ENC_COINS, 1, urandom);
+    unsigned char sk[SK_BYTES];
+    unsigned char pk[PK_BYTES];
+    unsigned char ct[CT_BYTES];
+    unsigned char ss_enc[SS_BYTES];
+    unsigned char ss_dec[SS_BYTES];
+    unsigned char kp_coins[KP_COINS];
+    unsigned char enc_coins[ENC_COINS];
 
-    /* --- keygen --- */
-    ret = jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand(pk, sk, kp_coins);
-    if (ret != 0) { printf("test %d: keypair failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
+    if (getrandom(kp_coins,  KP_COINS,  0) != (ssize_t)KP_COINS ||
+        getrandom(enc_coins, ENC_COINS, 0) != (ssize_t)ENC_COINS) { error_fail++; continue; }
 
-    /* --- encapsulate --- */
-    ret = jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand(ct, ss_enc, pk, enc_coins);
-    if (ret != 0) { printf("test %d: enc failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
+    if (jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand(pk, sk, kp_coins) != 0) { error_fail++; continue; }
+    if (jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand(ct, ss_enc, pk, enc_coins) != 0) { error_fail++; continue; }
 
-    /* --- decapsulate (should succeed) --- */
-    ret = jade_kem_mlkem_kaiburr6_amd64_ref_dec(ss_dec, ct, sk);
-    if (ret != 0) { printf("test %d: dec failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
+    /* valid decapsulation must recover the same shared secret */
+    if (jade_kem_mlkem_kaiburr6_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
+    if (memcmp(ss_enc, ss_dec, SS_BYTES) != 0) roundtrip_fail++;
 
-    if (memcmp(ss_enc, ss_dec, SS_BYTES) != 0) {
-      printf("test %d: FAIL — shared secrets do not match after successful dec\n", t);
-      fclose(urandom); return -1;
-    }
-
-    /* --- decapsulate corrupted ciphertext (implicit rejection) --- */
+    /* corrupted ciphertext must NOT recover the genuine shared secret (implicit rejection) */
     ct[0] ^= 1;
-    ret = jade_kem_mlkem_kaiburr6_amd64_ref_dec(ss_dec, ct, sk);
-    if (ret != 0) { printf("test %d: dec (corrupt) failed (ret=%d)\n", t, ret); fclose(urandom); return -1; }
-
-    if (memcmp(ss_enc, ss_dec, SS_BYTES) == 0) {
-      printf("test %d: FAIL — shared secrets match after corrupted ct (implicit rejection broken)\n", t);
-      fclose(urandom); return -1;
-    }
-
-    printf("test %d: OK\n", t);
+    if (jade_kem_mlkem_kaiburr6_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
+    if (memcmp(ss_enc, ss_dec, SS_BYTES) == 0) reject_fail++;
   }
 
-  fclose(urandom);
-  printf("\nAll %d tests passed.\n", NTESTS);
+  printf("roundtrip failures (ss mismatch after valid dec): %ld / %ld\n", roundtrip_fail, ntests);
+  printf("implicit-rejection failures (match after corrupt): %ld / %ld\n", reject_fail, ntests);
+  printf("primitive/rng errors:                              %ld / %ld\n", error_fail, ntests);
+
+  if (roundtrip_fail || reject_fail || error_fail) {
+    printf("\nFAILED\n");
+    return 1;
+  }
+  printf("\nAll %ld iterations passed.\n", ntests);
   return 0;
 }
