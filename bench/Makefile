@@ -9,6 +9,7 @@ ALL := \
  bin/formosa-mlkem-1024-ref
 
 KAIBURR := \
+ bin/formosa-kaiburr6-avx2 \
  bin/formosa-kaiburr8-avx2
 
 ALL_EXTENDED := $(ALL) \
@@ -24,7 +25,8 @@ compile-extended: $(ALL_EXTENDED)
 compile-kaiburr: $(KAIBURR)
 
 run-kaiburr: compile-kaiburr
-	@./bin/formosa-kaiburr8-avx2 "$(CPU)" "f.kaiburr8 avx2" 1
+	@./bin/formosa-kaiburr6-avx2 "$(CPU)" "f.kaiburr6 avx2" 1
+	@./bin/formosa-kaiburr8-avx2 "$(CPU)" "f.kaiburr8 avx2" 0
 
 run: compile
 	@./bin/formosa-mlkem-768-avx2 "$(CPU)" "f.mlkem768 avx2" 1
@@ -81,6 +83,15 @@ bin/formosa-mlkem-1024-ref: randombytes/librandombytes1.a
 
 #-- formosa-kaiburr (this repository) -------------------------------
 #-- avx2
+bin/formosa-kaiburr6-avx2: randombytes/librandombytes1.a
+	$(CC) $(CFLAGS) -o $@ src/crypto_kem.c \
+		-DJADE_NAMESPACE=JADE_KEM_mlkem_kaiburr6_amd64_avx2 \
+		-DJADE_NAMESPACE_LC=jade_kem_mlkem_kaiburr6_amd64_avx2 \
+		-Irandombytes/ \
+		-I../code/jasmin/kaiburr6/avx2/include/ \
+    ../code/jasmin/kaiburr6/avx2/jkem.s \
+    randombytes/librandombytes1.a
+
 bin/formosa-kaiburr8-avx2: randombytes/librandombytes1.a
 	$(CC) $(CFLAGS) -o $@ src/crypto_kem.c \
 		-DJADE_NAMESPACE=JADE_KEM_mlkem_kaiburr8_amd64_avx2 \
