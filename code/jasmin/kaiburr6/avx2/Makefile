@@ -25,6 +25,12 @@ test/test_keccak: test/test_keccak.c test/test_keccak_ref.s test/test_keccak_avx
 jkem.s: $(JINC) jkem.jazz
 	$(JASMINC) -o jkem.s $(JFLAGS) jkem.jazz
 
+test/test_kem: test/test_kem.c jkem.s randombytes.c
+	$(CC) $(CFLAGS) -I include/ -o test/test_kem test/test_kem.c jkem.s randombytes.c
+
+test: test/test_kem
+	cd test && bash test.sh
+
 test/test_keccak_ref.s: ../../common/ref/mlkem_keccak_ref.jazz
 	$(JASMINC) -o $@ $(JFLAGS) $<
 
@@ -37,7 +43,7 @@ pqcp: $(JINC)  jkem.s
 	diff jkem_pqcp.s jkem.s > /dev/null; \
 	if [ $$? -eq 0 ]; then echo "\nALL GOOD!"; else echo "\n!!!ASSEMBLY FILE AFTER TYPING NOT SAME!!!"; fi
 
-.PHONY: ct clean
+.PHONY: ct clean test
 
 ct:
 	$(JASMINCT) jkem.jazz
@@ -49,6 +55,7 @@ clean:
 	-rm -f *.s
 	-rm -f jkem.o
 	-rm -f test/speed_kem
+	-rm -f test/test_kem
 	-rm -f test/test_keccak
 	-rm -f test/test_keccak_ref.s test/test_keccak_avx2.s 
 	-rm -f test/test_oldkeccak
