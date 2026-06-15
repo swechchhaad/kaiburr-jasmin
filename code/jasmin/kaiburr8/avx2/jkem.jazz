@@ -13,7 +13,7 @@ require "kem.jinc"
 { ptr: public, val: secret } ×
 public
 "]
-export fn jade_kem_mlkem_mlkem768_amd64_avx2_keypair_derand(
+export fn jade_kem_mlkem_kaiburr8_amd64_avx2_keypair_derand(
     reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key,
     reg ptr u8[MLKEM_SECRETKEYBYTES] secret_key,
     reg ptr u8[2*MLKEM_SYMBYTES] coins)
@@ -43,7 +43,7 @@ export fn jade_kem_mlkem_mlkem768_amd64_avx2_keypair_derand(
 { ptr: public, val: secret } ×
 public
 "]
-export fn jade_kem_mlkem_mlkem768_amd64_avx2_enc_derand(
+export fn jade_kem_mlkem_kaiburr8_amd64_avx2_enc_derand(
     reg ptr u8[MLKEM_CIPHERTEXTBYTES] ciphertext,
     reg ptr u8[MLKEM_SYMBYTES] shared_secret,
     reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key,
@@ -70,7 +70,7 @@ export fn jade_kem_mlkem_mlkem768_amd64_avx2_enc_derand(
 { ptr: public, val: secret } ×
 public
 "]
-export fn jade_kem_mlkem_mlkem768_amd64_avx2_keypair(
+export fn jade_kem_mlkem_kaiburr8_amd64_avx2_keypair(
     reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key,
     reg ptr u8[MLKEM_SECRETKEYBYTES] secret_key)
  -> reg ptr u8[MLKEM_PUBLICKEYBYTES], reg ptr u8[MLKEM_SECRETKEYBYTES], reg u64
@@ -106,7 +106,7 @@ export fn jade_kem_mlkem_mlkem768_amd64_avx2_keypair(
 { ptr: public, val: secret } ×
 public
 "]
-export fn jade_kem_mlkem_mlkem768_amd64_avx2_enc(
+export fn jade_kem_mlkem_kaiburr8_amd64_avx2_enc(
     reg ptr u8[MLKEM_CIPHERTEXTBYTES] ciphertext,
     reg ptr u8[MLKEM_SYMBYTES] shared_secret,
     reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key)
@@ -143,7 +143,7 @@ export fn jade_kem_mlkem_mlkem768_amd64_avx2_enc(
 { ptr: public, val: secret } ×
 public
 "]
-export fn jade_kem_mlkem_mlkem768_amd64_avx2_dec(
+export fn jade_kem_mlkem_kaiburr8_amd64_avx2_dec(
     reg ptr u8[MLKEM_SYMBYTES] shared_secret,
     reg ptr u8[MLKEM_CIPHERTEXTBYTES] ciphertext,
     reg ptr u8[MLKEM_SECRETKEYBYTES] secret_key)

@@ -1,44 +1,44 @@
-#ifndef JADE_KEM_mlkem_mlkem1024_amd64_avx2_API_H
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_API_H
+#ifndef JADE_KEM_mlkem_kaiburr6_amd64_avx2_API_H
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_API_H
 
 #include <stdint.h>
 
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_SECRETKEYBYTES   3168
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_PUBLICKEYBYTES   1568
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_CIPHERTEXTBYTES  1568
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_KEYPAIRCOINBYTES 64
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_ENCCOINBYTES     32
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_BYTES            32
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_SECRETKEYBYTES   13920
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_PUBLICKEYBYTES   6944
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_CIPHERTEXTBYTES  7296
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_KEYPAIRCOINBYTES 64
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_ENCCOINBYTES     32
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_BYTES            32
 
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_ALGNAME         "mlkem1024"
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_ARCH            "amd64"
-#define JADE_KEM_mlkem_mlkem1024_amd64_avx2_IMPL            "avx2"
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_ALGNAME         "kaiburr6"
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_ARCH            "amd64"
+#define JADE_KEM_mlkem_kaiburr6_amd64_avx2_IMPL            "avx2"
 
-int jade_kem_mlkem_mlkem1024_amd64_avx2_keypair_derand(
+int jade_kem_mlkem_kaiburr6_amd64_avx2_keypair_derand(
   uint8_t *public_key,
   uint8_t *secret_key,
   uint8_t *coins
 );
 
-int jade_kem_mlkem_mlkem1024_amd64_avx2_keypair(
+int jade_kem_mlkem_kaiburr6_amd64_avx2_keypair(
   uint8_t *public_key,
   uint8_t *secret_key
 );
 
-int jade_kem_mlkem_mlkem1024_amd64_avx2_enc_derand(
+int jade_kem_mlkem_kaiburr6_amd64_avx2_enc_derand(
   uint8_t *ciphertext,
   uint8_t *shared_secret,
   const uint8_t *public_key,
   uint8_t *coins
 );
 
-int jade_kem_mlkem_mlkem1024_amd64_avx2_enc(
+int jade_kem_mlkem_kaiburr6_amd64_avx2_enc(
   uint8_t *ciphertext,
   uint8_t *shared_secret,
   const uint8_t *public_key
 );
 
-int jade_kem_mlkem_mlkem1024_amd64_avx2_dec(
+int jade_kem_mlkem_kaiburr6_amd64_avx2_dec(
   uint8_t *shared_secret,
   const uint8_t *ciphertext,
   const uint8_t *secret_key
