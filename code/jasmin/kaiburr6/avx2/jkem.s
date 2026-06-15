@@ -33036,7 +33036,7 @@ L_gen_matrix_avx2$2:
 	ret
 L_gen_matrix_sample_four_polynomials$1:
 	leaq	glob_data + 2784(%rip), %r9
-	shlq	$19, %r8
+	imulq	$648, %r8, %r8
 	addq	%r8, %r10
 	movq	(%r9,%r10), %r8
 	movq	%r8, 832(%rsp)
