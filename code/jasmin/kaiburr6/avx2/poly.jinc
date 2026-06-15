@@ -44,7 +44,7 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
 {
   stack u8[6 * MLKEM_N/8 + 32] buf;
   stack u8[1] nonce_s;
-  reg u64 i;
+  reg u64 i off o2;
   reg ptr u8[MLKEM_SYMBYTES] seed;
 
   reg u256 zero shufc shiftc p01 p23 one c1f c20 c3f;
@@ -71,8 +71,10 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
   c3f    = noise6_c3f;
 
   i = 0;
+  off = 0;
+  o2 = 0;
   while (i < MLKEM_N/16) {
-    v      = buf.[:u256 (uint)(12*i)];
+    v      = buf.[:u256 off];          /* off = 12*i; scale-1 address (12 is not a valid x86 scale) */
     groups = #VPSHUFB_256(v, shufc);
 
     gg = #VPERMD(p01, groups);
@@ -88,8 +90,10 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
     plo   = #VPACKSS_8u32(a0, a1);
     outlo = #VPERMQ(plo, 0xD8);
 
-    rp[:u256 i] = outlo;
+    rp.[:u256 o2] = outlo;
     i += 1;
+    off += 12;
+    o2 += 32;
   }
 
   return rp;
