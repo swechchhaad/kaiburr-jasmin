@@ -48,11 +48,9 @@ int main(int argc, char **argv)
     if (jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand(pk, sk, kp_coins) != 0) { error_fail++; continue; }
     if (jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand(ct, ss_enc, pk, enc_coins) != 0) { error_fail++; continue; }
 
-    /* valid decapsulation must recover the same shared secret */
     if (jade_kem_mlkem_kaiburr6_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
     if (memcmp(ss_enc, ss_dec, SS_BYTES) != 0) roundtrip_fail++;
 
-    /* corrupted ciphertext must NOT recover the genuine shared secret (implicit rejection) */
     ct[0] ^= 1;
     if (jade_kem_mlkem_kaiburr6_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
     if (memcmp(ss_enc, ss_dec, SS_BYTES) == 0) reject_fail++;
