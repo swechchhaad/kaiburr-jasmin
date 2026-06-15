@@ -4,7 +4,7 @@
 
 #include <stdint.h>
 
-#define JADE_KEM_mlkem_kaiburr6_amd64_ref_SECRETKEYBYTES   20920
+#define JADE_KEM_mlkem_kaiburr6_amd64_ref_SECRETKEYBYTES   13920
 #define JADE_KEM_mlkem_kaiburr6_amd64_ref_PUBLICKEYBYTES   6944
 #define JADE_KEM_mlkem_kaiburr6_amd64_ref_CIPHERTEXTBYTES  7296
 #define JADE_KEM_mlkem_kaiburr6_amd64_ref_KEYPAIRCOINBYTES 64

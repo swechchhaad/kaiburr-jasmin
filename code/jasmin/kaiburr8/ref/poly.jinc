@@ -1,4 +1,6 @@
 require "params.jinc"
+require "../../common/ref/poly.jinc"
+
 
 #[ safety =
    { requires = is_arr_init(s_seed,0,MLKEM_SYMBYTES)

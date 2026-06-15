@@ -1,13 +1,12 @@
 	.att_syntax
 	.text
 	.p2align	5
-	.global	jade_kem_mlkem_kaiburr6_amd64_ref_dec
-	.global	jade_kem_mlkem_kaiburr6_amd64_ref_enc
-	.global	jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand
-	.global	jade_kem_mlkem_kaiburr6_amd64_ref_keypair
-	.global	jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand
-	.type	jade_kem_mlkem_kaiburr6_amd64_ref_dec, %function
-jade_kem_mlkem_kaiburr6_amd64_ref_dec:
+	.global	_jade_kem_mlkem_kaiburr6_amd64_ref_dec
+	.global	_jade_kem_mlkem_kaiburr6_amd64_ref_enc
+	.global	_jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand
+	.global	_jade_kem_mlkem_kaiburr6_amd64_ref_keypair
+	.global	_jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand
+_jade_kem_mlkem_kaiburr6_amd64_ref_dec:
 	movq	%rsp, %rax
 	leaq	-212736(%rsp), %rsp
 	andq	$-8, %rsp
@@ -427,13 +426,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$905:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$903
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$904:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$903:
 	cmpq	$256, %rdx
@@ -450,13 +449,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$901:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$899
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$900:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$899:
 	cmpq	$256, %rdx
@@ -764,227 +763,227 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$856:
 	movq	%mm4, %rcx
 	movb	$0, %al
 	leaq	11848(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$855:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$1, %al
 	leaq	12360(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$854:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$2, %al
 	leaq	12872(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$853:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$3, %al
 	leaq	13384(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$852:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$4, %al
 	leaq	13896(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$851:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$5, %al
 	leaq	14408(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$850:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$6, %al
 	leaq	14920(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$849:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$7, %al
 	leaq	15432(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$848:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$8, %al
 	leaq	15944(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$847:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$9, %al
 	leaq	16456(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$846:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$10, %al
 	leaq	16968(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$845:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$11, %al
 	leaq	17480(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$844:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$12, %al
 	leaq	17992(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$843:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$13, %al
 	leaq	18504(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$842:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$14, %al
 	leaq	19016(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$841:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$15, %al
 	leaq	19528(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$840:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$16, %al
 	leaq	20040(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$839:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$17, %al
 	leaq	20552(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$838:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movq	%mm4, %rcx
 	movb	$18, %al
 	leaq	21064(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$837:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$19, %al
 	leaq	21576(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$836:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$20, %al
 	leaq	22088(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$835:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$21, %al
 	leaq	22600(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$834:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$22, %al
 	leaq	23112(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$833:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$23, %al
 	leaq	23624(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$832:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$24, %al
 	leaq	24136(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$831:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$25, %al
 	leaq	24648(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$830:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$26, %al
 	leaq	25160(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$829:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$27, %al
 	leaq	25672(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$828:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$28, %al
 	leaq	26184(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$827:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$29, %al
 	leaq	26696(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$826:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$30, %al
 	leaq	27208(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$825:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$31, %al
 	leaq	27720(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$824:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$32, %al
 	leaq	28232(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$823:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$33, %al
 	leaq	28744(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$822:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$34, %al
 	leaq	29256(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$821:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$35, %al
 	leaq	29768(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$820:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$36, %al
 	leaq	1096(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$819:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	leaq	11848(%rsp), %rax
 	call	L_poly_ntt$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$818:
@@ -1237,13 +1236,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$766:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$764
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$765:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$764:
 	cmpq	$256, %rdx
@@ -1446,13 +1445,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$729:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$727
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$728:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$727:
 	cmpq	$256, %rdx
@@ -1655,13 +1654,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$692:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$690
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$691:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$690:
 	cmpq	$256, %rdx
@@ -1864,13 +1863,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$655:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$653
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$654:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$653:
 	cmpq	$256, %rdx
@@ -2073,13 +2072,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$618:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$616
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$617:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$616:
 	cmpq	$256, %rdx
@@ -2282,13 +2281,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$581:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$579
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$580:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$579:
 	cmpq	$256, %rdx
@@ -2491,13 +2490,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$544:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$542
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$543:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$542:
 	cmpq	$256, %rdx
@@ -2700,13 +2699,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$507:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$505
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$506:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$505:
 	cmpq	$256, %rdx
@@ -2909,13 +2908,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$470:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$468
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$469:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$468:
 	cmpq	$256, %rdx
@@ -3118,13 +3117,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$433:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$431
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$432:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$431:
 	cmpq	$256, %rdx
@@ -3327,13 +3326,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$396:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$394
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$395:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$394:
 	cmpq	$256, %rdx
@@ -3536,13 +3535,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$359:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$357
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$358:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$357:
 	cmpq	$256, %rdx
@@ -3745,13 +3744,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$322:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$320
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$321:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$320:
 	cmpq	$256, %rdx
@@ -3954,13 +3953,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$285:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$283
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$284:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$283:
 	cmpq	$256, %rdx
@@ -4163,13 +4162,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$248:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$246
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$247:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$246:
 	cmpq	$256, %rdx
@@ -4372,13 +4371,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$211:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$209
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$210:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$209:
 	cmpq	$256, %rdx
@@ -4581,13 +4580,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$174:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$172
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$173:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$172:
 	cmpq	$256, %rdx
@@ -4790,13 +4789,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$137:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$135
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$136:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$135:
 	cmpq	$256, %rdx
@@ -4999,13 +4998,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$100:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$98
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$99:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$98:
 	cmpq	$256, %rdx
@@ -5151,13 +5150,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$59:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$57
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$58:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$57:
 	cmpq	$256, %rdx
@@ -5166,13 +5165,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$57:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$55
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$56:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$55:
 	cmpq	$256, %rdx
@@ -5181,13 +5180,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$55:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$53
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$54:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$53:
 	cmpq	$256, %rdx
@@ -5196,13 +5195,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$53:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$51
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$52:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$51:
 	cmpq	$256, %rdx
@@ -5211,13 +5210,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$51:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$49
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$50:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$49:
 	cmpq	$256, %rdx
@@ -5226,13 +5225,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$49:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$47
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$48:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$47:
 	cmpq	$256, %rdx
@@ -5241,13 +5240,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$47:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$45
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$46:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$45:
 	cmpq	$256, %rdx
@@ -5256,13 +5255,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$45:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$43
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$44:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$43:
 	cmpq	$256, %rdx
@@ -5271,13 +5270,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$43:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$41
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$42:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$41:
 	cmpq	$256, %rdx
@@ -5286,13 +5285,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$41:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$39
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$40:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$39:
 	cmpq	$256, %rdx
@@ -5301,13 +5300,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$39:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$37
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$38:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$37:
 	cmpq	$256, %rdx
@@ -5316,13 +5315,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$37:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$35
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$36:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$35:
 	cmpq	$256, %rdx
@@ -5331,13 +5330,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$35:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$33
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$34:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$33:
 	cmpq	$256, %rdx
@@ -5346,13 +5345,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$33:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$31
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$32:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$31:
 	cmpq	$256, %rdx
@@ -5361,13 +5360,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$31:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$29
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$30:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$29:
 	cmpq	$256, %rdx
@@ -5376,13 +5375,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$29:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$27
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$28:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$27:
 	cmpq	$256, %rdx
@@ -5391,13 +5390,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$27:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$25
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$26:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$25:
 	cmpq	$256, %rdx
@@ -5406,13 +5405,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$25:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$23
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$24:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$23:
 	cmpq	$256, %rdx
@@ -5421,13 +5420,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$23:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$21
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$22:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$21:
 	cmpq	$256, %rdx
@@ -42205,8 +42204,7 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_dec$1:
 	movq	212720(%rsp), %r15
 	movq	212728(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_kaiburr6_amd64_ref_enc, %function
-jade_kem_mlkem_kaiburr6_amd64_ref_enc:
+_jade_kem_mlkem_kaiburr6_amd64_ref_enc:
 	movq	%rsp, %rax
 	leaq	-205448(%rsp), %rsp
 	andq	$-16, %rsp
@@ -42530,227 +42528,227 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$855:
 	movq	%mm4, %rcx
 	movb	$0, %al
 	leaq	11856(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$854:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$1, %al
 	leaq	12368(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$853:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$2, %al
 	leaq	12880(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$852:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$3, %al
 	leaq	13392(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$851:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$4, %al
 	leaq	13904(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$850:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$5, %al
 	leaq	14416(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$849:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$6, %al
 	leaq	14928(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$848:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$7, %al
 	leaq	15440(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$847:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$8, %al
 	leaq	15952(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$846:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$9, %al
 	leaq	16464(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$845:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$10, %al
 	leaq	16976(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$844:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$11, %al
 	leaq	17488(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$843:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$12, %al
 	leaq	18000(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$842:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$13, %al
 	leaq	18512(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$841:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$14, %al
 	leaq	19024(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$840:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$15, %al
 	leaq	19536(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$839:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$16, %al
 	leaq	20048(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$838:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$17, %al
 	leaq	20560(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$837:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movq	%mm4, %rcx
 	movb	$18, %al
 	leaq	21072(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$836:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$19, %al
 	leaq	21584(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$835:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$20, %al
 	leaq	22096(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$834:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$21, %al
 	leaq	22608(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$833:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$22, %al
 	leaq	23120(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$832:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$23, %al
 	leaq	23632(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$831:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$24, %al
 	leaq	24144(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$830:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$25, %al
 	leaq	24656(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$829:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$26, %al
 	leaq	25168(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$828:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$27, %al
 	leaq	25680(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$827:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$28, %al
 	leaq	26192(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$826:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$29, %al
 	leaq	26704(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$825:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$30, %al
 	leaq	27216(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$824:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$31, %al
 	leaq	27728(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$823:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$32, %al
 	leaq	28240(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$822:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$33, %al
 	leaq	28752(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$821:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$34, %al
 	leaq	29264(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$820:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$35, %al
 	leaq	29776(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$819:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$36, %al
 	leaq	1104(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$818:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	leaq	11856(%rsp), %rax
 	call	L_poly_ntt$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$817:
@@ -43003,13 +43001,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$765:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$763
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$764:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$763:
 	cmpq	$256, %rdx
@@ -43212,13 +43210,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$728:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$726
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$727:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$726:
 	cmpq	$256, %rdx
@@ -43421,13 +43419,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$691:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$689
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$690:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$689:
 	cmpq	$256, %rdx
@@ -43630,13 +43628,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$654:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$652
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$653:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$652:
 	cmpq	$256, %rdx
@@ -43839,13 +43837,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$617:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$615
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$616:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$615:
 	cmpq	$256, %rdx
@@ -44048,13 +44046,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$580:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$578
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$579:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$578:
 	cmpq	$256, %rdx
@@ -44257,13 +44255,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$543:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$541
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$542:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$541:
 	cmpq	$256, %rdx
@@ -44466,13 +44464,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$506:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$504
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$505:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$504:
 	cmpq	$256, %rdx
@@ -44675,13 +44673,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$469:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$467
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$468:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$467:
 	cmpq	$256, %rdx
@@ -44884,13 +44882,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$432:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$430
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$431:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$430:
 	cmpq	$256, %rdx
@@ -45093,13 +45091,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$395:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$393
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$394:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$393:
 	cmpq	$256, %rdx
@@ -45302,13 +45300,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$358:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$356
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$357:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$356:
 	cmpq	$256, %rdx
@@ -45511,13 +45509,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$321:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$319
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$320:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$319:
 	cmpq	$256, %rdx
@@ -45720,13 +45718,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$284:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$282
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$283:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$282:
 	cmpq	$256, %rdx
@@ -45929,13 +45927,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$247:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$245
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$246:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$245:
 	cmpq	$256, %rdx
@@ -46138,13 +46136,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$210:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$208
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$209:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$208:
 	cmpq	$256, %rdx
@@ -46347,13 +46345,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$173:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$171
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$172:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$171:
 	cmpq	$256, %rdx
@@ -46556,13 +46554,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$136:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$134
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$135:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$134:
 	cmpq	$256, %rdx
@@ -46765,13 +46763,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$99:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$97
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$98:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$97:
 	cmpq	$256, %rdx
@@ -46917,13 +46915,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$58:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$56
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$57:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$56:
 	cmpq	$256, %rdx
@@ -46932,13 +46930,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$56:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$54
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$55:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$54:
 	cmpq	$256, %rdx
@@ -46947,13 +46945,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$54:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$52
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$53:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$52:
 	cmpq	$256, %rdx
@@ -46962,13 +46960,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$52:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$50
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$51:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$50:
 	cmpq	$256, %rdx
@@ -46977,13 +46975,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$50:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$48
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$49:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$48:
 	cmpq	$256, %rdx
@@ -46992,13 +46990,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$48:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$46
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$47:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$46:
 	cmpq	$256, %rdx
@@ -47007,13 +47005,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$46:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$44
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$45:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$44:
 	cmpq	$256, %rdx
@@ -47022,13 +47020,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$44:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$42
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$43:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$42:
 	cmpq	$256, %rdx
@@ -47037,13 +47035,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$42:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$40
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$41:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$40:
 	cmpq	$256, %rdx
@@ -47052,13 +47050,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$40:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$38
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$39:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$38:
 	cmpq	$256, %rdx
@@ -47067,13 +47065,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$38:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$36
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$37:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$36:
 	cmpq	$256, %rdx
@@ -47082,13 +47080,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$36:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$34
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$35:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$34:
 	cmpq	$256, %rdx
@@ -47097,13 +47095,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$34:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$32
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$33:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$32:
 	cmpq	$256, %rdx
@@ -47112,13 +47110,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$32:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$30
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$31:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$30:
 	cmpq	$256, %rdx
@@ -47127,13 +47125,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$30:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$28
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$29:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$28:
 	cmpq	$256, %rdx
@@ -47142,13 +47140,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$28:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$26
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$27:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$26:
 	cmpq	$256, %rdx
@@ -47157,13 +47155,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$26:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$24
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$25:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$24:
 	cmpq	$256, %rdx
@@ -47172,13 +47170,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$24:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$22
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$23:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$22:
 	cmpq	$256, %rdx
@@ -47187,13 +47185,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$22:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$20
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$21:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$20:
 	cmpq	$256, %rdx
@@ -47294,8 +47292,7 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc$1:
 	movq	205432(%rsp), %r15
 	movq	205440(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand, %function
-jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand:
+_jade_kem_mlkem_kaiburr6_amd64_ref_enc_derand:
 	movq	%rsp, %rax
 	leaq	-205448(%rsp), %rsp
 	andq	$-8, %rsp
@@ -47616,227 +47613,227 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$855:
 	movq	%mm4, %rcx
 	movb	$0, %al
 	leaq	11856(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$854:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$1, %al
 	leaq	12368(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$853:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$2, %al
 	leaq	12880(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$852:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$3, %al
 	leaq	13392(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$851:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$4, %al
 	leaq	13904(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$850:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$5, %al
 	leaq	14416(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$849:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$6, %al
 	leaq	14928(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$848:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$7, %al
 	leaq	15440(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$847:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$8, %al
 	leaq	15952(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$846:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$9, %al
 	leaq	16464(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$845:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$10, %al
 	leaq	16976(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$844:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$11, %al
 	leaq	17488(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$843:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$12, %al
 	leaq	18000(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$842:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$13, %al
 	leaq	18512(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$841:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$14, %al
 	leaq	19024(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$840:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$15, %al
 	leaq	19536(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$839:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$16, %al
 	leaq	20048(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$838:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$17, %al
 	leaq	20560(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$837:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movq	%mm4, %rcx
 	movb	$18, %al
 	leaq	21072(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$836:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$19, %al
 	leaq	21584(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$835:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$20, %al
 	leaq	22096(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$834:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$21, %al
 	leaq	22608(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$833:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$22, %al
 	leaq	23120(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$832:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$23, %al
 	leaq	23632(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$831:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$24, %al
 	leaq	24144(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$830:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$25, %al
 	leaq	24656(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$829:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$26, %al
 	leaq	25168(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$828:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$27, %al
 	leaq	25680(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$827:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$28, %al
 	leaq	26192(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$826:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$29, %al
 	leaq	26704(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$825:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$30, %al
 	leaq	27216(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$824:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$31, %al
 	leaq	27728(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$823:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$32, %al
 	leaq	28240(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$822:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$33, %al
 	leaq	28752(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$821:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$34, %al
 	leaq	29264(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$820:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$35, %al
 	leaq	29776(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$819:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$36, %al
 	leaq	1104(%rsp), %r10
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$818:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	leaq	11856(%rsp), %rax
 	call	L_poly_ntt$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$817:
@@ -48089,13 +48086,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$765:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$763
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$764:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$763:
 	cmpq	$256, %rdx
@@ -48298,13 +48295,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$728:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$726
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$727:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$726:
 	cmpq	$256, %rdx
@@ -48507,13 +48504,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$691:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$689
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$690:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$689:
 	cmpq	$256, %rdx
@@ -48716,13 +48713,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$654:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$652
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$653:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$652:
 	cmpq	$256, %rdx
@@ -48925,13 +48922,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$617:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$615
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$616:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$615:
 	cmpq	$256, %rdx
@@ -49134,13 +49131,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$580:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$578
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$579:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$578:
 	cmpq	$256, %rdx
@@ -49343,13 +49340,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$543:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$541
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$542:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$541:
 	cmpq	$256, %rdx
@@ -49552,13 +49549,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$506:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$504
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$505:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$504:
 	cmpq	$256, %rdx
@@ -49761,13 +49758,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$469:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$467
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$468:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$467:
 	cmpq	$256, %rdx
@@ -49970,13 +49967,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$432:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$430
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$431:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$430:
 	cmpq	$256, %rdx
@@ -50179,13 +50176,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$395:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$393
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$394:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$393:
 	cmpq	$256, %rdx
@@ -50388,13 +50385,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$358:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$356
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$357:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$356:
 	cmpq	$256, %rdx
@@ -50597,13 +50594,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$321:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$319
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$320:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$319:
 	cmpq	$256, %rdx
@@ -50806,13 +50803,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$284:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$282
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$283:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$282:
 	cmpq	$256, %rdx
@@ -51015,13 +51012,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$247:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$245
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$246:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$245:
 	cmpq	$256, %rdx
@@ -51224,13 +51221,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$210:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$208
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$209:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$208:
 	cmpq	$256, %rdx
@@ -51433,13 +51430,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$173:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$171
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$172:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$171:
 	cmpq	$256, %rdx
@@ -51642,13 +51639,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$136:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$134
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$135:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$134:
 	cmpq	$256, %rdx
@@ -51851,13 +51848,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$99:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$97
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$98:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$97:
 	cmpq	$256, %rdx
@@ -52003,13 +52000,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$58:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$56
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$57:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$56:
 	cmpq	$256, %rdx
@@ -52018,13 +52015,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$56:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$54
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$55:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$54:
 	cmpq	$256, %rdx
@@ -52033,13 +52030,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$54:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$52
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$53:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$52:
 	cmpq	$256, %rdx
@@ -52048,13 +52045,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$52:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$50
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$51:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$50:
 	cmpq	$256, %rdx
@@ -52063,13 +52060,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$50:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$48
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$49:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$48:
 	cmpq	$256, %rdx
@@ -52078,13 +52075,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$48:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$46
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$47:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$46:
 	cmpq	$256, %rdx
@@ -52093,13 +52090,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$46:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$44
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$45:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$44:
 	cmpq	$256, %rdx
@@ -52108,13 +52105,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$44:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$42
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$43:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$42:
 	cmpq	$256, %rdx
@@ -52123,13 +52120,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$42:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$40
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$41:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$40:
 	cmpq	$256, %rdx
@@ -52138,13 +52135,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$40:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$38
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$39:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$38:
 	cmpq	$256, %rdx
@@ -52153,13 +52150,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$38:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$36
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$37:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$36:
 	cmpq	$256, %rdx
@@ -52168,13 +52165,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$36:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$34
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$35:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$34:
 	cmpq	$256, %rdx
@@ -52183,13 +52180,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$34:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$32
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$33:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$32:
 	cmpq	$256, %rdx
@@ -52198,13 +52195,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$32:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$30
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$31:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$30:
 	cmpq	$256, %rdx
@@ -52213,13 +52210,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$30:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$28
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$29:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$28:
 	cmpq	$256, %rdx
@@ -52228,13 +52225,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$28:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$26
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$27:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$26:
 	cmpq	$256, %rdx
@@ -52243,13 +52240,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$26:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$24
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$25:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$24:
 	cmpq	$256, %rdx
@@ -52258,13 +52255,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$24:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$22
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$23:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$22:
 	cmpq	$256, %rdx
@@ -52273,13 +52270,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$22:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$20
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$21:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$20:
 	cmpq	$256, %rdx
@@ -52380,8 +52377,7 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_enc_derand$1:
 	movq	205432(%rsp), %r15
 	movq	205440(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_kaiburr6_amd64_ref_keypair, %function
-jade_kem_mlkem_kaiburr6_amd64_ref_keypair:
+_jade_kem_mlkem_kaiburr6_amd64_ref_keypair:
 	movq	%rsp, %rax
 	leaq	-194776(%rsp), %rsp
 	andq	$-16, %rsp
@@ -52630,255 +52626,255 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$848:
 	movb	$0, %al
 	leaq	1184(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$847:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$1, %al
 	leaq	1696(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$846:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$2, %al
 	leaq	2208(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$845:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$3, %al
 	leaq	2720(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$844:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$4, %al
 	leaq	3232(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$843:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$5, %al
 	leaq	3744(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$842:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$6, %al
 	leaq	4256(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$841:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$7, %al
 	leaq	4768(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$840:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$8, %al
 	leaq	5280(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$839:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$9, %al
 	leaq	5792(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$838:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$10, %al
 	leaq	6304(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$837:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$11, %al
 	leaq	6816(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$836:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$12, %al
 	leaq	7328(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$835:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$13, %al
 	leaq	7840(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$834:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$14, %al
 	leaq	8352(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$833:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$15, %al
 	leaq	8864(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$832:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$16, %al
 	leaq	9376(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$831:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$17, %al
 	leaq	9888(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$830:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$18, %al
 	leaq	10400(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$829:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$19, %al
 	leaq	10912(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$828:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$20, %al
 	leaq	11424(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$827:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$21, %al
 	leaq	11936(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$826:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$22, %al
 	leaq	12448(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$825:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$23, %al
 	leaq	12960(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$824:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$24, %al
 	leaq	13472(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$823:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$25, %al
 	leaq	13984(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$822:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$26, %al
 	leaq	14496(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$821:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$27, %al
 	leaq	15008(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$820:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$28, %al
 	leaq	15520(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$819:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$29, %al
 	leaq	16032(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$818:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$30, %al
 	leaq	16544(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$817:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$31, %al
 	leaq	17056(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$816:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$32, %al
 	leaq	17568(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$815:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$33, %al
 	leaq	18080(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$814:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$34, %al
 	leaq	18592(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$813:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$35, %al
 	leaq	19104(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$812:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	leaq	1184(%rsp), %rax
 	call	L_poly_ntt$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$811:
@@ -53185,13 +53181,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$741:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$739
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$740:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$739:
 	cmpq	$256, %rdx
@@ -53397,13 +53393,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$703:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$701
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$702:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$701:
 	cmpq	$256, %rdx
@@ -53609,13 +53605,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$665:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$663
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$664:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$663:
 	cmpq	$256, %rdx
@@ -53821,13 +53817,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$627:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$625
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$626:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$625:
 	cmpq	$256, %rdx
@@ -54033,13 +54029,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$589:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$587
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$588:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$587:
 	cmpq	$256, %rdx
@@ -54245,13 +54241,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$551:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$549
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$550:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$549:
 	cmpq	$256, %rdx
@@ -54457,13 +54453,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$513:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$511
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$512:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$511:
 	cmpq	$256, %rdx
@@ -54669,13 +54665,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$475:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$473
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$474:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$473:
 	cmpq	$256, %rdx
@@ -54881,13 +54877,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$437:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$435
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$436:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$435:
 	cmpq	$256, %rdx
@@ -55093,13 +55089,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$399:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$397
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$398:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$397:
 	cmpq	$256, %rdx
@@ -55305,13 +55301,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$361:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$359
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$360:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$359:
 	cmpq	$256, %rdx
@@ -55517,13 +55513,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$323:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$321
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$322:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$321:
 	cmpq	$256, %rdx
@@ -55729,13 +55725,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$285:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$283
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$284:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$283:
 	cmpq	$256, %rdx
@@ -55941,13 +55937,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$247:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$245
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$246:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$245:
 	cmpq	$256, %rdx
@@ -56153,13 +56149,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$209:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$207
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$208:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$207:
 	cmpq	$256, %rdx
@@ -56365,13 +56361,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$171:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$169
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$170:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$169:
 	cmpq	$256, %rdx
@@ -56577,13 +56573,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$133:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$131
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$132:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$131:
 	cmpq	$256, %rdx
@@ -56789,13 +56785,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$95:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$93
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$94:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$93:
 	cmpq	$256, %rdx
@@ -56879,13 +56875,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$74:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$72
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$73:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$72:
 	cmpq	$256, %rdx
@@ -56894,13 +56890,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$72:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$70
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$71:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$70:
 	cmpq	$256, %rdx
@@ -56909,13 +56905,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$70:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$68
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$69:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$68:
 	cmpq	$256, %rdx
@@ -56924,13 +56920,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$68:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$66
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$67:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$66:
 	cmpq	$256, %rdx
@@ -56939,13 +56935,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$66:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$64
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$65:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$64:
 	cmpq	$256, %rdx
@@ -56954,13 +56950,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$64:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$62
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$63:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$62:
 	cmpq	$256, %rdx
@@ -56969,13 +56965,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$62:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$60
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$61:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$60:
 	cmpq	$256, %rdx
@@ -56984,13 +56980,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$60:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$58
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$59:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$58:
 	cmpq	$256, %rdx
@@ -56999,13 +56995,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$58:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$56
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$57:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$56:
 	cmpq	$256, %rdx
@@ -57014,13 +57010,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$56:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$54
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$55:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$54:
 	cmpq	$256, %rdx
@@ -57029,13 +57025,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$54:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$52
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$53:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$52:
 	cmpq	$256, %rdx
@@ -57044,13 +57040,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$52:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$50
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$51:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$50:
 	cmpq	$256, %rdx
@@ -57059,13 +57055,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$50:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$48
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$49:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$48:
 	cmpq	$256, %rdx
@@ -57074,13 +57070,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$48:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$46
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$47:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$46:
 	cmpq	$256, %rdx
@@ -57089,13 +57085,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$46:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$44
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$45:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$44:
 	cmpq	$256, %rdx
@@ -57104,13 +57100,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$44:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$42
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$43:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$42:
 	cmpq	$256, %rdx
@@ -57119,13 +57115,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$42:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$40
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$41:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$40:
 	cmpq	$256, %rdx
@@ -57134,13 +57130,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$40:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$38
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$39:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$38:
 	cmpq	$256, %rdx
@@ -59071,8 +59067,7 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair$1:
 	movq	194760(%rsp), %r15
 	movq	194768(%rsp), %rsp
 	ret
-	.type	jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand, %function
-jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand:
+_jade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand:
 	movq	%rsp, %rax
 	leaq	-194712(%rsp), %rsp
 	andq	$-8, %rsp
@@ -59316,255 +59311,255 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$848:
 	movb	$0, %al
 	leaq	1120(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$847:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$1, %al
 	leaq	1632(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$846:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$2, %al
 	leaq	2144(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$845:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$3, %al
 	leaq	2656(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$844:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$4, %al
 	leaq	3168(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$843:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$5, %al
 	leaq	3680(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$842:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$6, %al
 	leaq	4192(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$841:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$7, %al
 	leaq	4704(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$840:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$8, %al
 	leaq	5216(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$839:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$9, %al
 	leaq	5728(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$838:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$10, %al
 	leaq	6240(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$837:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$11, %al
 	leaq	6752(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$836:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$12, %al
 	leaq	7264(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$835:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$13, %al
 	leaq	7776(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$834:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$14, %al
 	leaq	8288(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$833:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$15, %al
 	leaq	8800(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$832:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$16, %al
 	leaq	9312(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$831:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$17, %al
 	leaq	9824(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$830:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$18, %al
 	leaq	10336(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$829:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$19, %al
 	leaq	10848(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$828:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$20, %al
 	leaq	11360(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$827:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$21, %al
 	leaq	11872(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$826:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$22, %al
 	leaq	12384(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$825:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$23, %al
 	leaq	12896(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$824:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$24, %al
 	leaq	13408(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$823:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$25, %al
 	leaq	13920(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$822:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$26, %al
 	leaq	14432(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$821:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$27, %al
 	leaq	14944(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$820:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$28, %al
 	leaq	15456(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$819:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$29, %al
 	leaq	15968(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$818:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$30, %al
 	leaq	16480(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$817:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$31, %al
 	leaq	16992(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$816:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$32, %al
 	leaq	17504(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$815:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$33, %al
 	leaq	18016(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$814:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$34, %al
 	leaq	18528(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$813:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	movb	$35, %al
 	leaq	19040(%rsp), %r10
 	leaq	32(%rsp), %rcx
-	leaq	-304(%rsp), %rsp
+	leaq	-240(%rsp), %rsp
 	call	L_poly_getnoise$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$812:
-	leaq	304(%rsp), %rsp
+	leaq	240(%rsp), %rsp
 	leaq	1120(%rsp), %rax
 	call	L_poly_ntt$1
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$811:
@@ -59871,13 +59866,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$741:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$739
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$740:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$739:
 	cmpq	$256, %rdx
@@ -60083,13 +60078,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$703:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$701
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$702:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$701:
 	cmpq	$256, %rdx
@@ -60295,13 +60290,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$665:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$663
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$664:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$663:
 	cmpq	$256, %rdx
@@ -60507,13 +60502,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$627:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$625
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$626:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$625:
 	cmpq	$256, %rdx
@@ -60719,13 +60714,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$589:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$587
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$588:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$587:
 	cmpq	$256, %rdx
@@ -60931,13 +60926,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$551:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$549
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$550:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$549:
 	cmpq	$256, %rdx
@@ -61143,13 +61138,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$513:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$511
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$512:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$511:
 	cmpq	$256, %rdx
@@ -61355,13 +61350,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$475:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$473
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$474:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$473:
 	cmpq	$256, %rdx
@@ -61567,13 +61562,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$437:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$435
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$436:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$435:
 	cmpq	$256, %rdx
@@ -61779,13 +61774,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$399:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$397
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$398:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$397:
 	cmpq	$256, %rdx
@@ -61991,13 +61986,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$361:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$359
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$360:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$359:
 	cmpq	$256, %rdx
@@ -62203,13 +62198,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$323:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$321
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$322:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$321:
 	cmpq	$256, %rdx
@@ -62415,13 +62410,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$285:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$283
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$284:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$283:
 	cmpq	$256, %rdx
@@ -62627,13 +62622,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$247:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$245
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$246:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$245:
 	cmpq	$256, %rdx
@@ -62839,13 +62834,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$209:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$207
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$208:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$207:
 	cmpq	$256, %rdx
@@ -63051,13 +63046,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$171:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$169
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$170:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$169:
 	cmpq	$256, %rdx
@@ -63263,13 +63258,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$133:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$131
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$132:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$131:
 	cmpq	$256, %rdx
@@ -63475,13 +63470,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$95:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$93
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$94:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$93:
 	cmpq	$256, %rdx
@@ -63565,13 +63560,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$74:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$72
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$73:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$72:
 	cmpq	$256, %rdx
@@ -63580,13 +63575,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$72:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$70
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$71:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$70:
 	cmpq	$256, %rdx
@@ -63595,13 +63590,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$70:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$68
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$69:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$68:
 	cmpq	$256, %rdx
@@ -63610,13 +63605,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$68:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$66
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$67:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$66:
 	cmpq	$256, %rdx
@@ -63625,13 +63620,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$66:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$64
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$65:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$64:
 	cmpq	$256, %rdx
@@ -63640,13 +63635,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$64:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$62
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$63:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$62:
 	cmpq	$256, %rdx
@@ -63655,13 +63650,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$62:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$60
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$61:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$60:
 	cmpq	$256, %rdx
@@ -63670,13 +63665,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$60:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$58
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$59:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$58:
 	cmpq	$256, %rdx
@@ -63685,13 +63680,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$58:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$56
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$57:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$56:
 	cmpq	$256, %rdx
@@ -63700,13 +63695,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$56:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$54
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$55:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$54:
 	cmpq	$256, %rdx
@@ -63715,13 +63710,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$54:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$52
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$53:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$52:
 	cmpq	$256, %rdx
@@ -63730,13 +63725,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$52:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$50
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$51:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$50:
 	cmpq	$256, %rdx
@@ -63745,13 +63740,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$50:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$48
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$49:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$48:
 	cmpq	$256, %rdx
@@ -63760,13 +63755,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$48:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$46
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$47:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$46:
 	cmpq	$256, %rdx
@@ -63775,13 +63770,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$46:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$44
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$45:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$44:
 	cmpq	$256, %rdx
@@ -63790,13 +63785,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$44:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$42
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$43:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$42:
 	cmpq	$256, %rdx
@@ -63805,13 +63800,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$42:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$40
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$41:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$40:
 	cmpq	$256, %rdx
@@ -63820,13 +63815,13 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$40:
 	movq	$0, %rdx
 	jmp 	Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$38
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$39:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$38:
 	cmpq	$256, %rdx
@@ -65756,6 +65751,176 @@ Ljade_kem_mlkem_kaiburr6_amd64_ref_keypair_derand$1:
 	movq	194688(%rsp), %r14
 	movq	194696(%rsp), %r15
 	movq	194704(%rsp), %rsp
+	ret
+L_poly_getnoise$1:
+	movq	%r10, 8(%rsp)
+	movq	%rcx, %rdx
+	movb	(%rdx), %sil
+	movb	%sil, 16(%rsp)
+	movb	1(%rdx), %sil
+	movb	%sil, 17(%rsp)
+	movb	2(%rdx), %sil
+	movb	%sil, 18(%rsp)
+	movb	3(%rdx), %sil
+	movb	%sil, 19(%rsp)
+	movb	4(%rdx), %sil
+	movb	%sil, 20(%rsp)
+	movb	5(%rdx), %sil
+	movb	%sil, 21(%rsp)
+	movb	6(%rdx), %sil
+	movb	%sil, 22(%rsp)
+	movb	7(%rdx), %sil
+	movb	%sil, 23(%rsp)
+	movb	8(%rdx), %sil
+	movb	%sil, 24(%rsp)
+	movb	9(%rdx), %sil
+	movb	%sil, 25(%rsp)
+	movb	10(%rdx), %sil
+	movb	%sil, 26(%rsp)
+	movb	11(%rdx), %sil
+	movb	%sil, 27(%rsp)
+	movb	12(%rdx), %sil
+	movb	%sil, 28(%rsp)
+	movb	13(%rdx), %sil
+	movb	%sil, 29(%rsp)
+	movb	14(%rdx), %sil
+	movb	%sil, 30(%rsp)
+	movb	15(%rdx), %sil
+	movb	%sil, 31(%rsp)
+	movb	16(%rdx), %sil
+	movb	%sil, 32(%rsp)
+	movb	17(%rdx), %sil
+	movb	%sil, 33(%rsp)
+	movb	18(%rdx), %sil
+	movb	%sil, 34(%rsp)
+	movb	19(%rdx), %sil
+	movb	%sil, 35(%rsp)
+	movb	20(%rdx), %sil
+	movb	%sil, 36(%rsp)
+	movb	21(%rdx), %sil
+	movb	%sil, 37(%rsp)
+	movb	22(%rdx), %sil
+	movb	%sil, 38(%rsp)
+	movb	23(%rdx), %sil
+	movb	%sil, 39(%rsp)
+	movb	24(%rdx), %sil
+	movb	%sil, 40(%rsp)
+	movb	25(%rdx), %sil
+	movb	%sil, 41(%rsp)
+	movb	26(%rdx), %sil
+	movb	%sil, 42(%rsp)
+	movb	27(%rdx), %sil
+	movb	%sil, 43(%rsp)
+	movb	28(%rdx), %sil
+	movb	%sil, 44(%rsp)
+	movb	29(%rdx), %sil
+	movb	%sil, 45(%rsp)
+	movb	30(%rdx), %sil
+	movb	%sil, 46(%rsp)
+	movb	31(%rdx), %sil
+	movb	%sil, 47(%rsp)
+	movb	%al, 48(%rsp)
+	leaq	56(%rsp), %rsi
+	leaq	16(%rsp), %rbx
+	leaq	-224(%rsp), %rsp
+	call	L_shake256_192_33$1
+L_poly_getnoise$4:
+	leaq	224(%rsp), %rsp
+	movq	8(%rsp), %rax
+	movq	$0, %rdx
+	jmp 	L_poly_getnoise$2
+L_poly_getnoise$3:
+	movq	%rdx, %rsi
+	shlq	$1, %rsi
+	addq	%rdx, %rsi
+	movzbl	56(%rsp,%rsi), %r9d
+	movzbl	57(%rsp,%rsi), %edi
+	shll	$8, %edi
+	orl 	%edi, %r9d
+	movzbl	58(%rsp,%rsi), %edi
+	shll	$16, %edi
+	orl 	%edi, %r9d
+	movq	%rdx, %rsi
+	shlq	$2, %rsi
+	movl	%r9d, %edi
+	shrl	$0, %edi
+	movb	%dil, %bpl
+	andb	$1, %bpl
+	movb	%dil, %bl
+	andb	$31, %bl
+	incb	%bl
+	shrb	$5, %bl
+	shlb	$1, %bl
+	incb	%bl
+	subb	%bpl, %bl
+	shrb	$5, %dil
+	andb	$1, %dil
+	movb	$0, %bpl
+	subb	%dil, %bpl
+	xorb	%bpl, %bl
+	subb	%bpl, %bl
+	movsbw	%bl, %di
+	movw	%di, (%rax,%rsi,2)
+	movl	%r9d, %edi
+	shrl	$6, %edi
+	movb	%dil, %bpl
+	andb	$1, %bpl
+	movb	%dil, %bl
+	andb	$31, %bl
+	incb	%bl
+	shrb	$5, %bl
+	shlb	$1, %bl
+	incb	%bl
+	subb	%bpl, %bl
+	shrb	$5, %dil
+	andb	$1, %dil
+	movb	$0, %bpl
+	subb	%dil, %bpl
+	xorb	%bpl, %bl
+	subb	%bpl, %bl
+	movsbw	%bl, %di
+	movw	%di, 2(%rax,%rsi,2)
+	movl	%r9d, %edi
+	shrl	$12, %edi
+	movb	%dil, %bpl
+	andb	$1, %bpl
+	movb	%dil, %bl
+	andb	$31, %bl
+	incb	%bl
+	shrb	$5, %bl
+	shlb	$1, %bl
+	incb	%bl
+	subb	%bpl, %bl
+	shrb	$5, %dil
+	andb	$1, %dil
+	movb	$0, %bpl
+	subb	%dil, %bpl
+	xorb	%bpl, %bl
+	subb	%bpl, %bl
+	movsbw	%bl, %di
+	movw	%di, 4(%rax,%rsi,2)
+	shrl	$18, %r9d
+	movb	%r9b, %dil
+	andb	$1, %dil
+	movb	%r9b, %bl
+	andb	$31, %bl
+	incb	%bl
+	shrb	$5, %bl
+	shlb	$1, %bl
+	incb	%bl
+	subb	%dil, %bl
+	shrb	$5, %r9b
+	andb	$1, %r9b
+	movb	$0, %dil
+	subb	%r9b, %dil
+	xorb	%dil, %bl
+	subb	%dil, %bl
+	movsbw	%bl, %di
+	movw	%di, 6(%rax,%rsi,2)
+	incq	%rdx
+L_poly_getnoise$2:
+	cmpq	$64, %rdx
+	jb  	L_poly_getnoise$3
 	ret
 L_i_poly_tomsg$1:
 	call	L_poly_csubq$1
@@ -68162,10 +68327,10 @@ L_poly_sub$1:
 	movq	$0, %rsi
 	jmp 	L_poly_sub$2
 L_poly_sub$3:
-	movw	(%rdx,%rsi,2), %bx
+	movw	(%rdx,%rsi,2), %r9w
 	movw	(%rcx,%rsi,2), %di
-	subw	%di, %bx
-	movw	%bx, (%rax,%rsi,2)
+	subw	%di, %r9w
+	movw	%r9w, (%rax,%rsi,2)
 	incq	%rsi
 L_poly_sub$2:
 	cmpq	$256, %rsi
@@ -68219,13 +68384,13 @@ L_poly_ntt$4:
 	movq	$0, %rdx
 	jmp 	L_poly_ntt$2
 L_poly_ntt$3:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r9d
-	imull	$20159, %r9d, %r9d
-	sarl	$26, %r9d
-	imull	$3329, %r9d, %r9d
-	subw	%r9w, %bx
-	movw	%bx, (%rax,%rdx,2)
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r15d
+	imull	$20159, %r15d, %r15d
+	sarl	$26, %r15d
+	imull	$3329, %r15d, %r15d
+	subw	%r15w, %r9w
+	movw	%r9w, (%rax,%rdx,2)
 	incq	%rdx
 L_poly_ntt$2:
 	cmpq	$256, %rdx
@@ -68237,45 +68402,45 @@ L_poly_invntt$1:
 	movq	$2, %rsi
 	jmp 	L_poly_invntt$4
 L_poly_invntt$5:
-	movq	$0, %r9
+	movq	$0, %r8
 	jmp 	L_poly_invntt$6
 L_poly_invntt$7:
-	movw	(%rcx,%rdx,2), %di
+	movw	(%rcx,%rdx,2), %bp
 	incq	%rdx
-	movq	%r9, %r8
-	addq	%rsi, %r9
+	movq	%r8, %rdi
+	addq	%rsi, %r8
 	jmp 	L_poly_invntt$8
 L_poly_invntt$9:
-	movw	(%rax,%r8,2), %bx
-	movq	%r8, %r11
-	addq	%rsi, %r11
-	movw	(%rax,%r11,2), %bp
-	movw	%bp, %r12w
-	addw	%bx, %r12w
+	movw	(%rax,%rdi,2), %r9w
+	movq	%rdi, %rbx
+	addq	%rsi, %rbx
+	movw	(%rax,%rbx,2), %r11w
+	movw	%r11w, %r12w
+	addw	%r9w, %r12w
 	movswl	%r12w, %r15d
 	imull	$20159, %r15d, %r15d
 	sarl	$26, %r15d
 	imull	$3329, %r15d, %r15d
 	subw	%r15w, %r12w
-	movw	%r12w, (%rax,%r8,2)
-	subw	%bp, %bx
-	movswl	%bx, %r12d
-	movswl	%di, %r13d
+	movw	%r12w, (%rax,%rdi,2)
+	subw	%r11w, %r9w
+	movswl	%r9w, %r12d
+	movswl	%bp, %r13d
 	imull	%r13d, %r12d
 	imull	$-218038272, %r12d, %r13d
 	sarl	$16, %r13d
-	imull	$-3329, %r13d, %ebx
-	addl	%r12d, %ebx
-	sarl	$16, %ebx
-	movw	%bx, (%rax,%r11,2)
-	incq	%r8
+	imull	$-3329, %r13d, %r9d
+	addl	%r12d, %r9d
+	sarl	$16, %r9d
+	movw	%r9w, (%rax,%rbx,2)
+	incq	%rdi
 L_poly_invntt$8:
-	cmpq	%r9, %r8
+	cmpq	%r8, %rdi
 	jb  	L_poly_invntt$9
-	movq	%r8, %r9
-	addq	%rsi, %r9
+	movq	%rdi, %r8
+	addq	%rsi, %r8
 L_poly_invntt$6:
-	cmpq	$256, %r9
+	cmpq	$256, %r8
 	jb  	L_poly_invntt$7
 	shlq	$1, %rsi
 L_poly_invntt$4:
@@ -68285,8 +68450,8 @@ L_poly_invntt$4:
 	movq	$0, %rdx
 	jmp 	L_poly_invntt$2
 L_poly_invntt$3:
-	movw	(%rax,%rdx,2), %bx
-	movswl	%bx, %r12d
+	movw	(%rax,%rdx,2), %r9w
+	movswl	%r9w, %r12d
 	movswl	%di, %r13d
 	imull	%r13d, %r12d
 	imull	$-218038272, %r12d, %r13d
@@ -68299,107 +68464,6 @@ L_poly_invntt$3:
 L_poly_invntt$2:
 	cmpq	$256, %rdx
 	jb  	L_poly_invntt$3
-	ret
-L_poly_getnoise$1:
-	movq	%r10, 8(%rsp)
-	movq	%rcx, %rdx
-	movb	(%rdx), %sil
-	movb	%sil, 16(%rsp)
-	movb	1(%rdx), %sil
-	movb	%sil, 17(%rsp)
-	movb	2(%rdx), %sil
-	movb	%sil, 18(%rsp)
-	movb	3(%rdx), %sil
-	movb	%sil, 19(%rsp)
-	movb	4(%rdx), %sil
-	movb	%sil, 20(%rsp)
-	movb	5(%rdx), %sil
-	movb	%sil, 21(%rsp)
-	movb	6(%rdx), %sil
-	movb	%sil, 22(%rsp)
-	movb	7(%rdx), %sil
-	movb	%sil, 23(%rsp)
-	movb	8(%rdx), %sil
-	movb	%sil, 24(%rsp)
-	movb	9(%rdx), %sil
-	movb	%sil, 25(%rsp)
-	movb	10(%rdx), %sil
-	movb	%sil, 26(%rsp)
-	movb	11(%rdx), %sil
-	movb	%sil, 27(%rsp)
-	movb	12(%rdx), %sil
-	movb	%sil, 28(%rsp)
-	movb	13(%rdx), %sil
-	movb	%sil, 29(%rsp)
-	movb	14(%rdx), %sil
-	movb	%sil, 30(%rsp)
-	movb	15(%rdx), %sil
-	movb	%sil, 31(%rsp)
-	movb	16(%rdx), %sil
-	movb	%sil, 32(%rsp)
-	movb	17(%rdx), %sil
-	movb	%sil, 33(%rsp)
-	movb	18(%rdx), %sil
-	movb	%sil, 34(%rsp)
-	movb	19(%rdx), %sil
-	movb	%sil, 35(%rsp)
-	movb	20(%rdx), %sil
-	movb	%sil, 36(%rsp)
-	movb	21(%rdx), %sil
-	movb	%sil, 37(%rsp)
-	movb	22(%rdx), %sil
-	movb	%sil, 38(%rsp)
-	movb	23(%rdx), %sil
-	movb	%sil, 39(%rsp)
-	movb	24(%rdx), %sil
-	movb	%sil, 40(%rsp)
-	movb	25(%rdx), %sil
-	movb	%sil, 41(%rsp)
-	movb	26(%rdx), %sil
-	movb	%sil, 42(%rsp)
-	movb	27(%rdx), %sil
-	movb	%sil, 43(%rsp)
-	movb	28(%rdx), %sil
-	movb	%sil, 44(%rsp)
-	movb	29(%rdx), %sil
-	movb	%sil, 45(%rsp)
-	movb	30(%rdx), %sil
-	movb	%sil, 46(%rsp)
-	movb	31(%rdx), %sil
-	movb	%sil, 47(%rsp)
-	movb	%al, 48(%rsp)
-	leaq	56(%rsp), %rsi
-	leaq	16(%rsp), %rbx
-	leaq	-224(%rsp), %rsp
-	call	L_shake256_256_33$1
-L_poly_getnoise$4:
-	leaq	224(%rsp), %rsp
-	movq	8(%rsp), %rax
-	movq	$0, %rsi
-	jmp 	L_poly_getnoise$2
-L_poly_getnoise$3:
-	movb	56(%rsp,%rsi), %r12b
-	movb	%r12b, %dil
-	andb	$1, %dil
-	movb	%r12b, %dl
-	andb	$31, %dl
-	incb	%dl
-	shrb	$5, %dl
-	shlb	$1, %dl
-	incb	%dl
-	subb	%dil, %dl
-	shrb	$5, %r12b
-	andb	$1, %r12b
-	movb	$0, %dil
-	subb	%r12b, %dil
-	xorb	%dil, %dl
-	subb	%dil, %dl
-	movsbw	%dl, %r9w
-	movw	%r9w, (%rax,%rsi,2)
-	incq	%rsi
-L_poly_getnoise$2:
-	cmpq	$256, %rsi
-	jb  	L_poly_getnoise$3
 	ret
 L_i_poly_frommsg$1:
 	movb	(%rax), %sil
@@ -71637,112 +71701,112 @@ L_poly_basemul$3:
 	movw	(%rax,%rsi,2), %dx
 	movw	(%rcx,%rsi,2), %r13w
 	incq	%rsi
-	movw	(%rax,%rsi,2), %bx
+	movw	(%rax,%rsi,2), %r9w
 	movw	(%rcx,%rsi,2), %di
 	decq	%rsi
-	movswl	%bx, %r12d
+	movswl	%r9w, %r12d
 	movswl	%di, %r8d
 	imull	%r8d, %r12d
 	imull	$-218038272, %r12d, %r8d
 	sarl	$16, %r8d
-	imull	$-3329, %r8d, %r9d
-	addl	%r12d, %r9d
-	sarl	$16, %r9d
-	movswl	%r9w, %r12d
+	imull	$-3329, %r8d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	movswl	%r15w, %r12d
 	movswl	%bp, %r8d
 	imull	%r8d, %r12d
 	imull	$-218038272, %r12d, %r8d
 	sarl	$16, %r8d
-	imull	$-3329, %r8d, %r9d
-	addl	%r12d, %r9d
-	sarl	$16, %r9d
-	movw	%r9w, %r8w
+	imull	$-3329, %r8d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	movw	%r15w, %r8w
 	movswl	%dx, %r12d
-	movswl	%r13w, %r9d
-	imull	%r9d, %r12d
-	imull	$-218038272, %r12d, %r9d
-	sarl	$16, %r9d
-	imull	$-3329, %r9d, %r9d
-	addl	%r12d, %r9d
-	sarl	$16, %r9d
-	addw	%r9w, %r8w
+	movswl	%r13w, %r11d
+	imull	%r11d, %r12d
+	imull	$-218038272, %r12d, %r11d
+	sarl	$16, %r11d
+	imull	$-3329, %r11d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	addw	%r15w, %r8w
 	movswl	%dx, %r12d
-	movswl	%di, %r9d
-	imull	%r9d, %r12d
-	imull	$-218038272, %r12d, %r9d
-	sarl	$16, %r9d
-	imull	$-3329, %r9d, %r9d
+	movswl	%di, %r11d
+	imull	%r11d, %r12d
+	imull	$-218038272, %r12d, %r11d
+	sarl	$16, %r11d
+	imull	$-3329, %r11d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	movswl	%r9w, %r12d
+	movswl	%r13w, %r11d
+	imull	%r11d, %r12d
+	imull	$-218038272, %r12d, %r11d
+	sarl	$16, %r11d
+	imull	$-3329, %r11d, %r9d
 	addl	%r12d, %r9d
 	sarl	$16, %r9d
-	movswl	%bx, %r12d
-	movswl	%r13w, %r13d
-	imull	%r13d, %r12d
-	imull	$-218038272, %r12d, %r13d
-	sarl	$16, %r13d
-	imull	$-3329, %r13d, %ebx
-	addl	%r12d, %ebx
-	sarl	$16, %ebx
-	addw	%bx, %r9w
+	addw	%r9w, %r15w
 	movq	8(%rsp), %r11
 	movw	%r8w, (%r11,%rsi,2)
 	incq	%rsi
-	movw	%r9w, (%r11,%rsi,2)
+	movw	%r15w, (%r11,%rsi,2)
 	movq	%r11, 16(%rsp)
 	negw	%bp
 	incq	%rsi
 	movw	(%rax,%rsi,2), %dx
 	movw	(%rcx,%rsi,2), %di
 	incq	%rsi
-	movw	(%rax,%rsi,2), %bx
+	movw	(%rax,%rsi,2), %r9w
 	movw	(%rcx,%rsi,2), %r13w
 	decq	%rsi
-	movswl	%bx, %r12d
+	movswl	%r9w, %r12d
 	movswl	%r13w, %r8d
 	imull	%r8d, %r12d
 	imull	$-218038272, %r12d, %r8d
 	sarl	$16, %r8d
-	imull	$-3329, %r8d, %r9d
-	addl	%r12d, %r9d
-	sarl	$16, %r9d
-	movswl	%r9w, %r12d
+	imull	$-3329, %r8d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	movswl	%r15w, %r12d
 	movswl	%bp, %r8d
 	imull	%r8d, %r12d
 	imull	$-218038272, %r12d, %r8d
 	sarl	$16, %r8d
-	imull	$-3329, %r8d, %r9d
-	addl	%r12d, %r9d
-	sarl	$16, %r9d
-	movw	%r9w, %r8w
+	imull	$-3329, %r8d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	movw	%r15w, %r8w
 	movswl	%dx, %r12d
-	movswl	%di, %r9d
-	imull	%r9d, %r12d
-	imull	$-218038272, %r12d, %r9d
-	sarl	$16, %r9d
-	imull	$-3329, %r9d, %r9d
-	addl	%r12d, %r9d
-	sarl	$16, %r9d
-	addw	%r9w, %r8w
+	movswl	%di, %r11d
+	imull	%r11d, %r12d
+	imull	$-218038272, %r12d, %r11d
+	sarl	$16, %r11d
+	imull	$-3329, %r11d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	addw	%r15w, %r8w
 	movswl	%dx, %r12d
-	movswl	%r13w, %r9d
-	imull	%r9d, %r12d
-	imull	$-218038272, %r12d, %r9d
-	sarl	$16, %r9d
-	imull	$-3329, %r9d, %r9d
+	movswl	%r13w, %r11d
+	imull	%r11d, %r12d
+	imull	$-218038272, %r12d, %r11d
+	sarl	$16, %r11d
+	imull	$-3329, %r11d, %r15d
+	addl	%r12d, %r15d
+	sarl	$16, %r15d
+	movswl	%r9w, %r12d
+	movswl	%di, %r11d
+	imull	%r11d, %r12d
+	imull	$-218038272, %r12d, %r11d
+	sarl	$16, %r11d
+	imull	$-3329, %r11d, %r9d
 	addl	%r12d, %r9d
 	sarl	$16, %r9d
-	movswl	%bx, %r12d
-	movswl	%di, %r13d
-	imull	%r13d, %r12d
-	imull	$-218038272, %r12d, %r13d
-	sarl	$16, %r13d
-	imull	$-3329, %r13d, %ebx
-	addl	%r12d, %ebx
-	sarl	$16, %ebx
-	addw	%bx, %r9w
+	addw	%r9w, %r15w
 	movq	16(%rsp), %r11
 	movw	%r8w, (%r11,%rsi,2)
 	incq	%rsi
-	movw	%r9w, (%r11,%rsi,2)
+	movw	%r15w, (%r11,%rsi,2)
 	incq	%rsi
 L_poly_basemul$2:
 	cmpq	$253, %rsi
@@ -71789,42 +71853,42 @@ L_sha3_512A_A64$12:
 	cmpq	$25, %rdi
 	jb  	L_sha3_512A_A64$13
 	movq	%rsi, 8(%rsp)
-	movq	$0, %r11
 	movq	$0, %rax
+	movq	$0, %rsi
 	jmp 	L_sha3_512A_A64$10
 L_sha3_512A_A64$11:
-	movq	(%rbx,%r11), %rsi
-	addq	$8, %r11
-	xorq	%rsi, (%rdx,%rax,8)
-	incq	%rax
+	movq	(%rbx,%rax), %rdi
+	addq	$8, %rax
+	xorq	%rdi, (%rdx,%rsi,8)
+	incq	%rsi
 L_sha3_512A_A64$10:
-	cmpq	$8, %rax
+	cmpq	$8, %rsi
 	jb  	L_sha3_512A_A64$11
-	movq	$0, %rsi
-	movq	$6, %rdi
-	orq 	%rdi, %rsi
-	xorq	%rsi, (%rdx,%rax,8)
+	movq	$0, %rdi
+	movq	$6, %rax
+	orq 	%rax, %rdi
+	xorq	%rdi, (%rdx,%rsi,8)
 	xorb	$128, 71(%rdx)
 	movq	8(%rsp), %rax
-	movq	$0, %r11
+	movq	$0, %rbx
 	movq	$0, %rsi
 	jmp 	L_sha3_512A_A64$5
 L_sha3_512A_A64$6:
 	movq	%rax, 8(%rsp)
-	movq	%r11, 16(%rsp)
+	movq	%rbx, 16(%rsp)
 	movq	%rsi, 24(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
 L_sha3_512A_A64$9:
 	leaq	208(%rsp), %rsp
 	movq	8(%rsp), %rax
-	movq	16(%rsp), %r11
+	movq	16(%rsp), %rbx
 	movq	$0, %rsi
 	jmp 	L_sha3_512A_A64$7
 L_sha3_512A_A64$8:
 	movq	(%rdx,%rsi,8), %r9
-	movq	%r9, (%rax,%r11)
-	addq	$8, %r11
+	movq	%r9, (%rax,%rbx)
+	addq	$8, %rbx
 	incq	%rsi
 L_sha3_512A_A64$7:
 	cmpq	$9, %rsi
@@ -71835,22 +71899,22 @@ L_sha3_512A_A64$5:
 	cmpq	$0, %rsi
 	jb  	L_sha3_512A_A64$6
 	movq	%rax, 24(%rsp)
-	movq	%r11, 16(%rsp)
+	movq	%rbx, 16(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
 L_sha3_512A_A64$4:
 	leaq	208(%rsp), %rsp
-	movq	24(%rsp), %rax
-	movq	16(%rsp), %r11
-	movq	$0, %rsi
+	movq	24(%rsp), %rsi
+	movq	16(%rsp), %rax
+	movq	$0, %rdi
 	jmp 	L_sha3_512A_A64$2
 L_sha3_512A_A64$3:
-	movq	(%rdx,%rsi,8), %r9
-	movq	%r9, (%rax,%r11)
-	addq	$8, %r11
-	incq	%rsi
+	movq	(%rdx,%rdi,8), %r9
+	movq	%r9, (%rsi,%rax)
+	addq	$8, %rax
+	incq	%rdi
 L_sha3_512A_A64$2:
-	cmpq	$8, %rsi
+	cmpq	$8, %rdi
 	jb  	L_sha3_512A_A64$3
 	ret
 L_shake128_squeezeblock$1:
@@ -71860,13 +71924,13 @@ L_shake128_squeezeblock$1:
 L_shake128_squeezeblock$4:
 	leaq	208(%rsp), %rsp
 	movq	8(%rsp), %rsi
-	movq	$0, %rcx
+	movq	$0, %rax
 	movq	$0, %rdi
 	jmp 	L_shake128_squeezeblock$2
 L_shake128_squeezeblock$3:
 	movq	(%rdx,%rdi,8), %r9
-	movq	%r9, (%rsi,%rcx)
-	addq	$8, %rcx
+	movq	%r9, (%rsi,%rax)
+	addq	$8, %rax
 	incq	%rdi
 L_shake128_squeezeblock$2:
 	cmpq	$21, %rdi
@@ -71882,24 +71946,24 @@ L_shake128_absorb34$5:
 L_shake128_absorb34$4:
 	cmpq	$25, %rsi
 	jb  	L_shake128_absorb34$5
-	movq	$0, %rcx
 	movq	$0, %rax
+	movq	$0, %rsi
 	jmp 	L_shake128_absorb34$2
 L_shake128_absorb34$3:
-	movq	(%rbx,%rcx), %rsi
-	addq	$8, %rcx
-	xorq	%rsi, (%rdx,%rax,8)
-	incq	%rax
+	movq	(%rbx,%rax), %rdi
+	addq	$8, %rax
+	xorq	%rdi, (%rdx,%rsi,8)
+	incq	%rsi
 L_shake128_absorb34$2:
-	cmpq	$4, %rax
+	cmpq	$4, %rsi
 	jb  	L_shake128_absorb34$3
-	movq	$0, %rsi
-	movzwq	(%rbx,%rcx), %rcx
-	orq 	%rcx, %rsi
-	movq	$31, %rdi
-	shlq	$16, %rdi
-	orq 	%rdi, %rsi
-	xorq	%rsi, (%rdx,%rax,8)
+	movq	$0, %rdi
+	movzwq	(%rbx,%rax), %rax
+	orq 	%rax, %rdi
+	movq	$31, %rax
+	shlq	$16, %rax
+	orq 	%rax, %rdi
+	xorq	%rdi, (%rdx,%rsi,8)
 	xorb	$128, 167(%rdx)
 	ret
 L_sha3_512A_A33$1:
@@ -71914,22 +71978,22 @@ L_sha3_512A_A33$12:
 	cmpq	$25, %rdi
 	jb  	L_sha3_512A_A33$13
 	movq	%rsi, 8(%rsp)
-	movq	$0, %rcx
 	movq	$0, %rax
+	movq	$0, %rsi
 	jmp 	L_sha3_512A_A33$10
 L_sha3_512A_A33$11:
-	movq	(%rbx,%rcx), %rsi
-	addq	$8, %rcx
-	xorq	%rsi, (%rdx,%rax,8)
-	incq	%rax
+	movq	(%rbx,%rax), %rdi
+	addq	$8, %rax
+	xorq	%rdi, (%rdx,%rsi,8)
+	incq	%rsi
 L_sha3_512A_A33$10:
-	cmpq	$4, %rax
+	cmpq	$4, %rsi
 	jb  	L_sha3_512A_A33$11
-	movq	$0, %rsi
-	movzbq	(%rbx,%rcx), %rdi
-	orq 	$1536, %rdi
-	orq 	%rdi, %rsi
-	xorq	%rsi, (%rdx,%rax,8)
+	movq	$0, %rdi
+	movzbq	(%rbx,%rax), %rax
+	orq 	$1536, %rax
+	orq 	%rax, %rdi
+	xorq	%rdi, (%rdx,%rsi,8)
 	xorb	$128, 71(%rdx)
 	movq	8(%rsp), %rax
 	movq	$0, %rcx
@@ -71967,13 +72031,13 @@ L_sha3_512A_A33$5:
 L_sha3_512A_A33$4:
 	leaq	208(%rsp), %rsp
 	movq	24(%rsp), %rsi
-	movq	16(%rsp), %rcx
+	movq	16(%rsp), %rax
 	movq	$0, %rdi
 	jmp 	L_sha3_512A_A33$2
 L_sha3_512A_A33$3:
 	movq	(%rdx,%rdi,8), %r9
-	movq	%r9, (%rsi,%rcx)
-	addq	$8, %rcx
+	movq	%r9, (%rsi,%rax)
+	addq	$8, %rax
 	incq	%rdi
 L_sha3_512A_A33$2:
 	cmpq	$8, %rdi
@@ -71992,62 +72056,62 @@ L_shake256_A32__A7328$23:
 L_shake256_A32__A7328$22:
 	cmpq	$25, %rsi
 	jb  	L_shake256_A32__A7328$23
-	movq	$0, %r11
 	movq	$0, %rax
+	movq	$0, %rsi
 	jmp 	L_shake256_A32__A7328$20
 L_shake256_A32__A7328$21:
-	movq	(%rdi,%r11), %rsi
-	addq	$8, %r11
-	xorq	%rsi, (%rdx,%rax,8)
-	incq	%rax
+	movq	(%rdi,%rax), %r9
+	addq	$8, %rax
+	xorq	%r9, (%rdx,%rsi,8)
+	incq	%rsi
 L_shake256_A32__A7328$20:
-	cmpq	$4, %rax
+	cmpq	$4, %rsi
 	jb  	L_shake256_A32__A7328$21
 	movq	8(%rsp), %rax
-	movq	$0, %r11
-	movq	(%rax,%r11), %rsi
-	xorq	%rsi, 32(%rdx)
-	addq	$8, %r11
+	movq	$0, %rbx
+	movq	(%rax,%rbx), %rdi
+	xorq	%rdi, 32(%rdx)
+	addq	$8, %rbx
 	movq	$5, %rsi
 	jmp 	L_shake256_A32__A7328$18
 L_shake256_A32__A7328$19:
-	movq	(%rax,%r11), %rdi
-	addq	$8, %r11
+	movq	(%rax,%rbx), %rdi
+	addq	$8, %rbx
 	xorq	%rdi, (%rdx,%rsi,8)
 	incq	%rsi
 L_shake256_A32__A7328$18:
 	cmpq	$17, %rsi
 	jb  	L_shake256_A32__A7328$19
 	movq	%rax, 8(%rsp)
-	movq	%r11, 16(%rsp)
+	movq	%rbx, 16(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
 L_shake256_A32__A7328$17:
 	leaq	208(%rsp), %rsp
 	movq	8(%rsp), %rax
-	movq	16(%rsp), %r11
+	movq	16(%rsp), %rbx
 	movq	$0, %r8
 	jmp 	L_shake256_A32__A7328$12
 L_shake256_A32__A7328$13:
 	movq	$0, %rsi
 	jmp 	L_shake256_A32__A7328$15
 L_shake256_A32__A7328$16:
-	movq	(%rax,%r11), %rdi
-	addq	$8, %r11
+	movq	(%rax,%rbx), %rdi
+	addq	$8, %rbx
 	xorq	%rdi, (%rdx,%rsi,8)
 	incq	%rsi
 L_shake256_A32__A7328$15:
 	cmpq	$17, %rsi
 	jb  	L_shake256_A32__A7328$16
 	movq	%rax, 16(%rsp)
-	movq	%r11, 8(%rsp)
+	movq	%rbx, 8(%rsp)
 	movq	%r8, 24(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
 L_shake256_A32__A7328$14:
 	leaq	208(%rsp), %rsp
 	movq	16(%rsp), %rax
-	movq	8(%rsp), %r11
+	movq	8(%rsp), %rbx
 	movq	24(%rsp), %r8
 	incq	%r8
 L_shake256_A32__A7328$12:
@@ -72056,8 +72120,8 @@ L_shake256_A32__A7328$12:
 	movq	$0, %rsi
 	jmp 	L_shake256_A32__A7328$10
 L_shake256_A32__A7328$11:
-	movq	(%rax,%r11), %rdi
-	addq	$8, %r11
+	movq	(%rax,%rbx), %rdi
+	addq	$8, %rbx
 	xorq	%rdi, (%rdx,%rsi,8)
 	incq	%rsi
 L_shake256_A32__A7328$10:
@@ -72069,25 +72133,25 @@ L_shake256_A32__A7328$10:
 	xorq	%rdi, (%rdx,%rsi,8)
 	xorb	$128, 135(%rdx)
 	movq	%mm0, %rax
-	movq	$0, %r11
+	movq	$0, %rbx
 	movq	$0, %rsi
 	jmp 	L_shake256_A32__A7328$5
 L_shake256_A32__A7328$6:
 	movq	%rax, 24(%rsp)
-	movq	%r11, 8(%rsp)
+	movq	%rbx, 8(%rsp)
 	movq	%rsi, 16(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
 L_shake256_A32__A7328$9:
 	leaq	208(%rsp), %rsp
 	movq	24(%rsp), %rax
-	movq	8(%rsp), %r11
+	movq	8(%rsp), %rbx
 	movq	$0, %rsi
 	jmp 	L_shake256_A32__A7328$7
 L_shake256_A32__A7328$8:
 	movq	(%rdx,%rsi,8), %r9
-	movq	%r9, (%rax,%r11)
-	addq	$8, %r11
+	movq	%r9, (%rax,%rbx)
+	addq	$8, %rbx
 	incq	%rsi
 L_shake256_A32__A7328$7:
 	cmpq	$17, %rsi
@@ -72098,19 +72162,19 @@ L_shake256_A32__A7328$5:
 	cmpq	$0, %rsi
 	jb  	L_shake256_A32__A7328$6
 	movq	%rax, 16(%rsp)
-	movq	%r11, 8(%rsp)
+	movq	%rbx, 8(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
 L_shake256_A32__A7328$4:
 	leaq	208(%rsp), %rsp
 	movq	16(%rsp), %rsi
-	movq	8(%rsp), %r11
+	movq	8(%rsp), %rax
 	movq	$0, %rdi
 	jmp 	L_shake256_A32__A7328$2
 L_shake256_A32__A7328$3:
 	movq	(%rdx,%rdi,8), %r9
-	movq	%r9, (%rsi,%r11)
-	addq	$8, %r11
+	movq	%r9, (%rsi,%rax)
+	addq	$8, %rax
 	incq	%rdi
 L_shake256_A32__A7328$2:
 	cmpq	$4, %rdi
@@ -72128,19 +72192,19 @@ L_sha3_256A_A6944$21:
 L_sha3_256A_A6944$20:
 	cmpq	$25, %rsi
 	jb  	L_sha3_256A_A6944$21
-	movq	$0, %rcx
 	movq	$0, %rax
+	movq	$0, %rsi
 	jmp 	L_sha3_256A_A6944$18
 L_sha3_256A_A6944$19:
-	movq	(%rbx,%rcx), %rsi
-	addq	$8, %rcx
-	xorq	%rsi, (%rdx,%rax,8)
-	incq	%rax
+	movq	(%rbx,%rax), %rdi
+	addq	$8, %rax
+	xorq	%rdi, (%rdx,%rsi,8)
+	incq	%rsi
 L_sha3_256A_A6944$18:
-	cmpq	$17, %rax
+	cmpq	$17, %rsi
 	jb  	L_sha3_256A_A6944$19
 	movq	%rbx, 16(%rsp)
-	movq	%rcx, 24(%rsp)
+	movq	%rax, 24(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
 L_sha3_256A_A6944$17:
@@ -72225,94 +72289,94 @@ L_sha3_256A_A6944$5:
 L_sha3_256A_A6944$4:
 	leaq	208(%rsp), %rsp
 	movq	16(%rsp), %rsi
-	movq	32(%rsp), %rcx
+	movq	32(%rsp), %rax
 	movq	$0, %rdi
 	jmp 	L_sha3_256A_A6944$2
 L_sha3_256A_A6944$3:
 	movq	(%rdx,%rdi,8), %r9
-	movq	%r9, (%rsi,%rcx)
-	addq	$8, %rcx
+	movq	%r9, (%rsi,%rax)
+	addq	$8, %rax
 	incq	%rdi
 L_sha3_256A_A6944$2:
 	cmpq	$4, %rdi
 	jb  	L_sha3_256A_A6944$3
 	ret
-L_shake256_256_33$1:
+L_shake256_192_33$1:
 	leaq	32(%rsp), %rdx
 	movq	$0, %rax
 	movq	$0, %rdi
-	jmp 	L_shake256_256_33$12
-L_shake256_256_33$13:
+	jmp 	L_shake256_192_33$12
+L_shake256_192_33$13:
 	movq	%rax, (%rdx,%rdi,8)
 	incq	%rdi
-L_shake256_256_33$12:
+L_shake256_192_33$12:
 	cmpq	$25, %rdi
-	jb  	L_shake256_256_33$13
+	jb  	L_shake256_192_33$13
 	movq	%rsi, 8(%rsp)
-	movq	$0, %r11
 	movq	$0, %rax
-	jmp 	L_shake256_256_33$10
-L_shake256_256_33$11:
-	movq	(%rbx,%r11), %rsi
-	addq	$8, %r11
-	xorq	%rsi, (%rdx,%rax,8)
-	incq	%rax
-L_shake256_256_33$10:
-	cmpq	$4, %rax
-	jb  	L_shake256_256_33$11
 	movq	$0, %rsi
-	movzbq	(%rbx,%r11), %rdi
-	orq 	$7936, %rdi
-	orq 	%rdi, %rsi
-	xorq	%rsi, (%rdx,%rax,8)
+	jmp 	L_shake256_192_33$10
+L_shake256_192_33$11:
+	movq	(%rbx,%rax), %rdi
+	addq	$8, %rax
+	xorq	%rdi, (%rdx,%rsi,8)
+	incq	%rsi
+L_shake256_192_33$10:
+	cmpq	$4, %rsi
+	jb  	L_shake256_192_33$11
+	movq	$0, %rdi
+	movzbq	(%rbx,%rax), %rax
+	orq 	$7936, %rax
+	orq 	%rax, %rdi
+	xorq	%rdi, (%rdx,%rsi,8)
 	xorb	$128, 135(%rdx)
 	movq	8(%rsp), %rax
-	movq	$0, %r11
+	movq	$0, %rbx
 	movq	$0, %rsi
-	jmp 	L_shake256_256_33$5
-L_shake256_256_33$6:
+	jmp 	L_shake256_192_33$5
+L_shake256_192_33$6:
 	movq	%rax, 8(%rsp)
-	movq	%r11, 16(%rsp)
+	movq	%rbx, 16(%rsp)
 	movq	%rsi, 24(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
-L_shake256_256_33$9:
+L_shake256_192_33$9:
 	leaq	208(%rsp), %rsp
 	movq	8(%rsp), %rax
-	movq	16(%rsp), %r11
+	movq	16(%rsp), %rbx
 	movq	$0, %rsi
-	jmp 	L_shake256_256_33$7
-L_shake256_256_33$8:
+	jmp 	L_shake256_192_33$7
+L_shake256_192_33$8:
 	movq	(%rdx,%rsi,8), %r9
-	movq	%r9, (%rax,%r11)
-	addq	$8, %r11
+	movq	%r9, (%rax,%rbx)
+	addq	$8, %rbx
 	incq	%rsi
-L_shake256_256_33$7:
+L_shake256_192_33$7:
 	cmpq	$17, %rsi
-	jb  	L_shake256_256_33$8
+	jb  	L_shake256_192_33$8
 	movq	24(%rsp), %rsi
 	incq	%rsi
-L_shake256_256_33$5:
+L_shake256_192_33$5:
 	cmpq	$1, %rsi
-	jb  	L_shake256_256_33$6
+	jb  	L_shake256_192_33$6
 	movq	%rax, 24(%rsp)
-	movq	%r11, 16(%rsp)
+	movq	%rbx, 16(%rsp)
 	leaq	-208(%rsp), %rsp
 	call	L_keccakf1600_ref$1
-L_shake256_256_33$4:
+L_shake256_192_33$4:
 	leaq	208(%rsp), %rsp
-	movq	24(%rsp), %rsi
-	movq	16(%rsp), %r11
-	movq	$0, %rdi
-	jmp 	L_shake256_256_33$2
-L_shake256_256_33$3:
-	movq	(%rdx,%rdi,8), %r9
-	movq	%r9, (%rsi,%r11)
-	addq	$8, %r11
-	incq	%rdi
-L_shake256_256_33$2:
-	cmpq	$15, %rdi
-	jb  	L_shake256_256_33$3
+	movq	24(%rsp), %rax
+	movq	16(%rsp), %rbx
+	movq	$0, %rsi
+	jmp 	L_shake256_192_33$2
+L_shake256_192_33$3:
+	movq	(%rdx,%rsi,8), %r9
+	movq	%r9, (%rax,%rbx)
+	addq	$8, %rbx
+	incq	%rsi
+L_shake256_192_33$2:
+	cmpq	$7, %rsi
+	jb  	L_shake256_192_33$3
 	ret
 L_keccakf1600_ref$1:
 	leaq	16(%rsp), %rax
@@ -72402,9 +72466,9 @@ L_pround_ref$1:
 	andnq	%rbx, %r14, %r15
 	xorq	%r13, %r15
 	movq	%r15, 24(%rax)
-	andnq	%rbp, %rbx, %rbx
-	xorq	%r14, %rbx
-	movq	%rbx, 32(%rax)
+	andnq	%rbp, %rbx, %r15
+	xorq	%r14, %r15
+	movq	%r15, 32(%rax)
 	movq	24(%rdx), %rbx
 	xorq	%r10, %rbx
 	rolq	$28, %rbx
@@ -72432,9 +72496,9 @@ L_pround_ref$1:
 	andnq	%rbx, %r14, %r15
 	xorq	%r13, %r15
 	movq	%r15, 64(%rax)
-	andnq	%rbp, %rbx, %rbx
-	xorq	%r14, %rbx
-	movq	%rbx, 72(%rax)
+	andnq	%rbp, %rbx, %r15
+	xorq	%r14, %r15
+	movq	%r15, 72(%rax)
 	movq	8(%rdx), %rbx
 	xorq	%r8, %rbx
 	rolq	$1, %rbx
@@ -72462,39 +72526,39 @@ L_pround_ref$1:
 	andnq	%rbx, %r14, %r15
 	xorq	%r13, %r15
 	movq	%r15, 104(%rax)
-	andnq	%rbp, %rbx, %rbx
-	xorq	%r14, %rbx
-	movq	%rbx, 112(%rax)
+	andnq	%rbp, %rbx, %r15
+	xorq	%r14, %r15
+	movq	%r15, 112(%rax)
 	movq	32(%rdx), %rbx
 	xorq	%r11, %rbx
 	rolq	$27, %rbx
 	movq	40(%rdx), %rbp
 	xorq	%rdi, %rbp
 	rolq	$36, %rbp
-	movq	88(%rdx), %r12
-	xorq	%r8, %r12
-	rolq	$10, %r12
-	movq	136(%rdx), %r13
-	xorq	%r9, %r13
-	rolq	$15, %r13
-	movq	184(%rdx), %r14
-	xorq	%r10, %r14
-	rolq	$56, %r14
-	andnq	%r12, %rbp, %r15
+	movq	88(%rdx), %r13
+	xorq	%r8, %r13
+	rolq	$10, %r13
+	movq	136(%rdx), %r14
+	xorq	%r9, %r14
+	rolq	$15, %r14
+	movq	184(%rdx), %r12
+	xorq	%r10, %r12
+	rolq	$56, %r12
+	andnq	%r13, %rbp, %r15
 	xorq	%rbx, %r15
 	movq	%r15, 120(%rax)
-	andnq	%r13, %r12, %r15
+	andnq	%r14, %r13, %r15
 	xorq	%rbp, %r15
 	movq	%r15, 128(%rax)
-	andnq	%r14, %r13, %r15
-	xorq	%r12, %r15
-	movq	%r15, 136(%rax)
-	andnq	%rbx, %r14, %r15
+	andnq	%r12, %r14, %r15
 	xorq	%r13, %r15
+	movq	%r15, 136(%rax)
+	andnq	%rbx, %r12, %r15
+	xorq	%r14, %r15
 	movq	%r15, 144(%rax)
-	andnq	%rbp, %rbx, %rbx
-	xorq	%r14, %rbx
-	movq	%rbx, 152(%rax)
+	andnq	%rbp, %rbx, %r15
+	xorq	%r12, %r15
+	movq	%r15, 152(%rax)
 	movq	16(%rdx), %rbx
 	xorq	%r9, %rbx
 	rolq	$62, %rbx
@@ -72577,4 +72641,3 @@ G$jzetas:
 	.byte	 96,   8,   7,   7,   3,   8,  26,   3,  27,   7, 171,   9, 155,   9, 222,   1
 	.byte	149,  12, 205,  11, 228,   3, 223,   3, 190,   3,  77,   7, 242,   5,  92,   6
 	.ident	"Jasmin Compiler 2026.03.1"
-	.section	".note.GNU-stack", "", %progbits
