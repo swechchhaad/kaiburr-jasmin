@@ -2,9 +2,8 @@
 
 -include ../../../Makefile.conf
 
-CKP    := ../../../kyber/ref
 CC     ?= arch -x86_64 gcc
-CFLAGS := -Wall -Wextra -g -O3 -fomit-frame-pointer -Wno-implicit-function-declaration -D KYBER_K=4
+CFLAGS := -Wall -Wextra -g -O3 -fomit-frame-pointer -Wno-implicit-function-declaration
 JFLAGS := ${JADDFLAGS}
 OS     := $(shell uname -s)
 

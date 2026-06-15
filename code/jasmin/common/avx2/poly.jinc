@@ -559,8 +559,6 @@ fn __cbd2(reg ptr u16[MLKEM_N] rp, reg ptr u8[MLKEM_ETA2*MLKEM_N/4] buf) -> reg 
 
   return rp;
 }
-
-/* In MLKEM 768 and 1024 eta1 and eta2 is cbd2 */
 #[ safety =
    { requires = is_arr_init(buf,0,MLKEM_N/2)
    , ensures = is_arr_init(rp,0,MLKEM_N * 2)
