@@ -1,3 +1,11 @@
 .DS_Store
 \#*#
 ~*
+
+code/jasmin/*/*/jkem.s
+code/jasmin/*/*/jkem.o
+code/jasmin/*/*/jkem_pqcp.jazz
+code/jasmin/*/*/jkem_pqcp.s
+code/jasmin/*/*/test/test_kem
+code/jasmin/*/*/test/test_keccak
+code/jasmin/*/*/test/test_keccak_*.s
