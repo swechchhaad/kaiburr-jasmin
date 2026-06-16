@@ -15,10 +15,8 @@ default:
 JINC = kem.jinc ../../common/avx2/params.jinc params.jinc ../../common/avx2/consts.jinc ../../common/avx2/verify.jinc ../../common/avx2/reduce.jinc \
        ../../common/avx2/polyvec.jinc polyvec.jinc ../../common/avx2/poly.jinc poly.jinc indcpa.jinc gen_matrix.jinc ../../common/avx2/mlkem_keccak_avx2.jinc
 
-%.s: %.jazz
-	$(JASMINC) -o $@ $(JFLAGS) $^
-
-jkem.s: $(JINC)
+jkem.s: $(JINC) jkem.jazz
+	$(JASMINC) -o jkem.s $(JFLAGS) jkem.jazz
 
 test/test_kem: test/test_kem.c jkem.s randombytes.c
 	$(CC) $(CFLAGS) -I include/ -o test/test_kem test/test_kem.c jkem.s randombytes.c
