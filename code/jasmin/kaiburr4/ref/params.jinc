@@ -1,2 +1,2 @@
-param int MLKEM_K = 6;
+param int MLKEM_K = 7;
 require "../../common/ref/params.jinc"

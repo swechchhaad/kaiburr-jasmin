@@ -37,7 +37,7 @@ fn __crypto_kem_keypair_jazz(reg mut ptr u8[MLKEM_PUBLICKEYBYTES] pk, reg mut pt
 
   s_skp = sk;
 
-  h_pk = _sha3_256A_A2336(h_pk, pk);
+  h_pk = _sha3_256A_A2720(h_pk, pk);
 
   sk = s_skp;
 
@@ -83,7 +83,7 @@ fn __crypto_kem_enc_jazz(reg mut ptr u8[MLKEM_CIPHERTEXTBYTES] ct, reg mut ptr u
     buf[:u64 i] = t64;
   }
 
-  buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES] = _sha3_256A_A2336(buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES], pk);
+  buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES] = _sha3_256A_A2720(buf[MLKEM_SYMBYTES:MLKEM_SYMBYTES], pk);
 
   kr = _sha3_512A_A64(kr, buf);
 
@@ -143,7 +143,7 @@ fn __crypto_kem_dec_jazz(
 
   #unspill(shk);
   #unspill(sk);
-  shk = _shake256_A32__A2720(shk, sk[MLKEM_SECRETKEYBYTES-MLKEM_SYMBYTES:MLKEM_SYMBYTES], ct);
+  shk = _shake256_A32__A3104(shk, sk[MLKEM_SECRETKEYBYTES-MLKEM_SYMBYTES:MLKEM_SYMBYTES], ct);
 
   shk = __cmov(shk, kr[0:MLKEM_SYMBYTES], cnd);
   return shk;
