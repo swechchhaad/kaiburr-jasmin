@@ -1,0 +1,54 @@
+require "gen_matrix_globals.jinc"
+require "../../common/avx2/gen_matrix.jinc"
+
+#[safety =
+   { requires = is_arr_init(rho,0,32) && 0<= transposed && transposed <= 1
+   , ensures = is_arr_init(matrix,0,MLKEM_K * MLKEM_K * MLKEM_N * 2)
+   }
+ ]
+fn _gen_matrix_avx2
+( reg mut ptr u16[MLKEM_K * MLKEM_K * MLKEM_N] matrix
+, reg const ptr u8[32] rho
+, #[spill_to_mmx] reg u64 transposed
+) -> reg ptr u16[MLKEM_K * MLKEM_K * MLKEM_N]
+{
+  // local variables
+  inline int i j last;
+  stack u8[BUF_size * 4] buf_s;
+  reg ptr u8[BUF_size * 4] buf;
+  reg ptr u16[4*MLKEM_N] polx4;
+  reg ptr u16[MLKEM_N] pol;
+  reg u64 pos_entry;
+  reg u16 rc;
+
+  () = #spill(transposed);
+
+  buf = buf_s;
+
+  for i = 0 to (MLKEM_K*MLKEM_K)/4
+  {
+    pos_entry = 8*i;
+    polx4 = matrix[4*i*MLKEM_N:4*MLKEM_N];
+    () = #unspill(transposed);
+    polx4, buf = _gen_matrix_sample_four_polynomials(polx4, buf, rho, pos_entry, transposed);
+    matrix[i*4*MLKEM_N:4*MLKEM_N] = polx4;
+  }
+
+  // MLKEM_K is odd, so MLKEM_K*MLKEM_K is not a multiple of 4 and the x4 loop above
+  // leaves exactly one polynomial: the last matrix entry (MLKEM_K-1, MLKEM_K-1).
+  // It is on the diagonal, so its coordinate bytes are equal in both the normal and
+  // transposed index halves => rc is the same regardless of `transposed`.
+  last = MLKEM_K*MLKEM_K - 1;
+  rc   = (MLKEM_K - 1) + ((MLKEM_K - 1) << 8);
+  pol  = matrix[last*MLKEM_N:MLKEM_N];
+  pol, buf[0:BUF_size] = __gen_matrix_sample_one_polynomial(pol, buf[0:BUF_size], rho, rc);
+  matrix[last*MLKEM_N:MLKEM_N] = pol;
+
+  for i = 0 to MLKEM_K
+  { for j = 0 to MLKEM_K
+    { matrix[i*MLKEM_VECN+j*MLKEM_N:MLKEM_N] = _nttunpack(matrix[i*MLKEM_VECN+j*MLKEM_N:MLKEM_N]);
+    }
+  }
+
+  return matrix;
+}

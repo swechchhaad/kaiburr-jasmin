@@ -1,0 +1,3 @@
+param int MLKEM_K = 7;
+
+require "../../common/avx2/params.jinc"

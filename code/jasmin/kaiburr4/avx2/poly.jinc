@@ -1,0 +1,93 @@
+require "params.jinc"
+require "../../common/avx2/poly.jinc"
+
+u256 noise4_c01 = (32u8)[ 1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1 ];
+u256 noise4_c07 = (32u8)[ 7,7,7,7,7,7,7,7, 7,7,7,7,7,7,7,7, 7,7,7,7,7,7,7,7, 7,7,7,7,7,7,7,7 ];
+u256 noise4_c08 = (32u8)[ 8,8,8,8,8,8,8,8, 8,8,8,8,8,8,8,8, 8,8,8,8,8,8,8,8, 8,8,8,8,8,8,8,8 ];
+u256 noise4_c0f = (32u8)[ 0xf,0xf,0xf,0xf,0xf,0xf,0xf,0xf, 0xf,0xf,0xf,0xf,0xf,0xf,0xf,0xf,
+                          0xf,0xf,0xf,0xf,0xf,0xf,0xf,0xf, 0xf,0xf,0xf,0xf,0xf,0xf,0xf,0xf ];
+
+inline fn noise4_map(reg u256 f, reg u256 one, reg u256 c07, reg u256 c08) -> reg u256
+{
+  reg u256 lowb t a sgn;
+
+  lowb = #VPAND_256(f, one); 
+  t    = #VPAND_256(f, c07);
+  t    = #VPCMPEQ_32u8(t, c07); 
+  a    = #VPAND_256(t, one);
+  a    = #VPADD_32u8(a, a);
+  a    = #VPADD_32u8(a, one); 
+  a    = #VPSUB_32u8(a, lowb);
+
+  sgn  = #VPAND_256(f, c08); 
+  sgn  = #VPCMPEQ_32u8(sgn, c08);
+  a    = #VPXOR_256(a, sgn);
+  a    = #VPSUB_32u8(a, sgn);
+
+  return a;
+}
+
+#[ safety =
+   { requires = is_arr_init(s_seed,0,MLKEM_SYMBYTES)
+   , ensures = is_arr_init(rp,0,MLKEM_N * 2)
+   }
+ ]
+fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] s_seed, reg u8 nonce) -> reg ptr u16[MLKEM_N]
+{
+  stack u8[4 * MLKEM_N/8] buf;
+  stack u8[1] nonce_s;
+  reg u64 i o;
+  reg ptr u8[MLKEM_SYMBYTES] seed;
+
+  reg u256 one c07 c08 c0f;
+  reg u256 v t nlo nhi ul uh iv0 iv1 a0 a1 wlo whi;
+  reg u128 ahi;
+
+  () = #spill(rp);
+  seed = s_seed;
+  nonce_s[0] = nonce;
+
+  buf = _shake256_A128__A32_A1(buf, seed, nonce_s);
+
+  () = #unspill(rp);
+
+  one = noise4_c01;
+  c07 = noise4_c07;
+  c08 = noise4_c08;
+  c0f = noise4_c0f;
+
+  i = 0;
+  o = 0;
+  while (i < MLKEM_N/2) {
+    v    = buf.[:u256 i];
+
+    nlo  = #VPAND_256(v, c0f); 
+    t    = #VPSRL_16u16(v, 4);
+    nhi  = #VPAND_256(t, c0f);    
+
+    ul   = #VPUNPCKL_32u8(nlo, nhi);
+    uh   = #VPUNPCKH_32u8(nlo, nhi);
+    iv0  = #VPERM2I128(ul, uh, 0x20);
+    iv1  = #VPERM2I128(ul, uh, 0x31);
+
+    a0   = noise4_map(iv0, one, c07, c08);
+    a1   = noise4_map(iv1, one, c07, c08);
+
+    wlo  = #VPMOVSX_16u8_16u16((128u) a0);
+    ahi  = #VEXTRACTI128(a0, 1);
+    whi  = #VPMOVSX_16u8_16u16(ahi);
+    rp.[:u256 o]      = wlo;
+    rp.[:u256 o + 32] = whi;
+
+    wlo  = #VPMOVSX_16u8_16u16((128u) a1);
+    ahi  = #VEXTRACTI128(a1, 1);
+    whi  = #VPMOVSX_16u8_16u16(ahi);
+    rp.[:u256 o + 64] = wlo;
+    rp.[:u256 o + 96] = whi;
+
+    i += 32;
+    o += 128;
+  }
+
+  return rp;
+}
