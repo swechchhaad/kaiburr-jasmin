@@ -57,8 +57,18 @@ namespace A9248 {
   from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
 }
 
+namespace A2336 {
+  param int _ASIZE = 2336;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
+
 namespace A9600 {
   param int _ASIZE = 9600;
+  from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
+}
+
+namespace A2688 {
+  param int _ASIZE = 2688;
   from Keccak require "ref/keccak1600_fixedsizes_ASIZE.jinc"
 }
 
@@ -189,6 +199,29 @@ fn _shake256_A32__A9632
 }
 
 #[safety =
+   { requires = is_arr_init(in0,0,32) && is_arr_init(in1,0,2688)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _shake256_A32__A2720
+( reg mut ptr u8[32] out
+, reg const ptr u8[32] in0
+, reg const ptr u8[2688] in1) -> reg ptr u8[32]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  st = st_s;
+  st = __state_init_ref(st);
+  () = #spill(out, in1);
+  st, _ = A32::__absorb_ref(st, 0, in0, UNFINISHED, R136);
+  () = #unspill(in1);
+  st, _ = A2688::__absorb_ref(st, 32, in1, SHAKE, R136);
+  () = #unspill(out);
+  _, out = A32::__squeeze_ref(st, out, R136);
+  return out;
+}
+
+#[safety =
    { requires = is_arr_init(in,0,9248)
    , ensures = is_arr_init(out,0,32)
    }
@@ -204,6 +237,28 @@ fn _sha3_256A_A9248
   st = st_s;
   st = __state_init_ref(st);
   st, _ = A9248::__absorb_ref(st, 0, in, SHA3, R136);
+  () = #unspill(out);
+  _, out = A32::__squeeze_ref(st, out, R136);
+
+  return out;
+}
+
+#[safety =
+   { requires = is_arr_init(in,0,2336)
+   , ensures = is_arr_init(out,0,32)
+   }
+ ]
+fn _sha3_256A_A2336
+( reg mut ptr u8[32] out
+, reg ptr u8[2336] in
+) -> reg ptr u8[32]
+{ stack u64[25] st_s;
+  reg ptr u64[25] st;
+
+  () = #spill(out);
+  st = st_s;
+  st = __state_init_ref(st);
+  st, _ = A2336::__absorb_ref(st, 0, in, SHA3, R136);
   () = #unspill(out);
   _, out = A32::__squeeze_ref(st, out, R136);
 

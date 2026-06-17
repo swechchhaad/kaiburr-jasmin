@@ -10,11 +10,11 @@ require "../../common/ref/poly.jinc"
 fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] s_seed, reg u8 nonce) -> reg ptr u16[MLKEM_N]
 {
   stack u8[MLKEM_SYMBYTES + 1] extseed; 
-  stack u8[8 * MLKEM_N/8] buf;     
-  reg u8  c a b;
+  stack u8[4 * MLKEM_N/8] buf;
+  reg u8  c a b s w;
   reg u16 r16;
-  reg u64 i;
-  inline int k;
+  reg u64 bi idx;
+  inline int j k;
   reg ptr u8[MLKEM_SYMBYTES] seed;
 
   () = #spill(rp);
@@ -23,34 +23,41 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
   for k = 0 to MLKEM_SYMBYTES { c = seed[k]; extseed[k] = c; }
   extseed[MLKEM_SYMBYTES] = nonce;
 
-  buf = _shake256_256_33(buf, extseed);   
+  buf = _shake256_128_33(buf, extseed);
 
   () = #unspill(rp);
 
-  i = 0;
-  while (i < MLKEM_N) {
-    c = buf[i];          
+  bi = 0;
+  while (bi < MLKEM_N/2) {
+    c = buf[bi];
+    idx = bi; idx <<= 1;
 
-    b = c;
-    b &= 1;         
+    for j = 0 to 2 {
+      w = c; w >>= (4 * j);
 
-    a = c;
-    a &= (1 << 7) - 1;     
-    a += 1;
-    a >>= 7;    
-    a <<= 1;
-    a += 1;
-    a -= b;                  
+      b = w;
+      b &= 1;
 
-    c >>= 7;          
-    b = 0;
-    b -= c;           
-    a ^= b;
-    a -= b;                   
+      a = w;
+      a &= (1 << 3) - 1;
+      a += 1;
+      a >>= 3;
+      a <<= 1;
+      a += 1;
+      a -= b;
 
-    r16 = (16s) a;
-    rp[i] = r16;
-    i += 1;
+      s = w;
+      s >>= 3;
+      s &= 1;
+      b = 0;
+      b -= s;
+      a ^= b;
+      a -= b;
+
+      r16 = (16s) a;
+      rp[idx + j] = r16;
+    }
+    bi += 1;
   }
 
   return rp;
