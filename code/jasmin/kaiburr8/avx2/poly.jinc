@@ -14,7 +14,7 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
 {
   stack u8[8 * MLKEM_N/8] buf;
   stack u8[1] nonce_s;
-  reg u64 i;
+  inline int i;                                  /* was: reg u64 i; */
   reg ptr u8[MLKEM_SYMBYTES] seed;
 
   reg u256 zero c01 c7f;
@@ -27,36 +27,35 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
 
   buf = _shake256_A256__A32_A1(buf, seed, nonce_s);
 
+  _ = #init_msf();                        
   () = #unspill(rp);
 
   zero = #set0_256();
   c01 = noise8_c01;
   c7f = noise8_c7f;
 
-  i = 0;
-  while (i < MLKEM_N) {
-    v    = buf.[:u256 (uint) i];    
+  /* 8 iterations; old i = 32*i (byte read), stores at 2*old_i = 64*i and 64*i+32 */
+  for i = 0 to MLKEM_N/32 {
+    v    = buf.[:u256 32*i];
 
-    lowb = #VPAND_256(v, c01);   
-    m7f  = #VPAND_256(v, c7f);      
+    lowb = #VPAND_256(v, c01);
+    m7f  = #VPAND_256(v, c7f);
     m7f  = #VPCMPEQ_32u8(m7f, c7f);
     a    = #VPAND_256(m7f, c01);
-    a    = #VPADD_32u8(a, a); 
-    a    = #VPADD_32u8(a, c01);  
+    a    = #VPADD_32u8(a, a);
+    a    = #VPADD_32u8(a, c01);
     a    = #VPSUB_32u8(a, lowb);
 
-    sgn  = #VPCMPGT_32u8(zero, v); 
+    sgn  = #VPCMPGT_32u8(zero, v);
     a    = #VPXOR_256(a, sgn);
-    a    = #VPSUB_32u8(a, sgn); 
+    a    = #VPSUB_32u8(a, sgn);
 
     wlo  = #VPMOVSX_16u8_16u16((128u) a);
     ahi  = #VEXTRACTI128(a, 1);
-    whi  = #VPMOVSX_16u8_16u16(ahi);   
+    whi  = #VPMOVSX_16u8_16u16(ahi);
 
-    rp.[:u256 (uint)(2*i)]      = wlo; 
-    rp.[:u256 (uint)(2*i + 32)] = whi;
-
-    i += 32;
+    rp.[:u256 64*i]      = wlo;
+    rp.[:u256 64*i + 32] = whi;
   }
 
   return rp;
