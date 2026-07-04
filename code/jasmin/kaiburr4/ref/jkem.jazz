@@ -6,7 +6,7 @@ require "kem.jinc"
    }
  ]
 #[ct = "secret × secret × secret → secret × secret × public"]
-export fn jade_kem_mlkem_kaiburr8_amd64_ref_keypair_derand(
+export fn jade_kem_mlkem_kaiburr4_amd64_ref_keypair_derand(
     #[spill_to_mmx] reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key,
     #[spill_to_mmx] reg ptr u8[MLKEM_SECRETKEYBYTES] secret_key,
     #[spill_to_mmx] reg ptr u8[2*MLKEM_SYMBYTES] coins)
@@ -24,7 +24,7 @@ export fn jade_kem_mlkem_kaiburr8_amd64_ref_keypair_derand(
 
 #[safety = { ensures = is_arr_init(public_key,0,MLKEM_PUBLICKEYBYTES) && is_arr_init(secret_key,0,MLKEM_SECRETKEYBYTES)}]
 #[ct = "secret × secret → secret × secret × public"]
-export fn jade_kem_mlkem_kaiburr8_amd64_ref_keypair(
+export fn jade_kem_mlkem_kaiburr4_amd64_ref_keypair(
   #[spill_to_mmx] reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key,
   #[spill_to_mmx] reg ptr u8[MLKEM_SECRETKEYBYTES] secret_key)
  -> reg ptr u8[MLKEM_PUBLICKEYBYTES], reg ptr u8[MLKEM_SECRETKEYBYTES], reg u64
@@ -50,7 +50,7 @@ export fn jade_kem_mlkem_kaiburr8_amd64_ref_keypair(
    }
 ]
 #[ct = "secret × secret × secret × secret → secret × secret × public"]
-export fn jade_kem_mlkem_kaiburr8_amd64_ref_enc_derand(
+export fn jade_kem_mlkem_kaiburr4_amd64_ref_enc_derand(
     reg ptr u8[MLKEM_CIPHERTEXTBYTES] ciphertext,
     reg ptr u8[MLKEM_SYMBYTES] shared_secret,
     reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key,
@@ -73,7 +73,7 @@ export fn jade_kem_mlkem_kaiburr8_amd64_ref_enc_derand(
    }
  ]
 #[ct = "secret × secret × secret → secret × secret × public"]
-export fn jade_kem_mlkem_kaiburr8_amd64_ref_enc(
+export fn jade_kem_mlkem_kaiburr4_amd64_ref_enc(
     reg ptr u8[MLKEM_CIPHERTEXTBYTES] ciphertext,
     reg ptr u8[MLKEM_SYMBYTES] shared_secret,
     reg ptr u8[MLKEM_PUBLICKEYBYTES] public_key)
@@ -95,7 +95,7 @@ export fn jade_kem_mlkem_kaiburr8_amd64_ref_enc(
    }
  ]
 #[ct = "secret × secret × secret → secret × public"]
-export fn jade_kem_mlkem_kaiburr8_amd64_ref_dec(
+export fn jade_kem_mlkem_kaiburr4_amd64_ref_dec(
     reg ptr u8[MLKEM_SYMBYTES] shared_secret,
     reg ptr u8[MLKEM_CIPHERTEXTBYTES] ciphertext,
     reg ptr u8[MLKEM_SECRETKEYBYTES] secret_key)

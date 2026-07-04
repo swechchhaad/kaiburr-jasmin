@@ -6,12 +6,12 @@
 
 #include "../include/api.h"
 
-#define SK_BYTES   JADE_KEM_mlkem_kaiburr8_amd64_ref_SECRETKEYBYTES
-#define PK_BYTES   JADE_KEM_mlkem_kaiburr8_amd64_ref_PUBLICKEYBYTES
-#define CT_BYTES   JADE_KEM_mlkem_kaiburr8_amd64_ref_CIPHERTEXTBYTES
-#define SS_BYTES   JADE_KEM_mlkem_kaiburr8_amd64_ref_BYTES
-#define KP_COINS   JADE_KEM_mlkem_kaiburr8_amd64_ref_KEYPAIRCOINBYTES
-#define ENC_COINS  JADE_KEM_mlkem_kaiburr8_amd64_ref_ENCCOINBYTES
+#define SK_BYTES   JADE_KEM_mlkem_kaiburr4_amd64_ref_SECRETKEYBYTES
+#define PK_BYTES   JADE_KEM_mlkem_kaiburr4_amd64_ref_PUBLICKEYBYTES
+#define CT_BYTES   JADE_KEM_mlkem_kaiburr4_amd64_ref_CIPHERTEXTBYTES
+#define SS_BYTES   JADE_KEM_mlkem_kaiburr4_amd64_ref_BYTES
+#define KP_COINS   JADE_KEM_mlkem_kaiburr4_amd64_ref_KEYPAIRCOINBYTES
+#define ENC_COINS  JADE_KEM_mlkem_kaiburr4_amd64_ref_ENCCOINBYTES
 
 #ifndef NTESTS
 #define NTESTS 10000
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
   long ntests = NTESTS;
   if (argc > 1) ntests = atol(argv[1]);
 
-  printf("kaiburr8 ref roundtrip test (k=24, NOISE_N=8)\n");
+  printf("kaiburr4 ref roundtrip test (k=7, NOISE_N=4)\n");
   printf("PK=%d SK=%d CT=%d SS=%d bytes\n", PK_BYTES, SK_BYTES, CT_BYTES, SS_BYTES);
   printf("running %ld iterations...\n\n", ntests);
 
@@ -45,14 +45,14 @@ int main(int argc, char **argv)
     if (getrandom(kp_coins,  KP_COINS,  0) != (ssize_t)KP_COINS ||
         getrandom(enc_coins, ENC_COINS, 0) != (ssize_t)ENC_COINS) { error_fail++; continue; }
 
-    if (jade_kem_mlkem_kaiburr8_amd64_ref_keypair_derand(pk, sk, kp_coins) != 0) { error_fail++; continue; }
-    if (jade_kem_mlkem_kaiburr8_amd64_ref_enc_derand(ct, ss_enc, pk, enc_coins) != 0) { error_fail++; continue; }
+    if (jade_kem_mlkem_kaiburr4_amd64_ref_keypair_derand(pk, sk, kp_coins) != 0) { error_fail++; continue; }
+    if (jade_kem_mlkem_kaiburr4_amd64_ref_enc_derand(ct, ss_enc, pk, enc_coins) != 0) { error_fail++; continue; }
 
-    if (jade_kem_mlkem_kaiburr8_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
+    if (jade_kem_mlkem_kaiburr4_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
     if (memcmp(ss_enc, ss_dec, SS_BYTES) != 0) roundtrip_fail++;
 
     ct[0] ^= 1;
-    if (jade_kem_mlkem_kaiburr8_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
+    if (jade_kem_mlkem_kaiburr4_amd64_ref_dec(ss_dec, ct, sk) != 0) { error_fail++; continue; }
     if (memcmp(ss_enc, ss_dec, SS_BYTES) == 0) reject_fail++;
   }
 

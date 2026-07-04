@@ -1,44 +1,44 @@
-#ifndef JADE_KEM_mlkem_kaiburr8_amd64_ref_API_H
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_API_H
+#ifndef JADE_KEM_mlkem_kaiburr4_amd64_ref_API_H
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_API_H
 
 #include <stdint.h>
 
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_SECRETKEYBYTES   18528
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_PUBLICKEYBYTES   9248
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_CIPHERTEXTBYTES  9600
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_KEYPAIRCOINBYTES 64
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_ENCCOINBYTES     32
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_BYTES            32
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_SECRETKEYBYTES   5472
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_PUBLICKEYBYTES   2720
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_CIPHERTEXTBYTES  3072
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_KEYPAIRCOINBYTES 64
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_ENCCOINBYTES     32
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_BYTES            32
 
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_ALGNAME         "kaiburr8"
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_ARCH            "amd64"
-#define JADE_KEM_mlkem_kaiburr8_amd64_ref_IMPL            "ref"
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_ALGNAME         "kaiburr4"
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_ARCH            "amd64"
+#define JADE_KEM_mlkem_kaiburr4_amd64_ref_IMPL            "ref"
 
-int jade_kem_mlkem_kaiburr8_amd64_ref_keypair_derand(
+int jade_kem_mlkem_kaiburr4_amd64_ref_keypair_derand(
   uint8_t *public_key,
   uint8_t *secret_key,
   const uint8_t *coins
 );
 
-int jade_kem_mlkem_kaiburr8_amd64_ref_keypair(
+int jade_kem_mlkem_kaiburr4_amd64_ref_keypair(
   uint8_t *public_key,
   uint8_t *secret_key
 );
 
-int jade_kem_mlkem_kaiburr8_amd64_ref_enc_derand(
+int jade_kem_mlkem_kaiburr4_amd64_ref_enc_derand(
   uint8_t *ciphertext,
   uint8_t *shared_secret,
   const uint8_t *public_key,
   const uint8_t *coins
 );
 
-int jade_kem_mlkem_kaiburr8_amd64_ref_enc(
+int jade_kem_mlkem_kaiburr4_amd64_ref_enc(
   uint8_t *ciphertext,
   uint8_t *shared_secret,
   const uint8_t *public_key
 );
 
-int jade_kem_mlkem_kaiburr8_amd64_ref_dec(
+int jade_kem_mlkem_kaiburr4_amd64_ref_dec(
   uint8_t *shared_secret,
   const uint8_t *ciphertext,
   const uint8_t *secret_key
