@@ -149,6 +149,7 @@ fn __indcpa_enc(
   v  = __poly_reduce(v);
 
   () = #unspill(ct);
+  /* ciphertext polys are in standard coefficient order after invNTT, so
    * pack with the plain 12-bit layout, not the NTT-order key packer. */
   for w = 0 to MLKEM_K { ct[MLKEM_POLYBYTES*w:MLKEM_POLYBYTES], bp[w*MLKEM_N:MLKEM_N] = _cpoly_tobytes(ct[MLKEM_POLYBYTES*w:MLKEM_POLYBYTES], bp[w*MLKEM_N:MLKEM_N]); }
   ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v = _cpoly_tobytes(ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v);
