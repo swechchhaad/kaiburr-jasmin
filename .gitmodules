@@ -12,3 +12,6 @@
 [submodule "jasmin"]
 	path = jasmin
 	url = https://gitlab.com/jasmin-lang/jasmin-compiler.git
+[submodule "code/kaiburr-c"]
+	path = code/kaiburr-c
+	url = https://github.com/swechchhaad/kaiburr-c
