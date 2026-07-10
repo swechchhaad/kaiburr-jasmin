@@ -49,6 +49,7 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
       s = w;
       s >>= 3;
       s &= 1;
+      s ^= 1;
       b = 0;
       b -= s;
       a ^= b;

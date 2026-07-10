@@ -19,6 +19,8 @@ inline fn noise6_map(reg u256 f, reg u256 one, reg u256 c1f, reg u256 c20) -> re
 {
   reg u256 lowb t a sgn;
 
+  f    = #VPXOR_256(f, c20);
+
   lowb = #VPAND_256(f, one);
   t    = #VPAND_256(f, c1f);
   t    = #VPCMPEQ_8u32(t, c1f);
