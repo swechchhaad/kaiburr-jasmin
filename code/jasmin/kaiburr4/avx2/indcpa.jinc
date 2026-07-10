@@ -149,8 +149,9 @@ fn __indcpa_enc(
   v  = __poly_reduce(v);
 
   () = #unspill(ct);
-  ct[0:MLKEM_POLYVECBYTES] = __i_polyvec_tobytes(ct[0:MLKEM_POLYVECBYTES], bp);
-  ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v = _i_poly_tobytes(ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v);
+  * pack with the plain 12-bit layout, not the NTT-order key packer. */
+  for w = 0 to MLKEM_K { ct[MLKEM_POLYBYTES*w:MLKEM_POLYBYTES], bp[w*MLKEM_N:MLKEM_N] = _cpoly_tobytes(ct[MLKEM_POLYBYTES*w:MLKEM_POLYBYTES], bp[w*MLKEM_N:MLKEM_N]); }
+  ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v = _cpoly_tobytes(ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES], v);
 
   return ct;
 }
@@ -165,9 +166,10 @@ fn __indcpa_dec(reg ptr u8[MLKEM_INDCPA_MSGBYTES] msgp, reg ptr u8[MLKEM_CIPHERT
 {
   stack u16[MLKEM_N] t v mp;
   stack u16[MLKEM_VECN] bp skpv;
+  inline int i;
 
-  bp = __i_polyvec_frombytes(ct[0:MLKEM_POLYVECBYTES]);
-  v = _i_poly_frombytes(v, ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES]);
+  for i = 0 to MLKEM_K { bp[i*MLKEM_N:MLKEM_N] = _cpoly_frombytes(bp[i*MLKEM_N:MLKEM_N], ct[MLKEM_POLYBYTES*i:MLKEM_POLYBYTES]); }
+  v = _cpoly_frombytes(v, ct[MLKEM_POLYVECBYTES:MLKEM_POLYBYTES]);
 
   skpv = __i_polyvec_frombytes(sk);
 
