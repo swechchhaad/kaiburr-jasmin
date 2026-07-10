@@ -8,8 +8,8 @@
 #include <unistd.h>
 
 /* ------------------------------------------------------------------------ */
-#include "kyber/ref/params.h"
-#include "kyber/ref/kem.h"
+#include "kaiburr-c/ref/params.h"
+#include "kaiburr-c/ref/kem.h"
 #include "runtime.h"
 
 /* ------------------------------------------------------------------------ */
