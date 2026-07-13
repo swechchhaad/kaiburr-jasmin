@@ -1,38 +1,36 @@
 require "params.jinc"
 require "../../common/avx2/poly.jinc"
 
-u256 noise6_shuf = (32u8)[
-    0,  1,  2, 255,    3,  4,  5, 255,    6,  7,  8, 255,    9, 10, 11, 255,
-  255,255,255, 255,  255,255,255, 255,  255,255,255, 255,  255,255,255, 255
+u256 noise6_shuf16 = (32u8)[
+  255,   5,   5,   4,   4,   3,   4,   3, 255,   2,   2,   1,   1,   0,   1,   0,
+  255,   5,   5,   4,   4,   3,   4,   3, 255,   2,   2,   1,   1,   0,   1,   0
 ];
-
-u256 noise6_shiftv = (8u32)[ 0, 6, 12, 18, 0, 6, 12, 18 ];
-u256 noise6_perm01 = (8u32)[ 0, 0, 0, 0, 1, 1, 1, 1 ];
-u256 noise6_perm23 = (8u32)[ 2, 2, 2, 2, 3, 3, 3, 3 ];
-
-u256 noise6_c01 = (8u32)[    1,    1,    1,    1,    1,    1,    1,    1 ];
-u256 noise6_c1f = (8u32)[ 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f ];
-u256 noise6_c20 = (8u32)[ 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 ];
-u256 noise6_c3f = (8u32)[ 0x3f, 0x3f, 0x3f, 0x3f, 0x3f, 0x3f, 0x3f, 0x3f ];
+u256 noise6_mult16 = (16u16)[
+  256, 64, 16, 1024, 256, 64, 16, 1024, 256, 64, 16, 1024, 256, 64, 16, 1024
+];
+u256 noise6_c01 = (16u16)[ 1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1 ];
+u256 noise6_c1f = (16u16)[ 0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f, 0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f ];
+u256 noise6_c20 = (16u16)[ 0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20, 0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20 ];
+u256 noise6_c3f = (16u16)[ 0x3f,0x3f,0x3f,0x3f,0x3f,0x3f,0x3f,0x3f, 0x3f,0x3f,0x3f,0x3f,0x3f,0x3f,0x3f,0x3f ];
 
 inline fn noise6_map(reg u256 f, reg u256 one, reg u256 c1f, reg u256 c20) -> reg u256
 {
   reg u256 lowb t a sgn;
 
-  f    = #VPXOR_256(f, c20);
+  f    = #VPXOR_256(f, c20);          
 
   lowb = #VPAND_256(f, one);
   t    = #VPAND_256(f, c1f);
-  t    = #VPCMPEQ_8u32(t, c1f);
+  t    = #VPCMPEQ_16u16(t, c1f);
   a    = #VPAND_256(t, one);
-  a    = #VPADD_8u32(a, a);
-  a    = #VPADD_8u32(a, one);
-  a    = #VPSUB_8u32(a, lowb);
+  a    = #VPADD_16u16(a, a);
+  a    = #VPADD_16u16(a, one);
+  a    = #VPSUB_16u16(a, lowb);
 
   sgn  = #VPAND_256(f, c20);
-  sgn  = #VPCMPEQ_8u32(sgn, c20);
+  sgn  = #VPCMPEQ_16u16(sgn, c20);
   a    = #VPXOR_256(a, sgn);
-  a    = #VPSUB_8u32(a, sgn);
+  a    = #VPSUB_16u16(a, sgn);
 
   return a;
 }
@@ -46,11 +44,11 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
 {
   stack u8[6 * MLKEM_N/8 + 32] buf;
   stack u8[1] nonce_s;
-  inline int i;                                  /* was: reg u64 i off o2; */
+  inline int i;
   reg ptr u8[MLKEM_SYMBYTES] seed;
 
-  reg u256 zero shufc shiftc p01 p23 one c1f c20 c3f;
-  reg u256 v groups gg ff a0 a1 plo outlo;
+  reg u256 zero shuf mult one c1f c20 c3f v;
+  reg u128 lo hi;
 
   () = #spill(rp);
   seed = s_seed;
@@ -58,40 +56,34 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
 
   buf[0:6 * MLKEM_N/8] = _shake256_A192__A32_A1(buf[0:6 * MLKEM_N/8], seed, nonce_s);
 
-  _ = #init_msf();                   
+  _ = #init_msf();
   () = #unspill(rp);
 
   zero = #set0_256();
-  buf.[:u256 6 * MLKEM_N/8] = zero;
+  buf.[:u256 6 * MLKEM_N/8] = zero; 
 
-  shufc  = noise6_shuf;
-  shiftc = noise6_shiftv;
-  p01    = noise6_perm01;
-  p23    = noise6_perm23;
-  one    = noise6_c01;
-  c1f    = noise6_c1f;
-  c20    = noise6_c20;
-  c3f    = noise6_c3f;
+  shuf = noise6_shuf16;
+  mult = noise6_mult16;
+  one  = noise6_c01;
+  c1f  = noise6_c1f;
+  c20  = noise6_c20;
+  c3f  = noise6_c3f;
 
-  /* 16 iterations; off = 12*i (byte read), o2 = 32*i (byte store) */
   for i = 0 to MLKEM_N/16 {
-    v      = buf.[:u256 12*i];
-    groups = #VPSHUFB_256(v, shufc);
+    lo = buf.[:u128 12*i];
+    hi = buf.[:u128 12*i + 6];
+    v  = zero;
+    v  = #VINSERTI128(v, lo, 0);
+    v  = #VINSERTI128(v, hi, 1);
 
-    gg = #VPERMD(p01, groups);
-    ff = #VPSRLV_8u32(gg, shiftc);
-    ff = #VPAND_256(ff, c3f);
-    a0 = noise6_map(ff, one, c1f, c20);
+    v  = #VPSHUFB_256(v, shuf);
+    v  = #VPMULL_16u16(v, mult);
+    v  = #VPSRL_16u16(v, 10);
+    v  = #VPAND_256(v, c3f);
 
-    gg = #VPERMD(p23, groups);
-    ff = #VPSRLV_8u32(gg, shiftc);
-    ff = #VPAND_256(ff, c3f);
-    a1 = noise6_map(ff, one, c1f, c20);
+    v  = noise6_map(v, one, c1f, c20);
 
-    plo   = #VPACKSS_8u32(a0, a1);
-    outlo = #VPERMQ(plo, 0xD8);
-
-    rp.[:u256 32*i] = outlo;
+    rp.[:u256 32*i] = v;
   }
 
   return rp;
