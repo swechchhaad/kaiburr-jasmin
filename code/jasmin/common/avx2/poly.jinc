@@ -389,9 +389,9 @@ fn _i_poly_frombytes(reg ptr u16[MLKEM_N] rp, reg ptr u8[MLKEM_POLYBYTES] ap) ->
 fn _cpoly_tobytes(reg mut ptr u8[MLKEM_POLYBYTES] rp, reg mut ptr u16[MLKEM_N] a) -> reg ptr u8[MLKEM_POLYBYTES], reg ptr u16[MLKEM_N]
 {
   reg u256 f madd pshuf;
-  reg u128 lo hi;
-  reg u16 t0 t1 d;
-  reg ui64 i j;
+  reg u128 lo hi t;
+  reg u64 t8;
+  stack u8[32] tmp;
   inline int c;
 
   a = _poly_csubq(a);                       // each coefficient now in [0, q) < 2^12
@@ -410,38 +410,25 @@ fn _cpoly_tobytes(reg mut ptr u8[MLKEM_POLYBYTES] rp, reg mut ptr u16[MLKEM_N] a
     rp.[:u128 24*c + 12] = hi;
   }
 
-  i = 240;
-  j = 360;
-  while (i < MLKEM_N)
-  {
-    t0 = a[i];
-    t1 = a[i+1];
-    d  = t0;
-    d  &= 0xff;
-    rp.[j] = d;
-    j += 1;
-    t0 >>= 8;
-    t0 &= 0xf;
-    d = t1;
-    d &= 0xf;
-    d <<= 4;
-    d |= t0;
-    rp.[j] = d;
-    j += 1;
-    t1 >>= 4;
-    rp.[j] = t1;
-    j += 1;
-    i += 2;
-  }
+  f  = a[:u256 15];
+  f  = #VPMADDWD_256(f, madd);
+  f  = #VPSHUFB_256(f, pshuf);
+  lo = #VEXTRACTI128(f, 0);
+  hi = #VEXTRACTI128(f, 1);
+  tmp.[:u128 0]  = lo;
+  tmp.[:u128 12] = hi;
+  t   = tmp.[:u128 0];
+  rp.[:u128 24*15]      = t;                 // bytes 360..375
+  t8  = tmp.[:u64 16];
+  rp.[:u64 24*15 + 16]  = t8;                // bytes 376..383
   return rp, a;
 }
 
 fn _cpoly_frombytes(reg mut ptr u16[MLKEM_N] rp, reg ptr u8[MLKEM_POLYBYTES] ap) -> reg ptr u16[MLKEM_N]
 {
   reg u256 f g load_shuffle mask;
-  reg u8 c0 c1 c2;
-  reg u16 d0 d1 t;
-  inline int c i;
+  reg u128 lo hi;
+  inline int c;
 
   load_shuffle = cpoly_load_shuffle[:u256 0];
   mask = maskx16[:u256 0];
@@ -457,25 +444,17 @@ fn _cpoly_frombytes(reg mut ptr u16[MLKEM_N] rp, reg ptr u8[MLKEM_POLYBYTES] ap)
     rp[:u256 c] = f;                        // coeffs 16c .. 16c+15, standard order
   }
 
-  /* scalar tail: coeffs 240..255 from bytes 360..383 */
-  for i = 120 to 128
-  {
-    c0 = ap[3*i];
-    c1 = ap[3*i+1];
-    c2 = ap[3*i+2];
-    d0 = (16u)c0;
-    t  = (16u)c1;
-    t &= 0xf;
-    t <<= 8;
-    d0 |= t;
-    d1 = (16u)c2;
-    d1 <<= 4;
-    t  = (16u)c1;
-    t >>= 4;
-    d1 |= t;
-    rp[2*i]   = d0;
-    rp[2*i+1] = d1;
-  }
+
+  lo = ap.[:u128 24*15];                     // bytes 360..375  -> lane 0
+  hi = ap.[:u128 24*15 + 8];                 // bytes 368..383  -> lane 1
+  f  = #set0_256();
+  f  = #VINSERTI128(f, lo, 0);
+  f  = #VINSERTI128(f, hi, 1);
+  f  = #VPSHUFB_256(f, load_shuffle);
+  g  = #VPSRL_16u16(f, 4);
+  f  = #VPBLEND_16u16(f, g, 0xAA);
+  f  = #VPAND_256(f, mask);
+  rp[:u256 15] = f;                          // coeffs 240..255
   return rp;
 }
 
