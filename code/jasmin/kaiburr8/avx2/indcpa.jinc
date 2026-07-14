@@ -44,12 +44,30 @@ fn __indcpa_keypair(#[spill_to_mmx] reg ptr u8[MLKEM_PUBLICKEYBYTES] pk, #[spill
   transposed = 0;
   aa = _gen_matrix_avx2(aa, publicseed, transposed);
 
-  for i = 0 to MLKEM_K {
+  /* secret s: four polynomials per 4-way batched SHAKE256, serial tail */
+  for i = 0 to MLKEM_K/4 {
+    nonce = 4*i;
+    skpv[(4*i+0)*MLKEM_N:MLKEM_N], skpv[(4*i+1)*MLKEM_N:MLKEM_N],
+    skpv[(4*i+2)*MLKEM_N:MLKEM_N], skpv[(4*i+3)*MLKEM_N:MLKEM_N]
+      = _poly_getnoise_4x(skpv[(4*i+0)*MLKEM_N:MLKEM_N], skpv[(4*i+1)*MLKEM_N:MLKEM_N],
+                          skpv[(4*i+2)*MLKEM_N:MLKEM_N], skpv[(4*i+3)*MLKEM_N:MLKEM_N],
+                          noiseseed, nonce);
+  }
+  for i = 4*(MLKEM_K/4) to MLKEM_K {
     nonce = i;
     skpv[i*MLKEM_N:MLKEM_N] = _poly_getnoise(skpv[i*MLKEM_N:MLKEM_N], noiseseed, nonce);
   }
 
-  for i = 0 to MLKEM_K {
+  /* error e: nonces continue at MLKEM_K */
+  for i = 0 to MLKEM_K/4 {
+    nonce = MLKEM_K + 4*i;
+    e[(4*i+0)*MLKEM_N:MLKEM_N], e[(4*i+1)*MLKEM_N:MLKEM_N],
+    e[(4*i+2)*MLKEM_N:MLKEM_N], e[(4*i+3)*MLKEM_N:MLKEM_N]
+      = _poly_getnoise_4x(e[(4*i+0)*MLKEM_N:MLKEM_N], e[(4*i+1)*MLKEM_N:MLKEM_N],
+                          e[(4*i+2)*MLKEM_N:MLKEM_N], e[(4*i+3)*MLKEM_N:MLKEM_N],
+                          noiseseed, nonce);
+  }
+  for i = 4*(MLKEM_K/4) to MLKEM_K {
     nonce = MLKEM_K + i;
     e[i*MLKEM_N:MLKEM_N] = _poly_getnoise(e[i*MLKEM_N:MLKEM_N], noiseseed, nonce);
   }
@@ -117,16 +135,35 @@ fn __indcpa_enc(
   transposed = 1;
   aat = _gen_matrix_avx2(aat, publicseed, transposed);
 
-  for w = 0 to MLKEM_K {
+  /* s': four polynomials per 4-way batched SHAKE256, serial tail */
+  for w = 0 to MLKEM_K/4 {
+    nonce = 4*w;
+    sp[(4*w+0)*MLKEM_N:MLKEM_N], sp[(4*w+1)*MLKEM_N:MLKEM_N],
+    sp[(4*w+2)*MLKEM_N:MLKEM_N], sp[(4*w+3)*MLKEM_N:MLKEM_N]
+      = _poly_getnoise_4x(sp[(4*w+0)*MLKEM_N:MLKEM_N], sp[(4*w+1)*MLKEM_N:MLKEM_N],
+                          sp[(4*w+2)*MLKEM_N:MLKEM_N], sp[(4*w+3)*MLKEM_N:MLKEM_N],
+                          noiseseed, nonce);
+  }
+  for w = 4*(MLKEM_K/4) to MLKEM_K {
     nonce = w;
     sp[w*MLKEM_N:MLKEM_N] = _poly_getnoise(sp[w*MLKEM_N:MLKEM_N], noiseseed, nonce);
   }
 
-  for w = 0 to MLKEM_K {
+  /* e1: nonces continue at MLKEM_K */
+  for w = 0 to MLKEM_K/4 {
+    nonce = MLKEM_K + 4*w;
+    ep[(4*w+0)*MLKEM_N:MLKEM_N], ep[(4*w+1)*MLKEM_N:MLKEM_N],
+    ep[(4*w+2)*MLKEM_N:MLKEM_N], ep[(4*w+3)*MLKEM_N:MLKEM_N]
+      = _poly_getnoise_4x(ep[(4*w+0)*MLKEM_N:MLKEM_N], ep[(4*w+1)*MLKEM_N:MLKEM_N],
+                          ep[(4*w+2)*MLKEM_N:MLKEM_N], ep[(4*w+3)*MLKEM_N:MLKEM_N],
+                          noiseseed, nonce);
+  }
+  for w = 4*(MLKEM_K/4) to MLKEM_K {
     nonce = MLKEM_K + w;
     ep[w*MLKEM_N:MLKEM_N] = _poly_getnoise(ep[w*MLKEM_N:MLKEM_N], noiseseed, nonce);
   }
 
+  /* e2: single polynomial, nonce 2*MLKEM_K */
   nonce = 2*MLKEM_K;
   epp = _poly_getnoise(epp, noiseseed, nonce);
 

@@ -339,6 +339,35 @@ fn _shake256x4_A256__A32_A1
   return out0, out1, out2, out3;
 }
 
+/* 4-way parallel SHAKE-256*/
+#[safety =
+   { requires = is_arr_init(seed,0,32) && is_arr_init(nonces,0,4)
+    , ensures = is_arr_init(out0,0,192) &&
+                is_arr_init(out1,0,192) &&
+                is_arr_init(out2,0,192) &&
+                is_arr_init(out3,0,192)
+    }
+]
+fn _shake256x4_A192__A32_A1
+( reg mut ptr u8[192] out0 out1 out2 out3
+, reg const ptr u8[32] seed
+, reg const ptr u8[4] nonces
+) -> reg ptr u8[192] /* out0 */
+   , reg ptr u8[192] /* out1 */
+   , reg ptr u8[192] /* out2 */
+   , reg ptr u8[192] /* out3 */
+{ stack u256[25] st_s;
+  reg ptr u256[25] st;
+  st = st_s;
+  st = __state_init_avx2x4(st);
+  st, _ = A32::__absorb_bcast_avx2x4(st, 0, seed, UNFINISHED, R136);
+  st, _ = A1::__absorb_avx2x4(st, 32, nonces[0:1], nonces[1:1], nonces[2:1], nonces[3:1], SHAKE, R136);
+  st, out0, out1, out2, out3
+    = A192::__squeeze_avx2x4(st, out0, out1, out2, out3, R136);
+
+  return out0, out1, out2, out3;
+}
+
 /* SHAKE-128 absorb reading from a 32-byte stack array (A32) first and from 2 byte
    stack array next */
 #[safety =

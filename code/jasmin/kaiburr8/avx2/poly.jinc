@@ -5,30 +5,13 @@ u256 noise8_c01 = (32u8)[ 1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1, 1,1
 u256 noise8_c7f = (32u8)[ 0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f, 0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,
                           0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f, 0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f,0x7f ];
 
-#[ safety =
-   { requires = is_arr_init(s_seed,0,MLKEM_SYMBYTES)
-   , ensures = is_arr_init(rp,0,MLKEM_N * 2)
-   }
- ]
-fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] s_seed, reg u8 nonce) -> reg ptr u16[MLKEM_N]
+inline
+fn __noise8_poly(reg ptr u16[MLKEM_N] rp, reg ptr u8[8 * MLKEM_N/8] buf) -> reg ptr u16[MLKEM_N]
 {
-  stack u8[8 * MLKEM_N/8] buf;
-  stack u8[1] nonce_s;
-  inline int i;                                  /* was: reg u64 i; */
-  reg ptr u8[MLKEM_SYMBYTES] seed;
-
+  inline int i;
   reg u256 zero c01 c7f;
   reg u256 v lowb m7f a sgn wlo whi;
   reg u128 ahi;
-
-  () = #spill(rp);
-  seed = s_seed;
-  nonce_s[0] = nonce;
-
-  buf = _shake256_A256__A32_A1(buf, seed, nonce_s);
-
-  _ = #init_msf();                        
-  () = #unspill(rp);
 
   zero = #set0_256();
   c01 = noise8_c01;
@@ -61,4 +44,74 @@ fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] 
   }
 
   return rp;
+}
+
+#[ safety =
+   { requires = is_arr_init(s_seed,0,MLKEM_SYMBYTES)
+   , ensures = is_arr_init(rp,0,MLKEM_N * 2)
+   }
+ ]
+fn _poly_getnoise(reg mut ptr u16[MLKEM_N] rp, reg const ptr u8[MLKEM_SYMBYTES] s_seed, reg u8 nonce) -> reg ptr u16[MLKEM_N]
+{
+  stack u8[8 * MLKEM_N/8] buf;
+  stack u8[1] nonce_s;
+  reg ptr u8[MLKEM_SYMBYTES] seed;
+
+  () = #spill(rp);
+  seed = s_seed;
+  nonce_s[0] = nonce;
+
+  buf = _shake256_A256__A32_A1(buf, seed, nonce_s);
+
+  _ = #init_msf();
+  () = #unspill(rp);
+
+  rp = __noise8_poly(rp, buf);
+
+  return rp;
+}
+
+/* _poly_getnoise_4x: sample four f(8) polynomials, parallelizing only the
+   SHAKE256 via the 4-way Keccak. Nonces are nonce, nonce+1, nonce+2, nonce+3. */
+#[safety =
+   { requires = is_arr_init(seed,0,MLKEM_SYMBYTES)
+   , ensures = is_arr_init(r0,0,MLKEM_N * 2) &&
+               is_arr_init(r1,0,MLKEM_N * 2) &&
+               is_arr_init(r2,0,MLKEM_N * 2) &&
+               is_arr_init(r3,0,MLKEM_N * 2)
+   }
+ ]
+fn _poly_getnoise_4x
+( reg ptr u16[MLKEM_N] r0 r1 r2 r3
+, reg const ptr u8[MLKEM_SYMBYTES] seed
+, reg u8 nonce
+) -> reg ptr u16[MLKEM_N]
+   , reg ptr u16[MLKEM_N]
+   , reg ptr u16[MLKEM_N]
+   , reg ptr u16[MLKEM_N]
+{
+  stack u8[8 * MLKEM_N/8] buf0 buf1 buf2 buf3;
+  stack u8[4] nonces;
+
+  () = #spill(r0, r1, r2, r3);
+
+  nonces[0] = nonce;
+  nonce += 1;
+  nonces[1] = nonce;
+  nonce += 1;
+  nonces[2] = nonce;
+  nonce += 1;
+  nonces[3] = nonce;
+
+  buf0, buf1, buf2, buf3 = _shake256x4_A256__A32_A1(buf0, buf1, buf2, buf3, seed, nonces);
+
+  _ = #init_msf();
+  () = #unspill(r0, r1, r2, r3);
+
+  r0 = __noise8_poly(r0, buf0);
+  r1 = __noise8_poly(r1, buf1);
+  r2 = __noise8_poly(r2, buf2);
+  r3 = __noise8_poly(r3, buf3);
+
+  return r0, r1, r2, r3;
 }
