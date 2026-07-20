@@ -15,7 +15,8 @@ C_REF=(kem.c indcpa.c polyvec.c poly.c ntt.c fn.c reduce.c verify.c fips202.c sy
 C_AVX2=(kem.c indcpa.c polyvec.c poly.c consts.c rejsample.c fn.c verify.c fips202.c fips202x4.c symmetric-shake.c keccak4x/KeccakP-1600-times4-SIMD256.c fq.S shuffle.S ntt.S invntt.S basemul.S)
 
 make -C "$BENCH/randombytes" >/dev/null 2>&1
-echo "host: $(hostname)  cpu: $(grep -m1 'model name' /proc/cpuinfo|cut -d: -f2|sed 's/^ //')  TIMINGS=$TIMINGS"
+CPU="${CPU:-$(grep -m1 'model name' /proc/cpuinfo|cut -d: -f2|sed 's/^ *//')}"
+echo "host: $(hostname)  cpu: $CPU  TIMINGS=$TIMINGS"
 
 hdr=1
 for row in $VARIANTS; do
@@ -60,7 +61,7 @@ EOF
         -I"$JDIR/include" -I"$BENCH/randombytes" \
         "$DRIVER" "$w/jkem.s" "$RB" -o "$w/bench_j" 2>"$w/j.log" || { echo "!! $v $impl Jasmin build failed:"; tail -4 "$w/j.log"; }
 
-    [ -x "$w/bench_c" ] && { "$w/bench_c" "8700K" "$v C      $impl" $hdr; hdr=0; }
-    [ -x "$w/bench_j" ] &&   "$w/bench_j" "8700K" "$v Jasmin $impl" 0
+    [ -x "$w/bench_c" ] && { "$w/bench_c" "$CPU" "$v C      $impl" $hdr; hdr=0; }
+    [ -x "$w/bench_j" ] &&   "$w/bench_j" "$CPU" "$v Jasmin $impl" 0
   done
 done
