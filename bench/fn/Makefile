@@ -3,7 +3,7 @@ SHELL := /bin/bash
 # Overridable knobs
 TIMINGS  ?= 10001
 IMPLS    ?= ref avx2
-VARIANTS ?= kaiburr4:7:5472:2720:3072 kaiburr6:18:13920:6944:7296 kaiburr8:24:18528:9248:9600
+VARIANTS ?= kaiburr1792:7:5472:2720:3072 kaiburr4608:18:13920:6944:7296 kaiburr6144:24:18528:9248:9600
 
 ENV = TIMINGS='$(TIMINGS)' IMPLS='$(IMPLS)' VARIANTS='$(VARIANTS)'
 ifneq ($(filter command line environment,$(origin CC)),)
@@ -28,12 +28,12 @@ ref:
 	@$(ENV) IMPLS='ref' bash run_ab.sh
 
 # Per-variant shortcuts
-kaiburr4:
-	@$(ENV) VARIANTS='kaiburr4:7:5472:2720:3072' bash run_ab.sh
-kaiburr6:
-	@$(ENV) VARIANTS='kaiburr6:18:13920:6944:7296' bash run_ab.sh
-kaiburr8:
-	@$(ENV) VARIANTS='kaiburr8:24:18528:9248:9600' bash run_ab.sh
+kaiburr1792:
+	@$(ENV) VARIANTS='kaiburr1792:7:5472:2720:3072' bash run_ab.sh
+kaiburr4608:
+	@$(ENV) VARIANTS='kaiburr4608:18:13920:6944:7296' bash run_ab.sh
+kaiburr6144:
+	@$(ENV) VARIANTS='kaiburr6144:24:18528:9248:9600' bash run_ab.sh
 
 # Quick smoke run (few iterations)
 smoke:
@@ -43,4 +43,4 @@ smoke:
 clean:
 	$(RM) -r ab_*
 
-.PHONY: default run avx2 ref kaiburr4 kaiburr6 kaiburr8 smoke clean
+.PHONY: default run avx2 ref kaiburr1792 kaiburr4608 kaiburr6144 smoke clean

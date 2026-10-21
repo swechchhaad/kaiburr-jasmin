@@ -4,10 +4,11 @@
 TOPLEVEL  = ../../
 JASMINDIR = $(TOPLEVEL)/jasmin
 CODEDIR   = $(TOPLEVEL)/code
+KAIBURR_C = $(TOPLEVEL)/../kaiburr-c
 SYSCALL   = jasmin_syscall.c
 
 # ------------------------------------------------------------------------
-CFLAGS  ?= -Wall -W -I ../../code -I ../../code/jasmin
+CFLAGS  ?= -Wall -W -I ../../.. -I ../../code -I ../../code/jasmin
 
 # ------------------------------------------------------------------------
 .PHONY: clean __force__
@@ -31,9 +32,9 @@ test_kem_$(2)_$(3): test_kem.c $$(CODEDIR)/jasmin/$(3)/$(2)/jkem.s
 		-DMLKEM_NAMESPACE=jade_kem_mlkem_$(3)_$(1)_$(2) \
 		-I $(CODEDIR)/jasmin/$(3)/$(2)/include \
 		$$(SYSCALL) runtime.c test_kem.c $$(CODEDIR)/jasmin/$(3)/$(2)/jkem.s \
-		$$(CODEDIR)/kaiburr-c/ref/randombytes.c \
-		$$(PQCRYSTAL_FIPS202:%=$$(CODEDIR)/kaiburr-c/ref/%) \
-		$$(PQCRYSTAL_KYBER:%=$$(CODEDIR)/kaiburr-c/ref/%)
+		$$(KAIBURR_C)/ref/randombytes.c \
+		$$(PQCRYSTAL_FIPS202:%=$$(KAIBURR_C)/ref/%) \
+		$$(PQCRYSTAL_KYBER:%=$$(KAIBURR_C)/ref/%)
 
 run_test_kem_$(2)_$(3): test_kem_$(2)_$(3) __force__
 	./test_kem_$(2)_$(3)
@@ -41,12 +42,12 @@ run_test_kem_$(2)_$(3): test_kem_$(2)_$(3) __force__
 TEST_KEM += test_kem_$(2)_$(3)
 endef
 
-$(eval $(call test_kem,amd64,avx2,kaiburr4,7))
-$(eval $(call test_kem,amd64,avx2,kaiburr6,18))
-$(eval $(call test_kem,amd64,avx2,kaiburr8,24))
-$(eval $(call test_kem,amd64,ref,kaiburr4,7))
-$(eval $(call test_kem,amd64,ref,kaiburr6,18))
-$(eval $(call test_kem,amd64,ref,kaiburr8,24))
+$(eval $(call test_kem,amd64,avx2,kaiburr1792,7))
+$(eval $(call test_kem,amd64,avx2,kaiburr4608,18))
+$(eval $(call test_kem,amd64,avx2,kaiburr6144,24))
+$(eval $(call test_kem,amd64,ref,kaiburr1792,7))
+$(eval $(call test_kem,amd64,ref,kaiburr4608,18))
+$(eval $(call test_kem,amd64,ref,kaiburr6144,24))
 
 all_test_kem: $(TEST_KEM)
 
@@ -63,9 +64,9 @@ speed_kem_$(2)_$(3): speed_kem.c $$(CODEDIR)/jasmin/$(3)/$(2)/jkem.s
 		-DMLKEM_NAMESPACE=jade_kem_mlkem_$(3)_$(1)_$(2) \
 		-I $(CODEDIR)/jasmin/$(3)/$(2)/include \
 		$$(SYSCALL) runtime.c speed_kem.c $$(CODEDIR)/jasmin/$(3)/$(2)/jkem.s \
-		$$(CODEDIR)/kaiburr-c/ref/randombytes.c \
-		$$(PQCRYSTAL_FIPS202:%=$$(CODEDIR)/kaiburr-c/ref/%) \
-		$$(PQCRYSTAL_KYBER:%=$$(CODEDIR)/kaiburr-c/ref/%)
+		$$(KAIBURR_C)/ref/randombytes.c \
+		$$(PQCRYSTAL_FIPS202:%=$$(KAIBURR_C)/ref/%) \
+		$$(PQCRYSTAL_KYBER:%=$$(KAIBURR_C)/ref/%)
 
 run_speed_kem_$(2)_$(3): speed_kem_$(2)_$(3)
 	./speed_kem_$(2)_$(3)
@@ -73,12 +74,12 @@ run_speed_kem_$(2)_$(3): speed_kem_$(2)_$(3)
 SPEED_KEM += speed_kem_$(2)_$(3)
 endef
 
-$(eval $(call speed_kem,amd64,avx2,kaiburr4,7))
-$(eval $(call speed_kem,amd64,avx2,kaiburr6,18))
-$(eval $(call speed_kem,amd64,avx2,kaiburr8,24))
-$(eval $(call speed_kem,amd64,ref,kaiburr4,7))
-$(eval $(call speed_kem,amd64,ref,kaiburr6,18))
-$(eval $(call speed_kem,amd64,ref,kaiburr8,24))
+$(eval $(call speed_kem,amd64,avx2,kaiburr1792,7))
+$(eval $(call speed_kem,amd64,avx2,kaiburr4608,18))
+$(eval $(call speed_kem,amd64,avx2,kaiburr6144,24))
+$(eval $(call speed_kem,amd64,ref,kaiburr1792,7))
+$(eval $(call speed_kem,amd64,ref,kaiburr4608,18))
+$(eval $(call speed_kem,amd64,ref,kaiburr6144,24))
 
 all_speed_kem: $(SPEED_KEM)
 
